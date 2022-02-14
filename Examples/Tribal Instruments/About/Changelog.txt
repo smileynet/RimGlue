@@ -1,6 +1,0 @@
-1.0.0 - 9/8/2021 - Initial Workshop upload
-
-1.0.1 - 9/8/2021 - minor about.xml fix
-
-1.0.2 - 9/23/2021 - added manifest file, better preview file
-

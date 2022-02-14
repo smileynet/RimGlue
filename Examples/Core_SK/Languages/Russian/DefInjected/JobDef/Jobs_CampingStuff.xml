@@ -1,8 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<LanguageData>
-
-	<DeployTent.reportString>устанавливает палатку.</DeployTent.reportString>
-	<PackTent.reportString>сворачивает палатку.</PackTent.reportString>
-	<RepairTent.reportString>чинит палатку.</RepairTent.reportString>
-
-</LanguageData>

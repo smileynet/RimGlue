@@ -1,4 +1,0 @@
-D:\Proyectos y Archivos Guardados\RimWorld Mods\Argón's Tribal Medicine\Source\ArgonTribalMedicie\ArgonTribalMedicie\obj\Debug\ArgonTribalMedicie.csprojAssemblyReference.cache
-D:\Proyectos y Archivos Guardados\RimWorld Mods\Argón's Tribal Medicine\Source\ArgonTribalMedicie\ArgonTribalMedicie\obj\Debug\ArgonTribalMedicie.csproj.CoreCompileInputs.cache
-D:\Proyectos y Archivos Guardados\RimWorld Mods\Argón's Tribal Medicine\1.2\Assemblies\ArgonTribalMedicie.dll
-D:\Proyectos y Archivos Guardados\RimWorld Mods\Argón's Tribal Medicine\Source\ArgonTribalMedicie\ArgonTribalMedicie\obj\Debug\ArgonTribalMedicie.dll

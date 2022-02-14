@@ -1,6 +1,0 @@
-# Changelog for Primitive Storage
-
-1.0.0.2 -fixed storage settings for Clay Pots
-
-#1.0.0.1 -Info edits, no code change
-
