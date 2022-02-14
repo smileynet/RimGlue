@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="BuildingBase">
+    <defName>PitfallTrap</defName>
+    <label>pitfall trap</label>
+    <thingClass>Building_TrapDamager</thingClass>
+    <graphicData>
+      <texPath>Things/Building/SpikePit/SpikePitArmed</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <rect>(0,0,1,0.15)</rect>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <drawerType>RealtimeOnly</drawerType>
+    <rotatable>false</rotatable>
+    <tickerType>Normal</tickerType>
+    <stealable>false</stealable>
+    <statBases>
+      <MaxHitPoints>60</MaxHitPoints>
+      <WorkToBuild>4000</WorkToBuild>
+      <Beauty>-6</Beauty>
+      <TrapMeleeDamage>90</TrapMeleeDamage>
+      <TrapSpringChance>0.9</TrapSpringChance>
+    </statBases>
+    <description>A pit dug in the ground full of spikes with fake ground cover. When the victim steps on the fake cover, the victim falls into the pit and is impaled by spikes.</description>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>70</costStuffCount>
+    <designationCategory>Security</designationCategory>
+    <building>
+      <isTrap>true</isTrap>
+      <trapDamageCategory>Sharp</trapDamageCategory>
+      <trapUnarmedGraphicData>
+        <texPath>Things/Building/SpikePit/SpikePitUnarmed</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <shaderType>Cutout</shaderType>
+      </trapUnarmedGraphicData>
+    </building>
+    <terrainAffordanceNeeded>Diggable</terrainAffordanceNeeded>
+    <researchPrerequisites>
+      <li>BasicTraps</li>
+    </researchPrerequisites>
+  </ThingDef>
+</Defs>

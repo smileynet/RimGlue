@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Walls -->
+
+  <ClutterSilverWall.label>Panel de pared reforzada</ClutterSilverWall.label>
+  <ClutterSilverWall.description>Una pared reforzada con paneles gruesos unidos para consolidarlo mejor.</ClutterSilverWall.description>
+  <ClutterSilverWall_Blueprint.label>panel de pared reforzada (bosquejo)</ClutterSilverWall_Blueprint.label>
+  <ClutterSilverWall_Frame.label>panel de pared reforzada (construcción)</ClutterSilverWall_Frame.label>
+  <ClutterSilverWall_Frame.description>Una pared reforzada con paneles gruesos unidos para consolidarlo mejor.</ClutterSilverWall_Frame.description>
+
+  <ClutterUWallLight.label>Pared utilitaria con luces</ClutterUWallLight.label>
+  <ClutterUWallLight.description>Versión actualizada de las paredes básicas, con la capacidad de adjuntar fácilmente cosas, ¡como el polvo de siglos de antigüedad! Esta versión viene con luces para mostrar su hermosa colección de polvo.</ClutterUWallLight.description>
+  <ClutterUWallLight_Blueprint.label>pared utilitaria con luces (bosquejo)</ClutterUWallLight_Blueprint.label>
+  <ClutterUWallLight_Frame.label>pared utilitaria con luces (construcción)</ClutterUWallLight_Frame.label>
+  <ClutterUWallLight_Frame.description>Versión actualizada de las paredes básicas, con la capacidad de juntar fácilmente las cosas, como el polvo de siglos de antigüedad! Esta versión viene con luces para mostrar su hermosa colección de polvo.</ClutterUWallLight_Frame.description>
+
+  <UtilityWindows.label>Marco de ventana</UtilityWindows.label>
+  <UtilityWindows.description>Una ventana sencilla para permitir la entrada de luz natural en una habitación. Puede ser construido en una pared.</UtilityWindows.description>
+
+  <WindowThingy.label>Cositas para ventanas</WindowThingy.label>
+  <DoorThingy.label>Cositas para puertas</DoorThingy.label>
+
+
+  <!-- Roof Support -->
+
+  <Column.label>Soporte de techo</Column.label>
+  <Column.description>Una columna estructural capaz de sostener un techo. No impide el movimiento ni proporciona cobertura.</Column.description>
+  <Column_Blueprint.label>Soporte del techo (bosquejo)</Column_Blueprint.label>
+  <Column_Frame.label>soporte de techo (construcción)</Column_Frame.label>
+  <Column_Frame.description>Una columna estructural capaz de soportar un techo. No impide el movimiento ni proporciona cobertura.</Column_Frame.description>
+
+
+</LanguageData>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs> 
+
+	<WorkGiverDef>
+		<defName>DoBillsWeave</defName>
+		<label>weave</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Art</workType>
+		<priorityInType>100</priorityInType>
+		<fixedBillGiverDefs>
+			<li>ArtSpot</li>
+		</fixedBillGiverDefs>
+		<verb>weave</verb>
+		<gerund>weaving at</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+
+	<WorkGiverDef>
+		<defName>DoBillsCookStoneOven</defName>
+		<label>Cook meals at stone oven</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Cooking</workType>
+		<priorityInType>100</priorityInType>
+		<fixedBillGiverDefs>
+			<li>StoneOven</li>
+		</fixedBillGiverDefs>
+		<verb>cook</verb>
+		<gerund>cooking</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>  
+
+</Defs>

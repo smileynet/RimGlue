@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="BanthaHorn"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs</xpath>
+      <value>
+        <ThingDef ParentName="PrimitiveHornInstrumentBase">
+          <label>bantha blowing horn</label>
+          <defName>BanthaBlowingHorn</defName>
+          <description>A large horn of a Bantha, sculpted into a musical horn.</description>
+          <graphicData>
+            <texPath>Things/Items/Primitive/BanthaBlowingHorn</texPath>
+            <drawSize>1.3</drawSize>
+          </graphicData>
+          <statBases>
+            <Mass>3.5</Mass>
+            <MarketValue>240</MarketValue>
+          </statBases>
+          <costList>
+            <BanthaHorn>1</BanthaHorn>
+          </costList>
+          <comps>
+            <li Class="MusicalInstruments.CompProperties_MusicalInstrument">
+              <compClass>MusicalInstruments.CompMusicalInstrument</compClass>
+              <easiness>0.4</easiness>
+              <expressiveness>0.4</expressiveness>
+              <xOffset>0.2</xOffset>
+              <zOffset>0.1</zOffset>
+              <xOffsetFacing>0.1</xOffsetFacing>
+              <zOffsetFacing>0.2</zOffsetFacing>
+              <isWindInstrument>true</isWindInstrument>
+            </li>
+          </comps>
+        </ThingDef>
+      </value>
+    </match>
+  </Operation>
+</Patch>

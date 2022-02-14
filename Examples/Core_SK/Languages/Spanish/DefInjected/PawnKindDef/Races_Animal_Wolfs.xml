@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Wolves -->
+
+  <Rimwolf.label>Black wolf</Rimwolf.label>
+  <Rimwolf.labelPlural>Black wolfs</Rimwolf.labelPlural>
+  <Rimwolf.lifeStages.0.label>Cachorro de loco negro</Rimwolf.lifeStages.0.label>
+  <Rimwolf.lifeStages.0.labelPlural>Rimwolf Puppys</Rimwolf.lifeStages.0.labelPlural>
+  <Rimwolf.lifeStages.0.labelMale>male Rimwolf Puppy</Rimwolf.lifeStages.0.labelMale>
+  <Rimwolf.lifeStages.0.labelMalePlural>male Rimwolf Puppys</Rimwolf.lifeStages.0.labelMalePlural>
+  <Rimwolf.lifeStages.0.labelFemale>female Rimwolf Puppy</Rimwolf.lifeStages.0.labelFemale>
+  <Rimwolf.lifeStages.0.labelFemalePlural>female Rimwolf Puppys</Rimwolf.lifeStages.0.labelFemalePlural>
+  <Rimwolf.lifeStages.1.label>Black wolf</Rimwolf.lifeStages.1.label>
+  <Rimwolf.lifeStages.1.labelPlural>Black wolf</Rimwolf.lifeStages.1.labelPlural>
+  <Rimwolf.lifeStages.1.labelMale>male Black wolf</Rimwolf.lifeStages.1.labelMale>
+  <Rimwolf.lifeStages.1.labelMalePlural>male Black wolfs</Rimwolf.lifeStages.1.labelMalePlural>
+  <Rimwolf.lifeStages.1.labelFemale>female Black wolf</Rimwolf.lifeStages.1.labelFemale>
+  <Rimwolf.lifeStages.1.labelFemalePlural>female Black wolfs</Rimwolf.lifeStages.1.labelFemalePlural>
+  <Rimwolf.lifeStages.2.label>Black wolf</Rimwolf.lifeStages.2.label>
+  <Rimwolf.lifeStages.2.labelPlural>Black wolf</Rimwolf.lifeStages.2.labelPlural>
+  <Rimwolf.lifeStages.2.labelMale>male Black wolf</Rimwolf.lifeStages.2.labelMale>
+  <Rimwolf.lifeStages.2.labelMalePlural>male Black wolfs</Rimwolf.lifeStages.2.labelMalePlural>
+  <Rimwolf.lifeStages.2.labelFemale>female Black wolf</Rimwolf.lifeStages.2.labelFemale>
+  <Rimwolf.lifeStages.2.labelFemalePlural>female Black wolfs</Rimwolf.lifeStages.2.labelFemalePlural>
+  <Rimwolf.labelMale>male Black wolf</Rimwolf.labelMale>
+  <Rimwolf.labelMalePlural>male Black wolfs</Rimwolf.labelMalePlural>
+  <Rimwolf.labelFemale>female Black wolf</Rimwolf.labelFemale>
+  <Rimwolf.labelFemalePlural>female Black wolfs</Rimwolf.labelFemalePlural>
+
+
+</LanguageData>

@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="StringInstrumentBase">
+    <label>guitar</label>
+    <defName>Guitar</defName>
+    <description>A six-stringed instrument played by picking or strumming. Great for entertaining groups around a campfire.</description>
+    <graphicData>
+      <texPath>Things/Items/String/Guitar</texPath>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <statBases>
+      <WorkToMake>15000</WorkToMake>
+      <Mass>6</Mass>
+    </statBases>
+    <costStuffCount>100</costStuffCount>
+    <comps>
+      <li Class="MusicalInstruments.CompProperties_MusicalInstrument">
+        <compClass>MusicalInstruments.CompMusicalInstrument</compClass>
+        <easiness>0.5</easiness>
+        <expressiveness>0.5</expressiveness>
+        <xOffset>0.2</xOffset>
+        <zOffset>-0.2</zOffset>
+        <xOffsetFacing>0.0</xOffsetFacing>
+        <zOffsetFacing>-0.2</zOffsetFacing>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="StringInstrumentBase">
+    <label>bass guitar</label>
+    <defName>BassGuitar</defName>
+    <description>A guitar that has the same pitch and tuning as a double bass, usually electrically amplified</description>
+    <graphicData>
+      <texPath>Things/Items/String/BassGuitar</texPath>
+    </graphicData>
+    <techLevel>Industrial</techLevel>
+    <researchPrerequisites>
+      <li>Electricity</li>
+    </researchPrerequisites>
+    <statBases>
+      <WorkToMake>20000</WorkToMake>
+      <Mass>8</Mass>
+    </statBases>
+    <costStuffCount>100</costStuffCount>
+    <costList>
+      <Steel>5</Steel>
+    </costList>
+    <comps>
+      <li Class="MusicalInstruments.CompProperties_MusicalInstrument">
+        <compClass>MusicalInstruments.CompMusicalInstrument</compClass>
+        <easiness>0.6</easiness>
+        <expressiveness>0.5</expressiveness>
+        <xOffset>0.2</xOffset>
+        <zOffset>-0.2</zOffset>
+        <xOffsetFacing>0.0</xOffsetFacing>
+        <zOffsetFacing>-0.2</zOffsetFacing>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="StringInstrumentBase">
+    <label>banjo</label>
+    <defName>Banjo</defName>
+    <description>A banjo is a musical instrument that looks like a guitar with a circular body, a long neck, and four or more strings.</description>
+    <graphicData>
+      <texPath>Things/Items/String/Banjo</texPath>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <statBases>
+      <WorkToMake>12000</WorkToMake>
+      <Mass>3</Mass>
+    </statBases>
+    <costStuffCount>50</costStuffCount>
+    <comps>
+      <li Class="MusicalInstruments.CompProperties_MusicalInstrument">
+        <compClass>MusicalInstruments.CompMusicalInstrument</compClass>
+        <easiness>0.7</easiness>
+        <expressiveness>0.3</expressiveness>
+        <xOffset>0.2</xOffset>
+        <zOffset>-0.2</zOffset>
+        <xOffsetFacing>0.0</xOffsetFacing>
+        <zOffsetFacing>-0.2</zOffsetFacing>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="StringInstrumentBase">
+    <label>balalaika</label>
+    <defName>Balalaika</defName>
+    <description>A plucked musical instrument, usually having a triangular body and three strings</description>
+    <graphicData>
+      <texPath>Things/Items/String/Balalaika</texPath>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <statBases>
+      <WorkToMake>11000</WorkToMake>
+      <Mass>3</Mass>
+    </statBases>
+    <costStuffCount>50</costStuffCount>
+    <comps>
+      <li Class="MusicalInstruments.CompProperties_MusicalInstrument">
+        <compClass>MusicalInstruments.CompMusicalInstrument</compClass>
+        <easiness>0.7</easiness>
+        <expressiveness>0.3</expressiveness>
+        <xOffset>0.2</xOffset>
+        <zOffset>-0.2</zOffset>
+        <xOffsetFacing>0.0</xOffsetFacing>
+        <zOffsetFacing>-0.2</zOffsetFacing>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="StringInstrumentBase">
+    <label>violin</label>
+    <defName>Violin</defName>
+    <description>A four-stringed instrument played with a bow, synonymous with the virtuosos of Old Earth.</description>
+    <graphicData>
+      <texPath>Things/Items/String/Violin</texPath>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <statBases>
+      <WorkToMake>30000</WorkToMake>
+      <Mass>3</Mass>
+    </statBases>
+    <costStuffCount>50</costStuffCount>
+    <comps>
+      <li Class="MusicalInstruments.CompProperties_MusicalInstrument">
+        <compClass>MusicalInstruments.CompMusicalInstrument</compClass>
+        <easiness>0.1</easiness>
+        <expressiveness>0.9</expressiveness>
+        <xOffset>0.4</xOffset>
+        <zOffset>0</zOffset>
+        <xOffsetFacing>-0.3</xOffsetFacing>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="StringInstrumentBase">
+    <label>cello</label>
+    <defName>Cello</defName>
+    <description>A cello is a musical instrument with four strings that looks like a large violin.</description>
+    <graphicData>
+      <texPath>Things/Items/String/Cello</texPath>
+      <flipExtraRotation>0</flipExtraRotation>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <statBases>
+      <WorkToMake>32000</WorkToMake>
+      <Mass>5</Mass>
+    </statBases>
+    <costStuffCount>100</costStuffCount>
+    <comps>
+      <li Class="MusicalInstruments.CompProperties_MusicalInstrument">
+        <compClass>MusicalInstruments.CompMusicalInstrument</compClass>
+        <easiness>0.2</easiness>
+        <expressiveness>0.8</expressiveness>
+        <xOffset>0.3</xOffset>
+        <zOffset>-0.1</zOffset>
+        <xOffsetFacing>-0.2</xOffsetFacing>
+        <zOffsetFacing>-0.1</zOffsetFacing>
+        <vertical>true</vertical>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="StringInstrumentBase">
+    <label>contrabass</label>
+    <defName>Contrabass</defName>
+    <description>A contrabass is the largest instrument in the violin family.</description>
+    <graphicData>
+      <texPath>Things/Items/String/Contrabass</texPath>
+      <flipExtraRotation>0</flipExtraRotation>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <statBases>
+      <WorkToMake>35000</WorkToMake>
+      <Mass>8</Mass>
+    </statBases>
+    <costStuffCount>150</costStuffCount>
+    <comps>
+      <li Class="MusicalInstruments.CompProperties_MusicalInstrument">
+        <compClass>MusicalInstruments.CompMusicalInstrument</compClass>
+        <easiness>0.3</easiness>
+        <expressiveness>0.7</expressiveness>
+        <xOffset>0.3</xOffset>
+        <zOffset>0.1</zOffset>
+        <xOffsetFacing>-0.2</xOffsetFacing>
+        <zOffsetFacing>0.1</zOffsetFacing>
+        <vertical>true</vertical>
+      </li>
+    </comps>
+  </ThingDef>
+</Defs>

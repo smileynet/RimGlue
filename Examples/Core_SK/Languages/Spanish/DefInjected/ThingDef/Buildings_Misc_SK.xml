@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <PrimitiveResearchBench.label>Mesa de investigación primitiva</PrimitiveResearchBench.label>
+  <PrimitiveResearchBench.description>Estudia los materiales circundantes aquí para investigar cosas nuevas.</PrimitiveResearchBench.description>
+  <PrimitiveResearchBench_Blueprint.label>mesa de investigación primitiva (anteproyecto)</PrimitiveResearchBench_Blueprint.label>
+  <PrimitiveResearchBench_Frame.label>mesa de investigación primitiva (en construcción)</PrimitiveResearchBench_Frame.label>
+  <PrimitiveResearchBench_Frame.description>Estudia los materiales circundantes aquí para investigar cosas nuevas.</PrimitiveResearchBench_Frame.description>
+
+  <TradingSpot.label>Punto de comercio</TradingSpot.label>
+  <TradingSpot.description>Designa un lugar donde los comerciantes se detendrán al visitar su colonia.</TradingSpot.description>
+  <TradingSpot_Blueprint.label>punto de comercio (anteproyecto)</TradingSpot_Blueprint.label>
+  <TradingSpot_Frame.label>punto de comercio (en construcción)</TradingSpot_Frame.label>
+  <TradingSpot_Frame.description>Designa un lugar donde los comerciantes se detendrán al visitar su colonia.</TradingSpot_Frame.description>
+
+  <Buildings_SubspaceBurstTransponder.label>Transpondedor de ráfaga subespacial</Buildings_SubspaceBurstTransponder.label>
+  <Buildings_SubspaceBurstTransponder.description>Contacta naves a la distancia y guíalos a tu colonia.</Buildings_SubspaceBurstTransponder.description>
+  <Buildings_SubspaceBurstTransponder_Blueprint.label>transpondedor de ráfaga subespacial (anteproyecto)</Buildings_SubspaceBurstTransponder_Blueprint.label>
+  <Buildings_SubspaceBurstTransponder_Frame.label>transpondedor de ráfaga subespacial (en construcción)</Buildings_SubspaceBurstTransponder_Frame.label>
+  <Buildings_SubspaceBurstTransponder_Frame.description>Contacta naves a la distancia y guíalos a tu colonia.</Buildings_SubspaceBurstTransponder_Frame.description>
+
+
+  <!-- Facilities -->
+
+  <CounterTopModular.label>contador de laboratorio</CounterTopModular.label>
+  <CounterTopModular.description>Una conveniente superficie de encimera.</CounterTopModular.description>
+  <CounterTopModular_Blueprint.label>contador de laboratorio (anteproyecto)</CounterTopModular_Blueprint.label>
+  <CounterTopModular_Blueprint_Install.label>contador de laboratorio (anteproyecto)</CounterTopModular_Blueprint_Install.label>
+  <CounterTopModular_Frame.label>contador de laboratorio (en construcción)</CounterTopModular_Frame.label>
+  <CounterTopModular_Frame.description>Una conveniente superficie de encimera.</CounterTopModular_Frame.description>
+
+  <LabStation.label>estación de laboratorio</LabStation.label>
+  <LabStation.description>Una estación de investigación auxiliar para ampliar las operaciones del laboratorio. Requiere energía.</LabStation.description>
+  <LabStation_Blueprint.label>estación de laboratorio (anteproyecto)</LabStation_Blueprint.label>
+  <LabStation_Blueprint_Install.label>estación de laboratorio (anteproyecto)</LabStation_Blueprint_Install.label>
+  <LabStation_Frame.label>estación de laboratorio (en construcción)</LabStation_Frame.label>
+  <LabStation_Frame.description>Estación de investigación auxiliar para ampliar las operaciones del laboratorio. Requiere energía.</LabStation_Frame.description>
+
+  <LabTerminal.label>terminal de investigación</LabTerminal.label>
+  <LabTerminal.description>Un compacto terminal de investigación para ampliar las operaciones del laboratorio. Requiere energía.</LabTerminal.description>
+  <LabTerminal_Blueprint.label>terminal de investigación (anteproyecto)</LabTerminal_Blueprint.label>
+  <LabTerminal_Blueprint_Install.label>terminal de investigación (anteproyecto)</LabTerminal_Blueprint_Install.label>
+  <LabTerminal_Frame.label>terminal de investigación (en construcción)</LabTerminal_Frame.label>
+  <LabTerminal_Frame.description>Terminal de investigación compacta para ampliar las operaciones de laboratorio. Requiere energía.</LabTerminal_Frame.description>
+
+  <AdvancedVitalsMonitor.label>Monitor de signos vitales avanzado</AdvancedVitalsMonitor.label>
+  <AdvancedVitalsMonitor.description>Un monitor avanzado capaz de diagnosticar la causa de casi cualquier síntoma. Necesita ser colocado junto a una cama médica de alta tecnología.</AdvancedVitalsMonitor.description>
+  <AdvancedVitalsMonitor_Blueprint.label>monitor de signos vitales avanzado (anteproyecto)</AdvancedVitalsMonitor_Blueprint.label>
+  <AdvancedVitalsMonitor_Blueprint_Install.label>monitor de signos vitales avanzado (anteproyecto)</AdvancedVitalsMonitor_Blueprint_Install.label>
+  <AdvancedVitalsMonitor_Frame.label>monitor de signos vitales avanzado (en construcción)</AdvancedVitalsMonitor_Frame.label>
+  <AdvancedVitalsMonitor_Frame.description>Un monitor avanzado capaz de diagnosticar la causa de casi cualquier síntoma. Necesita ser colocado junto a una cama médica de alta tecnología.</AdvancedVitalsMonitor_Frame.description>
+
+  <FileCabinet.label>Archivador</FileCabinet.label>
+  <FileCabinet.description>Un lugar importante para almacenar documentos importantes sobre importantes experimentos utilizados para importantes investigaciones sobre tecnologías importantes. Aumenta ligeramente la velocidad de la investigación cuando está al lado de un banco de investigación.</FileCabinet.description>
+  <FileCabinet_Blueprint.label>archivador (anteproyecto)</FileCabinet_Blueprint.label>
+  <FileCabinet_Blueprint_Install.label>archivador (anteproyecto)</FileCabinet_Blueprint_Install.label>
+  <FileCabinet_Frame.label>archivador (en construcción)</FileCabinet_Frame.label>
+  <FileCabinet_Frame.description>Un lugar importante para almacenar documentos importantes sobre importantes experimentos utilizados para importantes investigaciones sobre tecnologías importantes. Aumenta ligeramente la velocidad de la investigación cuando está al lado de un banco de investigación.</FileCabinet_Frame.description>
+
+  <Patterner.label>Diseñador de patrones</Patterner.label>
+  <Patterner.description>Un lugar importante para almacenar textiles usados ​​para aumentar la velocidad de trabajo en los bancos textiles.</Patterner.description>
+  <Patterner_Blueprint.label>diseñador de patrones (anteproyecto)</Patterner_Blueprint.label>
+  <Patterner_Blueprint_Install.label>diseñador de patrones (anteproyecto)</Patterner_Blueprint_Install.label>
+  <Patterner_Frame.label>diseñador de patrones (en construcción)</Patterner_Frame.label>
+  <Patterner_Frame.description>Un lugar importante para almacenar textiles usados ​​para aumentar la velocidad de trabajo en los bancos textiles.</Patterner_Frame.description>
+
+  <Small_ToolCabinet.label>Armario de herramientas pequeño</Small_ToolCabinet.label>
+  <Small_ToolCabinet.description>Aumenta la velocidad de trabajo. Necesita colocarse cerca del banco de trabajo. Un banco de trabajo puede conectarse simultáneamente a sólo dos armarios de herramientas.</Small_ToolCabinet.description>
+  <Small_ToolCabinet_Blueprint.label>armario de herramientas pequeño (anteproyecto)</Small_ToolCabinet_Blueprint.label>
+  <Small_ToolCabinet_Blueprint_Install.label>armario de herramientas pequeño (anteproyecto)</Small_ToolCabinet_Blueprint_Install.label>
+  <Small_ToolCabinet_Frame.label>armario de herramientas pequeño (en construcción)</Small_ToolCabinet_Frame.label>
+  <Small_ToolCabinet_Frame.description>Aumenta la velocidad de trabajo. Necesita colocarse cerca del banco de trabajo. Un banco de trabajo puede conectarse simultáneamente a sólo dos armarios de herramientas.</Small_ToolCabinet_Frame.description>
+
+  <CookingTools.label>Herramientas de cocina</CookingTools.label>
+  <CookingTools.description>Aumenta la velocidad de trabajo. Necesita colocarse cerca del banco de trabajo. Un banco de trabajo puede conectarse simultáneamente a sólo dos armarios de herramientas.</CookingTools.description>
+  <CookingTools_Blueprint.label>herramientas de cocina (anteproyecto)</CookingTools_Blueprint.label>
+  <CookingTools_Blueprint_Install.label>herramientas de cocina (anteproyecto)</CookingTools_Blueprint_Install.label>
+  <CookingTools_Frame.label>herramientas de cocina (en construcción)</CookingTools_Frame.label>
+  <CookingTools_Frame.description>Aumenta la velocidad de trabajo. Necesita colocarse cerca del banco de trabajo. Un banco de trabajo puede conectarse simultáneamente a sólo dos armarios de herramientas.</CookingTools_Frame.description>
+
+  <!--[Core] <MoisturePump.label>moisture pump</MoisturePump.label>-->
+  <!--[Core] <MoisturePump.description>Very slowly removes moisture from nearby terrain, converting marshes or shallow water into dry ground. Does not affect deep water.</MoisturePump.description>-->
+  <!--[Core] <MoisturePump_Blueprint.label>moisture pump (blueprint)</MoisturePump_Blueprint.label>-->
+  <MoisturePump_Blueprint_Install.label>moisture pump (blueprint)</MoisturePump_Blueprint_Install.label>
+  <!--[Core] <MoisturePump_Frame.label>moisture pump (building)</MoisturePump_Frame.label>-->
+  <!--[Core] <MoisturePump_Frame.description>Very slowly removes moisture from nearby terrain, converting marshes or shallow water into dry ground. Does not affect deep water.</MoisturePump_Frame.description>-->
+
+  <FertilizerPump.label>Bomba de terraformado</FertilizerPump.label>
+  <FertilizerPump.description>A single use pump that slowly expands a field of growable soil around itself. Requiere energía.</FertilizerPump.description>
+  <FertilizerPump_Blueprint.label>bomba de terraformado (anteproyecto)</FertilizerPump_Blueprint.label>
+  <FertilizerPump_Frame.label>bomba de terraformado (en construcción)</FertilizerPump_Frame.label>
+  <FertilizerPump_Frame.description>Esta bomba dilata lentamente un campo de suelo cultivable alrededor de sí mismo. Requiere energía.</FertilizerPump_Frame.description>
+
+  
+  <!-- Cryptosleep casket -->
+
+  <Holodeck.label>Holosuite</Holodeck.label>
+  <Holodeck.description>Un holosuite capaz de hombre con el que sus colonos pueden practicar sus habilidades sociales.</Holodeck.description>
+  <Holodeck_Blueprint.label>holosuite (anteproyecto)</Holodeck_Blueprint.label>
+  <Holodeck_Blueprint_Install.label>holosuite (anteproyecto)</Holodeck_Blueprint_Install.label>
+  <Holodeck_Frame.label>holosuite (en construcción)</Holodeck_Frame.label>
+  <Holodeck_Frame.description>Un holosuite capaz de hombre con el que sus colonos pueden practicar sus habilidades sociales.</Holodeck_Frame.description>
+
+  <PunchingBag.label>Saco de boxeo</PunchingBag.label>
+  <PunchingBag.description>Una bolsa de arena que sus colonos pueden usar para practicar sus habilidades de cuerpo a cuerpo.</PunchingBag.description>
+  <PunchingBag_Blueprint.label>saco de boxeo (anteproyecto)</PunchingBag_Blueprint.label>
+  <PunchingBag_Blueprint_Install.label>saco de boxeo (anteproyecto)</PunchingBag_Blueprint_Install.label>
+  <PunchingBag_Frame.label>saco de boxeo (en construcción)</PunchingBag_Frame.label>
+  <PunchingBag_Frame.description>Una bolsa de arena que sus colonos pueden usar para practicar sus habilidades de cuerpo a cuerpo.</PunchingBag_Frame.description>
+
+  <!-- Transport pods -->
+
+  <MobileMineralSonar.label>Sonar mineral móvil</MobileMineralSonar.label>
+  <MobileMineralSonar.description>El sonar mineral móvil se utiliza para detectar minerales ocultos y depósitos de petróleo. - Explorará las rocas circundantes de forma autónoma con los paquetes de energía embebidos. - Proporcionar alguna potencia adicional acelerará la velocidad de exploración.</MobileMineralSonar.description>
+  <MobileMineralSonar_Blueprint.label>sonar mineral móvil (anteproyecto)</MobileMineralSonar_Blueprint.label>
+  <MobileMineralSonar_Blueprint_Install.label>sonar mineral móvil (anteproyecto)</MobileMineralSonar_Blueprint_Install.label>
+  <MobileMineralSonar_Frame.label>sonar mineral móvil (en construcción)</MobileMineralSonar_Frame.label>
+  <MobileMineralSonar_Frame.description>El sonar mineral móvil se utiliza para detectar minerales ocultos y depósitos de petróleo. - Explorará las rocas circundantes de forma autónoma con los paquetes de energía embebidos. - Proporcionar alguna potencia adicional acelerará la velocidad de exploración.</MobileMineralSonar_Frame.description>
+
+  <DermalRegenerator.label>Regenerador dérmico</DermalRegenerator.label>
+  <DermalRegenerator.description>Un dispositivo médico capaz de explorar y reparar el tejido superficial.</DermalRegenerator.description>
+  <DermalRegenerator_Blueprint.label>regenerador dermal (anteproyecto)</DermalRegenerator_Blueprint.label>
+  <DermalRegenerator_Frame.label>regenerador dermal (en construcción)</DermalRegenerator_Frame.label>
+  <DermalRegenerator_Frame.description>Un dispositivo médico capaz de explorar y reparar el tejido superficial.</DermalRegenerator_Frame.description>
+
+  <ImpactionCharge.label>Carga de impactación</ImpactionCharge.label>
+  <ImpactionCharge.description>Detonan al mando. Crea una explosión dirigida de plasma, que afecta directamente a la roca madre. Se utiliza para la minería de asteroides y el acceso a los recursos subterráneos.</ImpactionCharge.description>
+  <ImpactionCharge_Blueprint.label>carga de impactación (anteproyecto)</ImpactionCharge_Blueprint.label>
+  <ImpactionCharge_Blueprint_Install.label>carga de impactación (anteproyecto)</ImpactionCharge_Blueprint_Install.label>
+  <ImpactionCharge_Frame.label>carga de impactación (en construcción)</ImpactionCharge_Frame.label>
+  <ImpactionCharge_Frame.description>Detonan al mando. Crea una explosión dirigida de plasma, que afecta directamente a la roca madre. Se utiliza para la minería de asteroides y el acceso a los recursos subterráneos.</ImpactionCharge_Frame.description>
+
+
+</LanguageData>

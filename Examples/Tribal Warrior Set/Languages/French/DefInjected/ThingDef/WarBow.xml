@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- War Bow -->
+
+  <Arrow_WarBow.label>Flèche de l'arc de guerre tribal</Arrow_WarBow.label>
+
+  <Gunmar_War_Bow.label>Arc de guerre tribal</Gunmar_War_Bow.label>
+  <Gunmar_War_Bow.description>Cet arc a une tension accrue dans la corde, ce qui augmente la distance et la puissance. Il a également une vitesse de flèche plus rapide que les arcs recourbés.</Gunmar_War_Bow.description>
+  <Gunmar_War_Bow.tools.0.label>Branche</Gunmar_War_Bow.tools.0.label>
+
+</LanguageData>

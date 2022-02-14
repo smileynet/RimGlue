@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ResearchProjectDef>
+		<defName>BasicStorage</defName>
+		<label>Basic Storage</label>
+		<description>Create basic storage solutions.</description>
+		<baseCost>500</baseCost>
+		<techLevel>Medieval</techLevel>
+        <tab>DeepStorage</tab>
+		<prerequisites>
+            <li>ComplexFurniture</li>
+		</prerequisites>
+		<researchViewX>1</researchViewX>
+		<researchViewY>1.5</researchViewY>
+	</ResearchProjectDef>
+
+</Defs>

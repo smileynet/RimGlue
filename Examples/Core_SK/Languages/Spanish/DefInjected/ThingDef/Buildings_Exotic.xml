@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <ShipMechChunk.label>Trozo mecánico de la nave</ShipMechChunk.label>
+  <ShipMechChunk.description>Un pedazo de una nave espacial. Puede ser deconstruido para producir mecanismos útiles, alambres y componentes electrónicos.</ShipMechChunk.description>
+
+  <CrashedShipWreck.label>Naufragio</CrashedShipWreck.label>
+  <ShipWreck.label>Naufragio de nave</ShipWreck.label>
+
+  <Totem.label>Tótem</Totem.label>
+  <Totem.description>Una pieza de madera del tamaño de una persona; material esculpido en una forma artística.</Totem.description>
+
+  <Cairn.label>Mojón</Cairn.label>
+  <Cairn.description>Una pieza de tamaño de una persona, material esculpido en una forma artística.</Cairn.description>
+
+
+  <!-- Landed Skyfallers -->
+
+  <DropPodLanded.label>Naufragio de capsula</DropPodLanded.label>
+  <ShipWreckLanded.label>Naufragio de nave</ShipWreckLanded.label>
+
+</LanguageData>

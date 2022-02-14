@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	  
+
+  <ThingDef ParentName="BuildingBase" Name="VBY_TotemPoleBase" Abstract="True">		
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <rotatable>false</rotatable>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <socialPropernessMatters>false</socialPropernessMatters>
+    <canBeUsedUnderRoof>false</canBeUsedUnderRoof>
+	<thingCategories>
+      <li>BuildingsJoy</li>
+    </thingCategories>
+    <thingSetMakerTags>
+      <li>RewardStandardLowFreq</li>
+    </thingSetMakerTags>
+	<inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+    <tradeTags>
+      <li>Art</li>
+    </tradeTags>
+    <stuffCategories>
+		<li>Woody</li>
+		<li>Stony</li>
+	</stuffCategories>
+	<costStuffCount>100</costStuffCount>	
+    <statBases>
+      <WorkToBuild>35000</WorkToBuild>
+      <MaxHitPoints>225</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+	  <Beauty>125</Beauty>
+      <Mass>145</Mass>
+      <JoyGainFactor>1.2</JoyGainFactor>
+	  <MeditationFocusStrength>0.20</MeditationFocusStrength>
+    </statBases>
+	<recipeMaker>
+	  <effectWorking>Sculpt</effectWorking>
+      <soundWorking>Recipe_Sculpt</soundWorking>
+	  <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Artistic</workSkill>
+	   <skillRequirements>
+	     <Artistic>4</Artistic>
+	   </skillRequirements>	
+	</recipeMaker>
+    <pathCost>50</pathCost>
+    <passability>PassThroughOnly</passability>
+	<fillPercent>0.75</fillPercent>
+    <size>(1,1)</size>
+	<building>
+      <joyKind>Meditative</joyKind>
+      <watchBuildingStandDistanceRange>-5~5</watchBuildingStandDistanceRange>
+      <watchBuildingStandRectWidth>6</watchBuildingStandRectWidth>
+    </building>
+    <placeWorkers>
+      <li>PlaceWorker_WatchArea</li>
+	  <li>PlaceWorker_MeditationOffsetBuildingsNear</li>
+    </placeWorkers>
+	<comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtSculpture</nameMaker>
+        <descriptionMaker>ArtDescription_Sculpture</descriptionMaker>
+        <canBeEnjoyedAsArt>true</canBeEnjoyedAsArt>
+      </li>
+      <li Class="CompProperties_MeditationFocus">
+        <statDef>MeditationFocusStrength</statDef>
+        <focusTypes>
+          <li>Artistic</li>
+		  <li>Natural</li>
+        </focusTypes>
+        <offsets>
+          <li Class="FocusStrengthOffset_Quality">
+            <curve>
+              <points>
+                <li>(0,0.12)</li> <!-- awful -->
+                <li>(1,0.16)</li> <!-- poor -->
+                <li>(2,0.20)</li> <!-- normal -->
+                <li>(3,0.22)</li> <!-- good -->
+                <li>(4,0.24)</li> <!-- excellent -->
+                <li>(5,0.26)</li> <!-- masterwork -->
+                <li>(6,0.28)</li> <!-- legendary -->
+              </points>
+            </curve>
+          </li>
+          <li Class="FocusStrengthOffset_BuildingDefsWithQuality">
+            <defs>
+              <li>VBY_AnimalTotem</li>
+              <li>VBY_InsectTotem</li>
+			  <li>VBY_AnimalRimTotem</li>
+			  <li MayRequire="sihv.rombones">VBY_BoneTotem</li>
+            </defs>
+            <radius>9.9</radius>
+            <maxBuildings>3</maxBuildings>
+            <focusPerQuality>
+              <points>
+                <li>(0,0.0)</li> <!-- awful -->
+                <li>(1,0.0)</li> <!-- poor -->
+                <li>(2,0.01)</li> <!-- normal -->
+                <li>(3,0.01)</li> <!-- good -->
+                <li>(4,0.01)</li> <!-- excellent -->
+                <li>(5,0.02)</li> <!-- masterwork -->
+                <li>(6,0.02)</li> <!-- legendary -->
+              </points>
+            </focusPerQuality>
+            <explanationKey>MeditationFocusPerSculpture</explanationKey>
+            <explanationKeyAbstract>MeditationFocusPerSculptureAbstract</explanationKeyAbstract>
+          </li>
+        </offsets>
+      </li>
+    </comps>
+	<designationCategory>Joy</designationCategory>
+    <designationHotKey>Misc3</designationHotKey>
+    <canOverlapZones>false</canOverlapZones>
+  </ThingDef>
+
+	
+  <ThingDef ParentName="VBY_TotemPoleBase">
+    <defName>VBY_AnimalTotem</defName>
+    <label>animal totem</label>
+    <description>A tall artistic carving depicting the spiritual connection between primitve humans and their free-range desires and animal nature.</description>
+    <graphicData>
+      <texPath>Things/Building/Art/Totems/HDM_AnimalTotem2</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawRotated>false</drawRotated>
+      <allowFlip>false</allowFlip>	  			
+	  <drawSize>(3,4)</drawSize>
+	  <drawOffset>(0,0,1.5)</drawOffset>
+		<shadowData>
+			<volume>(0.5, 1, 0.25)</volume>
+			<offset>(0,0,0)</offset>
+		</shadowData>
+    </graphicData>
+    <uiIconPath>Things/Building/Art/Totems/HDM_AnimalTotem</uiIconPath>	        
+  </ThingDef>
+  
+  <ThingDef ParentName="VBY_TotemPoleBase">
+    <defName>VBY_InsectTotem</defName>
+    <label>insect totem</label>
+    <description>A tall artistic carving depicting the spiritual connection between primitve humans and their hive-mind desire to achieve collective progress and survival.</description>
+    <graphicData>
+      <texPath>Things/Building/Art/Totems/HDM_InsectTotem2</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawRotated>false</drawRotated>
+      <allowFlip>false</allowFlip>	  			
+	  <drawSize>(3,4)</drawSize>
+	  <drawOffset>(0,0,1.5)</drawOffset>
+		<shadowData>
+			<volume>(0.5, 1, 0.25)</volume>
+			<offset>(0,0,0)</offset>
+		</shadowData>
+    </graphicData>
+    <uiIconPath>Things/Building/Art/Totems/HDM_InsectTotem</uiIconPath>	        
+  </ThingDef>
+  
+  <ThingDef ParentName="VBY_TotemPoleBase">
+    <defName>VBY_AnimalRimTotem</defName>
+    <label>animal wisdom totem</label>
+    <description>A tall artistic carving depicting some of the most revered and respected animals on The Rim.</description>
+    <graphicData>
+      <texPath>Things/Building/Art/Totems/HDM_AnimalTotem3</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawRotated>false</drawRotated>
+      <allowFlip>false</allowFlip>	  			
+	  <drawSize>(3,4)</drawSize>
+	  <drawOffset>(0,0,1.5)</drawOffset>
+		<shadowData>
+			<volume>(0.5, 1, 0.25)</volume>
+			<offset>(0,0,0)</offset>
+		</shadowData>
+    </graphicData>
+    <uiIconPath>Things/Building/Art/Totems/HDM_AnimalTotem3</uiIconPath>	        
+  </ThingDef>
+
+  
+	<ThingDef MayRequire="sihv.rombones" ParentName="VBY_TotemPoleBase">
+	  <defName>VBY_BoneTotem</defName>
+		<label>bone totem</label>
+		<description>A tall artistic statue constructed of bones. Do you recognize anyone?</description>
+		<graphicData>
+			<texPath>Things/Building/Art/Totems/HDM_BoneTotem</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawRotated>false</drawRotated>
+			<allowFlip>false</allowFlip>	  			
+			<drawSize>(3,4)</drawSize>
+			<drawOffset>(0,0,1.5)</drawOffset>
+			<shadowData>
+				<volume>(0.5, 1, 0.25)</volume>
+				<offset>(0,0,0)</offset>
+			</shadowData>
+		</graphicData>
+		<costStuffCount Inherit ="False"/>
+		<stuffCategories Inherit ="False"/>
+		<costList>
+		  <BoneItem>125</BoneItem>
+		</costList>
+		<comps>
+		  <li Class="CompProperties_MeditationFocus">
+			<statDef>MeditationFocusStrength</statDef>
+			<focusTypes>
+			  <li>Morbid</li>
+			</focusTypes>
+		  </li>
+		</comps>
+		<uiIconPath>Things/Building/Art/Totems/HDM_BoneTotem</uiIconPath>	        
+	</ThingDef> 
+
+
+	<ThingDef MayRequire="DankPyon.Medieval.Overhaul" ParentName="VBY_TotemPoleBase">
+	  <defName>VBY_BoneTotemMO</defName>
+		<label>bone totem</label>
+		<description>A tall artistic statue constructed of bones. Do you recognize anyone?</description>
+		<graphicData>
+			<texPath>Things/Building/Art/Totems/HDM_BoneTotem</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawRotated>false</drawRotated>
+			<allowFlip>false</allowFlip>	  			
+			<drawSize>(3,4)</drawSize>
+			<drawOffset>(0,0,1.5)</drawOffset>
+			<shadowData>
+				<volume>(0.5, 1, 0.25)</volume>
+				<offset>(0,0,0)</offset>
+			</shadowData>
+		</graphicData>
+		<costStuffCount Inherit ="False"/>
+		<stuffCategories Inherit ="False"/>
+		<costList>
+		  <DankPyon_Bone>125</DankPyon_Bone>
+		</costList>
+		<comps>
+		  <li Class="CompProperties_MeditationFocus">
+			<statDef>MeditationFocusStrength</statDef>
+			<focusTypes>
+			  <li>Morbid</li>
+			</focusTypes>
+		  </li>
+		</comps>
+		<uiIconPath>Things/Building/Art/Totems/HDM_BoneTotem</uiIconPath>	        
+	</ThingDef>
+ 
+  
+</Defs>  

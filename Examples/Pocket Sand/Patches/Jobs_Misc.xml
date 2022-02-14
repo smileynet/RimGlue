@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Core</li>
+		</mods>
+
+		<!-- ============================ Replace Vanilla JobDrivers ========================== -->
+
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/JobDef[defName="Equip"]/driverClass</xpath>
+					<value>
+						<driverClass>PocketSand.JobDriver_Equip</driverClass>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/JobDef[defName="DropEquipment"]/driverClass</xpath>
+					<value>
+						<driverClass>PocketSand.JobDriver_DropEquipment</driverClass>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/JobDef[defName="UnloadYourInventory"]/driverClass</xpath>
+					<value>
+						<driverClass>PocketSand.JobDriver_UnloadYourInventory</driverClass>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+	
+</Patch>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+            <li>Simple FX: Smoke</li>
+        </mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+            <operations>
+			<li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="VBY_PrimitiveBrewery_HerbalistBench"]/comps</xpath>
+                    <value>
+                        <li Class="Flecker.CompProperties_Smoker">
+							<fleckDef>Owl_Vapor</fleckDef>
+							<billsOnly>true</billsOnly>
+							<particleSize>0.33</particleSize>
+						</li>
+                    </value>
+            </li>
+			<li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="VBY_PrimitiveKiln"]/comps</xpath>
+                    <value>
+                        <li Class="Flecker.CompProperties_Smoker">
+							<fleckDef>Owl_SmokeHeavy</fleckDef>
+							<particleOffset>(0.5,0,0)</particleOffset>
+						</li>
+                    </value>
+            </li>
+			<li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="VBY_PrimitiveKiln_Rotated"]/comps</xpath>
+                    <value>
+                        <li Class="Flecker.CompProperties_Smoker">
+							<fleckDef>Owl_SmokeHeavy</fleckDef>
+							<particleOffset>(0,0,0.5)</particleOffset>
+						</li>
+                    </value>
+            </li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

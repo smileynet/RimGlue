@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <QRY_Quarry>Cantera</QRY_Quarry>
+  <QRY_SettingsDepletionPercent>Número de operaciones mineras</QRY_SettingsDepletionPercent>
+  <QRY_SettingsJunkChance>Probabilidad de basura (incluye trozos): &lt;b&gt;&lt;color=orange&gt;{0}%&lt;/color&gt;&lt;/b&gt;</QRY_SettingsJunkChance>
+  <QRY_SettingsChunkChance>Probabilidad de trozos: &lt;b&gt;&lt;color=orange&gt;{0}%&lt;/color&gt;&lt;/b&gt;</QRY_SettingsChunkChance>
+  <QRY_DepletionLabel>&lt;b&gt;&lt;color=orange&gt;{0}&lt;/color&gt;&lt;/b&gt; operaciones mineras antes de que la cantera sea inutilizable</QRY_DepletionLabel>
+
+  <QRY_TooltipLetter>Seleccione si se ha enviado o no la carta de recuperación del suelo. Si es falsa, el aviso se enviará la primera vez que se desconstruya una cantera.</QRY_TooltipLetter>
+  <QRY_TooltipJunkChance>Posibilidad de conseguir basura. Si no se extrae basura, se extraerá un recurso aleatorio.</QRY_TooltipJunkChance>
+  <QRY_TooltipChunkChance>Oportunidad de conseguir un trozo de roca. Si se extrae basura, esta es la oportunidad de obtener trozos en lugar de escombros.\n\nEl bloqueo de los bloques utiliza la probabilidad de que se determine si se extrajo una cantidad suficiente de piedra para hacer bloques</QRY_TooltipChunkChance>
+
+  <QRY_LabelHaulMode>Modo de transporte</QRY_LabelHaulMode>
+  <QRY_Haul>Transportar recursos minados.</QRY_Haul>
+  <QRY_NotHaul>Ignorar recursos minados.</QRY_NotHaul>
+
+  <QRY_LabelMineResources>Minar recursos</QRY_LabelMineResources>
+  <QRY_DescriptionMineResources>Designar la cantera en la que se extraeran los recursos. Haga clic para cambiar al modo de bloqueo.</QRY_DescriptionMineResources>
+
+  <QRY_LabelMineBlocks>Cincelado de bloques</QRY_LabelMineBlocks>
+  <QRY_DescriptionMineBlocks>Designar la cantera a ser minada para obtener bloques. Haga clic para cambiar al modo de recurso.</QRY_DescriptionMineBlocks>
+
+  <QRY_ReportNotEnoughStone>La cantera necesita ser construida en un área con más piedra minada</QRY_ReportNotEnoughStone>
+  <QRY_InspectQuarryPercent>Porcentaje de cantera</QRY_InspectQuarryPercent>
+
+  <QRY_TextMote_LargeVein>¡Vena grande!</QRY_TextMote_LargeVein>
+  <QRY_TextMote_MiningFailed>Fallido...</QRY_TextMote_MiningFailed>
+
+  <QRY_LetterSentQuery>Envió la carta de recuperación del suelo</QRY_LetterSentQuery>
+  <QRY_LetterLabel>Recuperar el suelo</QRY_LetterLabel>
+  <QRY_LetterText>Una vez que la cantera ha sido desconstruida, se puede designar a los colonos para cubrir el suelo antiguo con tierra con el fin de obtener un terreno utilizable donde la cantera estuvo una vez. Utilice el comando Piso liso para designar un área para recuperar.</QRY_LetterText>
+
+</LanguageData>

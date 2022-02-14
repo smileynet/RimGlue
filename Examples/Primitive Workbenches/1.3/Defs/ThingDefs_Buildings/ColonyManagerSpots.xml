@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ========================= Work tables ==========================-->
+	<ThingDef MayRequire="Fluffy.ColonyManager" ParentName="BenchBase">
+		<defName>VBY_NeolithicManagerSpot</defName>
+		<label>neolithic manager spot</label>
+		<thingClass>FluffyManager.Building_ManagerStation</thingClass>
+		<description>A spot of ground perfect for planning work tasks for the colony. There's nothing here to keep track of progress so it's easy for the manager to forget or overlook things.</description>
+		<graphicData>
+			<texPath>Things/Building/Production/VBY_ManagerSpot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<altitudeLayer>FloorEmplacement</altitudeLayer>
+		<fillPercent>0</fillPercent>
+		<useHitPoints>false</useHitPoints>
+		<statBases>
+			<Mass>0</Mass>
+			<WorkToBuild>0</WorkToBuild>
+		</statBases>
+		<scatterableOnMapGen>false</scatterableOnMapGen>
+		<size>(1,1)</size>
+		<designationCategory>Production</designationCategory>
+		<passability>Standable</passability>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<tickerType>Normal</tickerType>
+		<comps>
+			<li Class="FluffyManager.CompProperties_ManagerStation">
+				<compClass>FluffyManager.Comp_ManagerStation</compClass>
+				<speed>2000</speed>
+			</li>
+			<li Class="CompProperties_Forbiddable"/>
+		</comps>
+		<building>
+			<sowTag>SupportPlantsOnly</sowTag>
+			<canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
+			<ai_chillDestination>false</ai_chillDestination>
+		</building>
+	</ThingDef>
+
+
+	<ThingDef MayRequire="Fluffy.ColonyManager" ParentName="BenchBase">
+		<defName>VBY_StoneManagerBench</defName>
+		<label>stone manager bench</label>
+		<thingClass>FluffyManager.Building_ManagerStation</thingClass>
+		<description>A flattened stone used for managing colony tasks more efficiantly. It's still quite basic, yet, with a bundle of twigs and some pebbles, the flat surface allows the manger to visualize daily plans.</description>
+		<graphicData>
+			<texPath>Things/Building/Production/NeoManager</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>  
+		<costStuffCount>25</costStuffCount>
+		<stuffCategories>
+		  <li>Stony</li>
+		</stuffCategories>
+		<statBases>
+			<WorkToBuild>200</WorkToBuild>
+			<Flammability>0</Flammability>
+			<MaxHitPoints>275</MaxHitPoints>
+			<Mass>15</Mass>
+			<Beauty>0</Beauty>
+		</statBases>
+		<designationCategory>Production</designationCategory>
+		<passability>PassThroughOnly</passability>
+		<pathCost>25</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<tickerType>Normal</tickerType>
+		<comps>
+			<li Class="FluffyManager.CompProperties_ManagerStation">
+				<compClass>FluffyManager.Comp_ManagerStation</compClass>
+				<speed>1500</speed>
+			</li>
+			<li Class="CompProperties_Forbiddable"/>
+		</comps>
+		<researchPrerequisites>
+			<li>VBY_PrimitiveProduction</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+</Defs>

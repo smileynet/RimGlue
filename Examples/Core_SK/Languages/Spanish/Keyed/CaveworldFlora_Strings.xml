@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Fungiponics Basin -->
+  <CaveworldFlora.CannotGrowTooCold>No puede crecer ahora: demasiado frío.</CaveworldFlora.CannotGrowTooCold>
+  <CaveworldFlora.CannotGrowTooHot>No puede crecer ahora: demasiado calor.</CaveworldFlora.CannotGrowTooHot>
+  <CaveworldFlora.Growing>Creciendo.</CaveworldFlora.Growing>
+  <CaveworldFlora.MustOnRoughRock>La cuenca de Fungiponica debe construirse sobre roca.</CaveworldFlora.MustOnRoughRock>
+  <CaveworldFlora.MustBeRoofed>La cuenca de Fungiponica debe estar techada.</CaveworldFlora.MustBeRoofed>
+  <CaveworldFlora.TooClose>Otra cuenca fungipónica está demasiado cerca.</CaveworldFlora.TooClose>
+
+  <!-- Flora Plant -->
+  <CaveworldFlora.InCryostasis>En criostasia</CaveworldFlora.InCryostasis>
+  <CaveworldFlora.Dying>Agonizando</CaveworldFlora.Dying>
+  <CaveworldFlora.Drying>Secandose</CaveworldFlora.Drying>
+  <CaveworldFlora.TooDark>Demasiado oscuro</CaveworldFlora.TooDark>
+  <CaveworldFlora.Overlit>Sobreiluminado</CaveworldFlora.Overlit>
+  <CaveworldFlora.Unroofed>Sin techo</CaveworldFlora.Unroofed>
+  <CaveworldFlora.UnadaptedSoil>Suelo no adaptado</CaveworldFlora.UnadaptedSoil>
+  <CaveworldFlora.TooFarFromRock>Demasiado lejos de las rocas</CaveworldFlora.TooFarFromRock>
+  <CaveworldFlora.ClusterRootRemoved>Raíz del hongo eliminada</CaveworldFlora.ClusterRootRemoved>
+  <CaveworldFlora.BrokenSymbiosis>Simbiosis rota</CaveworldFlora.BrokenSymbiosis>
+  <CaveworldFlora.Cryostasis>Criostasia</CaveworldFlora.Cryostasis>
+
+  <!-- Black Lotus -->
+  <CaveworldFlora.LetterLabelBlackLotus>Loto negro</CaveworldFlora.LetterLabelBlackLotus>
+  <CaveworldFlora.BlackLotus>Uno de sus colonos se ha intoxicado por el efluvio de un loto negro. Tenga cuidado, esas emanaciones son extremadamente tóxicas.</CaveworldFlora.BlackLotus>  
+
+</LanguageData>

@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Tiger.label>Tigre</Tiger.label>
+  <Tiger.labelPlural>Tigres</Tiger.labelPlural>
+  <Tiger.lifeStages.0.label>Gatito tigre</Tiger.lifeStages.0.label>
+  <Tiger.lifeStages.0.labelPlural>Gatitos tigres</Tiger.lifeStages.0.labelPlural>
+  <Tiger.lifeStages.0.labelMale>Gatito de tigre masculino</Tiger.lifeStages.0.labelMale>
+  <Tiger.lifeStages.0.labelMalePlural>Gatitos de tigre masculinos</Tiger.lifeStages.0.labelMalePlural>
+  <Tiger.lifeStages.0.labelFemale>Gatito de tigre femenino</Tiger.lifeStages.0.labelFemale>
+  <Tiger.lifeStages.0.labelFemalePlural>Gatitos de tigre femeninos</Tiger.lifeStages.0.labelFemalePlural>
+  <Tiger.lifeStages.1.label>Tiger</Tiger.lifeStages.1.label>
+  <Tiger.lifeStages.1.labelPlural>Tigres</Tiger.lifeStages.1.labelPlural>
+  <Tiger.lifeStages.1.labelMale>Tigre masculino</Tiger.lifeStages.1.labelMale>
+  <Tiger.lifeStages.1.labelMalePlural>Tigres masculinos</Tiger.lifeStages.1.labelMalePlural>
+  <Tiger.lifeStages.1.labelFemale>Tigre femenino</Tiger.lifeStages.1.labelFemale>
+  <Tiger.lifeStages.1.labelFemalePlural>Tigres femeninos</Tiger.lifeStages.1.labelFemalePlural>
+  <Tiger.lifeStages.2.label>Tigre</Tiger.lifeStages.2.label>
+  <Tiger.lifeStages.2.labelPlural>Tigres</Tiger.lifeStages.2.labelPlural>
+  <Tiger.lifeStages.2.labelMale>Tigre masculino</Tiger.lifeStages.2.labelMale>
+  <Tiger.lifeStages.2.labelMalePlural>Tigres masculinos</Tiger.lifeStages.2.labelMalePlural>
+  <Tiger.lifeStages.2.labelFemale>Tigre femenino</Tiger.lifeStages.2.labelFemale>
+  <Tiger.lifeStages.2.labelFemalePlural>Tigres femeninos</Tiger.lifeStages.2.labelFemalePlural>
+  <Tiger.labelMale>Tigre masculino</Tiger.labelMale>
+  <Tiger.labelMalePlural>Tigres masculinos</Tiger.labelMalePlural>
+  <Tiger.labelFemale>Tigre femenino</Tiger.labelFemale>
+  <Tiger.labelFemalePlural>Tigres femeninos</Tiger.labelFemalePlural>
+
+  <WhiteTiger.label>Tigre blanco</WhiteTiger.label>
+  <WhiteTiger.labelPlural>Tigres blancos</WhiteTiger.labelPlural>
+  <WhiteTiger.lifeStages.0.label>Gatito blanco tigre</WhiteTiger.lifeStages.0.label>
+  <WhiteTiger.lifeStages.0.labelPlural>Gatitos de tigre blanco</WhiteTiger.lifeStages.0.labelPlural>
+  <WhiteTiger.lifeStages.0.labelMale>Gatito de tigre blanco masculino</WhiteTiger.lifeStages.0.labelMale>
+  <WhiteTiger.lifeStages.0.labelMalePlural>Gatitos de tigres blancos masculinos</WhiteTiger.lifeStages.0.labelMalePlural>
+  <WhiteTiger.lifeStages.0.labelFemale>Gatito de tigre blanco femenino</WhiteTiger.lifeStages.0.labelFemale>
+  <WhiteTiger.lifeStages.0.labelFemalePlural>Gatitos de tigre blanco femeninos</WhiteTiger.lifeStages.0.labelFemalePlural>
+  <WhiteTiger.lifeStages.1.label>Tigre blanco</WhiteTiger.lifeStages.1.label>
+  <WhiteTiger.lifeStages.1.labelPlural>Tigres blancos</WhiteTiger.lifeStages.1.labelPlural>
+  <WhiteTiger.lifeStages.1.labelMale>Tigre blanco masculino</WhiteTiger.lifeStages.1.labelMale>
+  <WhiteTiger.lifeStages.1.labelMalePlural>Tigres blancos masculinos</WhiteTiger.lifeStages.1.labelMalePlural>
+  <WhiteTiger.lifeStages.1.labelFemale>Tigre blanco femenino</WhiteTiger.lifeStages.1.labelFemale>
+  <WhiteTiger.lifeStages.1.labelFemalePlural>Tigres blancos femeninos</WhiteTiger.lifeStages.1.labelFemalePlural>
+  <WhiteTiger.lifeStages.2.label>Tigre blanco</WhiteTiger.lifeStages.2.label>
+  <WhiteTiger.lifeStages.2.labelPlural>Tigres blancos</WhiteTiger.lifeStages.2.labelPlural>
+  <WhiteTiger.lifeStages.2.labelMale>Tigre blanco masculino</WhiteTiger.lifeStages.2.labelMale>
+  <WhiteTiger.lifeStages.2.labelMalePlural>Tigres blancos masculinos</WhiteTiger.lifeStages.2.labelMalePlural>
+  <WhiteTiger.lifeStages.2.labelFemale>Tigre blanco femenino</WhiteTiger.lifeStages.2.labelFemale>
+  <WhiteTiger.lifeStages.2.labelFemalePlural>Tigres blancos femeninos</WhiteTiger.lifeStages.2.labelFemalePlural>
+  <WhiteTiger.labelMale>Tigre blanco masculino</WhiteTiger.labelMale>
+  <WhiteTiger.labelMalePlural>Tigres blancos masculinos</WhiteTiger.labelMalePlural>
+  <WhiteTiger.labelFemale>Tigre blanco femenino</WhiteTiger.labelFemale>
+  <WhiteTiger.labelFemalePlural>Tigres blancos femeninos</WhiteTiger.labelFemalePlural>
+
+  <SnowLeopard.label>Leopardo de las nieves</SnowLeopard.label>
+  <SnowLeopard.labelPlural>Leopardos de las nieves</SnowLeopard.labelPlural>
+  <SnowLeopard.lifeStages.0.label>Leopardo de las nieves</SnowLeopard.lifeStages.0.label>
+  <SnowLeopard.lifeStages.0.labelPlural>Leopardos de las nieves</SnowLeopard.lifeStages.0.labelPlural>
+  <SnowLeopard.lifeStages.0.labelMale>Leopardo de las nieves masculino</SnowLeopard.lifeStages.0.labelMale>
+  <SnowLeopard.lifeStages.0.labelMalePlural>Leopardos de las nieves masculinos</SnowLeopard.lifeStages.0.labelMalePlural>
+  <SnowLeopard.lifeStages.0.labelFemale>Leopardo de las nieves femenino</SnowLeopard.lifeStages.0.labelFemale>
+  <SnowLeopard.lifeStages.0.labelFemalePlural>Leopardos de las nieves femeninos</SnowLeopard.lifeStages.0.labelFemalePlural>
+  <SnowLeopard.lifeStages.1.label>Leopardo de las nieves</SnowLeopard.lifeStages.1.label>
+  <SnowLeopard.lifeStages.1.labelPlural>Leopardos de las nieves</SnowLeopard.lifeStages.1.labelPlural>
+  <SnowLeopard.lifeStages.1.labelMale>Leopardo de las nieves masculino</SnowLeopard.lifeStages.1.labelMale>
+  <SnowLeopard.lifeStages.1.labelMalePlural>Leopardos de las nieves masculinos</SnowLeopard.lifeStages.1.labelMalePlural>
+  <SnowLeopard.lifeStages.1.labelFemale>Leopardo de las nieves femenino</SnowLeopard.lifeStages.1.labelFemale>
+  <SnowLeopard.lifeStages.1.labelFemalePlural>Leopardos de las nieves femeninos</SnowLeopard.lifeStages.1.labelFemalePlural>
+  <SnowLeopard.lifeStages.2.label>Leopardo de las nieves</SnowLeopard.lifeStages.2.label>
+  <SnowLeopard.lifeStages.2.labelPlural>Leopardos de las nieves</SnowLeopard.lifeStages.2.labelPlural>
+  <SnowLeopard.lifeStages.2.labelMale>Leopardo de las nieves masculino</SnowLeopard.lifeStages.2.labelMale>
+  <SnowLeopard.lifeStages.2.labelMalePlural>Leopardos de las nieves masculinos</SnowLeopard.lifeStages.2.labelMalePlural>
+  <SnowLeopard.lifeStages.2.labelFemale>Leopardo de las nieves femenino</SnowLeopard.lifeStages.2.labelFemale>
+  <SnowLeopard.lifeStages.2.labelFemalePlural>Leopardos de las nieves femeninos</SnowLeopard.lifeStages.2.labelFemalePlural>
+  <SnowLeopard.labelMale>Leopardo de las nieves masculino</SnowLeopard.labelMale>
+  <SnowLeopard.labelMalePlural>Leopardos de las nieves masculinos</SnowLeopard.labelMalePlural>
+  <SnowLeopard.labelFemale>Leopardo de las nieves femenino</SnowLeopard.labelFemale>
+  <SnowLeopard.labelFemalePlural>Leopardos de las nieves femeninos</SnowLeopard.labelFemalePlural>
+
+  <Jaguar.label>Jaguar</Jaguar.label>
+  <Jaguar.labelPlural>Jaguares</Jaguar.labelPlural>
+  <Jaguar.lifeStages.0.label>Jaguar</Jaguar.lifeStages.0.label>
+  <Jaguar.lifeStages.0.labelPlural>Jaguares</Jaguar.lifeStages.0.labelPlural>
+  <Jaguar.lifeStages.0.labelMale>Jaguar masculino</Jaguar.lifeStages.0.labelMale>
+  <Jaguar.lifeStages.0.labelMalePlural>Jaguares masculinos</Jaguar.lifeStages.0.labelMalePlural>
+  <Jaguar.lifeStages.0.labelFemale>Jaguar femenino</Jaguar.lifeStages.0.labelFemale>
+  <Jaguar.lifeStages.0.labelFemalePlural>Jaguares femeninos</Jaguar.lifeStages.0.labelFemalePlural>
+  <Jaguar.lifeStages.1.label>Jaguar</Jaguar.lifeStages.1.label>
+  <Jaguar.lifeStages.1.labelPlural>Jaguares</Jaguar.lifeStages.1.labelPlural>
+  <Jaguar.lifeStages.1.labelMale>Jaguar masculino</Jaguar.lifeStages.1.labelMale>
+  <Jaguar.lifeStages.1.labelMalePlural>Jaguares masculinos</Jaguar.lifeStages.1.labelMalePlural>
+  <Jaguar.lifeStages.1.labelFemale>Jaguar femenino</Jaguar.lifeStages.1.labelFemale>
+  <Jaguar.lifeStages.1.labelFemalePlural>Jaguares femeninos</Jaguar.lifeStages.1.labelFemalePlural>
+  <Jaguar.lifeStages.2.label>Jaguar</Jaguar.lifeStages.2.label>
+  <Jaguar.lifeStages.2.labelPlural>Jaguares</Jaguar.lifeStages.2.labelPlural>
+  <Jaguar.lifeStages.2.labelMale>Jaguar masculino</Jaguar.lifeStages.2.labelMale>
+  <Jaguar.lifeStages.2.labelMalePlural>Jaguares masculinos</Jaguar.lifeStages.2.labelMalePlural>
+  <Jaguar.lifeStages.2.labelFemale>Jaguar femenino</Jaguar.lifeStages.2.labelFemale>
+  <Jaguar.lifeStages.2.labelFemalePlural>Jaguares femeninos</Jaguar.lifeStages.2.labelFemalePlural>
+  <Jaguar.labelMale>Jaguar masculino</Jaguar.labelMale>
+  <Jaguar.labelMalePlural>Jaguares masculinos</Jaguar.labelMalePlural>
+  <Jaguar.labelFemale>Jaguar femenino</Jaguar.labelFemale>
+  <Jaguar.labelFemalePlural>Jaguares femeninos</Jaguar.labelFemalePlural>
+
+
+</LanguageData>

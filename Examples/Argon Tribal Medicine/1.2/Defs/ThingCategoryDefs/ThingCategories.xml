@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingCategoryDef>
+    <defName>TM_MedicalHerbs</defName>
+    <label>medical herbs</label>
+    <parent>PlantMatter</parent>
+    <resourceReadoutRoot>true</resourceReadoutRoot>
+    <iconPath>Things/Plant/Raw/Broots_Raw</iconPath>
+  </ThingCategoryDef>
+  
+</Defs>

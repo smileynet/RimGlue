@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Tropical -->
+
+  <Lacosdile.label>lacosdile</Lacosdile.label>
+  <Lacosdile.labelPlural>lacosdiles</Lacosdile.labelPlural>
+  <Lacosdile.lifeStages.0.label>lacosdile</Lacosdile.lifeStages.0.label>
+  <Lacosdile.lifeStages.0.labelPlural>lacosdile</Lacosdile.lifeStages.0.labelPlural>
+  <Lacosdile.lifeStages.0.labelMale>male lacosdile</Lacosdile.lifeStages.0.labelMale>
+  <Lacosdile.lifeStages.0.labelMalePlural>male lacosdiles</Lacosdile.lifeStages.0.labelMalePlural>
+  <Lacosdile.lifeStages.0.labelFemale>female lacosdile</Lacosdile.lifeStages.0.labelFemale>
+  <Lacosdile.lifeStages.0.labelFemalePlural>female lacosdiles</Lacosdile.lifeStages.0.labelFemalePlural>
+  <Lacosdile.lifeStages.1.label>lacosdile</Lacosdile.lifeStages.1.label>
+  <Lacosdile.lifeStages.1.labelPlural>lacosdile</Lacosdile.lifeStages.1.labelPlural>
+  <Lacosdile.lifeStages.1.labelMale>male lacosdile</Lacosdile.lifeStages.1.labelMale>
+  <Lacosdile.lifeStages.1.labelMalePlural>male lacosdiles</Lacosdile.lifeStages.1.labelMalePlural>
+  <Lacosdile.lifeStages.1.labelFemale>female lacosdile</Lacosdile.lifeStages.1.labelFemale>
+  <Lacosdile.lifeStages.1.labelFemalePlural>female lacosdiles</Lacosdile.lifeStages.1.labelFemalePlural>
+  <Lacosdile.lifeStages.2.label>lacosdile</Lacosdile.lifeStages.2.label>
+  <Lacosdile.lifeStages.2.labelPlural>lacosdile</Lacosdile.lifeStages.2.labelPlural>
+  <Lacosdile.lifeStages.2.labelMale>male lacosdile</Lacosdile.lifeStages.2.labelMale>
+  <Lacosdile.lifeStages.2.labelMalePlural>male lacosdiles</Lacosdile.lifeStages.2.labelMalePlural>
+  <Lacosdile.lifeStages.2.labelFemale>female lacosdile</Lacosdile.lifeStages.2.labelFemale>
+  <Lacosdile.lifeStages.2.labelFemalePlural>female lacosdiles</Lacosdile.lifeStages.2.labelFemalePlural>
+  <Lacosdile.labelMale>male lacosdile</Lacosdile.labelMale>
+  <Lacosdile.labelMalePlural>male lacosdiles</Lacosdile.labelMalePlural>
+  <Lacosdile.labelFemale>female lacosdile</Lacosdile.labelFemale>
+  <Lacosdile.labelFemalePlural>female lacosdiles</Lacosdile.labelFemalePlural>
+
+  <Okapi.label>okapi</Okapi.label>
+  <Okapi.labelPlural>okapis</Okapi.labelPlural>
+  <Okapi.lifeStages.0.label>okapi</Okapi.lifeStages.0.label>
+  <Okapi.lifeStages.0.labelPlural>okapi</Okapi.lifeStages.0.labelPlural>
+  <Okapi.lifeStages.0.labelMale>male okapi</Okapi.lifeStages.0.labelMale>
+  <Okapi.lifeStages.0.labelMalePlural>male okapis</Okapi.lifeStages.0.labelMalePlural>
+  <Okapi.lifeStages.0.labelFemale>female okapi</Okapi.lifeStages.0.labelFemale>
+  <Okapi.lifeStages.0.labelFemalePlural>female okapis</Okapi.lifeStages.0.labelFemalePlural>
+  <Okapi.lifeStages.1.label>okapi</Okapi.lifeStages.1.label>
+  <Okapi.lifeStages.1.labelPlural>okapi</Okapi.lifeStages.1.labelPlural>
+  <Okapi.lifeStages.1.labelMale>male okapi</Okapi.lifeStages.1.labelMale>
+  <Okapi.lifeStages.1.labelMalePlural>male okapis</Okapi.lifeStages.1.labelMalePlural>
+  <Okapi.lifeStages.1.labelFemale>female okapi</Okapi.lifeStages.1.labelFemale>
+  <Okapi.lifeStages.1.labelFemalePlural>female okapis</Okapi.lifeStages.1.labelFemalePlural>
+  <Okapi.lifeStages.2.label>okapi</Okapi.lifeStages.2.label>
+  <Okapi.lifeStages.2.labelPlural>okapi</Okapi.lifeStages.2.labelPlural>
+  <Okapi.lifeStages.2.labelMale>male okapi</Okapi.lifeStages.2.labelMale>
+  <Okapi.lifeStages.2.labelMalePlural>male okapis</Okapi.lifeStages.2.labelMalePlural>
+  <Okapi.lifeStages.2.labelFemale>female okapi</Okapi.lifeStages.2.labelFemale>
+  <Okapi.lifeStages.2.labelFemalePlural>female okapis</Okapi.lifeStages.2.labelFemalePlural>
+  <Okapi.labelMale>male okapi</Okapi.labelMale>
+  <Okapi.labelMalePlural>male okapis</Okapi.labelMalePlural>
+  <Okapi.labelFemale>female okapi</Okapi.labelFemale>
+  <Okapi.labelFemalePlural>female okapis</Okapi.labelFemalePlural>
+
+
+</LanguageData>

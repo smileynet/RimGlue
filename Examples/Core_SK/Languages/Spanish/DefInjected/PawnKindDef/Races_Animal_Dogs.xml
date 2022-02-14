@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <GermanShepherd.label>Pastor alemán</GermanShepherd.label>
+  <GermanShepherd.labelPlural>Pastores alemán</GermanShepherd.labelPlural>
+  <GermanShepherd.lifeStages.0.label>Perrito pastor alemán</GermanShepherd.lifeStages.0.label>
+  <GermanShepherd.lifeStages.0.labelPlural>Perritos pastor alemán</GermanShepherd.lifeStages.0.labelPlural>
+  <GermanShepherd.lifeStages.0.labelMale>Perrito pastor alemán masculino</GermanShepherd.lifeStages.0.labelMale>
+  <GermanShepherd.lifeStages.0.labelMalePlural>Perritos pastor alemán masculinos</GermanShepherd.lifeStages.0.labelMalePlural>
+  <GermanShepherd.lifeStages.0.labelFemale>Perrito pastor alemán femenino</GermanShepherd.lifeStages.0.labelFemale>
+  <GermanShepherd.lifeStages.0.labelFemalePlural>Perritos pastor alemán femeninos</GermanShepherd.lifeStages.0.labelFemalePlural>
+  <GermanShepherd.lifeStages.1.label>Pastor alemán</GermanShepherd.lifeStages.1.label>
+  <GermanShepherd.lifeStages.1.labelPlural>Pastores alemán</GermanShepherd.lifeStages.1.labelPlural>
+  <GermanShepherd.lifeStages.1.labelMale>Perro pastor alemán masculino</GermanShepherd.lifeStages.1.labelMale>
+  <GermanShepherd.lifeStages.1.labelMalePlural>Perros pastor alemán masculinos</GermanShepherd.lifeStages.1.labelMalePlural>
+  <GermanShepherd.lifeStages.1.labelFemale>Perro pastor alemán femenino</GermanShepherd.lifeStages.1.labelFemale>
+  <GermanShepherd.lifeStages.1.labelFemalePlural>Perros pastor alemán femeninos</GermanShepherd.lifeStages.1.labelFemalePlural>
+  <GermanShepherd.lifeStages.2.label>Pastor alemán</GermanShepherd.lifeStages.2.label>
+  <GermanShepherd.lifeStages.2.labelPlural>Pastores alemán</GermanShepherd.lifeStages.2.labelPlural>
+  <GermanShepherd.lifeStages.2.labelMale>Perro pastor alemán masculino</GermanShepherd.lifeStages.2.labelMale>
+  <GermanShepherd.lifeStages.2.labelMalePlural>Perros pastor alemán masculinos</GermanShepherd.lifeStages.2.labelMalePlural>
+  <GermanShepherd.lifeStages.2.labelFemale>Perro pastor alemán femenino</GermanShepherd.lifeStages.2.labelFemale>
+  <GermanShepherd.lifeStages.2.labelFemalePlural>Perros pastor alemán femeninos</GermanShepherd.lifeStages.2.labelFemalePlural>
+  <GermanShepherd.labelMale>Perro pastor alemán masculino</GermanShepherd.labelMale>
+  <GermanShepherd.labelMalePlural>Perros pastor alemán masculinos</GermanShepherd.labelMalePlural>
+  <GermanShepherd.labelFemale>Perro pastor alemán femenino</GermanShepherd.labelFemale>
+  <GermanShepherd.labelFemalePlural>Perros pastor alemán femeninos</GermanShepherd.labelFemalePlural>
+
+</LanguageData>

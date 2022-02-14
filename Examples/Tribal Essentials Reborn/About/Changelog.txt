@@ -1,0 +1,41 @@
+1.0.0 - 9/9/2021 - downloaded 1.2 version from Workshop
+
+removed old "Tribal Raiders" pieces, pawnkind, faction, dependency (unneeded, tribal raider factions now exist in vanilla, and I'm not up to fixing the DLL anyway) 
+
+removed Harmony dependency (separate now) - I'm not sure it's still needed as I don't run without it anyway - pretty sure it was only for the TR integration as the rest seem to be straight-forward defs
+
+Cleaned out older unused defs and texture assets, cleaned up folder structure
+
+removed smoked meat and smokepit - use Zal's Smoked Meat, patches included for smoked fish and fungus if mods/DLC is in use
+
+lowered filth % on barn wood floor
+
+May need to refactor the researchprojects etc
+
+remove tribal psychoid tea?
+
+
+1.0.1 - 9/10/2021 - incorporated patches from Primitive Workbenches. If this mod is loaded after PW, it will receive the same ZARS integrations - or trying to incorporate them, anyway!
+
+
+1.0.2 - 9/10/2021 - fixed a patch that was throwing an error
+
+1.0.3 - 9/10/2021 - added detection of additional fishing mod for smoked fish integration
+
+1.0.4 - 9/13/2021 - (Reverted update - messing with StoneOven rotation)
+
+1.0.5 - 9/13/2021 - added tribal psychoid tea x4 recipe, added Stone Oven rotation, fixed ZARS Productions Spots / Crafting Basket integration, fixed Primitive Workbench Crafting Basket integration
+
+1.0.6 - 9/18/2021 - added a few more patches for Primitive Workbenches (tailoring spot work speed, flint as ingredient for Stone Oven, Tribal Lore Fire)
+
+1.0.7 - 9/19/2021 - added manifest file
+
+1.0.8 - 9/23/2021 - fixed preview.png
+
+1.0.9 - 9/30/2021 - added loadafter for Primitive Workbenches, ZARS Production Spots, fix for Cooked Egg recipe
+
+1.1.0 - 10/25/2021 - added pemmican x4 to stone oven
+
+1.1.1 - 10/25/2021 - fixes to joy items
+
+1.1.2 - 1/17/2022 - de-cheese the spike trap (now must be rearmed)

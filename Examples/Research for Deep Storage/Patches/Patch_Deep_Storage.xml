@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>LWM's Deep Storage</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <!--ThingDefs-->
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="LWM_BigShelf"]</xpath>
+                    <value>
+                        <researchPrerequisites Inherit="false">
+                            <li>BasicStorage</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+                
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="LWM_VeryBigShelf"]</xpath>
+                    <value>
+                        <researchPrerequisites Inherit="false">
+                            <li>BasicStorage</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+                
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="LWM_MealRack"]</xpath>
+                    <value>
+                        <researchPrerequisites Inherit="false">
+                            <li>BasicStorage</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+                
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="LWM_Food_Basket"]/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites Inherit="false">
+                            <li>BasicStorage</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+                
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="LWM_Meat_Hook"]/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites Inherit="false">
+                            <li>BasicStorage</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+                
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="LWM_Hayloft"]</xpath>
+                    <value>
+                        <researchPrerequisites Inherit="false">
+                            <li>BasicStorage</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+                
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="LWM_FabricHamper"]</xpath>
+                    <value>
+                        <researchPrerequisites Inherit="false">
+                            <li>BasicStorage</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+                
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="LWM_Pallet"]</xpath>
+                    <value>
+                        <researchPrerequisites Inherit="false">
+                            <li>BasicStorage</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+                
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="LWM_Pallet_Covered"]</xpath>
+                    <value>
+                        <researchPrerequisites Inherit="false">
+                            <li>BasicStorage</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+                
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="LWM_DeepStorage_Skip"]</xpath>
+                    <value>
+                        <researchPrerequisites Inherit="false">
+                            <li>BasicStorage</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+                
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="LWM_Medicine_Cabinet"]</xpath>
+                    <value>
+                        <researchPrerequisites Inherit="false">
+                            <li>BasicStorage</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+                
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="LWM_Clothing_Rack"]</xpath>
+                    <value>
+                        <researchPrerequisites Inherit="false">
+                            <li>BasicStorage</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+                
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="LWM_Safe"]/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites Inherit="false">
+                            <li>BasicStorage</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+                
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="LWM_WeaponsCabinet"]/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites Inherit="false">
+                            <li>BasicStorage</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+                
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="LWM_WeaponsLocker"]/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites Inherit="false">
+                            <li>BasicStorage</li> <!--ModernStorage if Simple Storage is detected-->
+                        </researchPrerequisites>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <FishingPierSpawner.label>Muelle de pesca</FishingPierSpawner.label>
+  <FishingPierSpawner.description>Un simple y sólido muelle de pesca. Mantiene los pies secos mientras pescan.</FishingPierSpawner.description>
+  <FishingPierSpawner_Blueprint.label>muelle de pesca (anteproyecto)</FishingPierSpawner_Blueprint.label>
+  <FishingPierSpawner_Frame.label>muelle de pesca (en construcción)</FishingPierSpawner_Frame.label>
+  <FishingPierSpawner_Frame.description>Un simple y sólido muelle de pesca. Mantiene los pies secos mientras pescan.</FishingPierSpawner_Frame.description>
+
+  <FishingPierSpawnerOnMud.label>Muelle de pesca (en el barro)</FishingPierSpawnerOnMud.label>
+  <FishingPierSpawnerOnMud.description>Un simple y sólido muelle de pesca. Mantiene los pies secos mientras pescan. Se puede construir sobre el lodo requiere más tiempo y materiales de construcción.</FishingPierSpawnerOnMud.description>
+  <FishingPierSpawnerOnMud_Blueprint.label>muelle de pesca (en el barro) (anteproyecto)</FishingPierSpawnerOnMud_Blueprint.label>
+  <FishingPierSpawnerOnMud_Frame.label>muelle de pesca (en el barro) (en construcción)</FishingPierSpawnerOnMud_Frame.label>
+  <FishingPierSpawnerOnMud_Frame.description>Un simple y sólido muelle de pesca. Mantiene los pies secos mientras pescan. Se puede construir sobre el lodo requiere más tiempo y materiales de construcción.</FishingPierSpawnerOnMud_Frame.description>
+
+  <FishingPier.label>Muelle de pesca</FishingPier.label>
+  <FishingPier.description>Un simple y sólido muelle de pesca. Mantiene los pies secos mientras pescan.</FishingPier.description>
+
+
+</LanguageData>

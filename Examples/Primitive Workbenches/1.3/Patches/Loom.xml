@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+ <Operation Class="PatchOperationFindMod">
+    <mods>
+	  <li>VGP Garden Fabrics</li>
+	  <li>VGP Garden Fabrics Simplified</li>
+	  <li>Better Wool Production [1.2+]</li>
+	  <li>MorrowRim</li>
+	  <li>Blessed Tribal Apparel</li>  
+  <!--<li>Tribal Essentials Reborn</li>  -->
+      <li>Medieval Overhaul</li> 
+    </mods>
+      <match Class="PatchOperationSequence">
+      <operations>
+		<li Class="PatchOperationAdd">					
+		  <xpath>Defs</xpath>
+		    <value>   
+			   <ThingDef ParentName="VBY_PrimitiveBenchBase">
+				<defName>VBY_PrimitiveLoom</defName>
+				<label>primitive loom</label>
+				<description>A wooden structure used to produce woven fabric.</description>    
+				<graphicData>
+				  <texPath>Things/Building/Production/Neolithic/HDM_PrimitiveLoom</texPath>      
+				  <graphicClass>Graphic_Single</graphicClass>
+				  <drawRotated>false</drawRotated>
+				  <allowFlip>false</allowFlip>
+				  <drawSize>(1.25)</drawSize>
+				  <drawOffset>(0,0,.25)</drawOffset>
+				  <shadowData>
+					<volume>(0.2, 0.35, 0.13)</volume>
+					<offset>(0,0,-0.42)</offset>
+				  </shadowData>
+				</graphicData>
+				<staticSunShadowHeight Inherit="false"/>	
+				<castEdgeShadows>false</castEdgeShadows>
+				<uiIconScale>1</uiIconScale>
+				<statBases>
+				  <WorkToBuild>1800</WorkToBuild>
+				  <MaxHitPoints>100</MaxHitPoints>
+				  <WorkTableWorkSpeedFactor>0.65</WorkTableWorkSpeedFactor>
+				  <Flammability>5</Flammability>
+				</statBases>
+				<size>(1,1)</size>
+				<comps>
+				  <li Class="CompProperties_AffectedByFacilities">
+					<linkableFacilities>
+					  <li>ToolCabinet</li>
+					  <li>VBY_PrimitiveToolBench</li>
+					</linkableFacilities>
+				  </li>
+				</comps>
+				<recipes>              <!--   -->
+					<li MayRequire="dismarzero.VGP.VGPGardenFabrics">MakeCloth</li>
+					<li MayRequire="dismarzero.VGP.VGPGardenFabrics">MakeClothBulk</li>
+					<li MayRequire="dismarzero.VGP.VGPGardenFabrics">MakeLinen</li>
+					<li MayRequire="dismarzero.VGP.VGPGardenFabrics">MakeLinenBulk</li>
+					<li MayRequire="dismarzero.VGP.VGPGardenFabrics">MakeDevilstrand</li>
+					<li MayRequire="dismarzero.VGP.VGPGardenFabrics">MakeDevilstrandBulk</li>
+					<li MayRequire="dismarzero.VGP.VGPGardenFabrics">MakeSynthreadCloth</li>
+					<li MayRequire="dismarzero.VGP.VGPGardenFabrics">MakeSynthreadClothBulk</li>
+					<li MayRequire="dismarzero.VGP.VGPGardenFabrics">MakeHyperweaveCloth</li>
+					<li MayRequire="dismarzero.VGP.VGPGardenFabrics">MakeHyperweaveClothBulk</li>
+					<li MayRequire="dismarzero.VGP.VGPGardenFabrics">Makeblendedwool</li>
+					<li MayRequire="dismarzero.VGP.VGPGardenFabrics">MakeblendedwoolBulk</li>
+					<li MayRequire="dismarzero.VGP.VGPGardenFabrics">Makeblendedcloth</li>
+					<li MayRequire="dismarzero.VGP.VGPGardenFabrics">MakeblendedclothBulk</li>
+					<li MayRequire="dismarzero.VGP.VGPGardenFabrics">MakeHempCloth</li>
+					<li MayRequire="dismarzero.VGP.VGPGardenFabrics">MakeHempClothBulk</li>
+					<li MayRequire="dismarzero.VGP.VGPGardenFabrics">MakePlasteelThread</li>
+					<li MayRequire="dismarzero.VGP.VGPGardenFabrics">Make_PatchleatherBulk</li>
+					<li MayRequire="dismarzero.VGP.VGPGardenFabricsSimplified">MakeHempCloth</li>
+					<li MayRequire="dismarzero.VGP.VGPGardenFabricsSimplified">MakeHempClothBulk</li>
+					<li MayRequire="dismarzero.VGP.VGPGardenFabricsSimplified">MakePlasteelThread</li>
+					<li MayRequire="dismarzero.VGP.VGPGardenFabricsSimplified">MakeSynthreadCloth</li>
+					<li MayRequire="dismarzero.VGP.VGPGardenFabricsSimplified">MakeSynthreadClothBulk</li>
+					<li MayRequire="dismarzero.VGP.VGPGardenFabricsSimplified">MakeHyperweaveCloth</li>
+					<li MayRequire="dismarzero.VGP.VGPGardenFabricsSimplified">MakeHyperweaveClothBulk</li>
+					<li MayRequire="dismarzero.VGP.VGPGardenFabricsSimplified">Makeblendedwool</li>
+					<li MayRequire="dismarzero.VGP.VGPGardenFabricsSimplified">MakeblendedwoolBulk</li>
+					<li MayRequire="dismarzero.VGP.VGPGardenFabricsSimplified">Makeblendedcloth</li>
+					<li MayRequire="dismarzero.VGP.VGPGardenFabricsSimplified">MakeblendedclothBulk</li>
+					<li MayRequire="troopersmith1.BWP">ProcessWoolAny</li>
+					<li MayRequire="troopersmith1.BWP">MakeWoolBlended</li>
+					<li MayRequire="SirMashedPotato.MorrowRim">MorrowRim_MakeClothFromKresh</li>
+					<li MayRequire="SirMashedPotato.MorrowRim">MorrowRim_MakeClothFromKresh_Bulk</li>
+					<li MayRequire="SafetyMets.BlessedTribalApparel">Make_SBCloth</li>
+					<li MayRequire="SafetyMets.BlessedTribalApparel">Make_SBClothBulk</li>
+				<!--<li MayRequire="zal.tribalessentials"></li>
+					<li MayRequire="zal.tribalessentials"></li>-->
+					<li>VBY_HayclothRecipe</li>
+					<li>VBY_HayclothRecipeBulk</li>
+					<li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_MakeCloth</li>
+					<li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_MakeClothBulk</li>
+				</recipes>
+				<costList>
+				  <VBY_Haycloth>20</VBY_Haycloth>
+				</costList>
+				<costStuffCount>20</costStuffCount>
+				<stuffCategories>
+				  <li>Woody</li>
+				</stuffCategories>
+			  </ThingDef>
+			  <WorkGiverDef>
+				<defName>DoBillsPrimitiveLoom</defName>
+				<label>weave at loom</label>
+				<giverClass>WorkGiver_DoBill</giverClass>
+				<workType>Tailoring</workType>
+				<priorityInType>66</priorityInType>
+				<fixedBillGiverDefs>
+				  <li>VBY_PrimitiveLoom</li>
+				</fixedBillGiverDefs>
+				<verb>make cloth</verb>
+				<gerund>making cloth</gerund>
+				<requiredCapacities>
+					<li>Manipulation</li>
+				</requiredCapacities>
+			    <prioritizeSustains>true</prioritizeSustains>
+			  </WorkGiverDef>
+	      </value>
+		</li>
+	   </operations>			
+      </match>
+  </Operation>
+
+ <Operation Class="PatchOperationFindMod">
+    <mods>
+	  <li>VGP Garden Fabrics</li>
+	  <li>VGP Garden Fabrics Simplified</li>
+    </mods>
+      <match Class="PatchOperationSequence">
+      <operations>
+		<li Class="PatchOperationAdd">					
+		  <xpath>Defs/RecipeDef[defName="MakePlasteelThread"]</xpath>
+	      <value>
+			<researchPrerequisite>VG_ClothI</researchPrerequisite>
+	      </value>
+		</li>
+	   </operations>			
+      </match>
+  </Operation>
+
+</Patch>

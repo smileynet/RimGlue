@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <JobDef>
+    <defName>TakeInstrument</defName>
+    <driverClass>MusicalInstruments.JobDriver_TakeInstrument</driverClass>
+    <reportString>taking instrument.</reportString>
+  </JobDef>
+</Defs>

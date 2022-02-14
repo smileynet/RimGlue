@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RecipeDef ParentName="MakeStoneBlocksBase">
+	<defName>VBYMake_FiredAdobe</defName>          
+	<label>make fired adobe blocks</label>
+	<description>Fires wet clay paste into usable adobe blocks.\n\nMakes 20 bricks.</description>
+	<workAmount>900</workAmount>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <targetCountAdjustment>20</targetCountAdjustment>
+	<ingredients>
+	  <li>
+		<filter>
+		  <thingDefs>
+			<li>VBY_ClayPaste</li>
+		  </thingDefs>
+		</filter>
+		<count>20</count>
+	  </li>
+	</ingredients>
+	<fixedIngredientFilter>
+	  <thingDefs>
+		<li>VBY_ClayPaste</li>
+	  </thingDefs>
+	</fixedIngredientFilter>
+	<products>
+	  <VBY_BlocksAdobe>20</VBY_BlocksAdobe>
+	</products>
+	<recipeUsers Inherit="False">
+		<li>VBY_PrimitiveKiln</li>
+		<li>VBY_PrimitiveKiln_Rotated</li>
+	</recipeUsers>
+  </RecipeDef>
+
+
+  <RecipeDef>  <!-- Will need nomatch to "Replace" with more hay if clay not found, or add clay? -->
+	<defName>VBY_MakeClumpsFromClay_Base</defName>
+	<label>make wet clay clumps</label>
+	<description>Make wet clay clumps from mud and haygrass.\n\nMakes 20 clumps of wet clay.</description>
+	<jobString>Making wet clay clumps.</jobString>
+	<effectWorking>Sculpt</effectWorking>
+	<soundWorking>Recipe_Sculpt</soundWorking>
+	<workAmount>200</workAmount>
+    <allowMixingIngredients>true</allowMixingIngredients>
+	<ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Hay</li>
+				</thingDefs>
+			</filter>
+			<count>40</count>
+		</li>
+	</ingredients>
+	<fixedIngredientFilter>
+		<thingDefs>
+			<li>Hay</li>
+		</thingDefs>
+	</fixedIngredientFilter>
+	<products>
+		<VBY_ClayPaste>20</VBY_ClayPaste>
+	</products>
+	<!--<workSkill>Crafting</workSkill>-->
+	<recipeUsers>
+		<li>CraftingSpot</li>
+		<li>VBY_PrimitiveCraftingTable</li>
+		<li>VBY_PrimitiveKiln</li>
+		<li>VBY_PrimitiveKiln_Rotated</li>
+	</recipeUsers>
+  </RecipeDef>
+
+</Defs>

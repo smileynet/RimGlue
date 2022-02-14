@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<FillUniversalFermenter.reportString>заполняет TargetA.</FillUniversalFermenter.reportString>
+	<TakeProductOutOfUniversalFermenter.reportString>получает готовую продуктцию из TargetA.</TakeProductOutOfUniversalFermenter.reportString>
+
+</LanguageData>

@@ -1,0 +1,656 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+<!-- Start of SoundDefs -->
+ 
+  <SoundDef>
+    <defName>sling_equip</defName>
+    <eventNames /> 
+	<context>MapOnly</context>  	
+    <subSounds>
+      <li>
+        <volumeRange>
+          <min>60</min>        
+          <max>80</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>0.85</min>        
+          <max>1</max>
+        </pitchRange>		
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>sling_equip</clipFolderPath>
+          </li>
+        </grains>      
+      </li>
+    </subSounds>
+  </SoundDef>
+ 
+   <SoundDef>
+    <defName>sling_throw</defName>
+    <eventNames />
+    <context>MapOnly</context>  
+    <subSounds>
+      <li>
+        <volumeRange>
+          <min>60</min>        
+          <max>80</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>0.85</min>        
+          <max>1</max>
+        </pitchRange>		
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>sling_throw</clipFolderPath>
+          </li>
+        </grains>      
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+   <SoundDef>
+    <defName>xbowequip_l</defName>  
+    <eventNames />
+    <context>MapOnly</context>  
+    <subSounds>
+      <li>
+        <volumeRange>
+          <min>60</min>        
+          <max>80</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>0.85</min>        
+          <max>1</max>
+        </pitchRange>		
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>xbowequip_l</clipFolderPath>
+          </li>
+        </grains>      
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+   <SoundDef>
+    <defName>xbow_shot</defName>  
+    <eventNames />
+    <context>MapOnly</context>  
+    <subSounds>
+      <li>
+        <volumeRange>
+          <min>60</min>        
+          <max>80</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>0.85</min>        
+          <max>1</max>
+        </pitchRange>		
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>xbow_shot</clipFolderPath>
+          </li>
+        </grains>      
+      </li>
+    </subSounds>
+  </SoundDef>
+ 
+ 
+   <SoundDef>
+    <defName>polearmequip</defName>  
+    <eventNames />
+    <context>MapOnly</context>  
+    <subSounds>
+      <li>
+        <volumeRange>
+          <min>60</min>        
+          <max>80</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>0.85</min>        
+          <max>1</max>
+        </pitchRange>		
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>polearmequip</clipFolderPath>
+          </li>
+        </grains>      
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+   <SoundDef>
+    <defName>polearmthrow</defName>  
+    <eventNames />
+    <context>MapOnly</context>  
+    <subSounds>
+      <li>
+        <volumeRange>
+          <min>60</min>        
+          <max>80</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>0.85</min>        
+          <max>1</max>
+        </pitchRange>		
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>polearmthrow</clipFolderPath>
+          </li>
+        </grains>      
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+   <SoundDef>
+    <defName>dagger_equip</defName>  
+    <eventNames />
+    <context>MapOnly</context>  
+    <subSounds>
+      <li>
+        <volumeRange>
+          <min>60</min>        
+          <max>80</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>0.85</min>        
+          <max>1</max>
+        </pitchRange>		
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>dagger_equip</clipFolderPath>
+          </li>
+        </grains>      
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+   <SoundDef>
+    <defName>knifethrow</defName>  
+    <eventNames />
+    <context>MapOnly</context>  
+    <subSounds>
+      <li>
+        <volumeRange>
+          <min>60</min>        
+          <max>80</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>0.85</min>        
+          <max>1</max>
+        </pitchRange>		
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>knifethrow</clipFolderPath>
+          </li>
+        </grains>      
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+   <SoundDef>
+    <defName>chainequip</defName>  
+    <eventNames />
+    <context>MapOnly</context>  
+    <subSounds>
+      <li>
+        <volumeRange>
+          <min>60</min>        
+          <max>80</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>0.85</min>        
+          <max>1</max>
+        </pitchRange>		
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>chainequip</clipFolderPath>
+          </li>
+        </grains>      
+      </li>
+    </subSounds>
+  </SoundDef>
+
+   <SoundDef>
+    <defName>chainthrow</defName>  
+    <eventNames />
+    <context>MapOnly</context>  
+    <subSounds>
+      <li>
+        <volumeRange>
+          <min>60</min>        
+          <max>80</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>0.85</min>        
+          <max>1</max>
+        </pitchRange>		
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>chainthrow</clipFolderPath>
+          </li>
+        </grains>      
+      </li>
+    </subSounds>
+  </SoundDef>
+
+   <SoundDef>
+    <defName>axe_equip</defName>  
+    <eventNames />
+    <context>MapOnly</context>  
+    <subSounds>
+      <li>
+        <volumeRange>
+          <min>60</min>        
+          <max>80</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>0.85</min>        
+          <max>1</max>
+        </pitchRange>		
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>axe_equip</clipFolderPath>
+          </li>
+        </grains>      
+      </li>
+    </subSounds>
+  </SoundDef>
+
+   <SoundDef>
+    <defName>axethrow</defName>  
+    <eventNames />
+    <context>MapOnly</context>  
+    <subSounds>
+      <li>
+        <volumeRange>
+          <min>60</min>        
+          <max>80</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>0.85</min>        
+          <max>1</max>
+        </pitchRange>		
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>axethrow</clipFolderPath>
+          </li>
+        </grains>      
+      </li>
+    </subSounds>
+  </SoundDef>
+
+   <SoundDef>
+    <defName>xbowequip_hm</defName>  
+    <eventNames />
+    <context>MapOnly</context>  
+    <subSounds>
+      <li>
+        <volumeRange>
+          <min>60</min>        
+          <max>80</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>0.85</min>        
+          <max>1</max>
+        </pitchRange>		
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>xbowequip_hm</clipFolderPath>
+          </li>
+        </grains>      
+      </li>
+    </subSounds>
+  </SoundDef>
+
+   <SoundDef>
+    <defName>xbowshot_heavy</defName>  
+    <eventNames />
+    <context>MapOnly</context>  
+    <subSounds>
+      <li>
+        <volumeRange>
+          <min>60</min>        
+          <max>80</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>0.85</min>        
+          <max>1</max>
+        </pitchRange>		
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>xbowshot_heavy</clipFolderPath>
+          </li>
+        </grains>      
+      </li>
+    </subSounds>
+  </SoundDef>
+
+   <SoundDef>
+    <defName>sxbow_shot</defName>  
+    <eventNames />
+    <context>MapOnly</context>  
+    <subSounds>
+      <li>
+        <volumeRange>
+          <min>60</min>        
+          <max>80</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>0.85</min>        
+          <max>1</max>
+        </pitchRange>		
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>sxbow_shot</clipFolderPath>
+          </li>
+        </grains>      
+      </li>
+    </subSounds>
+  </SoundDef>
+
+   <SoundDef>
+    <defName>longbowequip</defName>  
+    <eventNames />
+    <context>MapOnly</context>  
+    <subSounds>
+      <li>
+        <volumeRange>
+          <min>60</min>        
+          <max>80</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>0.85</min>        
+          <max>1</max>
+        </pitchRange>		
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>longbowequip</clipFolderPath>
+          </li>
+        </grains>      
+      </li>
+    </subSounds>
+  </SoundDef>		
+
+   <SoundDef>
+    <defName>bowfireshot</defName>  
+    <eventNames />
+    <context>MapOnly</context>  
+    <subSounds>
+      <li>
+        <volumeRange>
+          <min>60</min>        
+          <max>80</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>0.85</min>        
+          <max>1</max>
+        </pitchRange>		
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>bowfireshot</clipFolderPath>
+          </li>
+        </grains>      
+      </li>
+    </subSounds>
+  </SoundDef>	
+
+   <SoundDef>
+    <defName>xbowequip_s</defName>  
+    <eventNames />
+    <context>MapOnly</context>  
+	<subSounds>
+      <li>
+        <volumeRange>
+          <min>60</min>        
+          <max>80</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>0.85</min>        
+          <max>1</max>
+        </pitchRange>		
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>xbowequip_s</clipFolderPath>
+          </li>
+        </grains>      
+      </li>
+    </subSounds>
+  </SoundDef>	
+  
+   <SoundDef>
+    <defName>longbowshot</defName>  
+    <eventNames />
+    <context>MapOnly</context>  
+	<subSounds>
+      <li>
+        <volumeRange>
+          <min>60</min>        
+          <max>80</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>0.85</min>        
+          <max>1</max>
+        </pitchRange>		
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>longbowshot</clipFolderPath>
+          </li>
+        </grains>      
+      </li>
+    </subSounds>
+  </SoundDef>	
+
+   <SoundDef>
+    <defName>flamearrow_hit</defName>  
+    <eventNames />
+    <context>MapOnly</context>  
+	<subSounds>
+      <li>
+        <volumeRange>
+          <min>60</min>        
+          <max>80</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>0.85</min>        
+          <max>1</max>
+        </pitchRange>		
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>flamearrow_hit</clipFolderPath>
+          </li>
+        </grains>      
+      </li>
+    </subSounds>
+  </SoundDef>	
+
+   <SoundDef>
+    <defName>tnet_throw</defName>  
+    <eventNames />
+    <context>MapOnly</context>  
+	<subSounds>
+      <li>
+        <volumeRange>
+          <min>60</min>        
+          <max>80</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>0.85</min>        
+          <max>1</max>
+        </pitchRange>		
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>tnet_throw</clipFolderPath>
+          </li>
+        </grains>      
+      </li>
+    </subSounds>
+  </SoundDef>	
+
+   <SoundDef>
+    <defName>sword_equip</defName>  
+    <eventNames />
+    <context>MapOnly</context>  
+	<subSounds>
+      <li>
+        <volumeRange>
+          <min>60</min>        
+          <max>80</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>0.85</min>        
+          <max>1</max>
+        </pitchRange>		
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>sword_equip</clipFolderPath>
+          </li>
+        </grains>      
+      </li>
+    </subSounds>
+  </SoundDef>	
+
+   <SoundDef>
+    <defName>spear_equip</defName>  
+    <eventNames />
+    <context>MapOnly</context>  
+	<subSounds>
+      <li>
+        <volumeRange>
+          <min>60</min>        
+          <max>80</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>0.85</min>        
+          <max>1</max>
+        </pitchRange>		
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>spear_equip</clipFolderPath>
+          </li>
+        </grains>      
+      </li>
+    </subSounds>
+  </SoundDef>	
+
+   <SoundDef>
+    <defName>rapier_equip</defName>  
+    <eventNames />
+    <context>MapOnly</context>  
+	<subSounds>
+      <li>
+        <volumeRange>
+          <min>60</min>        
+          <max>80</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>0.85</min>        
+          <max>1</max>
+        </pitchRange>		
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>rapier_equip</clipFolderPath>
+          </li>
+        </grains>      
+      </li>
+    </subSounds>
+  </SoundDef>
+
+   <SoundDef>
+    <defName>swordb_equip</defName>  
+    <eventNames />
+    <context>MapOnly</context>  
+	<subSounds>
+      <li>
+        <volumeRange>
+          <min>60</min>        
+          <max>80</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>0.85</min>        
+          <max>1</max>
+        </pitchRange>		
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>swordb_equip</clipFolderPath>
+          </li>
+        </grains>      
+      </li>
+    </subSounds>
+  </SoundDef>  
+
+   <SoundDef>
+    <defName>wood_equip</defName>  
+    <eventNames />
+    <context>MapOnly</context>  
+	<subSounds>
+      <li>
+        <volumeRange>
+          <min>60</min>        
+          <max>80</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>0.85</min>        
+          <max>1</max>
+        </pitchRange>		
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>wood_equip</clipFolderPath>
+          </li>
+        </grains>      
+      </li>
+    </subSounds>
+  </SoundDef>  
+
+   <SoundDef>
+    <defName>stone_equip</defName>  
+    <eventNames />
+    <context>MapOnly</context>  
+	<subSounds>
+      <li>
+        <volumeRange>
+          <min>60</min>        
+          <max>80</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>0.85</min>        
+          <max>1</max>
+        </pitchRange>		
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>stone_equip</clipFolderPath>
+          </li>
+        </grains>      
+      </li>
+    </subSounds>
+  </SoundDef>  
+
+  <SoundDef>
+    <defName>craftingbench_work</defName>  
+    <sustain>True</sustain>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <priorityMode>PrioritizeNearest</priorityMode>  
+    <subSounds>
+      <li>
+        <muteWhenPaused>True</muteWhenPaused>      
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>craftingbench_work</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>30</min>        
+          <max>30</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>0.9541177</min>        
+          <max>1.091765</max>
+        </pitchRange>      
+        <sustainLoop>true</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+<!-- End of SoundDefs -->
+</Defs>

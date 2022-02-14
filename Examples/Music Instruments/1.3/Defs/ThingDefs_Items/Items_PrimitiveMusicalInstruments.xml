@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="PrimitiveInstrumentBase">
+    <label>frame drum</label>
+    <defName>FrameDrum</defName>
+    <description>A simple rhythmic percussion instrument made from leather stretched over a wooden frame.</description>
+    <graphicData>
+      <texPath>Things/Items/Primitive/FrameDrum</texPath>
+    </graphicData>
+    <techLevel>Neolithic</techLevel>
+    <statBases>
+      <WorkToMake>9000</WorkToMake>
+      <Mass>3</Mass>
+    </statBases>
+    <costList>
+      <WoodLog>15</WoodLog>
+    </costList>
+    <stuffCategories>
+      <li>Leathery</li>
+    </stuffCategories>
+    <costStuffCount>30</costStuffCount>
+    <comps>
+      <li Class="MusicalInstruments.CompProperties_MusicalInstrument">
+        <compClass>MusicalInstruments.CompMusicalInstrument</compClass>
+        <easiness>0.5</easiness>
+        <expressiveness>0.3</expressiveness>
+        <xOffset>0.1</xOffset>
+        <zOffset>-0.2</zOffset>
+        <xOffsetFacing>0.0</xOffsetFacing>
+        <zOffsetFacing>-0.2</zOffsetFacing>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="PrimitiveInstrumentBase">
+    <label>ocarina</label>
+    <defName>Ocarina</defName>
+    <description>A simple wind instrument with a haunting tone, carved from a single piece of material.</description>
+    <graphicData>
+      <texPath>Things/Items/Primitive/Ocarina</texPath>
+    </graphicData>
+    <techLevel>Neolithic</techLevel>
+    <statBases>
+      <WorkToMake>15000</WorkToMake>
+      <Mass>0.5</Mass>
+    </statBases>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>5</costStuffCount>
+    <comps>
+      <li Class="MusicalInstruments.CompProperties_MusicalInstrument">
+        <compClass>MusicalInstruments.CompMusicalInstrument</compClass>
+        <easiness>0.3</easiness>
+        <expressiveness>0.5</expressiveness>
+        <xOffset>0.4</xOffset>
+        <zOffset>0.1</zOffset>
+        <xOffsetFacing>-0.2</xOffsetFacing>
+        <zOffsetFacing>0.1</zOffsetFacing>
+        <isWindInstrument>true</isWindInstrument>
+      </li>
+    </comps>
+  </ThingDef>
+</Defs>

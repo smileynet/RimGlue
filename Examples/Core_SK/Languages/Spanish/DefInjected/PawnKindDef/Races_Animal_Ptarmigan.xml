@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Animal -->
+
+  <Ptarmigan.label>Perdiz</Ptarmigan.label>
+  <Ptarmigan.labelPlural>Perdices</Ptarmigan.labelPlural>
+  <Ptarmigan.lifeStages.0.label>polluelo de perdiz</Ptarmigan.lifeStages.0.label>
+  <Ptarmigan.lifeStages.0.labelPlural>polluelos de perdices</Ptarmigan.lifeStages.0.labelPlural>
+  <Ptarmigan.lifeStages.0.labelMale>polluelo de perdiz masculina</Ptarmigan.lifeStages.0.labelMale>
+  <Ptarmigan.lifeStages.0.labelMalePlural>polluelos de perdices masculinas</Ptarmigan.lifeStages.0.labelMalePlural>
+  <Ptarmigan.lifeStages.0.labelFemale>polluelo de perdiz femenina</Ptarmigan.lifeStages.0.labelFemale>
+  <Ptarmigan.lifeStages.0.labelFemalePlural>polluelos de perdices femeninas</Ptarmigan.lifeStages.0.labelFemalePlural>
+  <Ptarmigan.lifeStages.1.label>Perdiz</Ptarmigan.lifeStages.1.label>
+  <Ptarmigan.lifeStages.1.labelPlural>Perdices</Ptarmigan.lifeStages.1.labelPlural>
+  <Ptarmigan.lifeStages.1.labelMale>perdiz masculina</Ptarmigan.lifeStages.1.labelMale>
+  <Ptarmigan.lifeStages.1.labelMalePlural>perdices masculinas</Ptarmigan.lifeStages.1.labelMalePlural>
+  <Ptarmigan.lifeStages.1.labelFemale>perdiz femenina</Ptarmigan.lifeStages.1.labelFemale>
+  <Ptarmigan.lifeStages.1.labelFemalePlural>perdices femeninas</Ptarmigan.lifeStages.1.labelFemalePlural>
+  <Ptarmigan.lifeStages.2.label>Perdiz</Ptarmigan.lifeStages.2.label>
+  <Ptarmigan.lifeStages.2.labelPlural>Perdices</Ptarmigan.lifeStages.2.labelPlural>
+  <Ptarmigan.lifeStages.2.labelMale>perdiz masculina</Ptarmigan.lifeStages.2.labelMale>
+  <Ptarmigan.lifeStages.2.labelMalePlural>male ptarmigans</Ptarmigan.lifeStages.2.labelMalePlural>
+  <Ptarmigan.lifeStages.2.labelFemale>perdiz femenina</Ptarmigan.lifeStages.2.labelFemale>
+  <Ptarmigan.lifeStages.2.labelFemalePlural>perdices femeninas</Ptarmigan.lifeStages.2.labelFemalePlural>
+  <Ptarmigan.labelMale>perdiz masculina</Ptarmigan.labelMale>
+  <Ptarmigan.labelMalePlural>perdices masculinas</Ptarmigan.labelMalePlural>
+  <Ptarmigan.labelFemale>perdiz femenina</Ptarmigan.labelFemale>
+  <Ptarmigan.labelFemalePlural>perdices femeninas</Ptarmigan.labelFemalePlural>
+
+
+</LanguageData>

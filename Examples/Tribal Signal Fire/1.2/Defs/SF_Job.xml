@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <JobDef>
+    <defName>UseSignalFire</defName>
+    <driverClass>TribalSignalFire.JobDriver_UseSignalFire</driverClass>
+    <reportString>using signal fire.</reportString>
+  </JobDef>
+</Defs>

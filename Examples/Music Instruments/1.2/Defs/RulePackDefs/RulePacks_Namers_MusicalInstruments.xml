@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <RulePackDef>
+    <defName>NamerArtMusicalInstrument</defName>
+    <include>
+      <li>ArtNameUtility</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <!-- General -->
+        <li>r_art_name-&gt;[ConceptBadass]</li>
+        <li>r_art_name-&gt;The [AnimalBadass]</li>
+        <li>r_art_name-&gt;[AdjectiveBadass] [AnimalBadass]</li>
+        <li>r_art_name-&gt;[ColorBadass] [AnimalBadass]</li>
+        <li>r_art_name-&gt;[ConceptBadass] [ColorBadass]</li>
+        <!-- Person. High probability; if we can use these we want to -->
+        <li>r_art_name(p=3)-&gt;[ANYPAWN_nameIndef]'s [ConceptBadass]</li>
+        <li>r_art_name(p=3)-&gt;[ANYPAWN_nameIndef]'s [AnimalBadass]</li>
+        <li>r_art_name(p=3)-&gt;[ANYPAWN_nameIndef]'s [PersonBadass]</li>
+        <li>r_art_name(p=3)-&gt;[ANYPAWN_nameIndef]'s [PersonAlly]</li>
+        <li>r_art_name(p=3)-&gt;[ANYPAWN_nameIndef]'s [PersonFamily]</li>
+        <li>r_art_name(p=3)-&gt;[ConceptBadass] of [ANYPAWN_nameIndef]</li>
+        <li>r_art_name(p=3)-&gt;[ColorBadass] [ANYPAWN_nameIndef]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+</Defs>

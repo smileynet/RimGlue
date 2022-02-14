@@ -1,0 +1,3161 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+ <!-- ================== Melee Weapon Classes ================ --> 
+  <ThingDef Name="MM_MWeaponBase" Abstract="True">
+    <category>Item</category>
+    <thingClass>ThingWithComps</thingClass>
+    <techLevel>Medieval</techLevel>	
+    <equipmentType>Primary</equipmentType>
+	
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+    </graphicData>
+
+    <statBases>
+      <SellPriceFactor>0.2</SellPriceFactor>	  
+	  <Beauty>0</Beauty>  
+    </statBases>
+	
+    <pathCost>10</pathCost>
+    <selectable>True</selectable>
+    <alwaysHaulable>True</alwaysHaulable>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <altitudeLayer>Item</altitudeLayer>
+    <tickerType>Never</tickerType>
+	
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+      <li><compClass>CompEquippable</compClass></li>
+    </comps>		
+  </ThingDef>
+ 
+ 
+<!-- Melee weapons, craftable, not stuffed -->
+<ThingDef Name="MM_MWeaponNotStuffed" ParentName="MM_MWeaponBase" Abstract="True"> 
+    <useHitPoints>True</useHitPoints>
+	<smeltable>True</smeltable>	
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>2</DeteriorationRate>	  
+    </statBases>
+    <inspectorTabs><li>ITab_Art</li></inspectorTabs>	
+     <comps>	  
+      <li><compClass>CompQuality</compClass></li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponMelee</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+    </comps>		
+    <tradeTags><li>MM_MeleeWeapons</li></tradeTags>
+    <thingCategories><li>WeaponsMelee</li></thingCategories>		
+  </ThingDef>     
+  
+ <!-- Subclass for stuffed weapons -->
+ <ThingDef Name="MM_MWeaponStuffed" ParentName="MM_MWeaponNotStuffed" Abstract="True"> 
+    <graphicData>
+ 	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+   </ThingDef>
+ 
+  <!-- Subclasses for 2h and 1h weapons for ease of patching -->
+  <ThingDef Name="MM_MWeaponStuffed2h" ParentName="MM_MWeaponStuffed" Abstract="True"> 
+   </ThingDef>
+   
+  <ThingDef Name="MM_MWeaponStuffed1h" ParentName="MM_MWeaponStuffed" Abstract="True"> 
+   </ThingDef>
+ 
+<!-- Subclasses for weapon tiers for 1h weapons -->
+
+ <ThingDef Name="MM_BasicTools_1h" ParentName="MM_MWeaponStuffed1h" Abstract="True">
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>craftingbench_work</soundWorking>
+      <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+      <recipeUsers>
+	  <li>CraftingWorkBench</li>
+	  </recipeUsers>
+      <skillRequirements>
+      <Crafting>4</Crafting>
+      </skillRequirements>
+	  <researchPrerequisite>BasicTools</researchPrerequisite>	  
+	</recipeMaker>
+	
+    <weaponTags>
+      <li>MM_MeleeWeaponTool</li>
+    </weaponTags>	
+	
+  </ThingDef>
+ 
+ <ThingDef Name="MM_MeleeTier1_1h" ParentName="MM_MWeaponStuffed1h" Abstract="True">
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+      <recipeUsers>
+	  <li>FueledSmithy</li>
+	  <li>ElectricSmithy</li>
+	  </recipeUsers>
+	  <researchPrerequisite>Smithing</researchPrerequisite>
+      <skillRequirements>
+      <Crafting>6</Crafting>
+      </skillRequirements>	  
+	</recipeMaker>
+
+    <weaponTags>
+      <li>MM_MeleeWeaponT1</li>
+    </weaponTags>
+
+  </ThingDef>
+  
+  <ThingDef Name="MM_MeleeTier2_1h" ParentName="MM_MWeaponStuffed1h" Abstract="True">
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+      <recipeUsers>
+	  <li>FueledSmithy</li>
+	  <li>ElectricSmithy</li>
+	  </recipeUsers>
+	  <researchPrerequisite>AdvancedMeleeWeapons</researchPrerequisite>
+      <skillRequirements>
+      <Crafting>8</Crafting>
+      </skillRequirements>	  
+	</recipeMaker>
+  
+    <weaponTags>
+      <li>MM_MeleeWeaponT2</li>
+    </weaponTags>
+  
+  </ThingDef>
+
+  <ThingDef Name="MM_MeleeTier3_1h" ParentName="MM_MWeaponStuffed1h" Abstract="True">
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+      <recipeUsers>
+	  <li>FueledSmithy</li>
+	  <li>ElectricSmithy</li>
+	  </recipeUsers>
+	  <researchPrerequisite>HeavyWeapons</researchPrerequisite>
+      <skillRequirements>
+      <Crafting>10</Crafting>
+      </skillRequirements>	  
+	</recipeMaker>
+    <thingSetMakerTags>
+		<li>PeaceTalksGift</li>
+		<li>ItemStashQuest</li>
+		<li>BanditCampQuestRewards</li>
+		<li>AncientTempleContents</li>
+		<li>AncientPodContents</li>
+    </thingSetMakerTags>
+
+    <weaponTags>
+      <li>MM_MeleeWeaponT3</li>
+    </weaponTags>
+
+  </ThingDef>
+
+  <ThingDef Name="MM_MeleeTier4_1h" ParentName="MM_MWeaponStuffed1h" Abstract="True">
+    <tradeTags><li>MM_MeleeWeaponExotic</li><li>ExoticMisc</li></tradeTags>
+    <statBases>
+      <SellPriceFactor>1.0</SellPriceFactor>	  
+	  <Beauty>20</Beauty>  
+    </statBases>
+    <thingSetMakerTags>
+		<li>PeaceTalksGift</li>
+		<li>ItemStashQuest</li>
+		<li>BanditCampQuestRewards</li>
+		<li>AncientTempleContents</li>
+		<li>AncientPodContents</li>
+    </thingSetMakerTags>
+	
+    <weaponTags>
+      <li>MM_MeleeWeaponExotic</li>
+    </weaponTags>	
+
+  </ThingDef>
+
+<!-- Subclasses for weapon tiers for 2h weapons -->
+
+ <ThingDef Name="MM_BasicTools_2h" ParentName="MM_MWeaponStuffed2h" Abstract="True">
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>craftingbench_work</soundWorking>
+      <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+      <recipeUsers>
+	  <li>CraftingWorkBench</li>
+	  </recipeUsers>
+      <skillRequirements>
+      <Crafting>4</Crafting>
+      </skillRequirements>
+	  <researchPrerequisite>BasicTools</researchPrerequisite>	  
+	</recipeMaker>
+	
+    <weaponTags>
+      <li>MM_MeleeWeaponTool</li>
+    </weaponTags>	
+	
+  </ThingDef>
+ 
+ <ThingDef Name="MM_MeleeTier1_2h" ParentName="MM_MWeaponStuffed2h" Abstract="True">
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+      <recipeUsers>
+	  <li>FueledSmithy</li>
+	  <li>ElectricSmithy</li>
+	  </recipeUsers>
+	  <researchPrerequisite>Smithing</researchPrerequisite>
+      <skillRequirements>
+      <Crafting>6</Crafting>
+      </skillRequirements>	  
+	</recipeMaker>
+
+    <weaponTags>
+      <li>MM_MeleeWeaponT1</li>
+    </weaponTags>
+
+  </ThingDef>
+  
+  <ThingDef Name="MM_MeleeTier2_2h" ParentName="MM_MWeaponStuffed2h" Abstract="True">
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+      <recipeUsers>
+	  <li>FueledSmithy</li>
+	  <li>ElectricSmithy</li>
+	  </recipeUsers>
+	  <researchPrerequisite>AdvancedMeleeWeapons</researchPrerequisite>
+      <skillRequirements>
+      <Crafting>8</Crafting>
+      </skillRequirements>	  
+	</recipeMaker>
+  
+    <weaponTags>
+      <li>MM_MeleeWeaponT2</li>
+    </weaponTags>
+  
+  </ThingDef>
+
+  <ThingDef Name="MM_MeleeTier3_2h" ParentName="MM_MWeaponStuffed2h" Abstract="True">
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+      <recipeUsers>
+	  <li>FueledSmithy</li>
+	  <li>ElectricSmithy</li>
+	  </recipeUsers>
+	  <researchPrerequisite>HeavyWeapons</researchPrerequisite>
+      <skillRequirements>
+      <Crafting>10</Crafting>
+      </skillRequirements>	  
+	</recipeMaker>
+    <thingSetMakerTags>
+		<li>PeaceTalksGift</li>
+		<li>ItemStashQuest</li>
+		<li>BanditCampQuestRewards</li>
+		<li>AncientTempleContents</li>
+		<li>AncientPodContents</li>
+    </thingSetMakerTags>
+
+    <weaponTags>
+      <li>MM_MeleeWeaponT3</li>
+    </weaponTags>
+
+  </ThingDef>
+
+  <ThingDef Name="MM_MeleeTier4_2h" ParentName="MM_MWeaponStuffed2h" Abstract="True">
+    <tradeTags><li>MM_MeleeWeaponExotic</li><li>ExoticMisc</li></tradeTags>
+    <statBases>
+      <SellPriceFactor>1.0</SellPriceFactor>	  
+	  <Beauty>20</Beauty>  
+    </statBases>
+    <thingSetMakerTags>
+		<li>PeaceTalksGift</li>
+		<li>ItemStashQuest</li>
+		<li>BanditCampQuestRewards</li>
+		<li>AncientTempleContents</li>
+		<li>AncientPodContents</li>
+    </thingSetMakerTags>
+	
+    <weaponTags>
+      <li>MM_MeleeWeaponExotic</li>
+    </weaponTags>	
+
+  </ThingDef>
+
+<!-- Tier 0 Peasant Melee Weapons -->
+
+
+<!-- Pitchfork -->  
+<ThingDef ParentName="MM_BasicTools_2h">
+    <defName>MM_Pitchfork</defName>
+    <label>pitchfork</label>
+    <description>A simple tool used in agriculture, has a long handle and several pointed tynes used to lift and pitch or throw loose material, such as hay, straw or leaves. Or people. Thus can be somewhat effectively used as a weapon in a pinch.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponMelee/MM_pitchfork</texPath>	  
+    </graphicData>
+
+    <soundInteract>spear_equip</soundInteract>
+
+    <weaponTags>
+		<li>MedievalTool</li>	
+    </weaponTags>
+
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+		</stuffCategories>
+	<costStuffCount>25</costStuffCount>
+    <costList>
+    <WoodLog>25</WoodLog>
+	</costList>
+	
+    <statBases>
+		<WorkToMake>2000</WorkToMake>
+		<Mass>3</Mass>		
+    </statBases>
+		
+    <equippedStatOffsets>
+    <PlantWorkSpeed>0.15</PlantWorkSpeed>
+    </equippedStatOffsets>
+
+    <equippedAngleOffset>25</equippedAngleOffset>
+	
+    <tools>
+      <li>
+        <label>tynes</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>14</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+	  <li>
+        <label>handle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>  
+
+<!-- Sickle -->  
+<ThingDef ParentName="MM_BasicTools_1h">
+    <defName>MM_Sickle</defName>
+    <label>Sickle</label>
+    <description>A handheld agricultural tool with a curved blade, designed for reaping and harvesting hay and various other soft plants.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponMelee/MM_sickle</texPath>	  
+    </graphicData>
+
+    <soundInteract>dagger_equip</soundInteract>
+
+    <weaponTags>
+		<li>MedievalTool</li>	
+    </weaponTags>
+
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+	<costStuffCount>25</costStuffCount>
+    <costList>
+	<WoodLog>15</WoodLog>
+	</costList>
+	
+    <statBases>
+		<WorkToMake>1600</WorkToMake>
+		<Mass>1</Mass>		
+    </statBases>
+		
+    <equippedStatOffsets>
+    <PlantWorkSpeed>0.1</PlantWorkSpeed>
+    </equippedStatOffsets>
+
+    <equippedAngleOffset>-45</equippedAngleOffset>
+	
+    <tools>
+	  <li>
+        <label>handle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+	  <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>14</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>  
+
+<!-- Woodcutter's Axe -->  
+<ThingDef ParentName="MM_BasicTools_2h">
+    <defName>MM_Woodcutteraxe</defName>
+    <label>woodcutter's axe</label>
+    <description>A simple tool for cutting down trees, has a long wooden handle and heavy metallic head with sharpened edge. Somewhat effective as a melee weapon due to its mass, but slow.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponMelee/MM_woodcutteraxe</texPath>	  
+    </graphicData>
+
+    <soundInteract>stone_equip</soundInteract>
+	
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+	<costStuffCount>20</costStuffCount>
+    <costList>
+	<WoodLog>35</WoodLog>
+	</costList>
+
+    <comps>
+    <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+    <northOffset>(0.20,0,0.20)</northOffset>
+    <eastOffset>(0,0,0)</eastOffset>
+    <westOffset>(0,0,0)</westOffset>
+    <southOffset>(0.20,0,0.20)</southOffset>
+    </li>
+    </comps>
+	
+    <statBases>
+		<WorkToMake>1400</WorkToMake>
+		<Mass>3</Mass>		
+    </statBases>
+		
+    <equippedStatOffsets>
+    <PlantWorkSpeed>0.1</PlantWorkSpeed>
+    </equippedStatOffsets>
+
+    <equippedAngleOffset>-45</equippedAngleOffset>
+	
+    <tools>
+	  <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2.2</cooldownTime>
+      </li>
+	  <li>
+        <label>head</label>
+		<labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <armorPenetration>0.2</armorPenetration>
+        <power>15</power>
+        <cooldownTime>2.2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef> 
+
+<!-- Stone Hammer -->  
+<ThingDef ParentName="MM_BasicTools_1h">
+    <defName>MM_SHammer</defName>
+    <label>hammer</label>
+    <description>Heavy hammerhead on a short handle. Commonly used in both construction and blacksmithing. Can be used as a melee weapon in a pinch.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponMelee/MM_stonehammer</texPath>	  
+    </graphicData>
+
+    <soundInteract>stone_equip</soundInteract>
+
+		<stuffCategories>
+			<li>Stony</li>
+			<li>Woody</li>
+			<li>Metallic</li>
+		</stuffCategories>
+	<costStuffCount>35</costStuffCount>
+    <costList>
+	<WoodLog>20</WoodLog>
+	</costList>
+
+    <comps>
+    <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+    <northOffset>(0.15,0,0)</northOffset>
+    <eastOffset>(0,0,0)</eastOffset>
+    <westOffset>(0,0,0)</westOffset>
+    <southOffset>(0.15,0,0)</southOffset>
+    </li>
+    </comps>
+
+    <statBases>
+		<WorkToMake>2000</WorkToMake>
+		<Mass>3</Mass>		
+    </statBases>
+		
+    <equippedStatOffsets>
+	<ConstructionSpeed>0.1</ConstructionSpeed>
+	<ConstructSuccessChance>0.05</ConstructSuccessChance>
+    </equippedStatOffsets>
+
+    <equippedAngleOffset>-45</equippedAngleOffset>
+	
+    <tools>
+	  <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+	  <li>
+        <label>hammerhead</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>19</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef> 
+
+<!-- Cleaver -->  
+<ThingDef ParentName="MM_BasicTools_1h">
+    <defName>MM_cleaver</defName>
+    <label>meat cleaver</label>
+    <description>A large knife on a short handle with wide cutting edge for chopping meat and hacking through bones.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponMelee/MM_cleaver</texPath>	  
+    </graphicData>
+
+    <soundInteract>dagger_equip</soundInteract>
+
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+	<costStuffCount>25</costStuffCount>
+    <costList>
+	<WoodLog>15</WoodLog>
+	</costList>
+
+    <comps>
+    <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+    <northOffset>(-0.1,0,0)</northOffset>
+    <eastOffset>(0,0,0)</eastOffset>
+    <westOffset>(0,0,0)</westOffset>
+    <southOffset>(-0.1,0,0)</southOffset>
+    </li>
+    </comps>
+
+    <statBases>
+		<WorkToMake>2000</WorkToMake>
+		<Mass>1</Mass>		
+    </statBases>
+		
+    <equippedStatOffsets>
+    <ButcheryFleshSpeed>0.1</ButcheryFleshSpeed>
+    <ButcheryFleshEfficiency>0.1</ButcheryFleshEfficiency>
+    </equippedStatOffsets>
+
+    <equippedAngleOffset>-55</equippedAngleOffset>
+	
+    <tools>
+	  <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+	  <li>
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>14</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+	  <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>14</power>
+        <cooldownTime>2.2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef> 
+
+<!-- Pickaxe -->  
+<ThingDef ParentName="MM_BasicTools_2h">
+    <defName>MM_pickaxe</defName>
+    <label>pickaxe</label>
+    <description>A T-shaped hand tool with a heavy sharp head typically used for prying stones apart and mining ores.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponMelee/MM_pickaxe</texPath>	  
+    </graphicData>
+
+    <soundInteract>wood_equip</soundInteract>
+
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+	<costStuffCount>30</costStuffCount>
+    <costList>
+	<WoodLog>20</WoodLog>
+	</costList>
+	
+    <statBases>
+		<WorkToMake>1900</WorkToMake>
+		<Mass>3</Mass>		
+    </statBases>
+		
+    <equippedStatOffsets>
+    <MiningSpeed>0.1</MiningSpeed>
+    <MiningYield>0.1</MiningYield>
+    </equippedStatOffsets>
+
+    <equippedAngleOffset>-45</equippedAngleOffset>
+	
+    <tools>
+	  <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+	  <li>
+        <label>head</label>
+		<labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>18</power>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+<!-- Shovel -->  
+<ThingDef ParentName="MM_BasicTools_2h">
+    <defName>MM_shovel</defName>
+    <label>shovel</label>
+    <description>A handheld tool for digging and moving soil, ores, sand and other materials. Consists of a broad blade on a medium length handle. Useful for both construction and plantwork.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponMelee/MM_shovel</texPath>	  
+    </graphicData>
+
+    <soundInteract>wood_equip</soundInteract>
+
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>			
+		</stuffCategories>
+	<costStuffCount>20</costStuffCount>
+    <costList>
+	<WoodLog>35</WoodLog>
+	</costList>
+
+    <comps>
+    <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+    <northOffset>(0.3,0,0.25)</northOffset>
+    <eastOffset>(0,0,0)</eastOffset>
+    <westOffset>(0,0,0)</westOffset>
+    <southOffset>(0.3,0,0.25)</southOffset>
+    </li>
+    </comps>
+	
+    <statBases>
+		<WorkToMake>1900</WorkToMake>
+		<Mass>3</Mass>		
+    </statBases>
+		
+    <equippedStatOffsets>
+    <ConstructionSpeed>0.1</ConstructionSpeed>
+    <PlantWorkSpeed>0.1</PlantWorkSpeed>
+    </equippedStatOffsets>
+
+    <equippedAngleOffset>-45</equippedAngleOffset>
+	
+    <tools>
+	  <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+	  <li>
+        <label>blade</label>
+		<labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>14</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+<!-- Scythe -->  
+<ThingDef ParentName="MM_BasicTools_2h">
+    <defName>MM_scythe</defName>
+    <label>scythe</label>
+    <description>A handheld tool typically used for mowing grass and harvesting crops such as wheats.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponMelee/MM_scythe</texPath>	  
+    </graphicData>
+
+    <soundInteract>polearmequip</soundInteract>
+
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+	<costStuffCount>20</costStuffCount>
+    <costList>
+	<WoodLog>35</WoodLog>
+	</costList>
+	
+    <statBases>
+		<WorkToMake>2100</WorkToMake>
+		<Mass>3</Mass>		
+    </statBases>
+		
+    <equippedStatOffsets>
+    <PlantWorkSpeed>0.15</PlantWorkSpeed>
+    </equippedStatOffsets>
+
+    <equippedAngleOffset>25</equippedAngleOffset>
+	
+    <tools>
+	  <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+	  <li>
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>17</power>
+        <cooldownTime>2.3</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+
+<!-- Tier 1 Militia Melee Weapons -->
+
+<!-- Dagger --> 
+<ThingDef ParentName="MM_MeleeTier1_1h">
+    <defName>MM_dagger</defName>
+    <label>dagger</label>
+    <description>Slightly curved short sharp weapon, beloved by thugs and cutthroats on every planet. Somewhat longer than a knife, which means couple more inches of steel in someone's stomach.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponMelee/MM_dagger</texPath>	  
+    </graphicData>
+
+    <soundInteract>dagger_equip</soundInteract>
+
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+		</stuffCategories>
+	<costStuffCount>35</costStuffCount>
+    <costList>
+	<WoodLog>20</WoodLog>
+	</costList>
+	
+    <statBases>
+		<WorkToMake>9000</WorkToMake>
+		<Mass>0.6</Mass>		
+    </statBases>
+		
+    <equippedStatOffsets>
+
+    </equippedStatOffsets>
+    <equippedAngleOffset>-75</equippedAngleOffset>
+	
+    <tools>
+	  <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.2</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>11</power>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+	  <li>
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.4</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>  
+
+<!-- Wooden Mallet -->
+<ThingDef ParentName="MM_BasicTools_2h">
+    <defName>MM_mallet</defName>
+    <label>Wooden mallet</label>
+    <description>Two handed wooden mallet, heavy, slow and simple. Can often be seen in hands of bandits, militia and other simple folk. Despite its simplicity, hits quite hard. Can be helpful in construction jobs.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponMelee/MM_mallet</texPath>	  
+    </graphicData>
+	
+    <recipeMaker>
+      <soundWorking>craftingbench_work</soundWorking>
+    </recipeMaker>
+
+    <soundInteract>wood_equip</soundInteract>
+
+    <costList>
+	<WoodLog>50</WoodLog>
+	<Steel>10</Steel>
+	</costList>
+	
+    <statBases>
+		<WorkToMake>5000</WorkToMake>
+		<Mass>3</Mass>		
+    </statBases>
+		
+    <equippedStatOffsets>
+	<ConstructionSpeed>0.1</ConstructionSpeed>
+    </equippedStatOffsets>
+
+    <equippedAngleOffset>-50</equippedAngleOffset>
+
+    <comps>
+    <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+    <northOffset>(0.1,0,0.2)</northOffset>
+    <eastOffset>(0.2,0,0.2)</eastOffset>
+    <westOffset>(-0.2,0,0.2)</westOffset>
+    <southOffset>(0.2,0,0.3)</southOffset>
+    </li>
+    </comps>
+
+    <tools>
+	  <li>
+        <label>handle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>11</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+	  <li>
+        <label>hammerhead</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>20</power>
+        <cooldownTime>2.9</cooldownTime>
+      </li>
+	  <li>
+        <label>shaft</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>22</power>
+        <cooldownTime>2.9</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+<!-- Shortsword --> 
+<ThingDef ParentName="MM_MeleeTier1_1h">
+    <defName>MM_shortsword</defName>
+    <label>shortsword</label>
+    <description>A light short sword, perfect for fighting in tight spaces. Doesn't have enough mass to pierce armor, but really dangerous against unarmored opponents.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponMelee/MM_shortsword</texPath>	  
+    </graphicData>
+
+    <soundInteract>sword_equip</soundInteract>
+
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+		</stuffCategories>
+	<costStuffCount>45</costStuffCount>
+    <costList>
+	<WoodLog>20</WoodLog>
+	</costList>
+	
+    <statBases>
+		<WorkToMake>9000</WorkToMake>
+		<Mass>0.8</Mass>		
+    </statBases>
+		
+    <equippedStatOffsets>
+
+    </equippedStatOffsets>
+    <equippedAngleOffset>-75</equippedAngleOffset>
+	
+    <tools>
+	  <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>1.2</cooldownTime>
+      </li>
+	  <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>  
+
+<!-- Hatchet -->
+<ThingDef ParentName="MM_MeleeTier1_1h">
+    <defName>MM_hatchet</defName>
+    <label>hatchet</label>
+    <description>An axe light enough to be used with one hand. Commonly used for splitting wood, but can serve as convenient and effective melee weapon.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponMelee/MM_hatchet</texPath>	  
+    </graphicData>
+
+    <soundInteract>axe_equip</soundInteract>
+
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+		</stuffCategories>
+	<costStuffCount>50</costStuffCount>
+    <costList>
+	<WoodLog>20</WoodLog>
+	</costList>
+	
+    <statBases>
+		<WorkToMake>12000</WorkToMake>
+		<Mass>1.2</Mass>		
+    </statBases>
+		
+    <equippedStatOffsets>
+
+    </equippedStatOffsets>
+    <equippedAngleOffset>-75</equippedAngleOffset>
+	
+    <tools>
+	  <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+	  <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>17</power>
+		<armorPenetration>0.3</armorPenetration>
+        <cooldownTime>2.2</cooldownTime>
+      </li>
+	  <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>16</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>  
+
+<!-- Military pick -->
+<ThingDef ParentName="MM_MeleeTier1_1h">
+    <defName>MM_mpick</defName>
+    <label>military pick</label>
+    <description>Military pick is a type of short warhammer, that has heavy metal head with a curved pointy spike for piercing through thick armors. The form of the spike makes it look somewhat similar to a miner's pickaxe.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponMelee/MM_mpick</texPath>	  
+    </graphicData>
+
+    <soundInteract>wood_equip</soundInteract>
+
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+		</stuffCategories>
+	<costStuffCount>60</costStuffCount>
+	
+    <statBases>
+		<WorkToMake>11000</WorkToMake>
+		<Mass>1.3</Mass>		
+    </statBases>
+		
+    <equippedStatOffsets>
+
+    </equippedStatOffsets>
+    <equippedAngleOffset>-75</equippedAngleOffset>
+	
+    <tools>
+	  <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+	  <li>
+        <label>spike</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>18</power>
+		<armorPenetration>0.4</armorPenetration>
+        <cooldownTime>2.2</cooldownTime>
+      </li>
+	  <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>2.2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>  
+
+<!-- Bludgeon -->
+<ThingDef ParentName="MM_MeleeTier1_1h">
+    <defName>MM_bludgeon</defName>
+    <label>bludgeon</label>
+    <description>A heavy club with several spiked rings on its head for added weight and damage.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponMelee/MM_bludgeon</texPath>	  
+    </graphicData>
+
+    <recipeMaker>
+      <soundWorking>craftingbench_work</soundWorking>
+    </recipeMaker>
+
+    <soundInteract>wood_equip</soundInteract>
+
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+		</stuffCategories>
+	<costStuffCount>40</costStuffCount>
+    <costList>
+	<WoodLog>25</WoodLog>
+	</costList>
+	
+    <statBases>
+		<WorkToMake>12000</WorkToMake>
+		<Mass>1.2</Mass>		
+    </statBases>
+		
+    <equippedStatOffsets>
+
+    </equippedStatOffsets>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+
+    <tools>
+	  <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+	  <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>17</power>
+        <cooldownTime>2.4</cooldownTime>
+      </li>
+	  <li>
+        <label>shaft</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>13</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>  
+
+<!-- Flail -->
+<ThingDef ParentName="MM_MeleeTier1_1h">
+    <defName>MM_flail</defName>
+    <label>flail</label>
+    <description>Heavy spiked ball chained to a short handle. Weighty ball provides enough force to deal damage even through medium armor, while chain grants it flexibility to strike over shields.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponMelee/MM_flail</texPath>	  
+    </graphicData>
+
+    <soundInteract>chainequip</soundInteract>
+
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+		</stuffCategories>
+	<costStuffCount>45</costStuffCount>
+    <costList>
+	<WoodLog>20</WoodLog>
+	</costList>
+	
+    <statBases>
+		<WorkToMake>10000</WorkToMake>
+		<Mass>2</Mass>		
+    </statBases>
+		
+    <equippedStatOffsets>
+
+    </equippedStatOffsets>
+    <equippedAngleOffset>-30</equippedAngleOffset>
+
+    <comps>
+    <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+    <northOffset>(0.3,0,0)</northOffset>
+    <eastOffset>(0,0,0)</eastOffset>
+    <westOffset>(0,0,0)</westOffset>
+    <southOffset>(0.3,0,0)</southOffset>
+    </li>
+    </comps>
+
+    <tools>
+	  <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+	  <li>
+        <label>flail head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>18</power>
+        <cooldownTime>2.4</cooldownTime>
+      </li>
+	  <li>
+        <label>flail head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>16</power>
+        <cooldownTime>2.1</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>  
+
+
+
+
+<!-- Tier 2 Warrior Melee Weapons -->
+
+
+<!-- Battle axe -->
+<ThingDef ParentName="MM_MeleeTier2_1h">
+    <defName>MM_waraxe</defName>
+    <label>battle axe</label>
+    <description>One-handed axe designed for fighting armored opponents. It lacks the speed and sharpness of swords, but compensates for it with its mass and damage it can inflict even through a decent suit of armor.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponMelee/MM_waraxe</texPath>	  
+      <drawSize>0.9</drawSize>
+    </graphicData>
+
+    <soundInteract>axe_equip</soundInteract>
+
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+	<costStuffCount>80</costStuffCount>
+    <costList>
+	<WoodLog>30</WoodLog>
+	</costList>
+	
+    <statBases>
+		<WorkToMake>15000</WorkToMake>
+		<Mass>2</Mass>		
+    </statBases>
+		
+    <equippedStatOffsets>
+
+    </equippedStatOffsets>
+    <equippedAngleOffset>-75</equippedAngleOffset>
+	
+    <tools>
+	  <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>2.4</cooldownTime>
+      </li>
+	  <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>20</power>
+		<armorPenetration>0.45</armorPenetration>
+        <cooldownTime>2.2</cooldownTime>
+      </li>
+	  <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>20</power>
+		<armorPenetration>0.45</armorPenetration>
+        <cooldownTime>2.8</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>  
+
+<!-- Warhammer -->
+<ThingDef ParentName="MM_MeleeTier2_1h">
+    <defName>MM_warhammer</defName>
+    <label>warhammer</label>
+    <description>One-handed hammer designed to be used against heavily armored opponents, can break bones and cripple a man in one blow even through a thick steel plate.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponMelee/MM_warhammer</texPath>	  
+      <drawSize>0.9</drawSize>
+    </graphicData>
+
+    <soundInteract>stone_equip</soundInteract>
+
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+	<costStuffCount>85</costStuffCount>
+    <costList>
+	<WoodLog>20</WoodLog>
+	</costList>
+	
+    <statBases>
+		<WorkToMake>17000</WorkToMake>
+		<Mass>2</Mass>		
+    </statBases>
+		
+    <equippedStatOffsets>
+
+    </equippedStatOffsets>
+    <equippedAngleOffset>-75</equippedAngleOffset>
+	
+    <tools>
+	  <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+	  <li>
+        <label>hammerhead</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>18</power>
+        <armorPenetration>0.5</armorPenetration>
+        <cooldownTime>2.4</cooldownTime>
+      </li>
+	  <li>
+        <label>hammerhead</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>21</power>
+        <armorPenetration>0.4</armorPenetration>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>  
+
+<!-- Polehammer -->
+<ThingDef ParentName="MM_MeleeTier2_2h">
+    <defName>MM_polehammer</defName>
+    <label>polehammer</label>
+    <description>A polearm version of warhammer - hammerhead is mounted on a long wooden shaft for extended reach. Has a spike on its end, for stabbing in case there is no space for a full swing. Its increased range is an advantage in open field, but becomes a problem in tight quarters.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponMelee/MM_polehammer</texPath>	  
+    </graphicData>
+
+    <soundInteract>polearmequip</soundInteract>
+
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+	<costStuffCount>90</costStuffCount>
+    <costList>
+	<WoodLog>40</WoodLog>
+	</costList>
+	
+    <statBases>
+		<WorkToMake>16000</WorkToMake>
+		<Mass>2.5</Mass>		
+    </statBases>
+		
+    <equippedStatOffsets>
+
+    </equippedStatOffsets>
+    <equippedAngleOffset>-45</equippedAngleOffset>
+	
+	<weaponTags>
+    <li>MM_Polearm</li>
+	</weaponTags>
+	
+	<comps>
+      <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+        <northOffset>(0.25,0,0.2)</northOffset>
+        <eastOffset>(0,0,0)</eastOffset>
+        <westOffset>(0,0,0)</westOffset>
+        <southOffset>(0.25,0,0.2)</southOffset>
+      </li>
+    </comps>
+
+    <tools>
+	  <li>
+        <label>shaft</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2.2</cooldownTime>
+      </li>
+	  <li>
+        <label>hammerhead</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>23</power>
+        <cooldownTime>2.7</cooldownTime>
+      </li>
+	  <li>
+        <label>spike</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>22</power>
+        <armorPenetration>0.3</armorPenetration>
+        <cooldownTime>2.7</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>  
+
+<!-- Morning Star -->
+<ThingDef ParentName="MM_MeleeTier2_1h">
+    <defName>MM_morningstar</defName>
+    <label>morning star</label>
+    <description>Blunt weapon that consists of spiked ball on a long handle. Heavy enough to do some damage even through medium armor, yet light enough to wield with one hand.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponMelee/MM_morningstar</texPath>	  
+    </graphicData>
+
+    <soundInteract>stone_equip</soundInteract>
+
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+		</stuffCategories>
+	<costStuffCount>80</costStuffCount>
+    <costList>
+	<WoodLog>20</WoodLog>
+	</costList>
+	
+    <statBases>
+		<WorkToMake>18000</WorkToMake>
+		<Mass>2</Mass>		
+    </statBases>
+		
+    <equippedStatOffsets>
+
+    </equippedStatOffsets>
+    <equippedAngleOffset>-75</equippedAngleOffset>
+
+    <comps>
+    <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+    <northOffset>(0.2,0,0)</northOffset>
+    <eastOffset>(0,0,0)</eastOffset>
+    <westOffset>(0,0,0)</westOffset>
+    <southOffset>(0.2,0,0)</southOffset>
+    </li>
+    </comps>
+
+    <tools>
+	  <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+	  <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>17</power>
+        <cooldownTime>2.2</cooldownTime>
+      </li>
+	  <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>20</power>
+        <cooldownTime>2.3</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>  
+
+<!-- War Spear -->
+<ThingDef ParentName="MM_MeleeTier2_2h">
+    <defName>MM_warspear</defName>
+    <label>war spear</label>
+    <description>Reinforced long fighting spear with winged barbed tip that prevents lodging it too deep into opponents flesh and getting stuck. Long spear tip allows for slashing attacks.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponMelee/MM_warspear</texPath>	  
+	  <drawSize>1.1</drawSize>
+    </graphicData>
+
+    <soundInteract>spear_equip</soundInteract>
+
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+	<costStuffCount>70</costStuffCount>
+    <costList>
+    <WoodLog>50</WoodLog>
+	</costList>
+
+	<weaponTags>
+    <li>MM_Polearm</li>
+	</weaponTags>
+
+	<comps>
+      <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+        <northOffset>(0,0,0)</northOffset>
+        <eastOffset>(0,0,0)</eastOffset>
+        <westOffset>(0,0,0)</westOffset>
+        <southOffset>(0,0,0)</southOffset>
+      </li>
+    </comps>
+	
+    <statBases>
+		<WorkToMake>18000</WorkToMake>
+		<Mass>1.5</Mass>		
+    </statBases>
+		
+    <equippedStatOffsets>
+    </equippedStatOffsets>
+    <equippedAngleOffset>25</equippedAngleOffset>
+	
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>11</power>
+        <cooldownTime>2.2</cooldownTime>
+      </li>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>19</power>
+        <cooldownTime>2.3</cooldownTime>
+      </li>
+	  <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>19</power>
+	    <armorPenetration>0.5</armorPenetration>
+        <cooldownTime>2.3</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>  
+
+<!-- Pike -->
+<ThingDef ParentName="MM_MeleeTier2_2h">
+    <defName>MM_pike</defName>
+    <label>pike</label>
+    <description>Weighted long polearm with a sharp tip for piercing medium armor. Very effective against beasts and enemy cavarly. Its longer than a normal spear and can't be used with one hand.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponMelee/MM_pike</texPath>	  
+    </graphicData>
+
+    <soundInteract>spear_equip</soundInteract>
+
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+	<costStuffCount>50</costStuffCount>
+    <costList>
+    <WoodLog>50</WoodLog>
+	</costList>
+
+	<weaponTags>
+    <li>MM_Polearm</li>
+	</weaponTags>
+
+	<comps>
+      <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+        <northOffset>(0,0,0)</northOffset>
+        <eastOffset>(0,0,0)</eastOffset>
+        <westOffset>(0,0,0)</westOffset>
+        <southOffset>(0,0,0)</southOffset>
+      </li>
+    </comps>
+	
+    <statBases>
+		<WorkToMake>20000</WorkToMake>
+		<Mass>2.5</Mass>		
+    </statBases>
+		
+    <equippedStatOffsets>
+    </equippedStatOffsets>
+    <equippedAngleOffset>25</equippedAngleOffset>
+	
+    <tools>
+      <li>
+        <label>shaft</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>11</power>
+        <cooldownTime>2.2</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>20</power>
+	    <armorPenetration>0.5</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+	  <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>25</power>
+	    <armorPenetration>0.5</armorPenetration>
+        <cooldownTime>2.8</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>  
+
+<!-- Billhook -->
+<ThingDef ParentName="MM_MeleeTier2_2h">
+    <defName>MM_billhook</defName>
+    <label>billhook</label>
+    <description>Weighted long polearm with a sharp tip for piercing medium armor and a big hook for pulling riders down from their mounts. Very effective against beasts and enemy cavalry. Its length is both its advantage and disadvantage, as it provides ample reach, but makes it hard to utilise in tight spaces.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponMelee/MM_billhook</texPath>	  
+    </graphicData>
+
+    <soundInteract>spear_equip</soundInteract>
+
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+	<costStuffCount>50</costStuffCount>
+    <costList>
+    <WoodLog>50</WoodLog>
+	</costList>
+
+	<weaponTags>
+    <li>MM_Polearm</li>
+	</weaponTags>
+
+	<comps>
+      <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+        <northOffset>(0,0,0)</northOffset>
+        <eastOffset>(0,0,0)</eastOffset>
+        <westOffset>(0,0,0)</westOffset>
+        <southOffset>(0,0,0)</southOffset>
+      </li>
+    </comps>
+	
+    <statBases>
+		<WorkToMake>18500</WorkToMake>
+		<Mass>3</Mass>		
+    </statBases>
+		
+    <equippedStatOffsets>
+    </equippedStatOffsets>
+    <equippedAngleOffset>25</equippedAngleOffset>
+	
+    <tools>
+      <li>
+        <label>shaft</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2.3</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>24</power>
+	    <armorPenetration>0.4</armorPenetration>
+        <cooldownTime>2.8</cooldownTime>
+      </li>
+	  <li>
+        <label>hook</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>22</power>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>  
+
+<!-- Trident -->
+<ThingDef ParentName="MM_MeleeTier2_2h">
+    <defName>MM_trident</defName>
+    <label>trident</label>
+    <description>A long three-pronged polearm often used in melee combat and sometimes for spear fishing. Associated with gods of oceans and sees on some planets.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponMelee/MM_trident</texPath>	  
+    </graphicData>
+
+    <soundInteract>spear_equip</soundInteract>
+
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+	<costStuffCount>80</costStuffCount>
+    <costList>
+    <Gold>10</Gold>
+	</costList>
+
+	<weaponTags>
+    <li>MM_Polearm</li>
+	</weaponTags>
+
+	<comps>
+      <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+        <northOffset>(0,0,0)</northOffset>
+        <eastOffset>(0,0,0)</eastOffset>
+        <westOffset>(0,0,0)</westOffset>
+        <southOffset>(0,0,0)</southOffset>
+      </li>
+    </comps>
+	
+    <statBases>
+		<WorkToMake>18000</WorkToMake>
+		<Mass>1.5</Mass>		
+    </statBases>
+		
+    <equippedStatOffsets>
+    </equippedStatOffsets>
+    <equippedAngleOffset>25</equippedAngleOffset>
+	
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>11</power>
+        <cooldownTime>2.2</cooldownTime>
+      </li>
+      <li>
+        <label>tips</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>18</power>
+        <cooldownTime>2.4</cooldownTime>
+      </li>
+	  <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>22</power>
+        <cooldownTime>2.4</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>  
+
+<!-- Flanged Mace -->
+<ThingDef ParentName="MM_MeleeTier2_1h">
+    <defName>MM_flangedmace</defName>
+    <label>flanged mace</label>
+    <description>Heavier version of common infantry mace with weighted wings on its head for additional blunt damage.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponMelee/MM_flangedmace</texPath>	  
+      <drawSize>0.9</drawSize>
+    </graphicData>
+
+    <soundInteract>stone_equip</soundInteract>
+
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+	<costStuffCount>75</costStuffCount>
+    <costList>
+	<WoodLog>25</WoodLog>
+	</costList>
+	
+    <statBases>
+		<WorkToMake>16000</WorkToMake>
+		<Mass>1.5</Mass>		
+    </statBases>
+		
+    <equippedStatOffsets>
+
+    </equippedStatOffsets>
+    <equippedAngleOffset>-75</equippedAngleOffset>
+
+    <comps>
+    <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+    <northOffset>(0.2,0,0)</northOffset>
+    <eastOffset>(0,0,0)</eastOffset>
+    <westOffset>(0,0,0)</westOffset>
+    <southOffset>(0.2,0,0)</southOffset>
+    </li>
+    </comps>
+
+    <tools>
+	  <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+	  <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>17</power>
+        <cooldownTime>2.2</cooldownTime>
+      </li>
+	  <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>18.5</power>
+        <cooldownTime>2.2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>  
+
+<!-- Bardiche -->
+<ThingDef ParentName="MM_MeleeTier2_2h">
+    <defName>MM_bardiche</defName>
+    <label>bardiche</label>
+    <description>Long polearm with a broad axeblade mounted on its end. Lacking halberd's spike or glaive's hook the sole purpose of this poleaxe is to hack opponent to pieces from longer range.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponMelee/MM_bardiche</texPath>	  
+      <drawSize>1.2</drawSize>
+    </graphicData>
+
+    <soundInteract>polearmequip</soundInteract>
+
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+		</stuffCategories>
+	<costStuffCount>75</costStuffCount>
+    <costList>
+    <WoodLog>50</WoodLog>
+	</costList>
+
+	<weaponTags>
+    <li>MM_Polearm</li>
+	</weaponTags>
+
+	<comps>
+      <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+        <northOffset>(0.25,0,0.2)</northOffset>
+        <eastOffset>(0,0,0)</eastOffset>
+        <westOffset>(0,0,0)</westOffset>
+        <southOffset>(0.25,0,0.2)</southOffset>
+      </li>
+    </comps>
+	
+    <statBases>
+		<WorkToMake>16500</WorkToMake>
+		<Mass>3</Mass>		
+    </statBases>
+		
+    <equippedStatOffsets>
+    </equippedStatOffsets>
+    <equippedAngleOffset>-45</equippedAngleOffset>
+	
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>2.3</cooldownTime>
+      </li>
+      <li>
+        <label>axeblade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>18</power>
+        <cooldownTime>2.3</cooldownTime>
+      </li>
+	  <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>18</power>
+        <cooldownTime>2.3</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+<!-- Rapier -->
+<ThingDef ParentName="MM_MeleeTier2_1h">
+    <defName>MM_rapier</defName>
+    <label>rapier</label>
+    <description>Long thin blade mainly used in dueling - occupation beloved by those of noble birth. Extremely light and fast, this weapon is made for stabbing and finding gaps in opponent's defense. Has a noble feel to it.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponMelee/MM_rapier</texPath>	  
+    </graphicData>
+
+    <soundInteract>rapier_equip</soundInteract>
+
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+	<costStuffCount>100</costStuffCount>
+    <costList>
+    <WoodLog>20</WoodLog>
+	</costList>
+	
+	<comps>
+      <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+        <northOffset>(0,0,0)</northOffset>
+        <eastOffset>(0,0,0)</eastOffset>
+        <westOffset>(0,0,0)</westOffset>
+        <southOffset>(0,0,0)</southOffset>
+      </li>
+    </comps>
+	
+    <statBases>
+		<WorkToMake>20000</WorkToMake>
+		<Mass>0.5</Mass>		
+    </statBases>
+		
+    <equippedStatOffsets>
+    </equippedStatOffsets>
+    <equippedAngleOffset>-45</equippedAngleOffset>
+	
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.1</cooldownTime>
+      </li>
+	  <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+<!-- Scramasax -->
+<ThingDef ParentName="MM_MeleeTier2_1h">
+    <defName>MM_scramasax</defName>
+    <label>scramasax</label>
+    <description>A medium sized sword with a blade, that becomes wider and heavier from its handle to its sharp tip. Can both cut and stab in a fight. Due to structure of its blade can also be used to hack your way through thick vegetation.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponMelee/MM_scramasax</texPath>	  
+    </graphicData>
+
+    <soundInteract>sword_equip</soundInteract>
+
+    <weaponTags>
+		<li>MedievalMeleeDecent</li>	
+    </weaponTags>
+
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+		</stuffCategories>
+	<costStuffCount>80</costStuffCount>
+    <costList>
+	<WoodLog>30</WoodLog>
+	</costList>
+	
+    <statBases>
+		<WorkToMake>16000</WorkToMake>
+		<Mass>1.1</Mass>		
+    </statBases>
+		
+    <equippedStatOffsets>
+
+    </equippedStatOffsets>
+    <equippedAngleOffset>-75</equippedAngleOffset>
+	
+    <tools>
+	  <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>17</power>
+        <cooldownTime>2.1</cooldownTime>
+      </li>
+	  <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>18</power>
+        <cooldownTime>2.1</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+<!-- Cutlass -->
+<ThingDef ParentName="MM_MeleeTier2_1h">
+    <defName>MM_cutlass</defName>
+    <label>cutlass</label>
+    <description>A medium sized slightly curved sword with a broad blade designed for heavy slashing attacks. Has an exquisite basket-like handguard. Commonly used by medieval and post-medieval ship crew.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponMelee/MM_boardingsword</texPath>	  
+    </graphicData>
+
+    <soundInteract>sword_equip</soundInteract>
+
+    <weaponTags>
+		<li>MedievalMeleeDecent</li>	
+    </weaponTags>
+
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+		</stuffCategories>
+	<costStuffCount>80</costStuffCount>
+    <costList>
+	<WoodLog>20</WoodLog>
+	</costList>
+	
+    <statBases>
+		<WorkToMake>16000</WorkToMake>
+		<Mass>1.3</Mass>		
+    </statBases>
+		
+    <equippedStatOffsets>
+
+    </equippedStatOffsets>
+    <equippedAngleOffset>-75</equippedAngleOffset>
+	
+    <tools>
+	  <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>16</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+	  <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>20</power>
+        <cooldownTime>2.3</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+<!-- Tier 3 Knight Melee weapons -->
+
+
+<!-- Greatsword --> 
+<ThingDef ParentName="MM_MeleeTier3_2h">
+    <defName>MM_greatsword</defName>
+    <label>greatsword</label>
+    <description>A heavy variant of a longsword crafted for two-handed use only. A fearsome weapon capable of cutting fully armored fighter in half with a single well placed blow. Its weight and lenght however often leave its wielder defenseless between swings.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponMelee/MM_greatsword</texPath>	  
+      <drawSize>1.05</drawSize>
+    </graphicData>
+
+    <soundInteract>swordb_equip</soundInteract>
+
+    <weaponTags>
+		<li>MedievalMeleeDecent</li>	
+    </weaponTags>
+
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+		</stuffCategories>
+	<costStuffCount>140</costStuffCount>
+    <costList>
+	<WoodLog>30</WoodLog>
+	</costList>
+	
+    <statBases>
+		<WorkToMake>25000</WorkToMake>
+		<Mass>8</Mass>		
+    </statBases>
+		
+    <equippedStatOffsets>
+
+    </equippedStatOffsets>
+    
+    <comps>
+    <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+    <northOffset>(0.1,0,0.2)</northOffset>
+    <eastOffset>(0.2,0,0.2)</eastOffset>
+    <westOffset>(-0.2,0,0.2)</westOffset>
+    <southOffset>(0.2,0,0.3)</southOffset>
+    </li>
+    </comps>
+	
+    <equippedAngleOffset>-50</equippedAngleOffset>
+	
+    <tools>
+	  <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>2.2</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>20</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+	  <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>28</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>  
+
+<!-- Bastard Sword --> 
+<ThingDef ParentName="MM_MeleeTier3_1h">
+    <defName>MM_bastardsword</defName>
+    <label>bastard sword</label>
+    <description>Noticeably heavier than a longsword, yet lighter than a full two-hander, bastard sword is hybrid blade, that can be used with both one and two hands to great effect. Wielding it with a single hand requires significant strength and stamina.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponMelee/MM_bastardsword</texPath>	  
+      <drawSize>0.95</drawSize>
+    </graphicData>
+
+    <soundInteract>sword_equip</soundInteract>
+
+    <weaponTags>
+		<li>MedievalMeleeDecent</li>	
+    </weaponTags>
+
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+		</stuffCategories>
+	<costStuffCount>130</costStuffCount>
+    <costList>
+	<WoodLog>20</WoodLog>
+	</costList>
+	
+    <statBases>
+		<WorkToMake>25000</WorkToMake>
+		<Mass>4</Mass>		
+    </statBases>
+		
+    <equippedStatOffsets>
+
+    </equippedStatOffsets>
+    <equippedAngleOffset>-30</equippedAngleOffset>
+
+    <comps>
+    <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+    <northOffset>(0.15,0,0.1)</northOffset>
+    <eastOffset>(0.15,0,0.1)</eastOffset>
+    <westOffset>(-0.15,0,0.1)</westOffset>
+    <southOffset>(0.15,0,0.1)</southOffset>
+    </li>
+    </comps>
+	
+    <tools>
+	  <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2.2</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>19</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+	  <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>26</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>  
+
+<!-- Greataxe --> 
+<ThingDef ParentName="MM_MeleeTier3_2h">
+    <defName>MM_greataxe</defName>
+    <label>greataxe</label>
+    <description>A gigantic double-bearded fighting axe. Its weight allows it to crush anything it can't cut apart. Unfortunately even strongest person wouldn't be able to attack fast with such weapon, leaving ample opportunities for faster opponents to counterattack.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponMelee/MM_greataxe</texPath>	  
+    </graphicData>
+
+    <soundInteract>polearmequip</soundInteract>
+
+    <weaponTags>
+		<li>MedievalMeleeDecent</li>	
+    </weaponTags>
+
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+		</stuffCategories>
+	<costStuffCount>150</costStuffCount>
+    <costList>
+	<WoodLog>30</WoodLog>
+	</costList>
+	
+    <statBases>
+		<WorkToMake>28000</WorkToMake>
+		<Mass>15</Mass>		
+    </statBases>
+		
+    <equippedStatOffsets>
+
+    </equippedStatOffsets>
+    <equippedAngleOffset>-50</equippedAngleOffset>
+
+    <comps>
+    <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+    <northOffset>(0.1,0,0.2)</northOffset>
+    <eastOffset>(0.2,0,0.2)</eastOffset>
+    <westOffset>(-0.2,0,0.2)</westOffset>
+    <southOffset>(0.2,0,0.3)</southOffset>
+    </li>
+    </comps>
+
+    <tools>
+	  <li>
+        <label>shaft</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>16</power>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>22</power>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+	  <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>30</power>
+        <cooldownTime>2.8</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>  
+
+<!-- Halberd -->
+<ThingDef ParentName="MM_MeleeTier3_2h">
+    <defName>MM_halberd</defName>
+    <label>halberd</label>
+    <description>Heavy two-handed polearm weapon with an axe blade mounted on a long shaft and topped with a sharp spike. Suitable for both chopping and stabbing. Its weight and pointy tip make it a dangerous weapon even for a heavily armored opponent.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponMelee/MM_halberd</texPath>	  
+    </graphicData>
+
+    <soundInteract>polearmequip</soundInteract>
+
+		<stuffCategories>
+			<li>Metallic</li>
+            <li>Woody</li>
+		</stuffCategories>
+	<costStuffCount>100</costStuffCount>
+    <costList>
+    <WoodLog>45</WoodLog>
+	</costList>
+
+	<weaponTags>
+    <li>MM_Polearm</li>
+	</weaponTags>
+
+	<comps>
+      <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+        <northOffset>(0.25,0,0.2)</northOffset>
+        <eastOffset>(0,0,0)</eastOffset>
+        <westOffset>(0,0,0)</westOffset>
+        <southOffset>(0.25,0,0.2)</southOffset>
+      </li>
+    </comps>
+	
+    <statBases>
+		<WorkToMake>26000</WorkToMake>
+		<Mass>7</Mass>		
+    </statBases>
+		
+    <equippedStatOffsets>
+    </equippedStatOffsets>
+    <equippedAngleOffset>-45</equippedAngleOffset>
+	
+    <tools>
+      <li>
+        <label>shaft</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+      <li>
+        <label>axeblade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>18</power>
+        <cooldownTime>2.3</cooldownTime>
+      </li>
+	  <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>23</power>
+		<armorPenetration>0.6</armorPenetration>
+        <cooldownTime>2.2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>  
+
+<!-- Glaive -->
+<ThingDef ParentName="MM_MeleeTier3_2h">
+    <defName>MM_glaive</defName>
+    <label>glaive</label>
+    <description>A versatile two-handed weapon, that consist of a long single-edged blade mounted on a long pole. Perfect for cutting down agile lightly armored opponets and cavalry.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponMelee/MM_glaive</texPath>	  
+    </graphicData>
+
+    <soundInteract>polearmequip</soundInteract>
+
+	<weaponTags>
+    <li>MM_Polearm</li>
+	</weaponTags>
+
+		<stuffCategories>
+			<li>Metallic</li>
+            <li>Woody</li>
+		</stuffCategories>
+	<costStuffCount>90</costStuffCount>
+    <costList>
+    <WoodLog>50</WoodLog>
+	</costList>
+	
+	<comps>
+      <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+        <northOffset>(0,0,0)</northOffset>
+        <eastOffset>(0,0,0)</eastOffset>
+        <westOffset>(0,0,0)</westOffset>
+        <southOffset>(0,0,0)</southOffset>
+      </li>
+    </comps>
+	
+    <statBases>
+		<WorkToMake>25000</WorkToMake>
+		<Mass>4</Mass>		
+    </statBases>
+		
+    <equippedStatOffsets>
+    </equippedStatOffsets>
+    <equippedAngleOffset>25</equippedAngleOffset>
+	
+    <tools>
+      <li>
+        <label>shaft</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>1.7</cooldownTime>
+      </li>
+	  <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>17</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+<!-- Great Mace --> 
+<ThingDef ParentName="MM_MeleeTier3_2h">
+    <defName>MM_heavymace</defName>
+    <label>heavy mace</label>
+    <description>An oversized mace designed for devastating blunt attacks, capable of maiming or killing even most tough and armored fighters in a single well landed hit. Very slow and heavy.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponMelee/MM_2hmace</texPath>	  
+    </graphicData>
+
+    <soundInteract>stone_equip</soundInteract>
+
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+		</stuffCategories>
+	<costStuffCount>130</costStuffCount>
+    <costList>
+	<WoodLog>30</WoodLog>
+	</costList>
+	
+    <statBases>
+		<WorkToMake>26000</WorkToMake>
+		<Mass>15</Mass>		
+    </statBases>
+		
+    <equippedStatOffsets>
+
+    </equippedStatOffsets>
+    <equippedAngleOffset>-50</equippedAngleOffset>
+
+    <comps>
+    <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+    <northOffset>(0.1,0,0.2)</northOffset>
+    <eastOffset>(0.2,0,0.2)</eastOffset>
+    <westOffset>(-0.2,0,0.2)</westOffset>
+    <southOffset>(0.2,0,0.3)</southOffset>
+    </li>
+    </comps>
+	
+    <tools>
+	  <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>2.2</cooldownTime>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>18</power>
+        <cooldownTime>2.4</cooldownTime>
+      </li>
+	  <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>24</power>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+<!-- Heavy Maul -->
+<ThingDef ParentName="MM_MeleeTier3_2h">
+    <defName>MM_maul</defName>
+    <label>heavy maul</label>
+    <description>Gigantic two-handed hammer with horrifying destructive potential, maul is knight's worst nightmare. While its incredibly slow due to its mass, a single hit can flatten a warrior in full plate armor. Best way to handle someone wielding this weapon is to never let him get close enough for a swing.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponMelee/MM_maul</texPath>	  
+    </graphicData>
+
+    <soundInteract>stone_equip</soundInteract>
+
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Stony</li>
+		</stuffCategories>
+	<costStuffCount>160</costStuffCount>
+	
+    <statBases>
+		<WorkToMake>30000</WorkToMake>
+		<Mass>12</Mass>		
+    </statBases>
+		
+    <equippedStatOffsets>
+
+    </equippedStatOffsets>
+    <equippedAngleOffset>-50</equippedAngleOffset>
+
+    <comps>
+    <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+    <northOffset>(0.1,0,0.2)</northOffset>
+    <eastOffset>(0.2,0,0.2)</eastOffset>
+    <westOffset>(-0.2,0,0.2)</westOffset>
+    <southOffset>(0.2,0,0.3)</southOffset>
+    </li>
+    </comps>
+	
+    <tools>
+	  <li>
+        <label>shaft</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+	  <li>
+        <label>hammerhead</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>28</power>
+        <cooldownTime>3</cooldownTime>
+      </li>
+	  <li>
+        <label>hammerhead</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>28</power>
+        <cooldownTime>3</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>  
+
+<!-- Heavy Flail --> 
+<ThingDef ParentName="MM_MeleeTier3_2h">
+    <defName>MM_flail_heavy</defName>
+    <label>heavy flail</label>
+    <description>Intimidating heavy spiked head chained to a big handle designed for two-handed use. Due to its massive size and mass it is hard to wield without proper training, but in capable hands it can inflict devastating damage.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponMelee/MM_flail_heavy</texPath>	  
+    </graphicData>
+
+    <soundInteract>chainequip</soundInteract>
+
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+		</stuffCategories>
+	<costStuffCount>130</costStuffCount>
+    <costList>
+	<WoodLog>25</WoodLog>
+	</costList>
+	
+    <statBases>
+		<WorkToMake>29000</WorkToMake>
+		<Mass>12</Mass>		
+    </statBases>
+		
+    <equippedStatOffsets>
+
+    </equippedStatOffsets>
+    <equippedAngleOffset>-50</equippedAngleOffset>
+
+    <comps>
+    <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+    <northOffset>(0.1,0,0.2)</northOffset>
+    <eastOffset>(0.2,0,0.2)</eastOffset>
+    <westOffset>(-0.2,0,0.2)</westOffset>
+    <southOffset>(0.2,0,0.3)</southOffset>
+    </li>
+    </comps>
+	
+    <tools>
+	  <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>24</power>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+	  <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>25</power>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+
+<!-- Tier 4 Elite\Exotic Melee weapons -->
+
+<!-- Doubleblade --> 
+<ThingDef ParentName="MM_MeleeTier4_2h">
+    <defName>MM_doubleblade</defName>
+    <label>doubleblade</label>
+    <description>Melee weapon of exotic design, it has two blades mounted on a single handle. Requires serious training to be wielded properly, but the who one who masters it, becomes a whirlwind of death and suffering on the battlefield.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponMelee/MM_doubleblade</texPath>	  
+    </graphicData>
+
+    <soundInteract>sword_equip</soundInteract>
+
+    <weaponTags>
+    </weaponTags>
+
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+	<costStuffCount>120</costStuffCount>
+    <costList>
+	<WoodLog>30</WoodLog>
+	</costList>
+	
+    <statBases>
+		<WorkToMake>26000</WorkToMake>
+		<Mass>1.4</Mass>		
+    </statBases>
+		
+    <equippedStatOffsets>
+
+    </equippedStatOffsets>
+    <equippedAngleOffset>-45</equippedAngleOffset>
+	
+    <tools>
+	  <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+	  <li>
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>  
+
+<!-- Fencing Sword -->
+<ThingDef ParentName="MM_MeleeTier4_1h">
+    <defName>MM_fencingsword</defName>
+    <label>fencing sword</label>
+    <description>Light double-edged sword of exotic design, it has a long delicate and yet sturdy blade, fit for both piercing and slashing strikes. Inspires respect and admiration for its wielder.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponMelee/MM_fencingsword</texPath>	  
+      <drawSize>0.9</drawSize>
+    </graphicData>
+
+    <soundInteract>rapier_equip</soundInteract>
+
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+	<costStuffCount>140</costStuffCount>
+    <costList>
+    <WoodLog>20</WoodLog>
+	</costList>
+	
+	<comps>
+      <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+        <northOffset>(0.15,0,0)</northOffset>
+        <eastOffset>(0.15,0,0)</eastOffset>
+        <westOffset>(-0.15,0,0)</westOffset>
+        <southOffset>(0.15,0,0)</southOffset>
+      </li>
+    </comps>
+	
+    <statBases>
+		<WorkToMake>30000</WorkToMake>
+		<Mass>1.0</Mass>		
+    </statBases>
+		
+    <equippedStatOffsets>
+    </equippedStatOffsets>
+    <equippedAngleOffset>-5</equippedAngleOffset>
+	
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>1.1</cooldownTime>
+      </li>
+	  <li>
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>1.2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+<!-- Sagaris --> 
+<ThingDef ParentName="MM_MeleeTier4_1h">
+    <defName>MM_sagaris</defName>
+    <label>sagaris</label>
+    <description>A medium weight battle axe of exotic design. Unlike double bearded axes, its axeblade is smithed into a single half-circle blade. Its design seems to have came from civilization long forgotten.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponMelee/MM_sagaris</texPath>	  
+    </graphicData>
+
+    <soundInteract>axe_equip</soundInteract>
+
+    <weaponTags>
+    </weaponTags>
+
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+	<costStuffCount>140</costStuffCount>
+    <costList>
+	<Gold>20</Gold>
+	</costList>
+	
+    <statBases>
+		<WorkToMake>25000</WorkToMake>
+		<Mass>2.5</Mass>		
+    </statBases>
+		
+    <equippedStatOffsets>
+
+    </equippedStatOffsets>
+    <equippedAngleOffset>-75</equippedAngleOffset>
+	
+    <tools>
+	  <li>
+        <label>shaft</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>axeblade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>22</power>
+        <cooldownTime>2.2</cooldownTime>
+      </li>
+	  <li>
+        <label>axeblade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>21</power>
+        <cooldownTime>2.2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+<!-- Zweihander --> 
+<ThingDef ParentName="MM_MeleeTier4_2h">
+    <defName>MM_zweihander</defName>
+    <label>zweihander</label>
+    <description>Zweihander is a greatsword of ancient exotic design. Like other greatswords its length easily reaches height of an average person. While its mass and size make it slow, its massive damage output more than compensates for it.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponMelee/MM_zweihander</texPath>	  
+    </graphicData>
+
+    <soundInteract>swordb_equip</soundInteract>
+
+    <weaponTags>
+    </weaponTags>
+
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+	<costStuffCount>150</costStuffCount>
+    <costList>
+	<WoodLog>20</WoodLog>
+	</costList>
+	
+    <statBases>
+		<WorkToMake>30000</WorkToMake>
+		<Mass>7</Mass>		
+    </statBases>
+		
+    <equippedStatOffsets>
+
+    </equippedStatOffsets>
+    <equippedAngleOffset>-50</equippedAngleOffset>
+
+    <comps>
+    <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+    <northOffset>(0.1,0,0.2)</northOffset>
+    <eastOffset>(0.2,0,0.2)</eastOffset>
+    <westOffset>(-0.2,0,0.2)</westOffset>
+    <southOffset>(0.2,0,0.3)</southOffset>
+    </li>
+    </comps>
+	
+    <tools>
+	  <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>2.2</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>25</power>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+	  <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>27</power>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+<!-- Khopesh --> 
+<ThingDef ParentName="MM_MeleeTier4_1h">
+    <defName>MM_khopesh</defName>
+    <label>khopesh</label>
+    <description>Medium sized curved sword of exotic design. Its tip is blunted and can be effectively used both as a hook or a bludgeon. Typically found in ancient tombs and ruins of lost cities.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponMelee/MM_khopesh</texPath>	  
+    </graphicData>
+
+    <soundInteract>sword_equip</soundInteract>
+
+    <weaponTags>
+    </weaponTags>
+
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+	<costStuffCount>130</costStuffCount>
+    <costList>
+	<Gold>20</Gold>
+	</costList>
+	
+    <statBases>
+		<WorkToMake>25000</WorkToMake>
+		<Mass>2</Mass>		
+    </statBases>
+		
+    <equippedStatOffsets>
+
+    </equippedStatOffsets>
+    <equippedAngleOffset>-75</equippedAngleOffset>
+	
+    <tools>
+	  <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>tip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+	  <li>
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>20</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+<!-- War Scythe --> 
+<ThingDef ParentName="MM_MeleeTier4_2h">
+    <defName>MM_warscythe</defName>
+    <label>war scythe</label>
+    <description>Polearm with a long curved menacing looking blade, that looks somewhat similar to a common scythe. While this particular design is more fit for ceremonial purposes, its quite dangerous in capable hands.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponMelee/MM_warscythe</texPath>	  
+    </graphicData>
+
+    <soundInteract>polearmequip</soundInteract>
+
+    <weaponTags>
+    </weaponTags>
+
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+	<costStuffCount>140</costStuffCount>
+	
+    <statBases>
+		<WorkToMake>24000</WorkToMake>
+		<Mass>2</Mass>		
+    </statBases>
+		
+    <equippedStatOffsets>
+
+    </equippedStatOffsets>
+    <equippedAngleOffset>25</equippedAngleOffset>
+
+    <tools>
+	  <li>
+        <label>shaft</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>17</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+	  <li>
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>20</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+<!-- War Sickle --> 
+<ThingDef ParentName="MM_MeleeTier4_1h">
+    <defName>MM_warsickle</defName>
+    <label>war sickle</label>
+    <description>Decorated light ceremonial weapon of exotic design incrusted with precious metals. Its form seems similar to a common sickle, but the blade if much more curved for rending flesh and catching enemy weapons.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponMelee/MM_warsickle</texPath>	  
+    </graphicData>
+
+    <soundInteract>sword_equip</soundInteract>
+
+    <weaponTags>
+    </weaponTags>
+
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+	<costStuffCount>120</costStuffCount>
+    <costList>
+	<Gold>30</Gold>
+	</costList>
+
+    <comps>
+    <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+    <northOffset>(0,0,0)</northOffset>
+    <eastOffset>(0,0,0)</eastOffset>
+    <westOffset>(0,0,0)</westOffset>
+    <southOffset>(0,0,0)</southOffset>
+    </li>
+    </comps>
+
+    <statBases>
+		<WorkToMake>24000</WorkToMake>
+		<Mass>1</Mass>		
+    </statBases>
+		
+    <equippedStatOffsets>
+
+    </equippedStatOffsets>
+    <equippedAngleOffset>-75</equippedAngleOffset>
+	
+    <tools>
+	  <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>16</power>
+        <cooldownTime>1.7</cooldownTime>
+      </li>
+	  <li>
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>18</power>
+        <cooldownTime>1.7</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+<!-- Flamberge --> 
+<ThingDef ParentName="MM_MeleeTier4_2h">
+    <defName>MM_flamberge</defName>
+    <label>flamberge</label>
+    <description>Flamberge or flamebladed sword, called so for its unusual wave-like blade, is a greatsword of ancient exotic design. Like other greatswords its length easily reaches height of an average person. Requires a proficient and trained swordsman to be effective, due to its mass.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponMelee/MM_flamberge</texPath>	  
+    </graphicData>
+
+    <soundInteract>swordb_equip</soundInteract>
+
+    <weaponTags>
+    </weaponTags>
+
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+	<costStuffCount>145</costStuffCount>
+    <costList>
+	<WoodLog>25</WoodLog>
+	</costList>
+	
+    <statBases>
+		<WorkToMake>27000</WorkToMake>
+		<Mass>6.5</Mass>		
+    </statBases>
+		
+    <equippedStatOffsets>
+
+    </equippedStatOffsets>
+    <equippedAngleOffset>-50</equippedAngleOffset>
+
+    <comps>
+    <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+    <northOffset>(0.1,0,0.2)</northOffset>
+    <eastOffset>(0.2,0,0.2)</eastOffset>
+    <westOffset>(-0.2,0,0.2)</westOffset>
+    <southOffset>(0.2,0,0.3)</southOffset>
+    </li>
+    </comps>
+	
+    <tools>
+	  <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>25</power>
+        <cooldownTime>2.4</cooldownTime>
+      </li>
+	  <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>25</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+
+<!-- END --> 
+
+</Defs>

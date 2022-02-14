@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- neolithic base -->
+  <Operation Class="PatchOperationInsert">
+    <xpath>*/TraderKindDef[defName="Base_Neolithic_Standard"]/stockGenerators/li[last()]</xpath>
+    <value>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>FrameDrum</thingDef>
+        <countRange>
+          <min>1</min>
+          <max>3</max>
+        </countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Ocarina</thingDef>
+        <countRange>
+          <min>-1</min>
+          <max>1</max>
+        </countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Marimba</thingDef>
+        <countRange>
+          <min>-2</min>
+          <max>1</max>
+        </countRange>
+      </li>
+      <li Class="StockGenerator_BuySingleDef">
+        <thingDef>FrameDrum</thingDef>
+      </li>
+      <li Class="StockGenerator_BuySingleDef">
+        <thingDef>Ocarina</thingDef>
+      </li>
+    </value>
+  </Operation>
+  <!-- outlander base -->
+  <Operation Class="PatchOperationInsert">
+    <xpath>*/TraderKindDef[defName="Base_Outlander_Standard"]/stockGenerators/li[last()]</xpath>
+    <value>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Guitar</thingDef>
+        <countRange>
+          <min>1</min>
+          <max>3</max>
+        </countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Violin</thingDef>
+        <countRange>
+          <min>-1</min>
+          <max>1</max>
+        </countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>ElectronicOrgan</thingDef>
+        <countRange>
+          <min>-2</min>
+          <max>1</max>
+        </countRange>
+      </li>
+      <li Class="StockGenerator_BuySingleDef">
+        <thingDef>Guitar</thingDef>
+      </li>
+      <li Class="StockGenerator_BuySingleDef">
+        <thingDef>Violin</thingDef>
+      </li>
+    </value>
+  </Operation>
+  <!-- neolithic caravan -->
+  <Operation Class="PatchOperationInsert">
+    <xpath>*/TraderKindDef[defName="Caravan_Neolithic_ShamanMerchant"]/stockGenerators/li[last()]</xpath>
+    <value>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>FrameDrum</thingDef>
+        <countRange>
+          <min>-2</min>
+          <max>1</max>
+        </countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Ocarina</thingDef>
+        <countRange>
+          <min>-2</min>
+          <max>1</max>
+        </countRange>
+      </li>
+      <li Class="StockGenerator_BuySingleDef">
+        <thingDef>FrameDrum</thingDef>
+      </li>
+      <li Class="StockGenerator_BuySingleDef">
+        <thingDef>Ocarina</thingDef>
+      </li>
+    </value>
+  </Operation>
+  <!-- outlander caravan -->
+  <Operation Class="PatchOperationInsert">
+    <xpath>*/TraderKindDef[defName="Caravan_Outlander_Exotic"]/stockGenerators/li[last()]</xpath>
+    <value>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Guitar</thingDef>
+        <countRange>
+          <min>-2</min>
+          <max>1</max>
+        </countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Violin</thingDef>
+        <countRange>
+          <min>-2</min>
+          <max>1</max>
+        </countRange>
+      </li>
+      <li Class="StockGenerator_BuySingleDef">
+        <thingDef>Guitar</thingDef>
+      </li>
+      <li Class="StockGenerator_BuySingleDef">
+        <thingDef>Violin</thingDef>
+      </li>
+    </value>
+  </Operation>
+  <!-- orbital -->
+  <Operation Class="PatchOperationInsert">
+    <xpath>*/TraderKindDef[defName="Orbital_Exotic"]/stockGenerators/li[last()]</xpath>
+    <value>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Guitar</thingDef>
+        <countRange>
+          <min>-1</min>
+          <max>2</max>
+        </countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Violin</thingDef>
+        <countRange>
+          <min>-1</min>
+          <max>2</max>
+        </countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>ElectronicOrgan</thingDef>
+        <countRange>
+          <min>-1</min>
+          <max>2</max>
+        </countRange>
+      </li>
+      <li Class="StockGenerator_BuySingleDef">
+        <thingDef>Guitar</thingDef>
+      </li>
+      <li Class="StockGenerator_BuySingleDef">
+        <thingDef>Violin</thingDef>
+      </li>
+      <li Class="StockGenerator_BuySingleDef">
+        <thingDef>ElectronicOrgan</thingDef>
+      </li>
+    </value>
+  </Operation>
+</Patch>

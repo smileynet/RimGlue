@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Buffalo.label>bufalo</Buffalo.label>
+  <Buffalo.labelPlural>bufalos</Buffalo.labelPlural>
+  <Buffalo.lifeStages.0.label>Búfalo becerro</Buffalo.lifeStages.0.label>
+  <Buffalo.lifeStages.0.labelPlural>Buafalo becerro</Buffalo.lifeStages.0.labelPlural>
+  <Buffalo.lifeStages.0.labelMale>Bufalo becerro masculino</Buffalo.lifeStages.0.labelMale>
+  <Buffalo.lifeStages.0.labelMalePlural>Bufalos becerros masculinos</Buffalo.lifeStages.0.labelMalePlural>
+  <Buffalo.lifeStages.0.labelFemale>Bufalo becerro femenino</Buffalo.lifeStages.0.labelFemale>
+  <Buffalo.lifeStages.0.labelFemalePlural>Bufalos becerros femeninos</Buffalo.lifeStages.0.labelFemalePlural>
+  <Buffalo.lifeStages.1.label>bufalo</Buffalo.lifeStages.1.label>
+  <Buffalo.lifeStages.1.labelPlural>bufalos</Buffalo.lifeStages.1.labelPlural>
+  <Buffalo.lifeStages.1.labelMale>bufalo masculino</Buffalo.lifeStages.1.labelMale>
+  <Buffalo.lifeStages.1.labelMalePlural>bufalos masculinos</Buffalo.lifeStages.1.labelMalePlural>
+  <Buffalo.lifeStages.1.labelFemale>bufalo femenino</Buffalo.lifeStages.1.labelFemale>
+  <Buffalo.lifeStages.1.labelFemalePlural>bufalos femeninos</Buffalo.lifeStages.1.labelFemalePlural>
+  <Buffalo.lifeStages.2.label>bufalo</Buffalo.lifeStages.2.label>
+  <Buffalo.lifeStages.2.labelPlural>bufalos</Buffalo.lifeStages.2.labelPlural>
+  <Buffalo.lifeStages.2.labelMale>bufalo masculino</Buffalo.lifeStages.2.labelMale>
+  <Buffalo.lifeStages.2.labelMalePlural>bufalos masculinos</Buffalo.lifeStages.2.labelMalePlural>
+  <Buffalo.lifeStages.2.labelFemale>bufalo femenino</Buffalo.lifeStages.2.labelFemale>
+  <Buffalo.lifeStages.2.labelFemalePlural>bufalos femeninos</Buffalo.lifeStages.2.labelFemalePlural>
+  <Buffalo.labelMale>bufalo masculino</Buffalo.labelMale>
+  <Buffalo.labelMalePlural>bufalos masculinos</Buffalo.labelMalePlural>
+  <Buffalo.labelFemale>bufalo femenino</Buffalo.labelFemale>
+  <Buffalo.labelFemalePlural>bufalos femeninos</Buffalo.labelFemalePlural>
+
+  <Sheep.label>cabra montez</Sheep.label>
+  <Sheep.labelPlural>cabras montecess</Sheep.labelPlural>
+  <Sheep.lifeStages.0.label>cabra montez</Sheep.lifeStages.0.label>
+  <Sheep.lifeStages.0.labelPlural>cabras monteces</Sheep.lifeStages.0.labelPlural>
+  <Sheep.lifeStages.0.labelMale>cabra montez masculina</Sheep.lifeStages.0.labelMale>
+  <Sheep.lifeStages.0.labelMalePlural>cabras monteces masculinas</Sheep.lifeStages.0.labelMalePlural>
+  <Sheep.lifeStages.0.labelFemale>cabra montez femenina</Sheep.lifeStages.0.labelFemale>
+  <Sheep.lifeStages.0.labelFemalePlural>cabras monteces femeninas</Sheep.lifeStages.0.labelFemalePlural>
+  <Sheep.lifeStages.1.label>cabra montez</Sheep.lifeStages.1.label>
+  <Sheep.lifeStages.1.labelPlural>cabras monteces</Sheep.lifeStages.1.labelPlural>
+  <Sheep.lifeStages.1.labelMale>cabra montez masculina</Sheep.lifeStages.1.labelMale>
+  <Sheep.lifeStages.1.labelMalePlural>cabras monteces masculinas</Sheep.lifeStages.1.labelMalePlural>
+  <Sheep.lifeStages.1.labelFemale>cabra montez femenina</Sheep.lifeStages.1.labelFemale>
+  <Sheep.lifeStages.1.labelFemalePlural>cabras monteces femeninas</Sheep.lifeStages.1.labelFemalePlural>
+  <Sheep.lifeStages.2.label>cabra montez</Sheep.lifeStages.2.label>
+  <Sheep.lifeStages.2.labelPlural>cabras monteces</Sheep.lifeStages.2.labelPlural>
+  <Sheep.lifeStages.2.labelMale>cabra montez masculina</Sheep.lifeStages.2.labelMale>
+  <Sheep.lifeStages.2.labelMalePlural>cabras monteces masculinas</Sheep.lifeStages.2.labelMalePlural>
+  <Sheep.lifeStages.2.labelFemale>cabra montez femenina</Sheep.lifeStages.2.labelFemale>
+  <Sheep.lifeStages.2.labelFemalePlural>cabras monteces femeninas</Sheep.lifeStages.2.labelFemalePlural>
+  <Sheep.labelMale>cabra montez masculina</Sheep.labelMale>
+  <Sheep.labelMalePlural>cabras monteces masculinas</Sheep.labelMalePlural>
+  <Sheep.labelFemale>cabra montez femenina</Sheep.labelFemale>
+  <Sheep.labelFemalePlural>cabras monteces femeninas</Sheep.labelFemalePlural>
+
+</LanguageData>

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThoughtDef>
+    <defName>BadMusic</defName>
+    <durationDays>0.5</durationDays>
+    <stackLimit>1</stackLimit>
+    <nullifiedIfNotColonist>false</nullifiedIfNotColonist>
+    <stages>
+      <li>
+        <label>bad music</label>
+        <description>This is just noise, it makes me hate the very idea of music.</description>
+        <baseMoodEffect>-2</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>NiceMusic</defName>
+    <durationDays>1</durationDays>
+    <stackLimit>1</stackLimit>
+    <nullifiedIfNotColonist>false</nullifiedIfNotColonist>
+    <stages>
+      <li>
+        <label>nice music</label>
+        <description>Some music helps the colony feel more alive.</description>
+        <baseMoodEffect>3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>GreatMusic</defName>
+    <durationDays>1.5</durationDays>
+    <stackLimit>1</stackLimit>
+    <nullifiedIfNotColonist>false</nullifiedIfNotColonist>
+    <stages>
+      <li>
+        <label>great music</label>
+        <description>This music is beautiful, it lets me forget my worries.</description>
+        <baseMoodEffect>6</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+</Defs>

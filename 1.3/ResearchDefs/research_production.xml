@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ResearchProjectDef>
+    <defName>smy_NeolithicProduction</defName>
+    <label>neolithic production</label>
+    <description>Learn to make neolithic production tables to enhance work speed over basic spots.</description>
+    <baseCost>300</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>6.40</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>smy_NeolithicProductionAdvanced</defName>
+    <label>advanced neolithic production</label>
+    <description>Take the next steps towards understanding medieval technology.</description>
+    <baseCost>600</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>5.70</researchViewY>
+    <requiredResearchBuilding>smy_NeolithicResearchTable</requiredResearchBuilding>
+    <prerequisites>
+      <li>smy_NeolithicProduction</li>
+    </prerequisites>
+  </ResearchProjectDef>
+</Defs>  

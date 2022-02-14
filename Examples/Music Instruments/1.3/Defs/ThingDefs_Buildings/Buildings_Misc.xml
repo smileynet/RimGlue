@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!--============================ Spots =============================-->
+  <ThingDef ParentName="BuildingBase">
+    <defName>MusicSpot</defName>
+    <label>music spot</label>
+    <description>Designates a spot for playing music.</description>
+    <graphicData>
+      <texPath>Things/Building/Misc/PartySpot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <color>(158, 196, 222)</color>
+    </graphicData>
+    <altitudeLayer>FloorEmplacement</altitudeLayer>
+    <statBases>
+      <WorkToBuild>0</WorkToBuild>
+    </statBases>
+    <rotatable>false</rotatable>
+    <scatterableOnMapGen>false</scatterableOnMapGen>
+    <useHitPoints>False</useHitPoints>
+    <designationCategory>Misc</designationCategory>
+    <passability>Standable</passability>
+    <comps>
+      <li Class="MusicalInstruments.CompProperties_MusicSpot">
+        <compClass>MusicalInstruments.CompMusicSpot</compClass>
+        <canBeDisabled>false</canBeDisabled>
+      </li>
+    </comps>
+    <building>
+      <sowTag>SupportPlantsOnly</sowTag>
+      <canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
+      <ai_chillDestination>false</ai_chillDestination>
+    </building>
+  </ThingDef>
+</Defs>

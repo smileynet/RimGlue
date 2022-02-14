@@ -1,0 +1,628 @@
+<Patch>
+
+
+	<!-- Mods -->
+
+	<Operation Class="PatchOperationFindMod">
+		<success>Always</success>
+		<mods>
+			<li>ZARS Production Spots</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Normal</success>
+			<operations>
+				<li Class="PatchOperationRemove">
+				<success>Always</success>
+					<xpath>*/ThingDef[@Name = "TE_ArtSpot"]/designationCategory</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+				<success>Always</success>
+					<xpath>*/ThingDef[@Name = "TE_BrewingSpot"]/designationCategory</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+				<success>Always</success>
+					<xpath>*/ThingDef[@Name = "TE_StoneChippingSpot"]/designationCategory</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+				<success>Always</success>
+					<xpath>*/ThingDef[@Name = "TE_TailoringSpot"]/designationCategory</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+				<success>Always</success>
+					<xpath>*/ThingDef[@Name = "TE_ResearchingSpot"]/designationCategory</xpath>
+				</li>
+
+				<li Class="PatchOperationReplace">
+				<success>Always</success>
+					<xpath>*/ThingDef[defName = "ZARS_ArtSpot"]/designationCategory</xpath>
+					<value>
+						<designationCategory>Production</designationCategory>
+					</value>
+				</li>								
+				
+
+				<li Class="PatchOperationAdd">
+				<success>Normal</success>
+					<xpath>*/ThingDef[@Name = "ZARS_SpotWorkTableBase"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+					<value>
+						<li>CraftingBasket</li>
+					</value>
+				</li>				
+			
+
+
+				<li Class="PatchOperationAdd">
+					<xpath>*/ThingDef[@Name = "TE_TotemBase"]/recipeMaker/recipeUsers</xpath>
+					<value>
+						<li>ZARS_ArtSpot</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>*/ThingDef[@Name = "TE_WeavingBase"]/recipeMaker/recipeUsers</xpath>
+					<value>
+						<li>ZARS_ArtSpot</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>*/ThingDef[@Name = "TE_PotteryBase"]/recipeMaker/recipeUsers</xpath>
+					<value>
+						<li>ZARS_ArtSpot</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>*/ThingDef[@Name = "TE_ApparelMakeableBase"]/recipeMaker/recipeUsers</xpath>
+					<value>
+						<li>ZARS_TailoringSpot</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>*/ThingDef[@Name = "TE_WeavingBase"]/recipeMaker/recipeUsers</xpath>
+					<value>
+						<li>ZARS_ArtSpot</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>*/RecipeDef[defName = "MakePatchedLeather"]/recipeUsers</xpath>
+					<value>
+						<li>ZARS_TailoringSpot</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>*/WorkGiverDef[defName="DoBillsWeave"]/fixedBillGiverDefs</xpath>
+					<value>
+						<li>ZARS_ArtSpot</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/WorkGiverDef[defName="DoBillsStonecut"]/fixedBillGiverDefs</xpath>
+		<value>
+			<li>StoneChippingSpot</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/RecipeDef[@Name = "MakeStoneBlocksBase"]/recipeUsers</xpath>
+		<value>
+			<li>StoneChippingSpot</li>
+		</value>
+	</Operation>
+
+	<!-- Things -->
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>*/ThingDef[defName = "BilliardsTable"]/researchPrerequisites</xpath>
+				<success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[defName = "BilliardsTable"]</xpath>
+				<value>
+					<researchPrerequisites/>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[defName = "BilliardsTable"]/researchPrerequisites</xpath>
+		<value>
+			<li>Gaming</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>*/ThingDef[defName = "Brewery"]/researchPrerequisites</xpath>
+				<success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[defName = "Brewery"]</xpath>
+				<value>
+					<researchPrerequisites/>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[defName = "Brewery"]/researchPrerequisites</xpath>
+		<value>
+			<li>WorkBenches</li>
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>*/ThingDef[defName = "ChessTable"]/researchPrerequisites</xpath>
+				<success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[defName = "ChessTable"]</xpath>
+				<value>
+					<researchPrerequisites/>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[defName = "ChessTable"]/researchPrerequisites</xpath>
+		<value>
+			<li>Gaming</li>
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[defName = "CraftingSpot"]/comps/li[1]/linkableFacilities</xpath>
+		<value>
+			<li>CraftingBasket</li>
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>*/ThingDef[defName = "FloorSpike"]/researchPrerequisites</xpath>
+				<value>
+					<researchPrerequisites>
+						<li>AdvanceTraps</li>
+					</researchPrerequisites>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>*/ThingDef[defName = "FueledStove"]/researchPrerequisites</xpath>
+				<success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[defName = "FueledStove"]</xpath>
+				<value>
+					<researchPrerequisites/>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[defName = "FueledStove"]/researchPrerequisites</xpath>
+		<value>
+			<li>WorkBenches</li>
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[defName="Hay"]</xpath>
+		<value>
+			<tickerType>Rare</tickerType>
+			<stuffProps>
+				<stuffAdjective>grass</stuffAdjective>
+				<categories>
+					<li>Grassy</li>
+				</categories>
+				<color>(134,132,46)</color>
+				<commonality>1.0</commonality>
+				<allowColorGenerators>true</allowColorGenerators>
+			</stuffProps>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[defName="Hay"]/statBases</xpath>
+		<value>
+			<MaxHitPoints>100</MaxHitPoints>
+			<DeteriorationRate>4</DeteriorationRate>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[defName="Hay"]/comps</xpath>
+		<value>
+			<li>
+				<compClass>CompColorable</compClass>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>*/ThingDef[defName = "Hopper"]/researchPrerequisites</xpath>
+				<success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[defName = "Hopper"]</xpath>
+				<value>
+					<researchPrerequisites/>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[defName = "Hopper"]/researchPrerequisites</xpath>
+		<value>
+			<li>Electricity</li>
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>*/ThingDef[defName = "PokerTable"]/researchPrerequisites</xpath>
+				<success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[defName = "PokerTable"]</xpath>
+				<value>
+					<researchPrerequisites/>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[defName = "PokerTable"]/researchPrerequisites</xpath>
+		<value>
+			<li>Gaming</li>
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>*/ThingDef[defName = "SimpleResearchBench"]/researchPrerequisites</xpath>
+				<success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[defName = "SimpleResearchBench"]</xpath>
+				<value>
+					<researchPrerequisites/>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[defName = "SimpleResearchBench"]/researchPrerequisites</xpath>
+		<value>
+			<li>WorkBenches</li>
+		</value>
+	</Operation>	
+
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>*/ThingDef[defName = "TableButcher"]/researchPrerequisites</xpath>
+				<success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[defName = "TableButcher"]</xpath>
+				<value>
+					<researchPrerequisites/>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[defName = "TableButcher"]/researchPrerequisites</xpath>
+		<value>
+			<li>WorkBenches</li>
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>*/ThingDef[defName = "TableSculpting"]/researchPrerequisites</xpath>
+				<success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[defName = "TableSculpting"]</xpath>
+				<value>
+					<researchPrerequisites/>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[defName = "TableSculpting"]/researchPrerequisites</xpath>
+		<value>
+			<li>WorkBenches</li>
+		</value>
+	</Operation>	
+
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>*/ThingDef[defName = "TrapSpike"]/researchPrerequisites</xpath>
+				<success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[defName = "TrapSpike"]</xpath>
+				<value>
+					<researchPrerequisites/>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[defName = "TrapSpike"]/researchPrerequisites</xpath>
+		<value>
+			<li>BasicTraps</li>
+		</value>
+	</Operation>
+
+
+	<!-- Work Givers -->
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/WorkGiverDef[defName="DoBillsBrew"]/fixedBillGiverDefs</xpath>
+		<value>
+			<li>BrewingSpot</li>
+		</value>
+	</Operation>
+
+	<!--
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/WorkGiverDef[defName="DoBillsButcherFlesh"]/fixedBillGiverDefs</xpath>
+		<value>
+			<li>ButcheringSpot</li>
+		</value>
+	</Operation>
+	-->
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/WorkGiverDef[defName="DoBillsMakeApparel"]/fixedBillGiverDefs</xpath>
+		<value>
+			<li>TailoringSpot</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/WorkGiverDef[defName="DoBillsSculpt"]/fixedBillGiverDefs</xpath>
+		<value>
+			<li>ArtSpot</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/WorkGiverDef[defName="DoBillsStonecut"]/fixedBillGiverDefs</xpath>
+		<value>
+			<li>StoneChippingSpot</li>
+		</value>
+	</Operation>
+
+	<!-- Research Projects -->
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>*/ResearchProjectDef[defName="Greatbow"]/prerequisites</xpath>
+				<value>
+					<prerequisites>
+						<li>RecurveBow</li>
+					</prerequisites>
+				</value>
+			</li>
+		</operations>
+	</Operation> 
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>*/ResearchProjectDef[defName="AdvanceTraps"]/prerequisites</xpath>
+				<value>
+					<prerequisites>
+						<li>BasicTraps</li>
+					</prerequisites>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>*/ResearchProjectDef[defName="AdvanceTraps"]/label</xpath>
+				<value>
+					<label>advanced traps</label>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>*/ResearchProjectDef[defName="AdvanceTraps"]/description</xpath>
+				<value>
+					<description>Advanced knowledge of trap building. Unlocks floor spikes, wall spikes and the spike pit.</description>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ResearchProjectDef[defName="AdvanceTraps"]</xpath>
+				<value>
+					<researchViewX>2</researchViewX>
+					<researchViewY>3.25</researchViewY>
+				</value>
+			</li>
+		</operations>
+	</Operation> 
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>*/ResearchProjectDef[defName="BasicsTraps"]</xpath>
+			</li>
+		</operations>
+	</Operation> 
+
+	<!--
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ResearchProjectDef[defName="Bedrolls"]/researchViewY</xpath>
+		<value>
+			<researchViewY>2</researchViewY>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ResearchProjectDef[defName="Beds"]/researchViewY</xpath>
+		<value>
+			<researchViewY>2.5</researchViewY>
+		</value>
+	</Operation>
+	-->
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>*/ResearchProjectDef[defName = "Brewing"]/tags</xpath>
+				<success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ResearchProjectDef[defName="Brewing"]</xpath>
+				<value>
+					<tags>
+						<li>TribalStart</li>
+					</tags>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>*/ResearchProjectDef[defName="Brewing"]/researchViewX</xpath>
+				<value>
+					<researchViewX>2</researchViewX>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>*/ResearchProjectDef[defName="Brewing"]/researchViewY</xpath>
+				<value>
+					<researchViewY>2</researchViewY>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ResearchProjectDef[defName="CarpetMaking"]/researchViewY</xpath>
+		<value>
+			<researchViewY>4.25</researchViewY>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ResearchProjectDef[defName="ComplexClothing"]/researchViewX</xpath>
+		<value>
+			<researchViewX>1</researchViewX>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ResearchProjectDef[defName="ComplexClothing"]</xpath>
+		<value>
+			<prerequisites>
+				<li>WorkBenches</li>
+			</prerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ResearchProjectDef[defName="GoJuiceProduction"]/researchViewX</xpath>
+		<value>
+			<researchViewX>3</researchViewX>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ResearchProjectDef[defName="GoJuiceProduction"]/researchViewY</xpath>
+		<value>
+			<researchViewY>0.5</researchViewY>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ResearchProjectDef[defName="PenoxycylineProduction"]/researchViewX</xpath>
+		<value>
+			<researchViewX>3</researchViewX>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ResearchProjectDef[defName="PenoxycylineProduction"]/researchViewY</xpath>
+		<value>
+			<researchViewY>1.25</researchViewY>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ResearchProjectDef[defName="RecurveBow"]/researchViewX</xpath>
+		<value>
+			<researchViewX>2</researchViewX>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ResearchProjectDef[defName="Stonecutting"]/researchViewX</xpath>
+		<value>
+			<researchViewX>1</researchViewX>
+		</value>
+	</Operation>
+
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>*/ResearchProjectDef[defName = "Stonecutting"]/prerequisites</xpath>
+				<success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ResearchProjectDef[defName="Stonecutting"]</xpath>
+				<value>
+					<prerequisites />
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ResearchProjectDef[defName="Stonecutting"]/prerequisites</xpath>
+		<value>
+			<li>WorkBenches</li>
+		</value>
+	</Operation>
+
+
+</Patch>

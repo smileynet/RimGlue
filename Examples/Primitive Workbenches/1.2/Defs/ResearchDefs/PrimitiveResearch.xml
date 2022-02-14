@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <ResearchProjectDef>
+    <defName>VBY_PrimitiveProduction</defName>
+    <label>primitive production</label>
+    <description>Learn to make slightly advanced production tables with rudimentary tools and resources.</description>
+    <baseCost>300</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>6.40</researchViewY>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>VBY_PrimitiveTools</defName>
+    <label>primitive tools</label>
+    <description>Learn to make better tools and weapons using flint, wood, and stone resources.</description>
+    <baseCost>400</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>6.40</researchViewY>
+	<prerequisites>
+      <li>VBY_PrimitiveProduction</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>VBY_PrimitiveProductionAdvanced</defName>
+    <label>advanced primitive intelligence</label>
+    <description>Take the next steps towards understanding medieval technology.</description>
+    <baseCost>600</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>5.70</researchViewY>
+	<requiredResearchBuilding>VBY_PrimitiveResearchTable</requiredResearchBuilding>
+	<prerequisites>
+      <li>VBY_PrimitiveProduction</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  
+</Defs>  

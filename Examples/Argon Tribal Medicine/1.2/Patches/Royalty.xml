@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>Royalty</li>
+    </mods>
+	<match Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/HediffDef [defName = "TM_HallucinationTeaEffect"]/stages/li[1]/statOffsets</xpath>
+				<value>
+					<PsychicEntropyRecoveryRate>0.2</PsychicEntropyRecoveryRate>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/HediffDef [defName = "TM_HallucinationTeaEffect"]/stages/li[1]/statOffsets</xpath>
+				<value>
+					<MeditationFocusGain>0.15</MeditationFocusGain>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/HediffDef [defName = "TM_HallucinationTeaEffect"]/stages/li[2]/statOffsets</xpath>
+				<value>
+					<PsychicEntropyRecoveryRate>0.42</PsychicEntropyRecoveryRate>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/HediffDef [defName = "TM_HallucinationTeaEffect"]/stages/li[2]/statOffsets</xpath>
+				<value>
+					<MeditationFocusGain>0.28</MeditationFocusGain>
+				</value>
+			</li>
+		</operations>
+	</match>
+</Operation>
+	
+	
+</Patch>

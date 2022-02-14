@@ -1,0 +1,1119 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	
+	<!--  ====================  VWE  =============================  -->
+	
+    <Operation Class="PatchOperationFindMod">
+        <success>Always</success>
+        <mods>
+          <li>Vanilla Weapons Expanded</li>
+        </mods>
+        <match Class="PatchOperationSequence">			
+            <operations>
+                <li Class="PatchOperationAdd">					
+		          <xpath>Defs/ThingDef[defName="VWE_Gun_Flintlock"]/costList</xpath>
+		            <value>
+						<VBY_PrimitiveFlint>22</VBY_PrimitiveFlint>
+		            </value>
+				</li>
+				<li Class="PatchOperationAdd">					
+		          <xpath>Defs/ThingDef[defName="VWE_Gun_Musket"]/costList</xpath>
+		            <value>
+						<VBY_PrimitiveFlint>28</VBY_PrimitiveFlint>
+		            </value>
+				</li>
+			</operations>
+        </match>
+	</Operation>
+	
+	<!--  ====================  No Dragons  =============================  -->
+	
+	<Operation Class="PatchOperationFindMod">
+        <success>Always</success>
+        <mods>
+          <li>[O21] Dragons Not Included</li>
+        </mods>
+        <match Class="PatchOperationSequence">			
+            <operations>
+                <li Class="PatchOperationAdd">					
+		          <xpath>Defs/ThingDef[defName="O21_Gun_FlintlockPistol"]/costList</xpath>
+		            <value>
+						<VBY_PrimitiveFlint>22</VBY_PrimitiveFlint>
+		            </value>
+				</li>
+				<li Class="PatchOperationAdd">					
+		          <xpath>Defs/ThingDef[defName="O21_TropicalShiv"]</xpath>
+		            <value>
+						<costList>
+							<VBY_PrimitiveFlint>10</VBY_PrimitiveFlint>
+						</costList>
+		            </value>
+				</li>
+				<li Class="PatchOperationAdd">
+				  <xpath>Defs/ThingDef[defName = "O21_TropicalShiv"]</xpath>
+					<value>
+					  <recipeMaker>
+						<researchPrerequisite Inherit="False"/>
+					  </recipeMaker>
+					</value>    
+				</li>
+				<li Class="PatchOperationAdd">					
+		          <xpath>Defs/ThingDef[defName="O21_TropicalSpearC"]/costList</xpath>
+		            <value>
+						<costList>
+							<VBY_PrimitiveFlint>15</VBY_PrimitiveFlint>
+						</costList>
+		            </value>
+				</li>
+				<li Class="PatchOperationAdd">
+				  <xpath>Defs/ThingDef[@Name = "TropicalClubBase"]</xpath>
+					<value>
+					  <recipeMaker>
+						<researchPrerequisite Inherit="False"/>
+					  </recipeMaker>
+					</value>    
+				</li>
+			</operations>
+        </match>
+	</Operation>
+	
+	<!--  ====================  Warhammer DJacks  =============================  -->
+	
+	<Operation Class="PatchOperationFindMod">
+        <success>Always</success>
+        <mods>
+          <li>Warhammer: Deathjacks</li>
+        </mods>
+        <match Class="PatchOperationSequence">			
+            <operations>
+                <li Class="PatchOperationAdd">					
+		          <xpath>Defs/ThingDef[defName="DeathjackPistol"]/costList</xpath>
+		            <value>
+						<VBY_PrimitiveFlint>22</VBY_PrimitiveFlint>
+		            </value>
+				</li>
+			</operations>
+        </match>
+	</Operation>
+	
+	<!--  ====================  Clockwork Rimworld  =============================  -->
+	
+	<Operation Class="PatchOperationFindMod">
+        <success>Always</success>
+        <mods>
+          <li>Clockwork Rimworld - Buildings and Modules.</li>
+        </mods>
+        <match Class="PatchOperationSequence">			
+            <operations>
+                <li Class="PatchOperationAdd">					
+		          <xpath>Defs/ThingDef[defName="EarlyPistol"]/costList</xpath>
+		            <value>
+						<VBY_PrimitiveFlint>22</VBY_PrimitiveFlint>
+		            </value>
+				</li>
+				<li Class="PatchOperationAdd">					
+		          <xpath>Defs/ThingDef[defName="tripistol"]/costList</xpath>
+		            <value>
+						<VBY_PrimitiveFlint>32</VBY_PrimitiveFlint>
+		            </value>
+				</li>
+				<li Class="PatchOperationAdd">					
+		          <xpath>Defs/ThingDef[defName="ImpMusket"]/costList</xpath>
+		            <value>
+						<VBY_PrimitiveFlint>28</VBY_PrimitiveFlint>
+		            </value>
+				</li>
+			</operations>
+        </match>
+	</Operation>
+	
+		
+	<!--  ====================  Westerado  =============================  -->
+	
+	<Operation Class="PatchOperationFindMod">
+        <success>Always</success>
+        <mods>
+          <li>Westerado (Continued)</li>
+        </mods>
+        <match Class="PatchOperationSequence">			
+            <operations>
+                <li Class="PatchOperationAdd">					
+		          <xpath>Defs/ThingDef[defName="Gun_FlintlockPistol_Westerado"]/costList</xpath>
+		            <value>
+						<VBY_PrimitiveFlint>22</VBY_PrimitiveFlint>
+		            </value>
+				</li>
+				<li Class="PatchOperationAdd">					
+		          <xpath>Defs/ThingDef[defName="Gun_MusketRifle_Westerado"]/costList</xpath>
+		            <value>
+						<VBY_PrimitiveFlint>28</VBY_PrimitiveFlint>
+		            </value>
+				</li>
+			</operations>
+        </match>
+	</Operation>
+	
+	<!--  ====================  Med Times  =============================  -->
+	
+	<Operation Class="PatchOperationFindMod">
+        <success>Always</success>
+        <mods>
+          <li>Medieval Times Unofficial Update</li>		  
+		  <li>Medieval Times Unofficial Update No Nan and legendary</li>
+        </mods>
+        <match Class="PatchOperationSequence">			
+            <operations>
+                <li Class="PatchOperationAdd">					
+		          <xpath>Defs/ThingDef[defName="MedTimes_Melee_PrimativeSpear"]/costList</xpath>
+		            <value>
+						<VBY_PrimitiveFlint>12</VBY_PrimitiveFlint>
+		            </value>
+				</li>
+			</operations>
+        </match>
+	</Operation>
+	
+	<!--  ====================  Zars  =============================  -->
+	
+	<Operation Class="PatchOperationFindMod">
+        <success>Always</success>
+        <mods>
+          <li>ZARS Tribalism</li>
+        </mods>
+        <match Class="PatchOperationSequence">			
+            <operations>
+                <li Class="PatchOperationAdd">					
+		          <xpath>Defs/RecipeDef[defName="MakeTribalSpear"]/ingredients</xpath> <!-- Ranged  Come Back  -->
+		            <value>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>VBY_PrimitiveFlint</li>
+								</thingDefs>
+							</filter>
+							<count>15</count>
+						</li>
+		            </value>
+				</li>
+				<li Class="PatchOperationAdd">					
+		          <xpath>Defs/RecipeDef[defName="MakeGreatBow"]/ingredients</xpath>
+		            <value>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>VBY_PrimitiveFlint</li>
+								</thingDefs>
+							</filter>
+							<count>35</count>
+						</li>
+		            </value>
+				</li>
+			</operations>
+        </match>
+	</Operation>	
+	
+	
+	<!--  ====================  Extra Stone  =============================  -->
+	
+	<Operation Class="PatchOperationFindMod">
+        <success>Always</success>
+        <mods>
+          <li>[K]Extra Stone</li>
+		  <li>[K]Extra Stone(w/ Cupro's Textures)</li>
+        </mods>
+        <match Class="PatchOperationSequence">			
+            <operations>
+                <li Class="PatchOperationAdd">					
+		          <xpath>Defs/RecipeDef[defName="Make_StoneBlocksChalk"]/products</xpath>
+		            <value>
+						<VBY_PrimitiveFlint>6</VBY_PrimitiveFlint>
+		            </value>
+				</li>				
+				<li Class="PatchOperationAdd">					
+		          <xpath>Defs/RecipeDef[defName="Make_StoneBlocksObsidian"]/products</xpath>
+		            <value>
+						<VBY_PrimitiveFlint>9</VBY_PrimitiveFlint>
+		            </value>
+				</li>
+			</operations>
+        </match>
+	</Operation>
+	
+	<!--  ====================  Revive Shiv  =============================  -->
+	
+	<Operation Class="PatchOperationFindMod">
+        <success>Always</success>
+        <mods>
+          <li>ReviveTheShiv</li>
+        </mods>
+        <match Class="PatchOperationSequence">			
+            <operations>
+                <li Class="PatchOperationRemove">					
+		          <xpath>Defs/ThingDef[defName="MeleeWeapon_Shiv"]/stuffCategories</xpath>
+				</li>
+				<li Class="PatchOperationRemove">					
+		          <xpath>Defs/ThingDef[defName="MeleeWeapon_Shiv"]/costStuffCount</xpath>
+				</li>
+				<li Class="PatchOperationAdd">					
+		          <xpath>Defs/ThingDef[defName="MeleeWeapon_Shiv"]</xpath>
+		            <value>
+					  <costList>
+						<VBY_PrimitiveFlint>8</VBY_PrimitiveFlint>
+					  </costList>	
+		            </value>
+				</li>
+				<li Class="PatchOperationAdd">
+				  <xpath>Defs/ThingDef[defName = "MeleeWeapon_Shiv"]/recipeMaker</xpath>
+					<value>
+						<researchPrerequisite Inherit="False"/> 
+					</value>    
+				</li>
+			</operations>
+        </match>
+	</Operation>
+	
+	<!--  ====================  Arrow Please  =============================  -->
+	
+	<Operation Class="PatchOperationFindMod">
+        <success>Always</success>
+        <mods>
+          <li>Arrow Please (Continued)</li>
+        </mods>
+        <match Class="PatchOperationSequence">			
+            <operations>
+                <li Class="PatchOperationAdd">					
+		          <xpath>Defs/ThingDef[defName="Bowshort_Flame"]/costList</xpath>
+		            <value>
+						<VBY_PrimitiveFlint>20</VBY_PrimitiveFlint>
+		            </value>
+				</li>
+				<li Class="PatchOperationAdd">					
+		          <xpath>Defs/ThingDef[defName="Bowrecurve_Flame"]/costList</xpath>
+		            <value>
+						<VBY_PrimitiveFlint>25</VBY_PrimitiveFlint>
+		            </value>
+				</li>
+				<li Class="PatchOperationAdd">					
+		          <xpath>Defs/ThingDef[defName="Bowgreat_Flame"]/costList</xpath>
+		            <value>
+						<VBY_PrimitiveFlint>35</VBY_PrimitiveFlint>
+		            </value>
+				</li>
+				<li Class="PatchOperationAdd">					
+		          <xpath>Defs/ThingDef[defName="Ranged_Torch"]/costList</xpath>
+		            <value>
+						<VBY_PrimitiveFlint>6</VBY_PrimitiveFlint>
+		            </value>
+				</li>
+				<li Class="PatchOperationAdd">					
+		          <xpath>Defs/ThingDef[defName="Ranged_Tomahawk"]/costList</xpath>
+		            <value>
+						<VBY_PrimitiveFlint>30</VBY_PrimitiveFlint>
+		            </value>
+				</li>
+			</operations>
+        </match>
+	</Operation>
+	
+	<!--  ====================  More Melee Weapons!  =============================  -->
+	
+	<Operation Class="PatchOperationFindMod">
+        <success>Always</success>
+        <mods>
+          <li>More Melee Weapons!</li>
+        </mods>
+        <match Class="PatchOperationSequence">			
+            <operations>
+				<li Class="PatchOperationReplace">					
+		          <xpath>Defs/ThingDef[defName="Gnm_Melee_StoneAxe"]/stuffCategories</xpath>
+					<value>
+					  <stuffCategories>
+						  <li>Woody</li>
+						</stuffCategories>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">					
+		          <xpath>Defs/ThingDef[defName="Gnm_Melee_StoneAxe"]/costStuffCount</xpath>
+				    <value>
+					  <costStuffCount>40</costStuffCount>
+					</value>
+				</li>
+                <li Class="PatchOperationAdd">					
+		          <xpath>Defs/ThingDef[defName="Gnm_Melee_StoneAxe"]</xpath>
+		            <value>
+						<costList>
+							<VBY_PrimitiveFlint>15</VBY_PrimitiveFlint>
+					    </costList>
+		            </value>
+				</li>
+				<li Class="PatchOperationAdd">					
+		          <xpath>Defs/ThingDef[defName="Gnm_Melee_StoneAxe"]/recipeMaker/recipeUsers</xpath>
+		            <value>
+						<li>VBY_PrimitiveMeleeWeaponTable</li>   <!-- got lazy here... -->
+		            </value>
+				</li>
+				<li Class="PatchOperationReplace">					
+		          <xpath>Defs/ThingDef[defName="Gnm_Melee_StoneKnife"]/stuffCategories</xpath>
+					<value>
+					  <stuffCategories>
+						  <li>Woody</li>
+						</stuffCategories>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">					
+		          <xpath>Defs/ThingDef[defName="Gnm_Melee_StoneKnife"]/costStuffCount</xpath>
+				    <value>
+					  <costStuffCount>20</costStuffCount>
+					</value>
+				</li>
+                <li Class="PatchOperationAdd">					
+		          <xpath>Defs/ThingDef[defName="Gnm_Melee_StoneKnife"]</xpath>
+		            <value>
+						<costList>
+							<VBY_PrimitiveFlint>10</VBY_PrimitiveFlint>
+					  </costList>
+		            </value>
+				</li>
+				<li Class="PatchOperationAdd">					
+		          <xpath>Defs/ThingDef[defName="Gnm_Melee_StoneKnife"]/recipeMaker/recipeUsers</xpath>
+		            <value>
+						<li>VBY_PrimitiveMeleeWeaponTable</li>
+		            </value>
+				</li>
+				<li Class="PatchOperationAdd">
+				  <xpath>Defs/ThingDef[defName = "Gnm_Melee_StoneKnife"]/recipeMaker</xpath>
+					<value>
+						<researchPrerequisite Inherit="False"/> 
+					</value>    
+				</li>
+				<li Class="PatchOperationReplace">					
+		          <xpath>Defs/ThingDef[defName="Gnm_Melee_StoneSpear"]/stuffCategories</xpath>
+					<value>
+					  <stuffCategories>
+						  <li>Woody</li>
+						</stuffCategories>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">					
+		          <xpath>Defs/ThingDef[defName="Gnm_Melee_StoneSpear"]/costStuffCount</xpath>
+				    <value>
+					  <costStuffCount>50</costStuffCount>
+					</value>
+				</li>
+                <li Class="PatchOperationAdd">					
+		          <xpath>Defs/ThingDef[defName="Gnm_Melee_StoneSpear"]</xpath>
+		            <value>
+						<costList>
+							<VBY_PrimitiveFlint>12</VBY_PrimitiveFlint>
+					  </costList>
+		            </value>
+				</li>
+				<li Class="PatchOperationAdd">					
+		          <xpath>Defs/ThingDef[defName="Gnm_Melee_StoneSpear"]/recipeMaker/recipeUsers</xpath>
+		            <value>
+						<li>VBY_PrimitiveMeleeWeaponTable</li>
+		            </value>
+				</li>				
+				<li Class="PatchOperationAdd">					
+		          <xpath>Defs/ThingDef[defName="Gnm_Melee_HeavyStoneAxe"]/recipeMaker/recipeUsers</xpath>
+		            <value>
+						<li>VBY_PrimitiveMeleeWeaponTable</li>
+		            </value>
+				</li>
+				<li Class="PatchOperationAdd">					
+		          <xpath>Defs/ThingDef[defName="Gnm_Melee_ThrumboClub"]/recipeMaker/recipeUsers</xpath>
+		            <value>
+						<li>VBY_PrimitiveMeleeWeaponTable</li>
+		            </value>
+				</li>
+				<li Class="PatchOperationAdd">
+				  <xpath>Defs/ThingDef[defName = "Gnm_Melee_ThrumboClub"]/recipeMaker</xpath>
+					<value>
+						<researchPrerequisite Inherit="False"/> 
+					</value>    
+				</li>
+				<li Class="PatchOperationAdd">					
+		          <xpath>Defs/ThingDef[defName="Gnm_Melee_ThrumboSpear"]/recipeMaker/recipeUsers</xpath>
+		            <value>
+						<li>VBY_PrimitiveMeleeWeaponTable</li>
+		            </value>
+				</li>
+				<li Class="PatchOperationAdd">					
+		          <xpath>Defs/ThingDef[defName="Gnm_Melee_ThrumboSword"]/recipeMaker/recipeUsers</xpath>
+		            <value>
+						<li>VBY_PrimitiveMeleeWeaponTable</li>
+		            </value>
+				</li>
+			</operations>
+        </match>
+	</Operation>
+	
+	
+	<!--  ====================  Melee Please  =============================  -->
+	
+	<Operation Class="PatchOperationFindMod">
+        <success>Always</success>
+        <mods>
+          <li>Melee Please (Continued)</li>
+        </mods>
+        <match Class="PatchOperationSequence">			
+            <operations>
+                <li Class="PatchOperationReplace">					
+		          <xpath>Defs/ThingDef[defName="Melee_Axe"]/stuffCategories</xpath>
+					<value>
+					  <stuffCategories>
+						  <li>Woody</li>
+						</stuffCategories>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">					
+		          <xpath>Defs/ThingDef[defName="Melee_Axe"]/costStuffCount</xpath>
+				    <value>
+					  <costStuffCount>40</costStuffCount>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">					
+		          <xpath>Defs/ThingDef[defName="Melee_Axe"]</xpath>
+		            <value>
+					  <costList>
+						<VBY_PrimitiveFlint>15</VBY_PrimitiveFlint>
+					  </costList>	
+		            </value>
+				</li>
+				<li Class="PatchOperationAdd">					
+		          <xpath>Defs/ThingDef[defName="Melee_Torch"]/costList</xpath>
+		            <value>
+						<VBY_PrimitiveFlint>2</VBY_PrimitiveFlint>
+		            </value>
+				</li>
+				<li Class="PatchOperationAdd">
+				  <xpath>Defs/ThingDef[defName = "Melee_Torch"]/recipeMaker</xpath>
+					<value>
+						<researchPrerequisite Inherit="False"/> 
+					</value>    
+				</li>
+				<li Class="PatchOperationAdd">
+				  <xpath>Defs/ThingDef[defName = "Melee_Ram"]/recipeMaker</xpath>
+					<value>
+						<researchPrerequisite Inherit="False"/> 
+					</value>    
+				</li>
+				<li Class="PatchOperationAdd">
+				  <xpath>Defs/ThingDef[defName = "Melee_Stick"]/recipeMaker</xpath>
+					<value>
+						<researchPrerequisite Inherit="False"/> 
+					</value>    
+				</li>
+			</operations>
+        </match>
+	</Operation>
+	
+	<!--  ====================  Taki Stuff  =============================  -->
+	
+	<Operation Class="PatchOperationFindMod">
+        <success>Always</success>
+        <mods>
+          <li>Taki's Random Stuff</li>
+          <li>Taki's Random Stuff (Continued)</li>
+        </mods>
+        <match Class="PatchOperationSequence">			
+            <operations><!--
+                <li Class="PatchOperationRemove">					
+		          <xpath>Defs/ThingDef[defName="MeleeWeapon_StoneHammer"]/stuffCategories</xpath>
+				</li>
+				<li Class="PatchOperationRemove">					
+		          <xpath>Defs/ThingDef[defName="MeleeWeapon_StoneHammer"]/costStuffCount</xpath>
+				</li>
+				<li Class="PatchOperationAdd">					
+		          <xpath>Defs/ThingDef[defName="MeleeWeapon_StoneHammer"]/costList</xpath>
+		            <value>
+						<VBY_PrimitiveFlint>22</VBY_PrimitiveFlint>
+		            </value>
+				</li>-->
+				<li Class="PatchOperationReplace">					
+		          <xpath>Defs/ThingDef[defName="MeleeWeapon_StoneAxe"]/stuffCategories</xpath>
+					<value>
+					  <stuffCategories>
+						  <li>Woody</li>
+						</stuffCategories>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">					
+		          <xpath>Defs/ThingDef[defName="MeleeWeapon_StoneAxe"]/costStuffCount</xpath>
+				    <value>
+					  <costStuffCount>40</costStuffCount>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">					
+		          <xpath>Defs/ThingDef[defName="MeleeWeapon_StoneAxe"]/costList</xpath>
+		            <value>
+						<costList>
+						  <VBY_PrimitiveFlint>15</VBY_PrimitiveFlint>
+						</costList>											
+		            </value>
+				</li>
+				<li Class="PatchOperationReplace">					
+		          <xpath>Defs/ThingDef[defName="MeleeWeapon_StoneSword"]/stuffCategories</xpath>
+					<value>
+					  <stuffCategories>
+						  <li>Woody</li>
+						</stuffCategories>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">					
+		          <xpath>Defs/ThingDef[defName="MeleeWeapon_StoneSword"]/costStuffCount</xpath>
+				    <value>
+					  <costStuffCount>15</costStuffCount>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">					
+		          <xpath>Defs/ThingDef[defName="MeleeWeapon_StoneSword"]/costList</xpath>
+		            <value>
+						<costList>
+						  <VBY_PrimitiveFlint>40</VBY_PrimitiveFlint>
+						</costList>											
+		            </value>
+				</li>
+				<li Class="PatchOperationReplace">					
+		          <xpath>Defs/ThingDef[defName="MeleeWeapon_StoneSpear"]/stuffCategories</xpath>  <!-- Ranged  -->
+					<value>
+					  <stuffCategories>
+						  <li>Woody</li>
+						</stuffCategories>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">					
+		          <xpath>Defs/ThingDef[defName="MeleeWeapon_StoneSpear"]/costStuffCount</xpath>
+				    <value>
+					  <costStuffCount>90</costStuffCount>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">					
+		          <xpath>Defs/ThingDef[defName="MeleeWeapon_StoneSpear"]/costList</xpath>
+		            <value>
+						<costList>
+						  <VBY_PrimitiveFlint>30</VBY_PrimitiveFlint>
+						</costList>											
+		            </value>
+				</li>
+			</operations>
+        </match>
+	</Operation>
+	
+	<!--  ====================  Early Firearms  =============================  -->
+	
+	<Operation Class="PatchOperationFindMod">
+        <success>Always</success>
+        <mods>
+          <li>Early Firearms mod</li>
+        </mods>
+        <match Class="PatchOperationSequence">			
+            <operations>
+				<li Class="PatchOperationAdd">					
+		          <xpath>Defs/ThingDef[defName="Flintlock Musket"]/costList</xpath>
+		            <value>
+						<VBY_PrimitiveFlint>28</VBY_PrimitiveFlint>
+		            </value>
+				</li>
+				<li Class="PatchOperationAdd">					
+		          <xpath>Defs/ThingDef[defName="Flintlock Pistol"]/costList</xpath>
+		            <value>
+						<VBY_PrimitiveFlint>22</VBY_PrimitiveFlint>
+		            </value>
+				</li>
+			</operations>
+        </match>
+	</Operation>
+	
+	<!--  ====================  Westernization Project  =============================  -->
+	
+	<Operation Class="PatchOperationFindMod">
+        <success>Always</success>
+        <mods>
+          <li>Rimworld Westernization Project (Continued)</li>
+        </mods>
+        <match Class="PatchOperationSequence">			
+            <operations>
+				<li Class="PatchOperationAdd">					
+		          <xpath>Defs/ThingDef[defName="Gun_M1822Musket"]/costList</xpath>
+		            <value>
+						<VBY_PrimitiveFlint>28</VBY_PrimitiveFlint>
+		            </value>
+				</li>
+			</operations>
+        </match>
+	</Operation>
+	
+	
+	<!--  =========================  Kit's Gunpowder Weapons  ======================================= -->
+	
+	<Operation Class="PatchOperationFindMod">
+        <success>Always</success>
+        <mods>
+          <li>Kit's Gunpowder Weapons</li>
+        </mods>
+        <match Class="PatchOperationSequence">			
+            <operations>
+				<li Class="PatchOperationAdd">
+				  <xpath>Defs/ThingDef[defName = "KIT_Gun_BayonetMusket"]/costList</xpath>
+					<value>
+						<VBY_PrimitiveFlint>28</VBY_PrimitiveFlint>
+					</value>    
+				</li>
+			</operations>
+        </match>
+	</Operation>
+	
+	<!--  =========================  Dead Goat's Weapon Pack  ======================================= -->
+	
+	<Operation Class="PatchOperationFindMod">
+        <success>Always</success>
+        <mods>
+          <li>Dead Goat's Weapon Pack(continued)</li>
+        </mods>
+        <match Class="PatchOperationSequence">			
+            <operations>
+				<li Class="PatchOperationAdd">
+				  <xpath>Defs/ThingDef[defName = "3dg_MeleeWeapon_Staff"]/recipeMaker</xpath>
+					<value>
+						<researchPrerequisite Inherit="False"/> 
+					</value>    
+				</li>
+				<li Class="PatchOperationAdd">
+				  <xpath>Defs/ThingDef[defName = "3dg_MeleeWeapon_Skullclub"]/recipeMaker</xpath>
+					<value>
+						<researchPrerequisite Inherit="False"/> 
+					</value>    
+				</li>
+			</operations>
+        </match>
+	</Operation>
+	
+	<!--  =========================  The Black Armory  ======================================= -->
+	
+	<Operation Class="PatchOperationFindMod">
+        <success>Always</success>
+        <mods>
+          <li>The Black Armory</li>
+        </mods>
+        <match Class="PatchOperationSequence">			
+            <operations>
+				<li Class="PatchOperationAdd">
+				  <xpath>Defs/ThingDef[defName = "BA_Gun_Jezail_P"]/costList</xpath>
+					<value>
+						<VBY_PrimitiveFlint>22</VBY_PrimitiveFlint>
+					</value>    
+				</li>
+				<li Class="PatchOperationAdd">
+				  <xpath>Defs/ThingDef[defName = "BA_Gun_Tanegashima_P"]/costList</xpath>
+					<value>
+						<VBY_PrimitiveFlint>22</VBY_PrimitiveFlint>
+					</value>    
+				</li>
+				<li Class="PatchOperationAdd">
+				  <xpath>Defs/ThingDef[defName = "BA_Gun_Tanegashima_T"]/costList</xpath>
+					<value>
+						<VBY_PrimitiveFlint>60</VBY_PrimitiveFlint>
+					</value>    
+				</li>
+				<li Class="PatchOperationAdd">
+				  <xpath>Defs/ThingDef[defName = "BA_Gun_Jezail_R"]/costList</xpath>
+					<value>
+						<VBY_PrimitiveFlint>28</VBY_PrimitiveFlint>
+					</value>    
+				</li>
+				<li Class="PatchOperationAdd">
+				  <xpath>Defs/ThingDef[defName = "BA_Gun_HandCannon_R"]/costList</xpath>
+					<value>
+						<VBY_PrimitiveFlint>28</VBY_PrimitiveFlint>
+					</value>    
+				</li>
+				<li Class="PatchOperationAdd">
+				  <xpath>Defs/ThingDef[defName = "BA_Gun_WallGun"]/costList</xpath>
+					<value>
+						<VBY_PrimitiveFlint>28</VBY_PrimitiveFlint>
+					</value>    
+				</li>
+			</operations>
+        </match>
+	</Operation>
+	
+	
+	<!-- ============================  VWE-Tribal  ====================  -->
+  
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>Vanilla Weapons Expanded - Tribal</li>
+    </mods>
+	<success>Always</success>
+    <match Class="PatchOperationSequence">
+		<operations>		
+			<li Class="PatchOperationReplace">					
+		      <xpath>Defs/ThingDef[defName="VWE_MeleeWeapon_TribalAxe"]/stuffCategories</xpath>
+				<value>
+				  <stuffCategories>
+					  <li>Woody</li>
+					</stuffCategories>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">					
+		      <xpath>Defs/ThingDef[defName="VWE_MeleeWeapon_TribalAxe"]</xpath>
+				<value>
+				  <costList>
+					 <VBY_PrimitiveFlint>15</VBY_PrimitiveFlint>
+				  </costList>	
+				</value>
+			</li>		
+		</operations>   
+    </match>
+  </Operation>
+
+	<!-- ============================  Stone Axe  ====================  -->
+  
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>Stone Axe</li>
+    </mods>
+	<success>Always</success>
+    <match Class="PatchOperationSequence">
+		<operations>		
+			<li Class="PatchOperationReplace">					
+		      <xpath>Defs/ThingDef[defName="StoneAxe"]/stuffCategories</xpath>
+				<value>
+				  <stuffCategories>
+					  <li>Woody</li>
+					</stuffCategories>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">					
+		      <xpath>Defs/ThingDef[defName="StoneAxe"]/costList</xpath>
+				<value>
+				  <costList>
+					 <VBY_PrimitiveFlint>15</VBY_PrimitiveFlint>
+				  </costList>	
+				</value>
+			</li>		
+		</operations>   
+    </match>
+  </Operation>
+
+	<!-- ============================  Tribal Warrior Set!  ====================  -->
+  
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>Tribal Warrior Set!</li>
+    </mods>
+	<success>Always</success>
+    <match Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationAdd">					
+		      <xpath>Defs/ThingDef[defName="Gunmar_War_Bow"]/costList</xpath>
+				<value>
+					 <VBY_PrimitiveFlint>45</VBY_PrimitiveFlint>
+				</value>
+			</li>		
+		</operations>   
+    </match>
+  </Operation>
+
+	<!-- ============================  [LTS] Ammunition  ====================  -->
+  
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>[LTS] Ammunition</li>
+    </mods>
+	<success>Always</success>
+    <match Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationReplace">					
+		      <xpath>Defs/RecipeDef[defName="Make_AmmoPrimitive"]/ingredients</xpath>
+				<value>
+					<ingredients>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>WoodLog</li>
+								</thingDefs>
+							</filter>
+							<count>15</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>VBY_PrimitiveFlint</li>
+								</thingDefs>
+							</filter>
+							<count>15</count>
+						</li>
+					</ingredients>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">					
+		      <xpath>Defs/RecipeDef[defName="Make_AmmoPrimitive"]/recipeUsers</xpath>
+				<value>
+					<li>VBY_PrimitiveRangedWeaponTable</li>
+					<li>VBY_PrimitiveCraftingTable</li>
+				</value>
+			</li>				
+		</operations>   
+    </match>
+  </Operation>	
+
+<!-- ============================  [Fuu] Uncompromising Tribal Faction  ====================  -->
+  
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>[Fuu] Uncompromising Tribal Faction</li>
+    </mods>
+	<success>Always</success>
+    <match Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationAdd">					
+		      <xpath>Defs/ThingDef[defName="UncompromisingTribalFaction_FireBow"]/costList</xpath>
+				<value>
+					 <VBY_PrimitiveFlint>35</VBY_PrimitiveFlint>
+				</value>
+			</li>		
+		</operations>   
+    </match>
+  </Operation>
+
+	<!-- ============================  Medieval Overhaul  ====================  -->
+  
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>Medieval Overhaul</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+	<success>Always</success>
+		<operations>			
+			<li Class="PatchOperationAdd">					
+		      <xpath>Defs/ThingDef[defName="DankPyon_Bow_Hunting"]/costList</xpath>
+				<value>
+					 <VBY_PrimitiveFlint>30</VBY_PrimitiveFlint>
+				</value>
+			</li>			
+			<li Class="PatchOperationAdd">					
+		      <xpath>Defs/ThingDef[defName="Bow_War"]/costList</xpath>
+				<value>
+					 <VBY_PrimitiveFlint>45</VBY_PrimitiveFlint>
+				</value>
+			</li>		
+		</operations>   
+    </match>
+  </Operation>
+
+	<!-- ============================  Bulk Stonecutting  ====================  -->
+  
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>Bulk Stonecutting</li>
+        <li>Bulk Stonecutting [1.3]</li>
+        <li>Stonecutting Extended</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+	<success>Always</success>
+		<operations>			
+			<li Class="PatchOperationAdd">					
+		      <xpath>Defs/RecipeDef[defName="MakeStoneBlocksBulkLimestone"]/products</xpath>
+				<value>
+					 <VBY_PrimitiveFlint>15</VBY_PrimitiveFlint>
+				</value>
+			</li>	
+		</operations>   
+    </match>
+  </Operation>
+
+	<!-- ============================  Bulk Stonecutting (Forked)  ====================  -->
+  
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>Bulk Stonecutting (Forked)</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+	<success>Always</success>
+		<operations>			
+			<li Class="PatchOperationAdd">					
+		      <xpath>Defs/RecipeDef[defName="MakeStoneBlocksBulkLimestone"]/products</xpath>
+				<value>
+					 <VBY_PrimitiveFlint>15</VBY_PrimitiveFlint>
+				</value>
+			</li>			
+			<li Class="PatchOperationAdd">					
+		      <xpath>Defs/RecipeDef[defName="MakeStoneBlocksBulkLimestone5"]/products</xpath>
+				<value>
+					 <VBY_PrimitiveFlint>25</VBY_PrimitiveFlint>
+				</value>
+			</li>			
+			<li Class="PatchOperationAdd">					
+		      <xpath>Defs/RecipeDef[defName="MakeStoneBlocksBulkLimestone10"]/products</xpath>
+				<value>
+					 <VBY_PrimitiveFlint>50</VBY_PrimitiveFlint>
+				</value>
+			</li>			
+			<li Class="PatchOperationAdd" MayRequire="sarg.alphabiomes">					
+		      <xpath>Defs/RecipeDef[defName="MakeStoneBlocksBulkRoseQuartz"]/products</xpath>
+				<value>
+					 <VBY_PrimitiveFlint>30</VBY_PrimitiveFlint>
+				</value>
+			</li>			
+			<li Class="PatchOperationAdd" MayRequire="sarg.alphabiomes">					
+		      <xpath>Defs/RecipeDef[defName="MakeStoneBlocksBulkABObsidian"]/products</xpath>
+				<value>
+					 <VBY_PrimitiveFlint>27</VBY_PrimitiveFlint>
+				</value>
+			</li>			
+			<li Class="PatchOperationAdd" MayRequire="sarg.alphabiomes">					
+		      <xpath>Defs/RecipeDef[defName="MakeStoneBlocksBulkRoseQuartz5"]/products</xpath>
+				<value>
+					 <VBY_PrimitiveFlint>50</VBY_PrimitiveFlint>
+				</value>
+			</li>			
+			<li Class="PatchOperationAdd" MayRequire="sarg.alphabiomes">					
+		      <xpath>Defs/RecipeDef[defName="MakeStoneBlocksBulkABObsidian5"]/products</xpath>
+				<value>
+					 <VBY_PrimitiveFlint>45</VBY_PrimitiveFlint>
+				</value>
+			</li>			
+			<li Class="PatchOperationAdd" MayRequire="sarg.alphabiomes">					
+		      <xpath>Defs/RecipeDef[defName="MakeStoneBlocksBulkRoseQuartz10"]/products</xpath>
+				<value>
+					 <VBY_PrimitiveFlint>100</VBY_PrimitiveFlint>
+				</value>
+			</li>			
+			<li Class="PatchOperationAdd" MayRequire="sarg.alphabiomes">					
+		      <xpath>Defs/RecipeDef[defName="MakeStoneBlocksBulkABObsidian10"]/products</xpath>
+				<value>
+					 <VBY_PrimitiveFlint>90</VBY_PrimitiveFlint>
+				</value>
+			</li>			
+			<li Class="PatchOperationAdd" MayRequire="Kura.ExtraStone">					
+		      <xpath>Defs/RecipeDef[defName="MakeStoneBlocksBulkChalk"]/products</xpath>
+				<value>
+					 <VBY_PrimitiveFlint>18</VBY_PrimitiveFlint>
+				</value>
+			</li>			
+			<li Class="PatchOperationAdd" MayRequire="Kura.ExtraStone">					
+		      <xpath>Defs/RecipeDef[defName="MakeStoneBlocksBulkObsidian"]/products</xpath>
+				<value>
+					 <VBY_PrimitiveFlint>27</VBY_PrimitiveFlint>
+				</value>
+			</li>			
+			<li Class="PatchOperationAdd" MayRequire="Kura.ExtraStone">					
+		      <xpath>Defs/RecipeDef[defName="MakeStoneBlocksBulkChalk5"]/products</xpath>
+				<value>
+					 <VBY_PrimitiveFlint>30</VBY_PrimitiveFlint>
+				</value>
+			</li>			
+			<li Class="PatchOperationAdd" MayRequire="Kura.ExtraStone">					
+		      <xpath>Defs/RecipeDef[defName="MakeStoneBlocksBulkObsidian5"]/products</xpath>
+				<value>
+					 <VBY_PrimitiveFlint>45</VBY_PrimitiveFlint>
+				</value>
+			</li>			
+			<li Class="PatchOperationAdd" MayRequire="Kura.ExtraStone">					
+		      <xpath>Defs/RecipeDef[defName="MakeStoneBlocksBulkChalk10"]/products</xpath>
+				<value>
+					 <VBY_PrimitiveFlint>60</VBY_PrimitiveFlint>
+				</value>
+			</li>			
+			<li Class="PatchOperationAdd" MayRequire="Kura.ExtraStone">					
+		      <xpath>Defs/RecipeDef[defName="MakeStoneBlocksBulkObsidian10"]/products</xpath>
+				<value>
+					 <VBY_PrimitiveFlint>90</VBY_PrimitiveFlint>
+				</value>
+			</li>			
+			<li Class="PatchOperationAdd" MayRequire="Ogliss.Cupro.CuprosStones">					
+		      <xpath>Defs/RecipeDef[defName="MakeStoneBlocksBulkQuartzite"]/products</xpath>
+				<value>
+					 <VBY_PrimitiveFlint>30</VBY_PrimitiveFlint>
+				</value>
+			</li>			
+			<li Class="PatchOperationAdd" MayRequire="Ogliss.Cupro.CuprosStones">					
+		      <xpath>Defs/RecipeDef[defName="MakeStoneBlocksBulkQuartzite5"]/products</xpath>
+				<value>
+					 <VBY_PrimitiveFlint>50</VBY_PrimitiveFlint>
+				</value>
+			</li>			
+			<li Class="PatchOperationAdd" MayRequire="Ogliss.Cupro.CuprosStones">					
+		      <xpath>Defs/RecipeDef[defName="MakeStoneBlocksBulkQuartzite10"]/products</xpath>
+				<value>
+					 <VBY_PrimitiveFlint>100</VBY_PrimitiveFlint>
+				</value>
+			</li>
+		</operations>   
+    </match>
+  </Operation>
+
+	<!--  ====================  Alpha Biomes  =============================  -->
+	
+	<Operation Class="PatchOperationFindMod">
+        <success>Always</success>
+        <mods>
+          <li>Alpha Biomes</li>
+        </mods>
+        <match Class="PatchOperationSequence">			
+            <operations>
+                <li Class="PatchOperationAdd">					
+		          <xpath>Defs/RecipeDef[defName="GU_MakeStoneBlocksRoseQuartz"]/products</xpath>
+		            <value>
+						<VBY_PrimitiveFlint>10</VBY_PrimitiveFlint>
+		            </value>
+				</li>				
+				<li Class="PatchOperationAdd">					
+		          <xpath>Defs/RecipeDef[defName="AB_MakeStoneBlocksObsidian"]/products</xpath>
+		            <value>
+						<VBY_PrimitiveFlint>9</VBY_PrimitiveFlint>
+		            </value>
+				</li>
+			</operations>
+        </match>
+	</Operation>
+
+	<!--  ====================  Cupro's Stones  =============================  -->
+	
+	<Operation Class="PatchOperationFindMod">
+        <success>Always</success>
+        <mods>
+          <li>Cupro's Stones</li>
+        </mods>
+        <match Class="PatchOperationSequence">			
+            <operations>
+                <li Class="PatchOperationAdd">					
+		          <xpath>Defs/RecipeDef[defName="MakeStoneBlocksQuartzite"]/products</xpath>
+		            <value>
+						<VBY_PrimitiveFlint>10</VBY_PrimitiveFlint>
+		            </value>
+				</li>	
+			</operations>
+        </match>
+	</Operation>	
+
+<!-- ============================  SZ_StonesAndTerrains  ====================  -->
+  
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>SZ_StonesAndTerrains</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+	<success>Always</success>
+		<operations>			
+			<li Class="PatchOperationAdd">					
+		      <xpath>Defs/RecipeDef[defName="Make_StoneBlocksWhiteLimestone"]/products</xpath>
+				<value>
+					 <VBY_PrimitiveFlint>5</VBY_PrimitiveFlint>
+				</value>
+			</li>			
+			<li Class="PatchOperationAdd">					
+		      <xpath>Defs/RecipeDef[defName="Make_StoneBlocksObsidian"]/products</xpath>
+				<value>
+					 <VBY_PrimitiveFlint>9</VBY_PrimitiveFlint>
+				</value>
+			</li>	
+		</operations>   
+    </match>
+  </Operation>
+	
+	
+</Patch>

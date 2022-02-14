@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>Defs/ThingDef/recipeMaker/recipeUsers[li="ElectricTailoringBench"]</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef/recipeMaker/recipeUsers[li="ElectricTailoringBench"]</xpath>
+				<value>
+					<li>VBY_PrimitiveTailoringTable</li>				
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>Defs/ThingDef/recipeMaker/recipeUsers[li="HandTailoringBench"]</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef/recipeMaker/recipeUsers[li="HandTailoringBench"]</xpath>
+				<value>
+					<li>VBY_PrimitiveTailoringTable</li>				
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	  
+
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>Defs/RecipeDef/recipeUsers[li="HandTailoringBench"]</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/RecipeDef/recipeUsers[li="HandTailoringBench"]</xpath>
+				<value>
+					<li>VBY_PrimitiveTailoringTable</li>					
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>Defs/RecipeDef/recipeUsers[li="ElectricTailoringBench"]</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/RecipeDef/recipeUsers[li="ElectricTailoringBench"]</xpath>
+				<value>
+					<li>VBY_PrimitiveTailoringTable</li>					
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>Defs/WorkGiverDef[defName="DoBillsButcherFlesh"]/fixedBillGiverDefs</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/WorkGiverDef[defName="DoBillsButcherFlesh"]/fixedBillGiverDefs</xpath>
+				<value>
+					<li>VBY_PrimitiveButcherTable</li>				
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>Defs/ThingDef/recipeMaker/recipeUsers[li="TableButcher"]</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef/recipeMaker/recipeUsers[li="TableButcher"]</xpath>
+				<value>
+					<li>VBY_PrimitiveButcherTable</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>Defs/RecipeDef/recipeUsers[li="TableButcher"]</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/RecipeDef/recipeUsers[li="TableButcher"]</xpath>
+				<value>
+					<li>VBY_PrimitiveButcherTable</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>Defs/ThingDef/recipeMaker/recipeUsers[li="CraftingSpot"]</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef/recipeMaker/recipeUsers[li="CraftingSpot"]</xpath>
+				<value>
+					<li>VBY_PrimitiveCraftingTable</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>Defs/RecipeDef/recipeUsers[li="CraftingSpot"]</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/RecipeDef/recipeUsers[li="CraftingSpot"]</xpath>
+				<value>
+					<li>VBY_PrimitiveCraftingTable</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>Defs/ThingDef/recipeMaker/recipeUsers[li="DrugLab"]</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef/recipeMaker/recipeUsers[li="DrugLab"]</xpath>
+				<value>
+					<li>VBY_PrimitiveBrewery_HerbalistBench</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>Defs/RecipeDef/recipeUsers[li="DrugLab"]</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/RecipeDef/recipeUsers[li="DrugLab"]</xpath>
+				<value>
+					<li>VBY_PrimitiveBrewery_HerbalistBench</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>Defs/ThingDef/recipeMaker/recipeUsers[li="TableStonecutter"]</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef/recipeMaker/recipeUsers[li="TableStonecutter"]</xpath>
+				<value>
+					<li>VBY_PrimitiveStoneCuttingTable</li>
+					<li>VBY_PrimitiveStoneCuttingSpot</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>Defs/RecipeDef/recipeUsers[li="TableStonecutter"]</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/RecipeDef/recipeUsers[li="TableStonecutter"]</xpath>
+				<value>
+					<li>VBY_PrimitiveStoneCuttingTable</li>
+					<li>VBY_PrimitiveStoneCuttingSpot</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	
+</Patch>

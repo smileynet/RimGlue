@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <PlaceWorker.TerrainCannotSupport>El terreno no puede soportar este objeto.</PlaceWorker.TerrainCannotSupport>
+  <PlaceWorker.MustWaterSeaOrPile>Debe colocarse en agua poco profunda o en pilotes.</PlaceWorker.MustWaterSeaOrPile>
+  <PlaceWorker.InteractivePointMustshore>El punto de interacción debe colocarse en la orilla.</PlaceWorker.InteractivePointMustshore>
+  <PlaceWorker.AlreadyPile>El terreno aquí ya está apilado.</PlaceWorker.AlreadyPile>
+
+</LanguageData>

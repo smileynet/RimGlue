@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!-- REMOVE BLOAT -->
+
+<Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>LWM's Deep Storage</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[defName="LWM_MealRack"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[defName="LWM_Pallet"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[defName="LWM_Pallet_Covered"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[defName="LWM_Medicine_Cabinet"]</xpath>
+			</li>
+		
+		</operations>
+	</match>
+</Operation>
+		<!-- REMOVE BLOAT (LITTLE STORAGE) -->
+
+<Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Little Storage 2</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[defName="sixdd_TrayRackSingle"]</xpath>
+			</li>
+			
+		</operations>
+	</match>
+</Operation>
+
+	<!-- ADD HAY TO FOOD BASKET -->
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>LWM's Deep Storage</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="LWM_Food_Basket"]/building/fixedStorageSettings/filter/thingDefs</xpath>
+        	<value>
+			<li>Hay</li>
+		</value>
+        </li>
+	</operations>
+    </match>
+  </Operation>
+
+	<!-- FIX FOOD BASKET SHADOW -->
+
+<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Little Storage 2</li>
+		</mods>
+		
+<match Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationAdd">
+      				<xpath>*/ThingDef[defName = "sixdd_BasketSingle"]/graphicData</xpath>
+      				<value>
+        				<shadowData />
+      				</value>
+    			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName="sixdd_BasketSingle"]/graphicData/shadowData</xpath>
+				<value>
+					 <volume>(0.8,0.4,0.7)</volume>
+				</value>
+    			</li>
+	
+		</operations>
+	</match>
+	</Operation>
+
+
+	<!-- SAFE TWEAKS -->
+
+<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>LWM's Deep Storage</li>
+		</mods>
+		
+<match Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="LWM_Safe"]/statBases/MaxHitPoints</xpath>
+				<value>
+					<MaxHitPoints>320</MaxHitPoints>
+				</value>
+    			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="LWM_Safe"]/statBases/WorkToBuild</xpath>
+				<value>
+					<WorkToBuild>2000</WorkToBuild>
+				</value>
+    			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="LWM_Safe"]/statBases/Mass</xpath>
+				<value>
+					<Mass>40</Mass>
+				</value>
+    			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="LWM_Safe"]/costStuffCount</xpath>
+				<value>
+					<costStuffCount>90</costStuffCount>
+				</value>
+    			</li>
+ 			<li Class="PatchOperationAdd">
+      				<xpath>*/ThingDef[defName = "LWM_Safe"]</xpath>
+      					<value>
+        				<costList />
+      				</value>
+    			</li>
+ 			<li Class="PatchOperationAdd">
+          			<xpath>Defs/ThingDef[defName="LWM_Safe"]/costList</xpath>
+        			<value>
+					<ComponentIndustrial>1</ComponentIndustrial>	
+				</value>
+        		</li>
+			<li Class="PatchOperationAdd">
+          			<xpath>Defs/ThingDef[defName="LWM_Safe"]/building/fixedStorageSettings/filter/categories</xpath>
+        			<value>
+					<li>Weapons</li>
+					<li>Apparel</li>
+					<li>Items</li>
+					<li>MortarShells</li>
+					<li>Medicine</li>
+					<li>Drugs</li>
+				</value>
+        		</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="LWM_Safe"]/building/defaultStorageSettings/priority</xpath>
+				<value>
+					<priority>Important</priority>
+				</value>
+    			</li>
+			<li Class="PatchOperationReplace">
+  				<xpath>/Defs/ThingDef[defName="LWM_Safe"]/comps/li/maxNumberStacks</xpath>
+            			<value>
+              			 <maxNumberStacks>10</maxNumberStacks>
+            			</value>
+             		</li>
+			<li Class="PatchOperationReplace">
+            			<xpath>/Defs/ThingDef[defName="LWM_Safe"]/comps/li/minNumberStacks</xpath>
+            			<value>
+              				<minNumberStacks>1</minNumberStacks>
+            			</value>
+             		</li>
+			<li Class="PatchOperationReplace">
+            			<xpath>/Defs/ThingDef[defName="LWM_Safe"]/comps/li/timeStoringTakes</xpath>
+            			<value>
+              				<timeStoringTakes>120</timeStoringTakes>
+            			</value>
+             		</li>
+
+	<!-- MORE FIXES -->
+
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[defName="LWM_BigShelf"]/statBases/Beauty</xpath>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="LWM_VeryBigShelf"]/fillPercent</xpath>
+				<value>
+					<fillPercent>0.4</fillPercent>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="LWM_BigShelf"]/description</xpath>
+				<value>
+					<description>A shelf for storing miscellaneous items. Holds twice as much as the regular one.</description>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="LWM_VeryBigShelf"]/description</xpath>
+				<value>
+					<description>A set of tall covered shelves for storing miscellaneous items.</description>
+				</value>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[defName="LWM_VeryBigShelf"]/statBases/Beauty</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName="LWM_VeryBigShelf"]/building</xpath>
+				<value>
+				  <fixedStorageSettings>
+					<filter>
+					  <disallowNotEverStorable>true</disallowNotEverStorable>
+					  <categories>
+						<li>Root</li>
+					  </categories>
+					</filter>
+				  </fixedStorageSettings>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="LWM_Meat_Hook"]/description</xpath>
+				<value>
+					<description>A tall metal frame with several hooks hanging from chains.  A simple crank allows hoisting several hanging corpses into the air.</description>
+				</value>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[defName="LWM_Meat_Hook"]/comps/li[2]</xpath>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="LWM_Hayloft"]/description</xpath>
+				<value>
+					<description>A hayloft for storing away haybales. Does not prevent deterioration outside.</description>
+				</value>
+			</li>
+			<!-- A hayloft stores hay -->
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[defName="LWM_Hayloft"]/building/fixedStorageSettings/filter/categories</xpath>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="LWM_FabricHamper"]/statBases/Flammability</xpath>
+				<value>
+					<Flammability>1</Flammability>
+				</value>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[defName="LWM_FabricHamper"]/statBases/Beauty</xpath>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="LWM_DeepStorage_Skip"]/description</xpath>
+				<value>
+					<description>A large metal bin for tossing heavy things into a pile without sorting. These skips are not covered; they are open to the weather.</description>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="LWM_DeepStorage_Skip"]/statBases/Mass</xpath>
+				<value>
+					<Mass>50</Mass>
+				</value>
+			</li>
+
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[defName="LWM_Clothing_Rack"]/statBases/Beauty</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[defName="LWM_Clothing_Rack"]/comps/li[2]</xpath>
+			</li>
+
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[defName="LWM_Safe"]/statBases/Beauty</xpath>
+			</li>
+
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[defName="LWM_WeaponsCabinet"]/statBases/Beauty</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[defName="LWM_WeaponsLocker"]/statBases/Beauty</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[defName="LWM_WeaponsCabinet"]/comps/li[2]</xpath>
+			</li>
+		</operations>
+	</match>
+	</Operation>
+
+</Patch>

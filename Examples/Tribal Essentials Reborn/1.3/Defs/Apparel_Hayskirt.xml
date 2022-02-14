@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<!-- Hay Skirt-->
+
+	<ThingDef ParentName="ApparelMakeableBase">
+		<defName>Hayskirt</defName>
+		<label>hay skirt</label>
+		<description>A garment crafted without machines using neolithic tools.</description>
+		<graphicData>
+			<texPath>Things/Apparel/Hayskirt/Hayskirt</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Neolithic</techLevel>
+		<costStuffCount>15</costStuffCount>
+		<stuffCategories>
+			<li>Woody</li>
+			<li>Grassy</li>
+		</stuffCategories>
+		<tradeability>Sellable</tradeability>
+		<statBases>
+			<MaxHitPoints>75</MaxHitPoints>
+			<WorkToMake>420</WorkToMake>
+			<Mass>0.2</Mass>
+			<Insulation_Cold>5</Insulation_Cold>
+		</statBases>
+		<thingCategories>
+			<li>Apparel</li>
+		</thingCategories>
+		<apparel>
+			<bodyPartGroups>
+				<li>Legs</li>
+				<li>Waist</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/Hayskirt/Hayskirt</wornGraphicPath>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<tags>
+				<li>Tribal</li>
+			</tags>
+		</apparel>
+		<recipeMaker>
+			<recipeUsers>
+				<li>TailoringSpot</li>
+				<li>HandTailoringBench</li>
+				<li>ElectricTailoringBench</li>
+			</recipeUsers>
+		</recipeMaker>
+
+	</ThingDef>
+
+
+</Defs>

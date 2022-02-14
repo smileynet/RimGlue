@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- COLT M1911 -->
+  
+  <Gun_Revolver.label>Colt M1911</Gun_Revolver.label>
+  <Gun_Revolver.description>Antigua pistola automática de patrón. Rango débil y corto, pero rápido.</Gun_Revolver.description>
+
+
+</LanguageData>

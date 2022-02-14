@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RecipeDef>
+		<defName>VBY_HayclothRecipe</defName>
+		<label>weave five haycloths</label>
+		<description>weave haycloth from hay. \n\nMakes 5 haycloth.</description>
+		<jobString>weaving fabric.</jobString>
+		<workAmount>700</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>		
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<effectWorking>Tailor</effectWorking>
+		<soundWorking>Recipe_Tailor</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Hay</li>
+					</thingDefs>
+				</filter>
+				<count>15</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Hay</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<VBY_Haycloth>5</VBY_Haycloth>
+		</products>
+		<workSkill>Crafting</workSkill>
+	 <recipeUsers>
+         <li>CraftingSpot</li>
+		 <li>VBY_PrimitiveCraftingTable</li>
+		 <li>VBY_PrimitiveTailoringTable</li>
+		 <li>HandTailoringBench</li>
+		 <li>ElectricTailoringBench</li>
+      </recipeUsers>		
+	</RecipeDef>
+	
+</Defs>	

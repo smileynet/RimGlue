@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <TaleDef>
+    <defName>PlayedMusic</defName>
+    <label>played music</label>
+    <taleClass>Tale_SinglePawnAndDef</taleClass>
+    <type>Volatile</type>
+    <defSymbol>OBJECT</defSymbol>
+    <baseInterest>5</baseInterest>
+    <rulePack>
+      <rulesStrings>
+        <li>tale_noun-&gt;[PAWN_nameDef] playing the [OBJECT_label]</li>
+        <li>image-&gt;[PAWN_nameFull] composing a piece for the [OBJECT_label] [circumstance_group]</li>
+        <li>image-&gt;[PAWN_nameFull] improvising on a [OBJECT_label] [circumstance_group]</li>
+        <li>image-&gt;[PAWN_nameFull] performing on the [OBJECT_label] [circumstance_group]</li>
+        <li>image-&gt;[PAWN_nameFull] practicing the [OBJECT_label] [circumstance_group]</li>
+        <li>circumstance_phrase-&gt;with a wry smile on [PAWN_possessive] face</li>
+        <li>circumstance_phrase-&gt;as a single tear runs down [PAWN_possessive] cheek</li>
+        <li>circumstance_phrase-&gt;with great intensity</li>
+        <li>circumstance_phrase-&gt;with a look of total concentration</li>
+        <li>circumstance_phrase-&gt;surrounded by a [Color] aura</li>
+        <li>desc_sentence-&gt;The [OBJECT_label] is represented by a [Animal].</li>
+        <li>desc_sentence-&gt;[PAWN_nameDef] is surrounded by sheet music.</li>
+        <li>desc_sentence-&gt;The [OBJECT_label] is intricately detailed.</li>
+        <li>desc_sentence-&gt;[Quantity_adjphrase] [PersonJob]s are dancing to the rhythm.</li>
+        <li>desc_sentence-&gt;[Quantity_adjphrase] [PersonJob]s listen nearby.</li>
+      </rulesStrings>
+    </rulePack>
+  </TaleDef>
+</Defs>

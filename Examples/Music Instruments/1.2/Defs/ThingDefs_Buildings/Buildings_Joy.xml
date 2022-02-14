@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef Name="MusicalInstrumentBuildingBase" ParentName="BuildingBase" Abstract="true">
+    <altitudeLayer>Building</altitudeLayer>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <rotatable>true</rotatable>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <fillPercent>0.40</fillPercent>
+    <thingCategories>
+      <li>MusicalInstruments</li>
+    </thingCategories>
+    <hasInteractionCell>True</hasInteractionCell>
+    <passability>PassThroughOnly</passability>
+    <defaultPlacingRot>North</defaultPlacingRot>
+    <statBases>
+      <SellPriceFactor>0.50</SellPriceFactor>
+    </statBases>
+    <building>
+      <joyKind>Music</joyKind>
+    </building>
+    <tradeTags>
+      <li>MusicalInstrument</li>
+    </tradeTags>
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtMusicalInstrument</nameMaker>
+        <descriptionMaker>ArtDescription_MusicalInstrument</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+      <li Class="MusicalInstruments.CompProperties_MusicSpot">
+        <compClass>MusicalInstruments.CompMusicSpot</compClass>
+        <canBeDisabled>false</canBeDisabled>
+      </li>
+    </comps>
+    <designationCategory>Joy</designationCategory>
+  </ThingDef>
+  <ThingDef ParentName="MusicalInstrumentBuildingBase">
+    <defName>Marimba</defName>
+    <label>marimba</label>
+    <description>A tuned percussion instrument, played by striking wooden bars with mallets.</description>
+    <graphicData>
+      <texPath>Things/Building/Marimba</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,1)</drawSize>
+      <shadowData>
+        <volume>(1.8, 0.33, 0.6)</volume>
+      </shadowData>
+    </graphicData>
+    <castEdgeShadows>false</castEdgeShadows>
+    <statBases>
+      <WorkToBuild>20000</WorkToBuild>
+      <MaxHitPoints>50</MaxHitPoints>
+      <Mass>8</Mass>
+      <Flammability>1.0</Flammability>
+      <Beauty>1</Beauty>
+    </statBases>
+    <size>(2,1)</size>
+    <interactionCellOffset>(1,0,-1)</interactionCellOffset>
+    <costList>
+      <WoodLog>150</WoodLog>
+    </costList>
+    <pathCost>70</pathCost>
+    <comps>
+      <li Class="MusicalInstruments.CompProperties_MusicalInstrument">
+        <compClass>MusicalInstruments.CompMusicalInstrument</compClass>
+        <easiness>0.3</easiness>
+        <expressiveness>0.6</expressiveness>
+        <isBuilding>true</isBuilding>
+      </li>
+    </comps>
+    <constructEffect>ConstructWood</constructEffect>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <researchPrerequisites>
+      <li>PrimitiveInstruments</li>
+    </researchPrerequisites>
+    <uiIconScale>0.9</uiIconScale>
+  </ThingDef>
+  <ThingDef ParentName="MusicalInstrumentBuildingBase">
+    <defName>ElectronicOrgan</defName>
+    <label>electronic organ</label>
+    <description>A keyboard instrument that generates sound using analog electronics. Often seen in midworld churches and concert halls.</description>
+    <graphicData>
+      <texPath>Things/Building/Organ</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2.2,1.1)</drawSize>
+    </graphicData>
+    <staticSunShadowHeight>0.20</staticSunShadowHeight>
+    <castEdgeShadows>true</castEdgeShadows>
+    <statBases>
+      <WorkToBuild>30000</WorkToBuild>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>25</Mass>
+      <Flammability>1.0</Flammability>
+      <Beauty>3</Beauty>
+    </statBases>
+    <size>(2,1)</size>
+    <interactionCellOffset>(1,0,-1)</interactionCellOffset>
+    <costList>
+      <Steel>40</Steel>
+      <WoodLog>60</WoodLog>
+      <ComponentIndustrial>6</ComponentIndustrial>
+    </costList>
+    <pathCost>70</pathCost>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <shortCircuitInRain>true</shortCircuitInRain>
+        <basePowerConsumption>200</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="MusicalInstruments.CompProperties_MusicalInstrument">
+        <compClass>MusicalInstruments.CompMusicalInstrument</compClass>
+        <easiness>0.4</easiness>
+        <expressiveness>0.8</expressiveness>
+        <isBuilding>true</isBuilding>
+      </li>
+    </comps>
+    <constructEffect>ConstructMetal</constructEffect>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <researchPrerequisites>
+      <li>ElectricInstruments</li>
+    </researchPrerequisites>
+    <uiIconScale>0.9</uiIconScale>
+  </ThingDef>
+</Defs>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<JoyGiverDef>
+		<defName>PlayThreeStonesGame</defName>
+		<giverClass>JoyGiver_InteractBuildingSitAdjacent</giverClass>
+		<baseChance>1.5</baseChance>
+		<requireChair>false</requireChair>
+		<thingDefs>
+			<li>ThreeStonesGame</li>
+		</thingDefs>
+		<jobDef>PlayThreeStonesGame</jobDef>
+		<joyKind>Gaming_Cerebral</joyKind>
+		<requiredCapacities>
+			<li>Sight</li>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	</JoyGiverDef>
+	
+	<JoyGiverDef>
+		<defName>ShareTribalLore</defName>
+		<giverClass>JoyGiver_InteractBuildingSitAdjacent</giverClass>
+		<baseChance>1.7</baseChance>
+		<requireChair>false</requireChair>
+		<thingDefs>
+			<li>TribalLoreFire</li>
+		</thingDefs>
+		<jobDef>ShareTribalLore</jobDef>
+		<joyKind>Gaming_Cerebral</joyKind>
+		<requiredCapacities>
+			<li>Sight</li>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	</JoyGiverDef>
+
+</Defs>

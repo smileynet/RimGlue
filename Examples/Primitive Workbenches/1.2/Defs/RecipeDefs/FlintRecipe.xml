@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RecipeDef>
+		<defName>VBY_SmashRocks</defName>
+		<label>smash limestone rocks</label>
+		<description>Smash two limestone rocks together to break into smaller fragments of flint.</description>
+		<jobString>smashing rocks.</jobString>
+		<workAmount>1700</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>  <!--Patch in stonecutting  -->
+		<effectWorking>CutStone</effectWorking>
+		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkLimestone</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ChunkLimestone</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<VBY_PrimitiveFlint>20</VBY_PrimitiveFlint>
+		</products>
+		<workSkill>Crafting</workSkill>
+	 <recipeUsers>
+         <li>VBY_PrimitiveStoneCuttingSpot</li>
+		 <li>VBY_PrimitiveStoneCuttingTable</li>
+		 <li>TableStonecutter</li>
+      </recipeUsers>		
+	</RecipeDef>
+	
+</Defs>	

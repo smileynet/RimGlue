@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <PlaceWorker.TerrainCannotSupport>이 물체를 지원할 수 없는 지형입니다.</PlaceWorker.TerrainCannotSupport>
+  <PlaceWorker.MustWaterSeaOrPile>얕은 물이나 보강된 지반에 배치해야 합니다.</PlaceWorker.MustWaterSeaOrPile>
+  <PlaceWorker.InteractivePointMustshore>상호작용 지점을 해안가에 배치해야 합니다.</PlaceWorker.InteractivePointMustshore>
+  <PlaceWorker.AlreadyPile>이곳의 지형은 이미 보강되어 있습니다.</PlaceWorker.AlreadyPile>
+
+</LanguageData>

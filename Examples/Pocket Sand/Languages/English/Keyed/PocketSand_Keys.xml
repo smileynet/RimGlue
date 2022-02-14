@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+	<PS_GizmoLabel>Weapons</PS_GizmoLabel>
+	<PS_GizmoDescription>Select Pawn equipment</PS_GizmoDescription>
+
+	<PS_SettingCategory>Pocket Sand</PS_SettingCategory>	
+	<PS_SettingMassCheck>Enable weapon mass check</PS_SettingMassCheck>
+	<PS_SettingEquipDelay>Enable equip delay</PS_SettingEquipDelay>
+	<PS_SettingCaravanDrop>Prevent caravan weapon drops</PS_SettingCaravanDrop>
+	<PS_SettingEquipDelayMultiplier>Equip delay multiplier</PS_SettingEquipDelayMultiplier>
+	<PS_SettingBlacklist>Caravan no-unload blacklist</PS_SettingBlacklist>
+	<PS_SettingAddBlacklist>Add weapon</PS_SettingAddBlacklist>
+	<PS_SettingJobDriver>JobDriver Info:</PS_SettingJobDriver>	
+	<PS_SettingJobDriverOk>Using PocketSand caravan unload JobDriver</PS_SettingJobDriverOk>
+	<PS_SettingJobDriverError>Using external caravan unload JobDriver</PS_SettingJobDriverError>
+	<PS_SettingJobDriverCaravan>Caravan Unload</PS_SettingJobDriverCaravan>
+	<PS_SettingJobDriverEquip>Equip Item</PS_SettingJobDriverEquip>
+	<PS_SettingJobDriverDrop>Unequip Item</PS_SettingJobDriverDrop>
+	
+	<PS_TooltipGizmoWeapon>{thing}.
+Left click to equip.
+Right click to drop.</PS_TooltipGizmoWeapon>
+	<PS_TooltipGizmoWeaponActive>{thing}.</PS_TooltipGizmoWeaponActive>
+	<PS_TooltipGizmoUnarmed>Unarmed.
+Left click to unequip current weapon.</PS_TooltipGizmoUnarmed>
+	<PS_TooltipGizmoUnarmedActive>Unarmed.</PS_TooltipGizmoUnarmedActive>
+	
+	<PS_TooltipSettingCaravan>Caravan unload job will prevent pawns from dropping weapons on arrival.</PS_TooltipSettingCaravan>
+	<PS_TooltipSettingCaravanBlacklist>You can add weapons to this blacklist, so they are qualified to be dropped on caravan arrival.</PS_TooltipSettingCaravanBlacklist>
+	<PS_TooltipSettingEquipDelay>Enables a delay on weapon equiping based on the its mass.
+Also changes the unequiping delay from vanilla RimWorld.</PS_TooltipSettingEquipDelay>
+	<PS_TooltipSettingEquipDelayMultiplier>Equip delay multiplier, in ticks.
+Delay = Weapon Mass * Multiplier
+60 Ticks = 1 Second</PS_TooltipSettingEquipDelayMultiplier>
+	<PS_TooltipSettingMassCheck>Adds checks on weapon equipping from the floor, to prevent pawns from getting over-encumbered.
+Doesn't apply to weapons already on pawn inventory.</PS_TooltipSettingMassCheck>
+
+	<PS_MessageOverCapacity>{pawn} tried to pick-up and equip {thing}, but they were carrying too much.</PS_MessageOverCapacity>
+</LanguageData>

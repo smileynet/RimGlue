@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Reused LWM's patch to add Small Deep Fridge -->
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>[KV] RimFridge - 1.0</li>
+      <li>[KV] RimFridge - 1.1</li>
+      <li>[KV] RimFridge</li><!-- 1.2+ version -->
+    </mods>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs</xpath>
+      <value>
+      	<ThingDef ParentName="FridgeBase" Name="sixdd_Small_DeepRimFridge">
+					<defName>sixdd_Small_RimFridge_Refrigerator</defName>
+					<label>Small Deep Refrigerator</label>
+					<description>A chest freezer taken to the next level: a series of shelves extend into the ground, allowing a large number of items to be stored with decent thermal insulation.  Getting to the lower stacks requires a series of ratchets and chains, but food stored here is safe from decay.\n\nMoving this structure is not really possible, given the work that went into digging a sufficiently large pit for the refrigeration system and deep storage.</description>
+	        <minifiedDef Inherit="false" />
+	        <thingCategories Inherit="false" />
+	        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+	        <tradeTags Inhert="false" />
+	        <drawGUIOverlay>true</drawGUIOverlay>
+					<graphicData>
+						<texPath>Building/Temperature/Fridge/SingleFridge</texPath>
+						<graphicClass>Graphic_Multi</graphicClass>
+						<drawSize>(3, 3)</drawSize>
+					</graphicData>
+					<altitudeLayer>Building</altitudeLayer>
+					<passability>PassThroughOnly</passability>
+				        <pathCost>80</pathCost>
+					<fillPercent>0.5</fillPercent><!-- decent to hide behind -->
+					<castEdgeShadows>true</castEdgeShadows>
+					<costList>
+					  <Steel>80</Steel>
+					  <ComponentIndustrial>3</ComponentIndustrial>
+					</costList>
+					<statBases>
+					  <Mass>100</Mass>
+					  <MaxHitPoints>120</MaxHitPoints>
+					  <WorkToBuild>2100</WorkToBuild><!-- Digging a bloody hole -->
+					  <Flammability>1.0</Flammability>
+					</statBases>
+					<size>(1,1)</size>
+					<comps>
+					  <li Class="CompProperties_Power">
+					    <compClass>CompPowerTrader</compClass>
+					    <basePowerConsumption>120</basePowerConsumption>
+					  </li>
+					  <li Class="RimFridge.CompProperties_SecondLayer">
+							<graphicData>
+								<texPath>Building/Temperature/Fridge/SingleFridgeLid</texPath>
+								<graphicClass>Graphic_Multi</graphicClass>
+								<shaderType>Transparent</shaderType>
+								<drawSize>(3,3)</drawSize>
+							</graphicData>
+							<altitudeLayer>Projectile</altitudeLayer>
+						</li>
+	          <li Class='LWM.DeepStorage.Properties'>
+	            <minNumberStacks>2</minNumberStacks>
+	            <maxNumberStacks>4</maxNumberStacks>
+	            <maxMassOfStoredItem>100</maxMassOfStoredItem>
+	            <minTimeStoringTakes>25</minTimeStoringTakes>
+	            <additionalTimeEachStack>120</additionalTimeEachStack><!-- More things mean more time to lower them into position -->
+	            <additionalTimeEachDef>30</additionalTimeEachDef><!-- Got to sort things! -->
+	            <overlayType>SumOfAllItems</overlayType>
+	          </li>
+				 	</comps>
+					<inspectorTabs>
+	          <li>LWM.DeepStorage.ITab_DeepStorage_Inventory</li>
+	          <!-- TODO: NOT using Deep Storage base: include StockpileForDisaster ITab, etc -->
+					</inspectorTabs>
+					<designationHotKey>Misc12</designationHotKey>
+					<staticSunShadowHeight>0.6</staticSunShadowHeight>
+      	</ThingDef>
+      </value>
+    </match>
+  </Operation>
+</Patch>

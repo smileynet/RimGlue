@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+ 
+  <Operation Class="PatchOperationAdd">
+  <success>Always</success>
+        <xpath>Defs/ThingDef[defName = "Bow_Short"]/costList</xpath>
+            <value>
+                <VBY_PrimitiveFlint>20</VBY_PrimitiveFlint> <!-- ??  -->
+            </value>    
+  </Operation>
+  <!--
+  <Operation Class="PatchOperationAdd">
+  <success>Always</success>
+        <xpath>Defs/ThingDef[defName = "Bow_Short"]/recipeMaker</xpath>
+            <value>
+                <researchPrerequisite Inherit="False"/> 
+            </value>    
+  </Operation>
+  -->
+ <Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>Thinking Spot</li>
+		<li>Early Times</li>
+    </mods>
+	<success>Always</success>
+    <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName = "MeleeWeapon_Club"]/recipeMaker</xpath>
+            <value>
+				<researchPrerequisite Inherit="False"/>
+            </value>  
+    </nomatch>
+  </Operation>
+  
+  <Operation Class="PatchOperationAdd">
+  <success>Always</success>
+        <xpath>Defs/ThingDef[defName = "Bow_Recurve"]/costList</xpath>
+            <value>
+                <VBY_PrimitiveFlint>25</VBY_PrimitiveFlint> <!-- ??  -->
+            </value>    
+  </Operation>
+  
+  <Operation Class="PatchOperationAdd">
+  <success>Always</success>
+        <xpath>Defs/ThingDef[defName = "Bow_Great"]/costList</xpath>
+            <value>
+                <VBY_PrimitiveFlint>35</VBY_PrimitiveFlint> <!-- ??  -->
+            </value>    
+  </Operation>
+  <!--
+  <Operation Class="PatchOperationAdd">
+  <success>Always</success>
+        <xpath>Defs/ThingDef[defName = "MeleeWeapon_Spear"]</xpath>
+            <value>
+                <costList>
+				   <VBY_PrimitiveFlint>15</VBY_PrimitiveFlint>
+				</costList>  ??  
+            </value>    
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+  <success>Always</success>
+        <xpath>Defs/ThingDef[defName = "MeleeWeapon_Spear"]/recipeMaker/researchPrerequisite</xpath>
+  </Operation>
+  -->
+  <Operation Class="PatchOperationRemove">
+  <success>Always</success>
+        <xpath>Defs/ThingDef[defName = "MeleeWeapon_Spear"]/weaponTags[li="NeolithicMeleeAdvanced"]</xpath>
+  </Operation>
+  
+  <Operation Class="PatchOperationReplace">
+  <success>Always</success>
+        <xpath>Defs/ThingDef[defName = "MeleeWeapon_Spear"]/techLevel</xpath>
+            <value>
+			  <techLevel>Medieval</techLevel>
+            </value>    
+  </Operation>
+  
+  <Operation Class="PatchOperationReplace">
+  <success>Always</success>
+        <xpath>Defs/ThingDef[defName = "MeleeWeapon_Knife"]/weaponTags</xpath>
+			<value>
+			  <weaponTags>
+				  <li>MedievalMeleeBasic</li>
+				</weaponTags>
+            </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationReplace">
+  <success>Always</success>
+        <xpath>Defs/ThingDef[defName = "MeleeWeapon_Knife"]/techLevel</xpath>
+            <value>
+			  <techLevel>Medieval</techLevel>
+            </value>    
+  </Operation>
+  
+  <Operation Class="PatchOperationReplace">
+  <success>Always</success>
+        <xpath>Defs/ThingDef[defName = "MeleeWeapon_Knife"]/recipeMaker</xpath>
+            <value>
+			  <recipeMaker>
+				  <researchPrerequisite>Smithing</researchPrerequisite>
+			  </recipeMaker>
+            </value>    
+  </Operation>
+  
+  
+</Patch> 

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<ThingDefFishMashgon.label>Машгон</ThingDefFishMashgon.label>
+	<ThingDefFishMashgon.description>Небольшой моллюск часто встречаются в прудах и болотах. Его название происходит от местных племен, называющих его "болотным драконом". Его легко поймать, он быстро размножается, служит основным источником белка.</ThingDefFishMashgon.description>
+	<Corpse_ThingDefFishMashgon.label>труп машгона</Corpse_ThingDefFishMashgon.label>
+	<Corpse_ThingDefFishMashgon.description>Труп машгона.</Corpse_ThingDefFishMashgon.description>
+
+	<ThingDefFishSduiggles.label>Свигл</ThingDefFishSduiggles.label>
+	<ThingDefFishSduiggles.description>Свигла можно найти в болотах и мелководьях. Этот вид кальмара очень умен и красив. И кто хотел бы его после этого ловить? Вы? Да вы монстр!</ThingDefFishSduiggles.description>
+	<Corpse_ThingDefFishSduiggles.label>труп свигла</Corpse_ThingDefFishSduiggles.label>
+	<Corpse_ThingDefFishSduiggles.description>Труп свигла.</Corpse_ThingDefFishSduiggles.description>
+
+	<ThingDefFishSeasnake.label>Морской змей</ThingDefFishSeasnake.label>
+	<ThingDefFishSeasnake.description>Большая морская змея.</ThingDefFishSeasnake.description>
+	<Corpse_ThingDefFishSeasnake.label>труп морского змея</Corpse_ThingDefFishSeasnake.label>
+	<Corpse_ThingDefFishSeasnake.description>Труп морского змея.</Corpse_ThingDefFishSeasnake.description>
+
+	<ThingDefFishBlueblade.label>Голубой клинок</ThingDefFishBlueblade.label>
+	<ThingDefFishBlueblade.description>Очень распространённая рыба на мелководье. Способна жить практически в любой воде: от горячих источников до ледяных вод.</ThingDefFishBlueblade.description>
+	<Corpse_ThingDefFishBlueblade.label>труп голубого клинка</Corpse_ThingDefFishBlueblade.label>
+	<Corpse_ThingDefFishBlueblade.description>Труп голубого клинка.</Corpse_ThingDefFishBlueblade.description>
+
+	<ThingDefFishTailteeth.label>Хвостатый шилозуб</ThingDefFishTailteeth.label>
+	<ThingDefFishTailteeth.description>Этот грозный хищник берет свое название от его коварной тактики. Он медленно приближается к неподозревающим жертвам, набрасывается и высасывает их живьем! Использует огромный хвост, как приманку. А его зубы, как правило, последнее что видит жертва.</ThingDefFishTailteeth.description>
+	<Corpse_ThingDefFishTailteeth.label>труп хвостатого шилозуба</Corpse_ThingDefFishTailteeth.label>
+	<Corpse_ThingDefFishTailteeth.description>Труп хвостатого шилозуба.</Corpse_ThingDefFishTailteeth.description>
+
+</LanguageData>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!-- Patch to Vanilla Weapons Expanded -->
+
+<!-- Remove duplicates -->
+  <Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Vanilla Weapons Expanded</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+<!-- Remove ranged -->
+			<li Class="PatchOperationRemove">
+			  <xpath>/Defs/ThingDef[defName="VWE_Bow_Crossbow"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+			  <xpath>/Defs/ThingDef[defName="VWE_Throwing_Knives"]</xpath>
+			</li>
+
+<!-- Remove duplicate tools and melee -->
+			<li Class="PatchOperationRemove">
+			  <xpath>/Defs/ThingDef[defName="VWE_MeleeWeapon_Shovel"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+			  <xpath>/Defs/ThingDef[defName="VWE_MeleeWeapon_Cleaver"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+			  <xpath>/Defs/ThingDef[defName="VWE_MeleeWeapon_Pickaxe"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+			  <xpath>/Defs/ThingDef[defName="VWE_MeleeWeapon_Hammer"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+			  <xpath>/Defs/ThingDef[defName="VWE_MeleeWeapon_BattleAxe"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+			  <xpath>/Defs/ThingDef[defName="VWE_MeleeWeapon_Halberd"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+			  <xpath>/Defs/ThingDef[defName="VWE_MeleeWeapon_Axe"]</xpath>
+			</li>
+		</operations>
+	</match>
+  </Operation>
+
+  <!-- Patch for compatibility with Dual Wield -->
+<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Dual Wield</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+	<li Class ="PatchOperationAddModExtension">
+		<xpath>/Defs/ThingDef[@Name = "MM_MWeaponStuffed2h"]</xpath>
+		<value>
+			<li Class="DualWield.DefModExtension_DefaultSettings">
+				<dualWield>False</dualWield>
+				<twoHand>True</twoHand> 
+			</li>
+		</value>
+	</li>
+	<li Class ="PatchOperationAddModExtension">
+		<xpath>/Defs/ThingDef[@Name = "MM_MWeaponStuffed1h"]</xpath>
+		<value>
+			<li Class="DualWield.DefModExtension_DefaultSettings">
+				<dualWield>True</dualWield>
+				<twoHand>False</twoHand> 
+			</li>
+		</value>
+	</li>
+	<li Class ="PatchOperationAddModExtension">
+		<xpath>/Defs/ThingDef[@Name = "MM_RangedBase_1h"]</xpath>
+		<value>
+			<li Class="DualWield.DefModExtension_DefaultSettings">
+				<dualWield>True</dualWield>
+				<twoHand>False</twoHand> 
+			</li>
+		</value>
+	</li>
+	<li Class ="PatchOperationAddModExtension">
+		<xpath>/Defs/ThingDef[@Name = "MM_RangedBase_2h"]</xpath>
+		<value>
+			<li Class="DualWield.DefModExtension_DefaultSettings">
+				<dualWield>False</dualWield>
+				<twoHand>True</twoHand> 
+			</li>
+		</value>
+	</li>
+		</operations>
+	</match>
+  </Operation>
+  
+<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Vanilla Factions Expanded - Medieval</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+	<li Class ="PatchOperationAddModExtension">
+		<xpath>/Defs/ThingDef[@Name = "MM_MWeaponStuffed2h"]</xpath>
+        <value>
+            <li Class="VFECore.ThingDefExtension">
+                <usableWithShields>false</usableWithShields>
+            </li>
+        </value>
+	</li>
+	<li Class ="PatchOperationAddModExtension">
+		<xpath>/Defs/ThingDef[@Name = "MM_MWeaponStuffed1h"]</xpath>
+        <value>
+            <li Class="VFECore.ThingDefExtension">
+                <usableWithShields>true</usableWithShields>
+            </li>
+        </value>
+	</li>
+	<li Class ="PatchOperationAddModExtension">
+		<xpath>/Defs/ThingDef[@Name = "MM_RangedBase_2h"]</xpath>
+        <value>
+            <li Class="VFECore.ThingDefExtension">
+                <usableWithShields>false</usableWithShields>
+            </li>
+        </value>
+	</li>
+	<li Class ="PatchOperationAddModExtension">
+		<xpath>/Defs/ThingDef[@Name = "MM_RangedBase_1h"]</xpath>
+        <value>
+            <li Class="VFECore.ThingDefExtension">
+                <usableWithShields>true</usableWithShields>
+            </li>
+        </value>
+	</li>
+		</operations>
+	</match>
+  </Operation>
+
+</Patch>

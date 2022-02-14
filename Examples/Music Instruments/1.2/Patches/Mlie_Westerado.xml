@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="BisonHorn_Westerado"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs</xpath>
+      <value>
+        <ThingDef ParentName="HornMusicalInstrumentBase">
+          <label>bison blowing horn</label>
+          <defName>BisonBlowingHorn</defName>
+          <description>A horn of a Bison, sculpted into a musical horn.</description>
+          <graphicData>
+            <texPath>Things/Items/BisonBlowingHorn</texPath>
+            <drawSize>0.7</drawSize>
+          </graphicData>
+          <statBases>
+            <Mass>0.3</Mass>
+            <MarketValue>140</MarketValue>
+          </statBases>
+          <costList>
+            <BisonHorn_Westerado>1</BisonHorn_Westerado>
+          </costList>
+          <comps>
+            <li Class="MusicalInstruments.CompProperties_MusicalInstrument">
+              <compClass>MusicalInstruments.CompMusicalInstrument</compClass>
+              <easiness>0.4</easiness>
+              <expressiveness>0.4</expressiveness>
+              <xOffset>0.45</xOffset>
+              <zOffset>0.3</zOffset>
+              <xOffsetFacing>0.15</xOffsetFacing>
+              <zOffsetFacing>-0.15</zOffsetFacing>
+              <isWindInstrument>true</isWindInstrument>
+            </li>
+          </comps>
+        </ThingDef>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="IbexHorn_Westerado"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs</xpath>
+      <value>
+        <ThingDef ParentName="HornMusicalInstrumentBase">
+          <label>ibex blowing horn</label>
+          <defName>IbexBlowingHorn</defName>
+          <description>A horn of an Ibex, sculpted into a musical horn.</description>
+          <graphicData>
+            <texPath>Things/Items/IbexBlowingHorn</texPath>
+          </graphicData>
+          <statBases>
+            <Mass>0.6</Mass>
+            <MarketValue>33</MarketValue>
+          </statBases>
+          <costList>
+            <IbexHorn_Westerado>1</IbexHorn_Westerado>
+          </costList>
+          <comps>
+            <li Class="MusicalInstruments.CompProperties_MusicalInstrument">
+              <compClass>MusicalInstruments.CompMusicalInstrument</compClass>
+              <easiness>0.4</easiness>
+              <expressiveness>0.4</expressiveness>
+              <xOffset>0.3</xOffset>
+              <zOffset>0.4</zOffset>
+              <xOffsetFacing>0.1</xOffsetFacing>
+              <zOffsetFacing>-0.12</zOffsetFacing>
+              <isWindInstrument>true</isWindInstrument>
+            </li>
+          </comps>
+        </ThingDef>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="GazelleHorn_Westerado"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs</xpath>
+      <value>
+        <ThingDef ParentName="HornMusicalInstrumentBase">
+          <label>gazelle blowing horn</label>
+          <defName>GazelleBlowingHorn</defName>
+          <description>A horn of an Gazelle, sculpted into a musical horn.</description>
+          <graphicData>
+            <texPath>Things/Items/GazelleBlowingHorn</texPath>
+          </graphicData>
+          <statBases>
+            <Mass>0.6</Mass>
+            <MarketValue>42</MarketValue>
+          </statBases>
+          <costList>
+            <GazelleHorn_Westerado>1</GazelleHorn_Westerado>
+          </costList>
+          <comps>
+            <li Class="MusicalInstruments.CompProperties_MusicalInstrument">
+              <compClass>MusicalInstruments.CompMusicalInstrument</compClass>
+              <easiness>0.4</easiness>
+              <expressiveness>0.4</expressiveness>
+              <xOffset>0</xOffset>
+              <zOffset>0.3</zOffset>
+              <xOffsetFacing>0.1</xOffsetFacing>
+              <zOffsetFacing>-0.5</zOffsetFacing>
+              <isWindInstrument>true</isWindInstrument>
+            </li>
+          </comps>
+        </ThingDef>
+      </value>
+    </match>
+  </Operation>
+</Patch>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ResearchProjectDef>
+    <defName>smy_NeolithicTools</defName>
+    <label>neolithic tools</label>
+    <description>Learn to make tools and weapons using flint, wood, and stone resources.</description>
+    <baseCost>400</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>6.40</researchViewY>
+    <prerequisites>
+      <li>smy_NeolithicProduction</li>
+    </prerequisites>
+  </ResearchProjectDef>
+</Defs>  

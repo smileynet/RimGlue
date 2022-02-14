@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>Primitive Tools</li>
+    </mods>
+	<success>Always</success>
+	<match Class="PatchOperationSequence">
+	  <operations>
+		<li Class="PatchOperationReplace">
+		  <xpath>Defs/ThingDef[defName = "VBY_FlintSpear"]/recipeMaker/researchPrerequisite</xpath>
+			<value>
+				<researchPrerequisite>VBY_PrimitiveTools</researchPrerequisite>
+			</value>
+		</li>
+	  </operations>
+	</match>	
+  </Operation>
+
+
+</Patch>

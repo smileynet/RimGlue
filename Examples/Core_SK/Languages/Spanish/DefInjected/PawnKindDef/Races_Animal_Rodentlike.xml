@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Rodentlike -->
+
+  <Chipmunk.label>ardilla</Chipmunk.label>
+  <Chipmunk.labelPlural>ardillas</Chipmunk.labelPlural>
+  <Chipmunk.lifeStages.0.label>ardilla</Chipmunk.lifeStages.0.label>
+  <Chipmunk.lifeStages.0.labelPlural>ardillas</Chipmunk.lifeStages.0.labelPlural>
+  <Chipmunk.lifeStages.0.labelMale>ardilla masculina</Chipmunk.lifeStages.0.labelMale>
+  <Chipmunk.lifeStages.0.labelMalePlural>ardillas masculinas</Chipmunk.lifeStages.0.labelMalePlural>
+  <Chipmunk.lifeStages.0.labelFemale>ardilla femenina</Chipmunk.lifeStages.0.labelFemale>
+  <Chipmunk.lifeStages.0.labelFemalePlural>ardillas femeninas</Chipmunk.lifeStages.0.labelFemalePlural>
+  <Chipmunk.lifeStages.1.label>ardilla</Chipmunk.lifeStages.1.label>
+  <Chipmunk.lifeStages.1.labelPlural>ardillas</Chipmunk.lifeStages.1.labelPlural>
+  <Chipmunk.lifeStages.1.labelMale>ardilla masculina</Chipmunk.lifeStages.1.labelMale>
+  <Chipmunk.lifeStages.1.labelMalePlural>ardillas masculinas</Chipmunk.lifeStages.1.labelMalePlural>
+  <Chipmunk.lifeStages.1.labelFemale>ardilla femenina</Chipmunk.lifeStages.1.labelFemale>
+  <Chipmunk.lifeStages.1.labelFemalePlural>ardillas femeninas</Chipmunk.lifeStages.1.labelFemalePlural>
+  <Chipmunk.lifeStages.2.label>ardilla</Chipmunk.lifeStages.2.label>
+  <Chipmunk.lifeStages.2.labelPlural>ardillas</Chipmunk.lifeStages.2.labelPlural>
+  <Chipmunk.lifeStages.2.labelMale>ardilla masculina</Chipmunk.lifeStages.2.labelMale>
+  <Chipmunk.lifeStages.2.labelMalePlural>ardillas masculinas</Chipmunk.lifeStages.2.labelMalePlural>
+  <Chipmunk.lifeStages.2.labelFemale>ardilla femenina</Chipmunk.lifeStages.2.labelFemale>
+  <Chipmunk.lifeStages.2.labelFemalePlural>ardillas femeninas</Chipmunk.lifeStages.2.labelFemalePlural>
+  <Chipmunk.labelMale>ardilla masculina</Chipmunk.labelMale>
+  <Chipmunk.labelMalePlural>ardilla masculinas</Chipmunk.labelMalePlural>
+  <Chipmunk.labelFemale>ardilla femenina</Chipmunk.labelFemale>
+  <Chipmunk.labelFemalePlural>ardillas femeninas</Chipmunk.labelFemalePlural>
+
+
+</LanguageData>

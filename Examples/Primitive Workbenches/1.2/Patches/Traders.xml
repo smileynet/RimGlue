@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+ 
+  <Operation Class="PatchOperationAdd">
+  <success>Always</success>
+        <xpath>Defs/TraderKindDef[defName = "Base_Neolithic_Standard"]/stockGenerators</xpath>
+            <value>
+				<li Class="StockGenerator_SingleDef">
+					<thingDef>VBY_PrimitiveFlint</thingDef>
+					<countRange>50~200</countRange>
+				</li>
+				<li Class="StockGenerator_SingleDef">
+					<thingDef>VBY_Haycloth</thingDef>
+					<countRange>125~250</countRange>
+				</li>
+            </value>    
+  </Operation>
+  
+  <Operation Class="PatchOperationAdd">
+  <success>Always</success>
+        <xpath>Defs/TraderKindDef[defName = "Caravan_Neolithic_BulkGoods"]/stockGenerators</xpath>
+            <value>
+				<li Class="StockGenerator_SingleDef">
+					<thingDef>VBY_PrimitiveFlint</thingDef>
+					<countRange>35~125</countRange>
+				</li>
+				<li Class="StockGenerator_SingleDef">
+					<thingDef>VBY_Haycloth</thingDef>
+					<countRange>75~200</countRange>
+				</li>
+            </value>    
+  </Operation>
+  
+  <Operation Class="PatchOperationAdd">
+  <success>Always</success>
+        <xpath>Defs/TraderKindDef[defName = "Caravan_Neolithic_WarMerchant"]/stockGenerators</xpath>
+            <value>
+				<li Class="StockGenerator_SingleDef">
+					<thingDef>VBY_PrimitiveFlint</thingDef>
+					<countRange>25~50</countRange>
+				</li>
+            </value>    
+  </Operation>
+  
+  <Operation Class="PatchOperationAdd">
+  <success>Always</success>
+        <xpath>Defs/TraderKindDef[defName = "Caravan_Neolithic_Slaver"]/stockGenerators</xpath>
+            <value>
+				<li Class="StockGenerator_SingleDef">
+					<thingDef>VBY_PrimitiveFlint</thingDef>
+					<countRange>-5~25</countRange>
+				</li>
+				<li Class="StockGenerator_SingleDef">
+					<thingDef>VBY_Haycloth</thingDef>
+					<countRange>-15~20</countRange>
+				</li>
+            </value>    
+  </Operation>
+  
+  <Operation Class="PatchOperationAdd">
+  <success>Always</success>
+        <xpath>Defs/TraderKindDef[defName = "Caravan_Neolithic_ShamanMerchant"]/stockGenerators</xpath>
+            <value>
+				<li Class="StockGenerator_SingleDef">
+					<thingDef>VBY_PrimitiveFlint</thingDef>
+					<countRange>30~60</countRange>
+				</li>
+				<li Class="StockGenerator_SingleDef">
+					<thingDef>VBY_Haycloth</thingDef>
+					<countRange>15~45</countRange>
+				</li>
+            </value>    
+  </Operation>
+  
+  <Operation Class="PatchOperationAdd">
+  <success>Always</success>
+        <xpath>Defs/TraderKindDef[defName = "Visitor_Neolithic_Standard"]/stockGenerators</xpath>
+            <value>
+				<li Class="StockGenerator_SingleDef">
+					<thingDef>VBY_PrimitiveFlint</thingDef>
+					<countRange>2~25</countRange>
+				</li>
+				<li Class="StockGenerator_SingleDef">
+					<thingDef>VBY_Haycloth</thingDef>
+					<countRange>5~20</countRange>
+				</li>
+            </value>    
+  </Operation>
+  
+  <Operation Class="PatchOperationAdd">
+  <success>Always</success>
+        <xpath>Defs/TraderKindDef[defName = "Orbital_BulkGoods"]/stockGenerators</xpath>
+            <value>
+				<li Class="StockGenerator_SingleDef">
+					<thingDef>VBY_PrimitiveFlint</thingDef>
+					<countRange>100~400</countRange>
+				</li>
+				<li Class="StockGenerator_SingleDef">
+					<thingDef>VBY_Haycloth</thingDef>
+					<countRange>100~400</countRange>
+				</li>
+            </value>    
+  </Operation>
+  
+  <!--  Loot Maker  -->
+  <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingSetMakerDef[defName = "TribeRaidLootMaker"]/root[@Class="ThingSetMaker_MarketValue"]/fixedParams/filter/thingDefs</xpath>
+            <value>
+				<li>VBY_PrimitiveFlint</li>
+            </value>    
+  </Operation>
+  
+  <!-- ====================  Medieval Times  ==================================  -->
+  
+  
+  <Operation Class="PatchOperationFindMod">
+        <success>Always</success>
+        <mods>
+          <li>Medieval Times Unofficial Update</li>
+		  <li>Medieval Times Unofficial Update No Nan and legendary</li>
+        </mods>
+        <match Class="PatchOperationSequence">			
+            <operations>
+                <li Class="PatchOperationAdd">					
+		          <xpath>Defs/TraderKindDef[defName="MedTimes_Caravan_BulkGoods"]/stockGenerators</xpath>
+		            <value>
+						<li Class="StockGenerator_SingleDef">
+							<thingDef>VBY_PrimitiveFlint</thingDef>
+							<countRange>100~200</countRange>
+						</li>
+						<li Class="StockGenerator_SingleDef">
+							<thingDef>VBY_Haycloth</thingDef>
+							<countRange>125~400</countRange>
+						</li>
+		            </value>
+				</li>
+				<li Class="PatchOperationAdd">					
+		          <xpath>Defs/TraderKindDef[defName="MedTimes_FactionBase"]/stockGenerators</xpath>
+		            <value>
+						<li Class="StockGenerator_SingleDef">
+							<thingDef>VBY_PrimitiveFlint</thingDef>
+							<countRange>50~250</countRange>
+						</li>
+						<li Class="StockGenerator_SingleDef">
+							<thingDef>VBY_Haycloth</thingDef>
+							<countRange>125~550</countRange>
+						</li>
+		            </value>
+				</li>
+			</operations>
+        </match>
+	</Operation>	
+	
+	
+	<!-- ====================  Emporium  ==================================  -->
+  
+  
+  <Operation Class="PatchOperationFindMod">
+        <success>Always</success>
+        <mods>
+          <li>Emporium (Continued)</li>
+        </mods>
+        <match Class="PatchOperationSequence">			
+            <operations>
+                <li Class="PatchOperationAdd">					
+		          <xpath>Defs/TraderKindDef[defName="Caravan_Emporeum"]/stockGenerators</xpath>
+		            <value>
+						<li Class="StockGenerator_SingleDef">
+							<thingDef>VBY_PrimitiveFlint</thingDef>
+							<countRange>-20~50</countRange>
+						</li>
+						<li Class="StockGenerator_SingleDef">
+							<thingDef>VBY_Haycloth</thingDef>
+							<countRange>-25~125</countRange>
+						</li>
+		            </value>
+				</li>
+			</operations>
+        </match>
+	</Operation>	
+	
+  
+  <!-- ====================  MultipleTraders  ==================================  -->
+  
+  
+  <Operation Class="PatchOperationFindMod">
+        <success>Always</success>
+        <mods>
+          <li>[1.2]MultipleTraders</li>
+        </mods>
+        <match Class="PatchOperationSequence">			
+            <operations>
+                <li Class="PatchOperationAdd">					
+		          <xpath>Defs/TraderKindDef[defName="RessourceTrader"]/stockGenerators</xpath>
+		            <value>
+						<li Class="StockGenerator_SingleDef">
+							<thingDef>VBY_PrimitiveFlint</thingDef>
+							<countRange>100~1000</countRange>
+						</li>
+		            </value>
+				</li>
+			</operations>
+        </match>
+	</Operation>
+
+  <!-- ====================  Rock Crates Revived  ==================================  -->
+  
+  
+  <Operation Class="PatchOperationFindMod">
+        <success>Always</success>
+        <mods>
+          <li>Rock Crates Revived</li>
+        </mods>
+        <match Class="PatchOperationSequence">			
+            <operations>
+                <li Class="PatchOperationAdd">					
+		          <xpath>Defs/TraderKindDef[defName="Caravan_Outlander_Excavation"]/stockGenerators</xpath>
+		            <value>
+						<li Class="StockGenerator_SingleDef">
+							<thingDef>VBY_PrimitiveFlint</thingDef>
+							<countRange>50~250</countRange>
+						</li>
+		            </value>
+				</li>
+				<li Class="PatchOperationAdd">					
+		          <xpath>Defs/TraderKindDef[defName="Orbital_Excavation"]/stockGenerators</xpath>
+		            <value>
+						<li Class="StockGenerator_SingleDef">
+							<thingDef>VBY_PrimitiveFlint</thingDef>
+							<countRange>50~250</countRange>
+						</li>
+		            </value>
+				</li>
+				<li Class="PatchOperationAdd">					
+		          <xpath>Defs/TraderKindDef[defName="Caravan_Neolithic_Excavation"]/stockGenerators</xpath>
+		            <value>
+						<li Class="StockGenerator_SingleDef">
+							<thingDef>VBY_PrimitiveFlint</thingDef>
+							<countRange>50~250</countRange>
+						</li>
+		            </value>
+				</li>
+			</operations>
+        </match>
+	</Operation>	
+
+  <!-- ====================  Ninja Package  ==================================  -->
+  
+  
+  <Operation Class="PatchOperationFindMod">
+        <success>Always</success>
+        <mods>
+          <li>Ninja Package(continued)</li>
+        </mods>
+        <match Class="PatchOperationSequence">			
+            <operations>
+                <li Class="PatchOperationAdd">					
+		          <xpath>Defs/TraderKindDef[defName="Base_Akaki_Ninja_Standard"]/stockGenerators</xpath>
+		            <value>
+						<li Class="StockGenerator_SingleDef">
+							<thingDef>VBY_PrimitiveFlint</thingDef>
+							<countRange>0~250</countRange>
+						</li>
+		            </value>
+				</li>
+				<li Class="PatchOperationAdd">					
+		          <xpath>Defs/TraderKindDef[defName="Akaki_Ninja_BulkGoods"]/stockGenerators</xpath>
+		            <value>
+						<li Class="StockGenerator_SingleDef">
+							<thingDef>VBY_PrimitiveFlint</thingDef>
+							<countRange>50~250</countRange>
+						</li>
+						<li Class="StockGenerator_SingleDef">
+							<thingDef>VBY_Haycloth</thingDef>
+							<countRange>100~1250</countRange>
+						</li>
+		            </value>
+				</li>
+				<li Class="PatchOperationAdd">					
+		          <xpath>Defs/TraderKindDef[defName="Visitor_Akaki_Ninja_Standard"]/stockGenerators</xpath>
+		            <value>
+						<li Class="StockGenerator_SingleDef">
+							<thingDef>VBY_PrimitiveFlint</thingDef>
+							<countRange>-5~10</countRange>
+						</li>
+						<li Class="StockGenerator_SingleDef">
+							<thingDef>VBY_Haycloth</thingDef>
+							<countRange>-5~25</countRange>
+						</li>
+		            </value>
+				</li>
+			</operations>
+        </match>
+	</Operation>
+	
+	<!-- ====================  Sparkling Worlds  ==================================  -->
+  
+  
+  <Operation Class="PatchOperationFindMod">
+        <success>Always</success>
+        <mods>
+          <li>Sparkling Worlds - Full Mod</li>
+        </mods>
+        <match Class="PatchOperationSequence">			
+            <operations>
+                <li Class="PatchOperationAdd">					
+		          <xpath>Defs/TraderKindDef[defName="Caravan_MiningGoodsSW"]/stockGenerators</xpath>
+		            <value>
+						<li Class="StockGenerator_SingleDef">
+							<thingDef>VBY_PrimitiveFlint</thingDef>
+							<countRange>120~200</countRange>
+						</li>
+		            </value>
+				</li>
+			</operations>
+        </match>
+	</Operation>
+
+  
+
+  
+</Patch> 

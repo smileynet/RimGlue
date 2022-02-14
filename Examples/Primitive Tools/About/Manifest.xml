@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Manifest>
+  <identifier>Primitive Tools</identifier> 
+<version>1.0.1.6</version>  
+  <dependencies>
+	<li>PrimitiveProduction.velcroboy333 &gt;= 1.0.0</li>
+	<li>TreeChoppingSpeed.velcroboy333</li>
+  </dependencies>
+  <incompatibleWith>
+	<li>2159056022</li>
+  </incompatibleWith>
+  <loadBefore />
+  <loadAfter>
+	<li>2327252470</li>
+	<li>2566231583</li>
+	<li>2011655761</li>
+  </loadAfter>
+  <suggests>
+		<li>2249071438</li>
+		<li>2532255863</li>
+    </suggests>
+  <showCrossPromotions>true</showCrossPromotions>
+</Manifest>

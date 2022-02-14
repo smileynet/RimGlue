@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<ResearchProjectDef>
+		<defName>Gunmar_WarBow</defName>
+		<label>warbow</label>
+		<description>Craft warbows, Kill the enemy from a long distance.</description>
+		<baseCost>1500</baseCost>
+		<techLevel>Medieval</techLevel>
+		<prerequisites>
+			<li>Greatbow</li>
+		</prerequisites>
+  <researchViewX>2.00</researchViewX>
+  <researchViewY>0.70</researchViewY>
+	</ResearchProjectDef>
+
+
+</Defs>

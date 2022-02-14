@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+   <WorkGiverDef>
+    <defName>DoBillsMMCraftingBench</defName>
+	<label>do crafting</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Crafting</workType>
+    <priorityInType>110</priorityInType>
+    <fixedBillGiverDefs>
+	  <li>CraftingWorkBench</li>
+	</fixedBillGiverDefs>
+    <verb>craft</verb>
+    <gerund>crafting at</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+	<prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>
+
+</Defs>

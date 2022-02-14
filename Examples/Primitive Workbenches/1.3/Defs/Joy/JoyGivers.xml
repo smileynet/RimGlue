@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <JoyGiverDef>
+    <defName>VBY_TotemWorship</defName>
+    <giverClass>JoyGiver_WatchBuilding</giverClass>
+    <baseChance>1</baseChance>
+    <canDoWhileInBed>false</canDoWhileInBed>	
+    <thingDefs>
+      <li>VBY_AnimalTotem</li>
+      <li>VBY_InsectTotem</li>
+	  <li>VBY_AnimalRimTotem</li>
+    </thingDefs>	
+    <jobDef>VBY_TotemJob</jobDef>
+    <joyKind>Meditative</joyKind>
+    <desireSit>false</desireSit>	
+  </JoyGiverDef>
+  
+  <!--
+  <JoyGiverDef>
+    <defName>VBY_CampfireStoryTime</defName>
+    <giverClass>JoyGiver_WatchBuilding</giverClass>
+    <baseChance>1</baseChance>
+    <canDoWhileInBed>false</canDoWhileInBed>	
+    <thingDefs>
+      <li>Campfire</li>  
+    </thingDefs>
+    <jobDef>VBY_TellStories</jobDef>
+    <joyKind>Social</joyKind>
+	<desireSit>true</desireSit>
+  </JoyGiverDef>
+ 
+  <JoyGiverDef>
+    <defName></defName>
+    <giverClass>JoyGiver_InteractBuildingInteractionCell</giverClass>
+    <baseChance>1</baseChance>
+    <thingDefs>	   
+    </thingDefs>
+    <jobDef></jobDef>
+    <joyKind>Meditative</joyKind>
+    <requiredCapacities>
+      <li>Sight</li>
+      <li>Manipulation</li>	  
+    </requiredCapacities>
+  </JoyGiverDef>
+  
+-->
+  
+</Defs>  

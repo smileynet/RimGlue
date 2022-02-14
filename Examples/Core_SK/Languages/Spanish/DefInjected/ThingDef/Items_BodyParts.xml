@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- artificial - advanced prosthetic weapons -->
+
+  <!-- lifesupport system -->
+
+  <lifesupport.label>Sistema de soporte de vida</lifesupport.label>
+  <lifesupport.description>Una pieza de tecnología básica hecha para mantener a la víctima/paciente vivo.</lifesupport.description>
+
+  <SenexiumImplant.label>Implante de senexium</SenexiumImplant.label>
+  <SenexiumImplant.description>Implante de aceleración de edad. Multiplica el envejecimiento por 100</SenexiumImplant.description>
+
+
+</LanguageData>

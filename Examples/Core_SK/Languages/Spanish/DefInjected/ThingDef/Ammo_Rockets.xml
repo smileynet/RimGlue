@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- M72 LAW grenades -->
+
+  <Ammo_M72LAW.label>Granada M72 LAW (HEAT)</Ammo_M72LAW.label>
+  <Ammo_M72LAW.description>El M72  LAW es un arma portátil antitanques de un solo disparo de 66 mm sin guía.</Ammo_M72LAW.description>
+
+
+  <!-- AT Missile rounds -->
+
+  <Ammo_SPG9Grenade_HEAT.label>Ronda Misil AT (HEAT)</Ammo_SPG9Grenade_HEAT.label>
+  <Ammo_SPG9Grenade_HEAT.description>Un misil anti-tanque (ATM), un misil guiado anti-tanque (ATGM), un arma guiada anti-tanque (ATGW) o un arma guiada anti-armadura, es un misil guiado diseñado principalmente para golpear y destruir vehículos militares fuertemente blindados.</Ammo_SPG9Grenade_HEAT.description>
+
+  <Ammo_SPG9Grenade_Frag.label>Ronda Misil AT (Fragmentario)</Ammo_SPG9Grenade_Frag.label>
+  <Ammo_SPG9Grenade_Frag.description>Un misil anti-tanque (ATM), un misil guiado anti-tanque (ATGM), un arma guiada anti-tanque (ATGW) o un arma guiada anti-armadura, es un misil guiado diseñado principalmente para golpear y destruir vehículos militares fuertemente blindados.</Ammo_SPG9Grenade_Frag.description>
+
+
+  <!-- 130mm rocket missiles -->
+
+  <Ammo_130mmRocketMissile.label>Cohete Misil 130mm (HE)</Ammo_130mmRocketMissile.label>
+  <Ammo_130mmRocketMissile.description>Cohete Misil 130mm.</Ammo_130mmRocketMissile.description>
+
+
+</LanguageData>

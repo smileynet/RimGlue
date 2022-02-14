@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <LockingDoorBasic.reportString>Bloqueando/Desbloqueando puerta.</LockingDoorBasic.reportString>
+  <SwitchWindowState.reportString>Abriendo/Cerrando ventana.</SwitchWindowState.reportString>
+  <RefuelBurner.reportString>Haciendo algo.</RefuelBurner.reportString>
+  <WatchGlassTelevision.reportString>Viendo películas.</WatchGlassTelevision.reportString>
+  <LockerBasic.reportString>Yendo a bloquear.</LockerBasic.reportString>
+  <ColorChanger.reportString>Yendo a coloreas estación.</ColorChanger.reportString>
+  <HSC.reportString>Yendo a estilizar estación.</HSC.reportString>
+  <BeatFireWithTool.reportString>Apagando fuego</BeatFireWithTool.reportString>
+  <Mend.reportString>Reparando TargetB.</Mend.reportString>
+  <Recycle.reportString>Recycling TargetB.</Recycle.reportString>
+  <Abuse.reportString>Abusando verbalmente de TargetA.</Abuse.reportString>
+
+
+  <!--<RepairItem.reportString>Reparando TargetB.</RepairItem.reportString>-->
+
+</LanguageData>

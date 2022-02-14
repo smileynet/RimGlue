@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+	
+	<!-- ==================     =========================  -->
+	<!--
+  <Operation Class="PatchOperationAdd">
+  <success>Always</success>
+        <xpath>Defs/WorkGiverDef[defName = "DoBillsButcherFlesh"]/fixedBillGiverDefs</xpath>
+            <value>
+                <li>VBY_PrimitiveButcherTable</li>
+            </value>    
+  </Operation>
+  -->
+  <Operation Class="PatchOperationAdd">
+  <success>Always</success>
+        <xpath>Defs/WorkGiverDef[defName = "DoBillsMakeApparel"]/fixedBillGiverDefs</xpath>
+            <value>
+                <li>VBY_PrimitiveTailoringTable</li>
+            </value>    
+  </Operation>
+  
+  <Operation Class="PatchOperationAdd">
+  <success>Always</success>
+        <xpath>Defs/WorkGiverDef[defName = "DoBillsProduceDrugs"]/fixedBillGiverDefs</xpath>
+            <value>
+                <li>VBY_PrimitiveBrewery_HerbalistBench</li>
+            </value>    
+  </Operation>
+  
+  <Operation Class="PatchOperationAdd">
+  <success>Always</success>
+        <xpath>Defs/WorkGiverDef[defName = "DoBillsStonecut"]/fixedBillGiverDefs</xpath>
+            <value>
+                <li>VBY_PrimitiveStoneCuttingTable</li>
+				<li>VBY_PrimitiveStoneCuttingSpot</li>
+            </value>    
+  </Operation>
+  
+</Patch>  

@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef Name="TE_DrugBase" Abstract="True">
+		<thingClass>ThingWithComps</thingClass>
+		<category>Item</category>
+		<useHitPoints>true</useHitPoints>
+		<selectable>true</selectable>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<DeteriorationRate>2</DeteriorationRate>
+			<Beauty>-4</Beauty>
+		</statBases>
+		<altitudeLayer>Item</altitudeLayer>
+		<stackLimit>400</stackLimit>
+		<thingCategories>
+			<li>Drugs</li>
+		</thingCategories>
+		<alwaysHaulable>true</alwaysHaulable>
+		<comps>
+			<li Class="CompProperties_Forbiddable" />
+		</comps>
+		<pathCost>15</pathCost>
+		<resourceReadoutPriority>Last</resourceReadoutPriority>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<ingestible>
+			<preferability>NeverForNutrition</preferability>
+			<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+			<joyKind>Chemical</joyKind>
+			<chairSearchRadius>8</chairSearchRadius>
+		</ingestible>
+		<storedConceptLearnOpportunity>DrugPolicies</storedConceptLearnOpportunity>
+	</ThingDef>
+
+	<ThingDef Name="TE_MakeableDrugBase" ParentName="TE_DrugBase" Abstract="True">
+		<recipeMaker>
+			      <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+			<workSkill>Intellectual</workSkill>
+			<effectWorking>Cook</effectWorking>
+			<soundWorking>Recipe_CookMeal</soundWorking>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="TE_MakeableDrugBase">
+		<defName>PsychoidTea</defName>
+		<label>tribal psychoid tea</label>
+		<description>A mild stimulant made from raw psychoid leaves. Has a subtle effect on mood, and fortifies the immune system.</description>
+		<graphicData>
+			<texPath>Things/Item/Drug/PsychoidTea</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<statBases>
+			<WorkToMake>1200</WorkToMake>
+			<MarketValue>10</MarketValue>
+			<Mass>0.01</Mass>
+			<Nutrition>0.08</Nutrition>
+		</statBases>
+		<tradeability>Sellable</tradeability>
+		<techLevel>Neolithic</techLevel>
+		<tickerType>Rare</tickerType>
+		<ingestible>
+			<foodType>Plant, Processed</foodType>
+			<joy>0.40</joy>
+			
+			<drugCategory>Social</drugCategory>
+			<baseIngestTicks>720</baseIngestTicks>
+			<nurseable>true</nurseable>
+			<ingestSound>Ingest_Inject</ingestSound>
+			<ingestEffectEat>EatVegetarian</ingestEffectEat>
+			<ingestHoldOffsetStanding>
+				<northDefault>
+					<offset>(0.18,0,0)</offset>
+				</northDefault>
+			</ingestHoldOffsetStanding>
+			<ingestHoldUsesTable>false</ingestHoldUsesTable>
+			<ingestCommandString>Drink {0}</ingestCommandString>
+			<ingestReportString>Drinking {0}.</ingestReportString>
+			<chairSearchRadius>25</chairSearchRadius>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>PsychoidTeaHigh</hediffDef>
+					<severity>0.70</severity>
+					<toleranceChemical>Psychite</toleranceChemical>
+				</li>
+				<li Class="IngestionOutcomeDoer_OffsetNeed">
+					<need>Rest</need>
+					<offset>0.2</offset>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>PsychiteTolerance</hediffDef>
+					<severity>0.02</severity>
+					<divideByBodySize>true</divideByBodySize>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<recipeMaker>
+			<bulkRecipeCount>4</bulkRecipeCount>
+			<soundWorking>Recipe_Brewing</soundWorking>
+			<workSkill>Intellectual</workSkill>
+			<researchPrerequisite>TribalEssentials</researchPrerequisite>
+			<recipeUsers>
+				<li>Campfire</li>
+				<li>StoneOven</li>
+				<li>ElectricStove</li>
+				<li>FueledStove</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Medicine>3</Medicine>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<PsychoidLeaves>4</PsychoidLeaves>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>60</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>        
+			<li Class="CompProperties_Drug">
+				<chemical>Psychite</chemical>
+				<addictiveness>0.05</addictiveness>
+				<minToleranceToAddict>0.25</minToleranceToAddict>
+				<existingAddictionSeverityOffset>0.20</existingAddictionSeverityOffset>
+				<needLevelOffset>0.4</needLevelOffset>
+				<isCombatEnhancingDrug>false</isCombatEnhancingDrug>
+				<listOrder>30</listOrder>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<HediffDef>
+		<defName>PsychoidTeaHigh</defName>
+		<description>Tribal Psychoid Tea High</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>psychoid tea</label>
+		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.7</severityPerDay>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<socialFightChanceFactor>0.8</socialFightChanceFactor>        
+				<painFactor>0.9</painFactor>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.20</offset>
+					</li>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<offset>0.40</offset>
+					</li>
+					<li>
+						<capacity>BloodPumping</capacity>
+						<offset>0.20</offset>
+					</li>
+					<li>
+						<capacity>Metabolism</capacity>
+						<offset>0.20</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<ThoughtDef>
+		<defName>PsychoidTeaHigh</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>PsychoidTeaHigh</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>drank psychoid tea</label>
+				<description>It soothes my mind a little.</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+</Defs>

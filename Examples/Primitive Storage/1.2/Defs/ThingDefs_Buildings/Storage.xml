@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- ==================== Clay Pots ==================== -->
+
+  <ThingDef ParentName="LWM_DeepStorage" >
+    <defName>VBY_Clay_Pot</defName>
+    <label>stone pot</label>
+    <description>A stone pot for storage.</description>
+    <graphicData>
+      <texPath>Things/HMC_Clay_Pot/HMC_Clay_Pot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <uiIconPath>Things/HMC_Clay_Pot/HMC_Clay_Pot</uiIconPath>
+    <castEdgeShadows>false</castEdgeShadows>
+	<pathCost>40</pathCost>
+	<fillPercent>0.3</fillPercent>
+    <size>(1,1)</size>
+    <statBases>
+      <Beauty>0.5</Beauty>
+      <MaxHitPoints>30</MaxHitPoints>
+      <WorkToBuild>600</WorkToBuild>
+      <Flammability>0.5</Flammability>
+      <Mass>8</Mass>
+    </statBases>
+    <stuffCategories>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>30</costStuffCount>
+    <building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+      <defaultStorageSettings>
+        <priority>Low</priority>
+        <filter>
+        </filter>
+      </defaultStorageSettings>
+	  <fixedStorageSettings>
+        <filter>          
+          <categories>
+            <li>PlantFoodRaw</li>
+            <li>Medicine</li>
+            <li>Drugs</li>
+            <li>PlantMatter</li>
+          </categories>
+          <thingDefs>
+            <li>Gold</li><!-- so heavy! :o -->
+            <li>Silver</li>
+			<li>Jade</li>
+			<li>Pemmican</li>
+			<li>Kibble</li>
+          </thingDefs>
+        </filter>
+      </fixedStorageSettings>
+    </building>
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>1</minNumberStacks>
+        <maxNumberStacks>5</maxNumberStacks> <!-- In-game 10 -->
+        <timeStoringTakes>20</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>None</overlayType>
+		<!--<maxTotalMass>80</maxTotalMass>   ??  -->
+      </li>
+	  <li><compClass>CompQuality</compClass></li>
+	  <li Class="CompProperties_Art">
+        <nameMaker>NamerArtFurniture</nameMaker>
+        <descriptionMaker>ArtDescription_Furniture</descriptionMaker>
+        <minQualityForArtistic>Awful</minQualityForArtistic>
+      </li>
+    </comps>
+    <researchPrerequisites Inherit="false" />	
+	<inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+  </ThingDef>
+
+	<!-- ==================== 2 ==================== -->
+  
+  <ThingDef ParentName="LWM_DeepStorage" >
+    <defName>VBY_Clay_Pot_Two</defName>
+    <label>stone pot</label>
+    <description>A stone pot for storage.</description>
+    <graphicData>
+      <texPath>Things/HMC_Clay_PotTwo/HMC_Clay_PotTwo</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <uiIconPath>Things/HMC_Clay_PotTwo/HMC_Clay_PotTwo</uiIconPath>
+    <castEdgeShadows>false</castEdgeShadows>
+	<pathCost>40</pathCost>
+	<fillPercent>0.3</fillPercent>
+    <size>(1,1)</size>
+    <statBases>
+      <Beauty>0.5</Beauty>
+      <MaxHitPoints>30</MaxHitPoints>
+      <WorkToBuild>600</WorkToBuild>
+      <Flammability>0.5</Flammability>
+      <Mass>8</Mass>
+    </statBases>
+    <stuffCategories>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>30</costStuffCount>
+    <building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+      <defaultStorageSettings>
+        <priority>Low</priority>
+        <filter>
+        </filter>
+      </defaultStorageSettings>
+	  <fixedStorageSettings>
+        <filter>          
+          <categories>
+            <li>PlantFoodRaw</li>
+            <li>Medicine</li>
+            <li>Drugs</li>
+            <li>PlantMatter</li>
+			<li>FoodRaw</li>
+          </categories>
+          <thingDefs>
+            <li>Gold</li><!-- so heavy! :o -->
+            <li>Silver</li>
+			<li>Jade</li>
+			<li>Pemmican</li>
+			<li>Kibble</li>
+          </thingDefs>
+        </filter>
+      </fixedStorageSettings>
+    </building>
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>1</minNumberStacks>
+        <maxNumberStacks>5</maxNumberStacks> <!-- In-game 10 -->
+        <timeStoringTakes>20</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>None</overlayType>
+		<!-- <maxTotalMass>80</maxTotalMass>   ??  -->
+      </li>
+	  <li><compClass>CompQuality</compClass></li>
+	  <li Class="CompProperties_Art">
+        <nameMaker>NamerArtFurniture</nameMaker>
+        <descriptionMaker>ArtDescription_Furniture</descriptionMaker>
+        <minQualityForArtistic>Awful</minQualityForArtistic>
+      </li>
+    </comps>
+	<researchPrerequisites Inherit="false" />
+	<inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+  </ThingDef>
+   
+  <!-- ==================== Wood Pile ==================== -->
+  
+  <ThingDef ParentName="LWM_DeepStorage" >
+    <defName>VBY_WoodPile</defName>
+    <label>wood pile</label>
+    <description>A wood pile for stacking wood.</description>
+    <graphicData>
+      <texPath>Things/HMC_WoodPile/HMC_WoodPile</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3,1)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <uiIconPath>Things/HMC_WoodPile/HMC_WoodPile</uiIconPath>
+    <castEdgeShadows>true</castEdgeShadows>
+	<rotatable>false</rotatable>
+	<fillPercent>0.7</fillPercent>
+	<pathCost>140</pathCost>
+    <size>(3,1)</size>
+    <statBases>
+      <Beauty>-4</Beauty>
+      <MaxHitPoints>300</MaxHitPoints>
+      <WorkToBuild>6000</WorkToBuild>
+      <Flammability>5</Flammability>
+      <Mass>30</Mass>
+    </statBases>
+    <stuffCategories>
+      <li>Woody</li>
+    </stuffCategories>
+    <costStuffCount>75</costStuffCount>
+    <building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+      <defaultStorageSettings>
+        <priority>Important</priority>
+        <filter>
+        </filter>
+      </defaultStorageSettings>
+	  <fixedStorageSettings>
+        <filter>       
+          <thingDefs>
+            <li>WoodLog</li>
+          </thingDefs>
+        </filter>
+      </fixedStorageSettings>
+	  <uninstallWork>1500</uninstallWork>
+    </building>
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>1</minNumberStacks>
+        <maxNumberStacks>5</maxNumberStacks> <!-- In-game 10 -->
+        <timeStoringTakes>100</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>None</overlayType>
+		<!-- <maxTotalMass>80</maxTotalMass>   ??  -->
+      </li>
+    </comps>
+	<researchPrerequisites Inherit="false" />
+  </ThingDef>
+  
+  <!-- ==================== Woven Baskets ==================== -->
+  
+  <ThingDef ParentName="LWM_DeepStorage" >
+    <defName>VBY_Woven_Basket</defName>
+    <label>woven basket</label>
+    <description>A woven basket for storage</description>
+    <graphicData>
+      <texPath>Things/HMC_Woven_Basket/HMC_Woven_Basket</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+	<fillPercent>0.3</fillPercent>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <uiIconPath>Things/HMC_Woven_Basket/HMC_Woven_Basket</uiIconPath>
+    <castEdgeShadows>true</castEdgeShadows>
+	<pathCost>10</pathCost>
+    <size>(1,1)</size>
+    <statBases>
+      <Beauty>0.5</Beauty>
+      <MaxHitPoints>30</MaxHitPoints>
+      <WorkToBuild>600</WorkToBuild>
+      <Flammability>2</Flammability>
+      <Mass>5</Mass>
+    </statBases>
+    <costList>
+      <Hay>75</Hay>
+    </costList>
+    <building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+      <defaultStorageSettings>
+        <priority>Low</priority>
+        <filter>
+        </filter>
+      </defaultStorageSettings>	  
+    </building>
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>1</minNumberStacks>
+        <maxNumberStacks>5</maxNumberStacks> <!-- In-game 10 -->
+        <timeStoringTakes>20</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>None</overlayType>
+		<!--<maxTotalMass>80</maxTotalMass>   ??  -->
+      </li>
+	  <li><compClass>CompQuality</compClass></li>
+	  <li Class="CompProperties_Art">
+        <nameMaker>NamerArtFurniture</nameMaker>
+        <descriptionMaker>ArtDescription_Furniture</descriptionMaker>
+        <minQualityForArtistic>Awful</minQualityForArtistic>
+      </li>
+    </comps>
+	<researchPrerequisites Inherit="false" />
+	<inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+  </ThingDef>
+
+	<!-- ==================== 2 ==================== -->
+  
+  <ThingDef ParentName="LWM_DeepStorage" >
+    <defName>VBY_WovenBasket_Two</defName>
+    <label>woven basket</label>
+    <description>A woven basket for storage</description>
+    <graphicData>
+      <texPath>Things/HMC_WovenBasket_Two/HMC_WovenBasket_Two</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <uiIconPath>Things/HMC_WovenBasket_Two/HMC_WovenBasket_Two</uiIconPath>
+    <castEdgeShadows>true</castEdgeShadows>
+	<fillPercent>0.3</fillPercent>
+	<pathCost>10</pathCost>
+    <size>(1,1)</size>
+    <statBases>
+      <Beauty>0.5</Beauty>
+      <MaxHitPoints>30</MaxHitPoints>
+      <WorkToBuild>600</WorkToBuild>
+      <Flammability>2</Flammability>
+      <Mass>5</Mass>
+    </statBases>
+    <costList>
+      <Hay>75</Hay>
+    </costList>
+    <building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+      <defaultStorageSettings>
+        <priority>Low</priority>
+        <filter>
+        </filter>
+      </defaultStorageSettings>	  
+    </building>
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>1</minNumberStacks>
+        <maxNumberStacks>5</maxNumberStacks> <!-- In-game 10 -->
+        <timeStoringTakes>20</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>None</overlayType>
+		<!-- <maxTotalMass>80</maxTotalMass>   ??  -->
+      </li>
+	  <li><compClass>CompQuality</compClass></li>
+	  <li Class="CompProperties_Art">
+        <nameMaker>NamerArtFurniture</nameMaker>
+        <descriptionMaker>ArtDescription_Furniture</descriptionMaker>
+        <minQualityForArtistic>Awful</minQualityForArtistic>
+      </li>
+    </comps>
+	<researchPrerequisites Inherit="false" />
+	<inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+  </ThingDef>
+  
+  <!-- ==================== Storage Tent ==================== -->
+  
+  <ThingDef ParentName="LWM_DeepStorage" >
+    <defName>VBY_StorageTent</defName>
+    <label>storage tent</label>
+    <description>A storage tent for....storing things.</description>
+    <graphicData>
+      <texPath>Things/HMC_StorageTent/HMC_StorageTent</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3,3)</drawSize>
+      <drawRotated>false</drawRotated>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<canBeUsedUnderRoof>false</canBeUsedUnderRoof>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <uiIconPath>Things/HMC_StorageTent/HMC_StorageTent</uiIconPath>
+    <castEdgeShadows>true</castEdgeShadows>
+	<pathCost>250</pathCost>
+    <size>(3,3)</size>
+	<fillPercent>0.6</fillPercent>
+    <statBases>
+      <Beauty>0</Beauty>
+      <MaxHitPoints>300</MaxHitPoints>
+      <WorkToBuild>10000</WorkToBuild>
+      <Flammability>1</Flammability>
+      <Mass>40</Mass>
+    </statBases>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+	<costList>
+      <WoodLog>15</WoodLog>
+    </costList>
+    <costStuffCount>50</costStuffCount>
+    <building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+	  <uninstallWork>800</uninstallWork>
+      <defaultStorageSettings>
+        <priority>Important</priority>
+        <filter>
+        </filter>
+      </defaultStorageSettings>
+    </building>
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>1</minNumberStacks>
+        <maxNumberStacks>5</maxNumberStacks> <!-- In-game 10 -->
+        <timeStoringTakes>35</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>None</overlayType>
+		<!-- <maxTotalMass>80</maxTotalMass>   ??  -->
+      </li>
+    </comps>
+	<placeWorkers>
+      <li>PlaceWorker_NotUnderRoof</li>
+    </placeWorkers>
+	<researchPrerequisites Inherit="false" />
+  </ThingDef>
+  
+  <!-- ==================== Storage Pit ==================== -->
+      
+	  
+	  <ThingDef ParentName="LWM_DeepStorage" >
+    <defName>VBY_StoragePit</defName>
+    <label>storage pit</label>
+    <description>A storage pit. Keeps things sligthly cooler underground.</description>
+    <graphicData>
+      <texPath>Things/HMC_StoragePit/HMC_StoragePit</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3,3)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <uiIconPath>Things/HMC_StoragePit/HMC_StoragePit</uiIconPath>
+    <castEdgeShadows>false</castEdgeShadows>
+	<pathCost>5</pathCost>
+	<fillPercent>0.01</fillPercent>
+	<minifiedDef Inherit="false" />
+	<thingCategories Inherit="false" />
+    <size>(1,1)</size>
+    <statBases>
+      <Beauty>-2</Beauty>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <WorkToBuild>15000</WorkToBuild>
+      <Flammability>0.0</Flammability>
+      <Mass>4000</Mass>
+    </statBases>
+    <stuffCategories>
+      <li>Woody</li>
+    </stuffCategories>
+    <costStuffCount>25</costStuffCount>
+	<terrainAffordanceNeeded>Diggable</terrainAffordanceNeeded>
+    <building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+      <defaultStorageSettings>
+        <priority>Important</priority>
+        <filter>
+        </filter>
+      </defaultStorageSettings>
+    </building>
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>1</minNumberStacks>
+        <maxNumberStacks>45</maxNumberStacks> <!-- In-game 10 -->
+        <timeStoringTakes>300</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>None</overlayType>
+		<!-- <maxTotalMass>80</maxTotalMass>   ??  -->
+      </li>
+	  <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusherPowered</compClass>
+        <heatPerSecond>-12</heatPerSecond>
+        <heatPushMinTemperature>2.5</heatPushMinTemperature>
+      </li>
+    </comps>
+	<researchPrerequisites Inherit="false" />
+  </ThingDef>
+  
+  
+  <!-- ==================== Granary ==================== -->
+  
+  <ThingDef ParentName="LWM_DeepStorage" >
+    <defName>VBY_Granary</defName>
+    <label>granary</label>
+    <description>A granary for keeping food dry.</description>
+    <graphicData>
+      <texPath>Things/HMC_Granary/HMC_Granary</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(4,4)</drawSize>
+	  <drawOffset>(0,0,1)</drawOffset>
+      <drawRotated>false</drawRotated>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<altitudeLayer>Projectile</altitudeLayer>
+	<canBeUsedUnderRoof>false</canBeUsedUnderRoof>
+	<minifiedDef Inherit="false" />
+	<thingCategories Inherit="false" />
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <uiIconPath>Things/HMC_Granary/HMC_Granary</uiIconPath>
+    <castEdgeShadows>false</castEdgeShadows>
+	<pathCost>250</pathCost>
+	<fillPercent>1</fillPercent>
+    <size>(3,2)</size>
+    <statBases>
+      <Beauty>0</Beauty>
+      <MaxHitPoints>600</MaxHitPoints>
+      <WorkToBuild>15000</WorkToBuild>
+      <Flammability>0.75</Flammability>
+      <Mass>140</Mass>
+    </statBases>
+    <stuffCategories>
+      <li>Stony</li>
+    </stuffCategories>
+	<costList>
+      <Hay>50</Hay>
+	  <WoodLog>15</WoodLog>
+    </costList>
+    <costStuffCount>75</costStuffCount>
+	<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+      <defaultStorageSettings>
+        <priority>Important</priority>
+        <filter>
+        </filter>
+      </defaultStorageSettings>
+	  <fixedStorageSettings>
+        <filter>          
+          <categories>
+            <li>PlantFoodRaw</li>
+            <li>PlantMatter</li>
+          </categories>
+        </filter>
+      </fixedStorageSettings>
+    </building>
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>1</minNumberStacks>
+        <maxNumberStacks>10</maxNumberStacks> <!-- In-game 10 -->
+        <timeStoringTakes>75</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>None</overlayType>
+		<!-- <maxTotalMass>80</maxTotalMass>   ??  -->
+      </li>
+    </comps>
+	<placeWorkers>
+      <li>PlaceWorker_NotUnderRoof</li>
+    </placeWorkers>
+	<researchPrerequisites Inherit="false" />
+  </ThingDef>
+  
+</Defs>  

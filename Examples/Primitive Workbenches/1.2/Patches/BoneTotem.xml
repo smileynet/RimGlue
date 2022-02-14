@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+ <Operation Class="PatchOperationFindMod">
+    <mods>
+	  <li>Rim of Madness - Bones</li>
+    </mods>
+      <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">					
+		  <xpath>Defs</xpath>
+		    <value>
+			   <ThingDef ParentName="VBY_TotemPoleBase">
+					<defName>VBY_BoneTotem</defName>
+					<label>bone totem</label>
+					<description>A tall artistic statue constructed of bones. Do you recognize anyone?</description>
+					<graphicData>
+					  <texPath>Things/Building/Art/Totems/HDM_BoneTotem</texPath>
+					  <graphicClass>Graphic_Single</graphicClass>
+					  <drawRotated>false</drawRotated>
+					  <allowFlip>false</allowFlip>	  			
+					  <drawSize>(3,4)</drawSize>
+					  <drawOffset>(0,0,1.5)</drawOffset>
+						<shadowData>
+							<volume>(0.5, 1, 0.25)</volume>
+							<offset>(0,0,0)</offset>
+						</shadowData>
+					</graphicData>
+					<costStuffCount Inherit ="False"/>
+					<stuffCategories Inherit ="False"/>
+					<costList>
+					  <BoneItem>125</BoneItem>
+					</costList>
+					<comps>
+					  <li Class="CompProperties_MeditationFocus">
+						<statDef>MeditationFocusStrength</statDef>
+						<focusTypes>
+						  <li>Morbid</li>
+						</focusTypes>
+					  </li>
+					</comps>
+					<uiIconPath>Things/Building/Art/Totems/HDM_BoneTotem</uiIconPath>	        
+				  </ThingDef>
+			</value>
+		</li>
+		<li Class="PatchOperationAdd">					
+		  <xpath>Defs/ThingDef[@Name="VBY_TotemPoleBase"]/comps/li[@Class="CompProperties_MeditationFocus"]/offsets/li[@Class="FocusStrengthOffset_BuildingDefsWithQuality"]/defs</xpath>
+		    <value>
+			  <li>VBY_BoneTotem</li>
+			</value>
+		</li>
+	  </operations>			
+      </match>
+  </Operation>
+  
+</Patch>  

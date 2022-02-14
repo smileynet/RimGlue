@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- War Bow -->
+
+  <Arrow_WarBow.label>部族の戦弓の矢</Arrow_WarBow.label>
+
+  <Gunmar_War_Bow.label>部族の戦弓</Gunmar_War_Bow.label>
+  <Gunmar_War_Bow.description>弦の張力を強めたことにより、飛距離を伸ばし、威力を高めた弓です。さらにリカーブボウよりも矢の速度が速くなっています。</Gunmar_War_Bow.description>
+  <Gunmar_War_Bow.tools.0.label>縁</Gunmar_War_Bow.tools.0.label>
+  <Gunmar_War_Bow.verbs.Verb_Shoot.label>部族の戦弓</Gunmar_War_Bow.verbs.Verb_Shoot.label>
+</LanguageData>

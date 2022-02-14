@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Weather controller core -->
+
+  <IonCannonControllerCore.label>Nucleo controlador de satelite ionico</IonCannonControllerCore.label>
+  <IonCannonControllerCore.description>Un dispositivo mecanoide para controlar el satélite de cañones de iones. Esta es una joya de la tecnología para los planetas agricultores y un arma temida para los enemigos.</IonCannonControllerCore.description>
+
+
+</LanguageData>

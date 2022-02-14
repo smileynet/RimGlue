@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<AnimalTrader.label>торговец животными</AnimalTrader.label>
+	<CraftedGoodsTrader.label>торговец промышленными ресурсами</CraftedGoodsTrader.label>
+	<DeepSpaceMiningShip.label>космический добытчик</DeepSpaceMiningShip.label>
+	<FoodTrader.label>торговец едой</FoodTrader.label>
+	<ManufacturedGoodsTrader.label>промышленный торговец</ManufacturedGoodsTrader.label>
+	<SlaveTrader.label>работорговец</SlaveTrader.label>
+
+</LanguageData>

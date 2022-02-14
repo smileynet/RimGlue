@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef Name="HeldMusicalInstrumentBase" Abstract="true">
+    <label>musicalinstrumentbase</label>
+    <thingClass>ThingWithComps</thingClass>
+    <category>Item</category>
+    <useHitPoints>true</useHitPoints>
+    <selectable>true</selectable>
+    <rotatable>true</rotatable>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <Flammability>0.7</Flammability>
+      <DeteriorationRate>2.0</DeteriorationRate>
+      <Beauty>1</Beauty>
+      <SellPriceFactor>0.50</SellPriceFactor>
+    </statBases>
+    <graphicData>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>2</drawSize>
+    </graphicData>
+    <altitudeLayer>Item</altitudeLayer>
+    <tickerType>Never</tickerType>
+    <alwaysHaulable>true</alwaysHaulable>
+    <smeltable>true</smeltable>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Artistic</workSkill>
+      <unfinishedThingDef>UnfinishedSculpture</unfinishedThingDef>
+      <effectWorking>Sculpt</effectWorking>
+      <soundWorking>Recipe_Sculpt</soundWorking>
+      <recipeUsers>
+        <li>TableMusicalInstruments</li>
+      </recipeUsers>
+      <defaultIngredientFilter>
+        <categories>
+          <li>Root</li>
+        </categories>
+        <disallowedThingDefs>
+          <li>Gold</li>
+          <li>Silver</li>
+          <li>Plasteel</li>
+          <li>Uranium</li>
+        </disallowedThingDefs>
+      </defaultIngredientFilter>
+    </recipeMaker>
+    <comps>
+      <li Class="CompProperties_Forbiddable" />
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtMusicalInstrument</nameMaker>
+        <descriptionMaker>ArtDescription_MusicalInstrument</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+      <li Class="CompProperties_Usable">
+        <useJob>TakeInstrument</useJob>
+        <useLabel>Take to inventory</useLabel>
+      </li>
+    </comps>
+    <tradeTags>
+      <li>MusicalInstrument</li>
+    </tradeTags>
+    <inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+    <thingCategories>
+      <li>MusicalInstruments</li>
+    </thingCategories>
+    <pathCost>10</pathCost>
+  </ThingDef>
+  <ThingDef Name="PrimitiveInstrumentBase" ParentName="HeldMusicalInstrumentBase" Abstract="True">
+    <recipeMaker>
+      <researchPrerequisite>PrimitiveInstruments</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+  <ThingDef Name="PrimitiveHornInstrumentBase" ParentName="PrimitiveInstrumentBase" Abstract="True">
+    <recipeMaker>
+      <recipeUsers>
+        <li>TableMusicalInstruments</li>
+        <li>CraftingSpot</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+  <ThingDef Name="StringInstrumentBase" ParentName="HeldMusicalInstrumentBase" Abstract="True">
+    <stuffCategories>
+      <li>Woody</li>
+    </stuffCategories>
+    <recipeMaker>
+      <researchPrerequisite>StringedInstruments</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+</Defs>

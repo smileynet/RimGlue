@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Neolithic Start Overhaul</name>
+	<author>smileynet</author>
+	<supportedVersions>
+		<li>1.3</li>
+    </supportedVersions>
+	<packageId>smileynet.neolithicstart.overhaul</packageId>
+	<loadAfter>
+		<li>brrainz.harmony</li>
+		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+		<li>LWM.DeepStorage</li>
+		<li>syrchalis.processor.framework</li>
+	</loadAfter>
+	<modDependencies>
+	  <li>
+		<packageId>brrainz.harmony</packageId>
+		<displayName>Harmony</displayName>
+		<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+		<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+	  </li>
+	  <li>
+		<packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>
+		<displayName>Vanilla Expanded Framework</displayName>
+		<steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=2023507013</steamWorkshopUrl>
+	  </li>
+	  <li>
+		<packageId>LWM.DeepStorage</packageId>
+		<displayName>LWM's Deep Storage</displayName>
+		<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=1617282896</steamWorkshopUrl>
+	  </li>
+	  <li>
+		<packageId>syrchalis.processor.framework</packageId>
+		<displayName>[SYR] Processor Framework</displayName>
+		<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2633514537</steamWorkshopUrl>
+	  </li>
+	</modDependencies>
+	<description>This mod was created for people looking to start from nothing and work their way up the tech tree with each tech unlock having meaningful results.
+	
+	This mod is not intended for neolithic only playthrough, but rather to provide well thought-out progression through each of the ages.
+	
+	I've tried to patch on top of existing mods as much as possible rather copy and swap to reduce the scope of things I need to personally maintain while allowing for as much flavor and compatibility as possible.</description>
+</ModMetaData>

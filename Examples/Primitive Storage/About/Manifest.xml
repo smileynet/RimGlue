@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Manifest>
+    <identifier>Primitive Storage</identifier>
+	<version>1.0.0.2</version>
+    <dependencies>
+        <li>1617282896</li> 
+    </dependencies>
+    <incompatibleWith>
+    </incompatibleWith>
+    <loadBefore>
+    </loadBefore>
+    <loadAfter>
+        <li>1617282896</li> 
+		<li></li>
+    </loadAfter>
+    <suggests>
+		<li>2327252470</li>
+		<li>2352893469</li>
+		<li>2532255863</li>
+    </suggests>
+    <showCrossPromotions>true</showCrossPromotions>
+    <manifestUri></manifestUri>
+    <downloadUri></downloadUri>
+</Manifest>

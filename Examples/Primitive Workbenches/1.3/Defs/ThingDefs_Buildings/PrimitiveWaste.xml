@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <ThingDef ParentName="FurnitureBase" Name="VBY_NeolithicWasteBase" Abstract="true">	
+	<researchPrerequisites Inherit="false">
+		<li>VBY_PrimitiveProduction</li>
+	</researchPrerequisites>
+    <comps>
+		<li Class="PrimitiveBuildings.CompProperties_PrimWaste">
+			<TickstoClean>2250</TickstoClean>
+			<Radius>7</Radius>
+		</li>
+	  <li><compClass>CompQuality</compClass></li>
+    </comps>
+	<specialDisplayRadius>7</specialDisplayRadius> 
+	<tickerType>Normal</tickerType>
+  </ThingDef>
+
+
+
+	<!-- ==================== Clay Pots ==================== -->
+  
+  <ThingDef ParentName="VBY_NeolithicWasteBase" >
+    <defName>VBY_Clay_Pot_TwoWaste</defName>
+    <label>stone waste bin</label>
+    <description>A stone pot for waste disposal. They take less work to make than a storage pot and do not have an art component.</description>
+    <graphicData>
+      <texPath>Things/HMC_Clay_PotTwo/HMC_Clay_PotTwo</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <uiIconPath>Things/HMC_Clay_PotTwo/HMC_Clay_PotTwo</uiIconPath>
+    <castEdgeShadows>false</castEdgeShadows>
+	<pathCost>40</pathCost>
+	<fillPercent>0.3</fillPercent>
+    <size>(1,1)</size>
+    <statBases>
+      <Beauty>1</Beauty>
+      <MaxHitPoints>30</MaxHitPoints>
+      <WorkToMake>3000</WorkToMake>
+      <!--<WorkToBuild>600</WorkToBuild>-->
+      <Flammability>0.5</Flammability>
+      <Mass>8</Mass>
+    </statBases>
+    <stuffCategories>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>30</costStuffCount>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedSculpture</unfinishedThingDef>
+	  <recipeUsers Inherit="false">
+		<li>VBY_PrimitiveKiln</li>
+		<li>VBY_PrimitiveKiln_Rotated</li>
+        <li>TableSculpting</li>
+	  </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+  
+  <!-- ==================== Woven Baskets ==================== -->
+  
+  <ThingDef ParentName="VBY_NeolithicWasteBase" >
+    <defName>VBY_Woven_BasketWaste</defName>
+    <label>woven waste bin</label>
+    <description>A woven basket for waste disposal. They take less work to make than a storage basket and do not have an art component.</description>
+    <graphicData>
+      <texPath>Things/HMC_Woven_Basket/HMC_Woven_Basket</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <uiIconPath>Things/HMC_Woven_Basket/HMC_Woven_Basket</uiIconPath>
+    <castEdgeShadows>true</castEdgeShadows>
+	<pathCost>10</pathCost>
+	<fillPercent>0.15</fillPercent>
+    <size>(1,1)</size>
+    <statBases>
+      <Beauty>0</Beauty>
+      <MaxHitPoints>30</MaxHitPoints>
+      <WorkToMake>350</WorkToMake>
+      <!--<WorkToBuild>600</WorkToBuild>-->
+      <Flammability>2</Flammability>
+      <Mass>5</Mass>
+    </statBases>
+    <costList>
+      <Hay>75</Hay>
+    </costList>
+	<resourcesFractionWhenDeconstructed>0.6</resourcesFractionWhenDeconstructed>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedSculpture</unfinishedThingDef>
+      <recipeUsers>
+        <li>CraftingSpot</li>
+        <li>VBY_PrimitiveCraftingTable</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+
+</Defs>

@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	
+	
+	
+	<!--  ====================  Med Times  ============================  -->
+	
+	<!--
+	<Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>Medieval Times Unofficial Update</li>
+    </mods>
+	<success>Always</success>
+	<match Class="PatchOperationSequence">
+	  <operations>
+		<li Class="PatchOperationTest">
+			<xpath>Defs/ThingDef/recipeMaker/recipeUsers[li="MedTimes_TailoringStation"]</xpath>
+		</li>
+		<li Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef/recipeMaker/recipeUsers[li="MedTimes_TailoringStation"]</xpath>
+			<value>
+				<li>VBY_PrimitiveTailoringTable</li>				
+			</value>
+		</li>		
+	  </operations>
+	</match>  
+	</Operation>
+	
+	<Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>Medieval Times Unofficial Update</li>
+    </mods>
+	<success>Always</success>
+	<match Class="PatchOperationSequence">
+	  <operations>
+		<li Class="PatchOperationTest">
+			<xpath>Defs/RecipeDef/recipeUsers[li="MedTimes_TailoringStation"]</xpath>
+		</li>
+		<li Class="PatchOperationAdd">
+			<xpath>Defs/RecipeDef/recipeUsers[li="MedTimes_TailoringStation"]</xpath>
+			<value>
+				<li>VBY_PrimitiveTailoringTable</li>				
+			</value>
+		</li>		
+	  </operations>
+	</match>  
+	</Operation>	
+	-->
+	
+	<Operation Class="PatchOperationFindMod">
+        <success>Always</success>
+        <mods>
+          <li>ZARS Tribalism</li>
+        </mods>
+        <match Class="PatchOperationSequence">			
+            <operations>
+                <li Class="PatchOperationReplace">					
+		          <xpath>Defs/ThingDef[defName="TailoringSpot"]/statBases/WorkTableWorkSpeedFactor</xpath>
+		            <value>
+						<WorkTableWorkSpeedFactor>0.3</WorkTableWorkSpeedFactor>
+		            </value>
+				</li>
+				<li Class="PatchOperationAdd">					
+		          <xpath>Defs/ThingDef[defName="Smokepit"]/costList</xpath>
+		            <value>
+						<VBY_PrimitiveFlint>2</VBY_PrimitiveFlint>
+		            </value>
+				</li>
+				<li Class="PatchOperationAdd">					
+		          <xpath>Defs/ThingDef[defName="StoneOven"]</xpath>
+		            <value>
+					  <costList>
+						<VBY_PrimitiveFlint>2</VBY_PrimitiveFlint>
+					  </costList>	
+		            </value>
+				</li>
+				<li Class="PatchOperationAdd">					
+		          <xpath>Defs/ThingDef[defName="TribalLoreFire"]/costList</xpath>
+		            <value>
+						<VBY_PrimitiveFlint>2</VBY_PrimitiveFlint>
+		            </value>
+				</li>
+			</operations>
+        </match>
+	</Operation>
+	
+	<Operation Class="PatchOperationFindMod">
+        <success>Always</success>
+        <mods>
+          <li>Taki's Random Stuff</li>
+          <li>Taki's Random Stuff (Continued)</li>
+        </mods>
+        <match Class="PatchOperationSequence">			
+            <operations>
+                <li Class="PatchOperationReplace">					
+		          <xpath>Defs/ThingDef[defName="CraftingSpot"]/statBases/WorkTableWorkSpeedFactor</xpath>
+		            <value>
+						<WorkTableWorkSpeedFactor>0.25</WorkTableWorkSpeedFactor>
+		            </value>
+				</li>
+			</operations>
+        </match>
+	</Operation>
+	
+	
+	<Operation Class="PatchOperationFindMod">
+        <success>Always</success>
+        <mods>
+          <li>Vanilla Furniture Expanded</li>
+        </mods>
+        <match Class="PatchOperationSequence">			
+            <operations>
+                <li Class="PatchOperationAdd">					
+		          <xpath>Defs/ThingDef[defName="Stone_Campfire"]/costList</xpath>
+		            <value>
+						<VBY_PrimitiveFlint>2</VBY_PrimitiveFlint>
+		            </value>
+				</li>
+			</operations>
+        </match>
+	</Operation>
+	
+	<Operation Class="PatchOperationFindMod">
+        <success>Always</success>
+        <mods>
+          <li>Tribal Signal Fire (Continued)</li>
+        </mods>
+        <match Class="PatchOperationSequence">			
+            <operations>
+                <li Class="PatchOperationAdd">					
+		          <xpath>Defs/ThingDef[defName="SignalFire"]/costList</xpath>
+		            <value>
+						<VBY_PrimitiveFlint>2</VBY_PrimitiveFlint>
+		            </value>
+				</li>
+			</operations>
+        </match>
+	</Operation>
+	
+	<Operation Class="PatchOperationFindMod">
+        <success>Always</success>
+        <mods>
+          <li>Ancient_Structures(continued)</li>
+        </mods>
+        <match Class="PatchOperationSequence">			
+            <operations>
+                <li Class="PatchOperationAdd">					
+		          <xpath>Defs/ThingDef[defName="AS_Firepit"]/costList</xpath>
+		            <value>
+						<VBY_PrimitiveFlint>2</VBY_PrimitiveFlint>
+		            </value>
+				</li>
+			</operations>
+        </match>
+	</Operation>
+
+	<!-- ============================  Medieval Overhaul  ====================  -->
+  
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>Medieval Overhaul</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+	<success>Always</success>
+		<operations>
+			<li Class="PatchOperationRemove">					
+		      <xpath>Defs/ThingDef[defName="DankPyon_StonecuttingSpot" or defName="DankPyon_ResearchingSpot"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">					
+		      <xpath>Defs/WorkGiverDef[defName="DankPyon_DoBillsStonecut"]</xpath>
+			</li>
+			<li Class="PatchOperationReplace">					
+		      <xpath>Defs/ThingDef[defName="VBY_PrimitiveStoneCuttingSpot"]/graphicData</xpath>
+		            <value>
+						<graphicData>
+						  <texPath>Production/StonecuttingSpot</texPath>
+						  <graphicClass>Graphic_Multi</graphicClass>
+						  <drawSize>(1.33,1.33)</drawSize>
+						  <shadowData>
+							<volume>(2.9, 0.3, 0.5)</volume>
+							<offset>(0, 0, 0)</offset>
+						  </shadowData>
+						  <damageData>
+							<cornerTL>Damage/Corner</cornerTL>
+							<cornerTR>Damage/Corner</cornerTR>
+							<cornerBL>Damage/Corner</cornerBL>
+							<cornerBR>Damage/Corner</cornerBR>
+						  </damageData>
+						</graphicData>
+		            </value>
+			</li>	
+		</operations>	   
+    </match>
+  </Operation>
+
+	<!-- ============================  Rock People (Continued)  ====================  -->
+  
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>Rock People (Continued)</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+		<operations> <!-- this needs to be tested yet  
+			<li Class="PatchOperationAdd">					
+		      <xpath>Defs/PawnKindDef[defName="R_LimestoneMelee"]</xpath>
+					<value>	
+						<lifeStages>
+						  <li>
+							<butcherBodyPart>
+							  <bodyPartGroup>Teeth</bodyPartGroup>
+							  <thing>VBY_PrimitiveFlint</thing>
+							</butcherBodyPart>
+						  </li>
+						  <li>
+							<butcherBodyPart>
+							  <bodyPartGroup>Teeth</bodyPartGroup>
+							  <thing>VBY_PrimitiveFlint</thing>
+							</butcherBodyPart>
+						  </li>
+						  <li>
+							<butcherBodyPart>
+							  <bodyPartGroup>Teeth</bodyPartGroup>
+							  <thing>VBY_PrimitiveFlint</thing>
+							</butcherBodyPart>
+						  </li>
+						</lifeStages>
+		            </value>
+			</li>-->
+			<li Class="PatchOperationAdd">					
+		      <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Rock_Limestone"]/butcherProducts</xpath>
+		            <value>
+						<VBY_PrimitiveFlint>5</VBY_PrimitiveFlint>
+		            </value>
+			</li>	
+		</operations>	   
+    </match>
+  </Operation>
+
+
+	<!-- ============================  Colony Manager  ====================  
+  
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>Colony Manager</li>
+    </mods>
+	<success>Always</success>
+    <nomatch Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationRemove">					
+		      <xpath>Defs/ThingDef[defName="VBY_NeolithicManagerSpot" or defName="VBY_StoneManagerBench"]</xpath>
+			</li>		
+		</operations>   
+    </nomatch>
+  </Operation>
+	-->
+	<!-- ============================  Stony campfire  ==================== -->
+	
+	<Operation Class="PatchOperationFindMod">
+        <mods>
+          <li>Stony campfire</li>
+        </mods>
+        <match Class="PatchOperationSequence">			
+            <operations>
+                <li Class="PatchOperationAdd">					
+		          <xpath>Defs/ThingDef[defName="StoneCampfire"]</xpath>
+		            <value>
+					  <costList>
+					    <VBY_PrimitiveFlint>2</VBY_PrimitiveFlint>
+				   	  </costList>
+		            </value>
+				</li>
+			</operations>
+        </match>
+	</Operation>
+
+</Patch>	

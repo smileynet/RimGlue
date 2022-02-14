@@ -1,0 +1,19 @@
+<Patch>	
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>*/RecipeDef[@Name="Zal_SmokeMeat10"]/recipeUsers</xpath>
+		<value>
+			<li>StoneOven</li>
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>*/RecipeDef[@Name="Zal_SmokeMeat40"]/recipeUsers</xpath>
+		<value>
+			<li>StoneOven</li>
+		</value>
+	</Operation>
+
+</Patch>

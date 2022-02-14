@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef ParentName="BedWithQualityBase">
+    <defName>VBY_Haybed</defName>
+    <label>hay bed</label>
+    <description>Bedding made from hay. It's soft...ish and kinda pokey.</description>
+    <graphicData>
+      <texPath>Things/Building/Furniture/Bed/HDM_BedHay</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+	  <drawSize>(1.25,2.25)</drawSize>
+      <damageData>
+        <rect>(0,0.05,1,1.95)</rect>
+      </damageData>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>EndTable</li>
+          <li>Dresser</li>
+        </linkableFacilities>
+      </li>
+    </comps>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <Flammability>3.0</Flammability>
+      <WorkToBuild>400</WorkToBuild>
+      <Mass>15</Mass>
+      <BedRestEffectiveness>0.90</BedRestEffectiveness>
+      <Comfort>0.60</Comfort>
+      <ImmunityGainSpeedFactor>1.03</ImmunityGainSpeedFactor>
+      <SurgerySuccessChanceFactor>0.85</SurgerySuccessChanceFactor>
+    </statBases>
+    <size>(1,2)</size>
+    <costList>
+	  <WoodLog>3</WoodLog> 	
+	  <VBY_Haycloth>10</VBY_Haycloth>
+	  <Hay>30</Hay>
+    </costList>
+    <building>
+      <bed_showSleeperBody>true</bed_showSleeperBody>
+      <bed_healPerDay>3</bed_healPerDay>
+    </building>
+    <fillPercent>0.4</fillPercent>
+    <pathCost>42</pathCost>
+    <staticSunShadowHeight>0.17</staticSunShadowHeight>
+    <castEdgeShadows>True</castEdgeShadows>
+    <designationHotKey>Misc2</designationHotKey>
+    <techLevel>Neolithic</techLevel>
+    <researchPrerequisites>
+      <li>VBY_PrimitiveProduction</li>
+    </researchPrerequisites>
+    <uiIconScale>0.90</uiIconScale>
+  </ThingDef>
+  
+   <ThingDef ParentName="BedWithQualityBase">
+    <defName>VBY_Leatherbed</defName>
+    <label>leather bed</label>
+    <description>A bed made from stretched leather over a wooden frame. It beats sleeping on the ground.</description>
+    <graphicData>
+      <texPath>Things/Building/Furniture/Bed/HDM_BedHide</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(1.25,2.25)</drawSize>
+      <damageData>
+        <rect>(0,0.05,1,1.95)</rect>
+      </damageData>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>EndTable</li>
+          <li>Dresser</li>
+        </linkableFacilities>
+      </li>
+    </comps>
+    <statBases>
+      <MaxHitPoints>90</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <WorkToBuild>400</WorkToBuild>
+      <Mass>15</Mass>
+      <BedRestEffectiveness>0.90</BedRestEffectiveness>
+      <Comfort>0.60</Comfort>
+      <ImmunityGainSpeedFactor>1.03</ImmunityGainSpeedFactor>
+      <SurgerySuccessChanceFactor>0.85</SurgerySuccessChanceFactor>
+    </statBases>
+    <size>(1,2)</size>
+    <costList>
+	  <WoodLog>3</WoodLog>
+    </costList>
+	<stuffCategories>
+      <li>Leathery</li>
+      <li>Fabric</li>
+    </stuffCategories>
+    <costStuffCount>40</costStuffCount>
+    <building>
+      <bed_showSleeperBody>true</bed_showSleeperBody>
+      <bed_healPerDay>3</bed_healPerDay>
+    </building>
+    <fillPercent>0.4</fillPercent>
+    <pathCost>42</pathCost>
+    <staticSunShadowHeight>0.17</staticSunShadowHeight>
+    <castEdgeShadows>True</castEdgeShadows>
+    <designationHotKey>Misc2</designationHotKey>
+    <techLevel>Neolithic</techLevel>
+    <researchPrerequisites>
+      <li>VBY_PrimitiveProduction</li>
+    </researchPrerequisites>
+    <uiIconScale>0.90</uiIconScale>
+  </ThingDef>
+  
+    <ThingDef ParentName="BedWithQualityBase">
+    <defName>VBY_DoubleHaybed</defName>
+    <label>double hay bed</label>
+    <description>Bedding made from hay. It's soft...ish and kinda pokey. Big enough for two.</description>
+    <graphicData>
+      <texPath>Things/Building/Furniture/Bed/HDM_DoubleHay</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(2.25,2.25)</drawSize>
+      <damageData>
+        <rect>(0,0.05,1,1.95)</rect>
+      </damageData>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>EndTable</li>
+          <li>Dresser</li>
+        </linkableFacilities>
+      </li>
+    </comps>
+    <statBases>
+      <MaxHitPoints>120</MaxHitPoints>
+      <Flammability>3.0</Flammability>
+      <WorkToBuild>700</WorkToBuild>
+      <Mass>25</Mass>
+      <BedRestEffectiveness>0.90</BedRestEffectiveness>
+      <Comfort>0.60</Comfort>
+      <ImmunityGainSpeedFactor>1.03</ImmunityGainSpeedFactor>
+      <SurgerySuccessChanceFactor>0.85</SurgerySuccessChanceFactor>
+    </statBases>
+    <size>(2,2)</size>
+    <costList>
+	  <WoodLog>5</WoodLog> 	
+	  <VBY_Haycloth>18</VBY_Haycloth>
+	  <Hay>50</Hay>
+    </costList>
+    <building>
+      <bed_showSleeperBody>true</bed_showSleeperBody>
+      <bed_healPerDay>3</bed_healPerDay>
+    </building>
+    <fillPercent>0.4</fillPercent>
+    <pathCost>42</pathCost>
+    <staticSunShadowHeight>0.17</staticSunShadowHeight>
+    <castEdgeShadows>True</castEdgeShadows>
+    <designationHotKey>Misc2</designationHotKey>
+    <techLevel>Neolithic</techLevel>
+	<leaveResourcesWhenKilled>True</leaveResourcesWhenKilled>
+    <researchPrerequisites>
+      <li>VBY_PrimitiveProduction</li>
+    </researchPrerequisites>
+    <uiIconScale>0.90</uiIconScale>
+  </ThingDef>
+  
+   <ThingDef ParentName="BedWithQualityBase">
+    <defName>VBY_DoubleLeatherbed</defName>
+    <label>double leather bed</label>
+    <description>A bed made from stretched leather over a wooden frame. It beats sleeping on the ground. Big enough for two.</description>
+    <graphicData>
+      <texPath>Things/Building/Furniture/Bed/HDM_DoubleLeatherBed</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(2.25,2.25)</drawSize>
+      <damageData>
+        <rect>(0,0.05,1,1.95)</rect>
+      </damageData>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>EndTable</li>
+          <li>Dresser</li>
+        </linkableFacilities>
+      </li>
+    </comps>
+    <statBases>
+      <MaxHitPoints>140</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <WorkToBuild>700</WorkToBuild>
+      <Mass>25</Mass>
+      <BedRestEffectiveness>0.90</BedRestEffectiveness>
+      <Comfort>0.60</Comfort>
+      <ImmunityGainSpeedFactor>1.03</ImmunityGainSpeedFactor>
+      <SurgerySuccessChanceFactor>0.85</SurgerySuccessChanceFactor>
+    </statBases>
+    <size>(2,2)</size>
+    <costList>
+	  <WoodLog>5</WoodLog>
+    </costList>
+	<stuffCategories>
+      <li>Leathery</li>
+      <li>Fabric</li>
+    </stuffCategories>
+    <costStuffCount>65</costStuffCount>
+    <building>
+      <bed_showSleeperBody>true</bed_showSleeperBody>
+      <bed_healPerDay>3</bed_healPerDay>
+    </building>
+    <fillPercent>0.4</fillPercent>
+    <pathCost>42</pathCost>
+    <staticSunShadowHeight>0.17</staticSunShadowHeight>
+    <castEdgeShadows>True</castEdgeShadows>
+    <designationHotKey>Misc2</designationHotKey>
+    <techLevel>Neolithic</techLevel>
+	<leaveResourcesWhenKilled>True</leaveResourcesWhenKilled>
+    <researchPrerequisites>
+      <li>VBY_PrimitiveProduction</li>
+    </researchPrerequisites>
+    <uiIconScale>0.90</uiIconScale>
+  </ThingDef>
+  
+  <!--  Poly Beds  -->
+  
+  <ThingDef ParentName="BedWithQualityBase">
+    <defName>VBY_TripleHayBed</defName>
+    <label>3-person hay bed</label>
+    <description>Bedding made from hay. It's soft...ish and kinda pokey. Big enough for three.</description>
+    <graphicData>
+      <texPath>Things/Building/Furniture/Bed/HDM_BedHay3</texPath>  <!--  ??  -->
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(3.25,2.25)</drawSize>  <!--  ??  -->
+      <damageData>
+        <rect>(0,0.05,1,1.95)</rect>  <!--  ??  -->
+      </damageData> 
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>EndTable</li>
+          <li>Dresser</li>
+        </linkableFacilities>
+      </li>
+    </comps>
+    <statBases>
+      <MaxHitPoints>180</MaxHitPoints>
+      <Flammability>3.0</Flammability>
+      <WorkToBuild>850</WorkToBuild>
+      <Mass>40</Mass>
+      <BedRestEffectiveness>0.90</BedRestEffectiveness>
+      <Comfort>0.60</Comfort>
+      <ImmunityGainSpeedFactor>1.03</ImmunityGainSpeedFactor>
+      <SurgerySuccessChanceFactor>0.85</SurgerySuccessChanceFactor>
+    </statBases>
+    <size>(3,2)</size>  <!--  ??  -->
+    <costList>
+	  <WoodLog>8</WoodLog> 	
+	  <VBY_Haycloth>27</VBY_Haycloth>
+	  <Hay>75</Hay>
+    </costList>
+    <building>
+      <bed_showSleeperBody>true</bed_showSleeperBody>
+      <bed_healPerDay>3</bed_healPerDay>
+    </building>
+    <fillPercent>0.4</fillPercent>
+    <pathCost>42</pathCost>
+    <staticSunShadowHeight>0.17</staticSunShadowHeight>
+    <castEdgeShadows>True</castEdgeShadows>
+    <designationHotKey>Misc2</designationHotKey>
+    <techLevel>Neolithic</techLevel>
+	<leaveResourcesWhenKilled>True</leaveResourcesWhenKilled>
+    <researchPrerequisites>
+      <li>VBY_PrimitiveProduction</li>
+    </researchPrerequisites>
+    <uiIconScale>0.90</uiIconScale>
+  </ThingDef>
+  
+    <ThingDef ParentName="BedWithQualityBase">
+    <defName>VBY_TripleLeatherBed</defName>
+    <label>3-person leather bed</label>
+    <description>A bed made from stretched leather over a wooden frame. It beats sleeping on the ground. Big enough for three.</description>
+    <graphicData>
+      <texPath>Things/Building/Furniture/Bed/HDM_LeatherBed3</texPath>  <!--  ??  -->
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(3.25,2.25)</drawSize>  <!--  ??  -->
+      <damageData>
+        <rect>(0,0.05,1,1.95)</rect>  <!--  ??  -->
+      </damageData> 
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>EndTable</li>
+          <li>Dresser</li>
+        </linkableFacilities>
+      </li>
+    </comps>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Flammability>3.0</Flammability>
+      <WorkToBuild>850</WorkToBuild>
+      <Mass>40</Mass>
+      <BedRestEffectiveness>0.90</BedRestEffectiveness>
+      <Comfort>0.60</Comfort>
+      <ImmunityGainSpeedFactor>1.03</ImmunityGainSpeedFactor>
+      <SurgerySuccessChanceFactor>0.85</SurgerySuccessChanceFactor>
+    </statBases>
+    <size>(3,2)</size>  <!--  ??  -->
+    <costList>
+	  <WoodLog>8</WoodLog>
+    </costList>
+	<stuffCategories>
+      <li>Leathery</li>
+      <li>Fabric</li>
+    </stuffCategories>
+    <costStuffCount>95</costStuffCount>
+    <building>
+      <bed_showSleeperBody>true</bed_showSleeperBody>
+      <bed_healPerDay>3</bed_healPerDay>
+    </building>
+    <fillPercent>0.4</fillPercent>
+    <pathCost>42</pathCost>
+    <staticSunShadowHeight>0.17</staticSunShadowHeight>
+    <castEdgeShadows>True</castEdgeShadows>
+    <designationHotKey>Misc2</designationHotKey>
+    <techLevel>Neolithic</techLevel>
+	<leaveResourcesWhenKilled>True</leaveResourcesWhenKilled>
+    <researchPrerequisites>
+      <li>VBY_PrimitiveProduction</li>
+    </researchPrerequisites>
+    <uiIconScale>0.90</uiIconScale>
+  </ThingDef>
+  
+  <!--  Hay Crib  -->
+  <ThingDef ParentName="FurnitureBase">
+    <defName>VBY_HayCrib</defName>
+    <label>primitive hay crib</label>
+    <description>A crib made from hay. It's soft...ish and kinda pokey. The perfect size for a wee pawn.</description>
+    <thingClass>Building_Bed</thingClass>
+    <graphicData> 
+      <texPath>Things/Building/Furniture/Bed/VBY_HayCribAlt</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+	  <shadowData>
+		<volume>(0.7, 1.0, 0.6)</volume>
+	  </shadowData>
+      <drawSize>(2,2)</drawSize>
+      <damageData>
+        <rect>(0,0.05,1,1.95)</rect>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+     <statBases>	 
+      <MaxHitPoints>80</MaxHitPoints>
+      <Flammability>3.0</Flammability>
+      <WorkToBuild>400</WorkToBuild>
+      <Mass>15</Mass>
+      <BedRestEffectiveness>0.90</BedRestEffectiveness>
+      <Comfort>0.60</Comfort>
+      <ImmunityGainSpeedFactor>1.03</ImmunityGainSpeedFactor>
+      <SurgerySuccessChanceFactor>0.85</SurgerySuccessChanceFactor>
+    </statBases>
+    <costList>
+	  <WoodLog>2</WoodLog> 	
+	  <VBY_Haycloth>5</VBY_Haycloth>
+	  <Hay>15</Hay>
+    </costList>
+    <size>(1,2)</size>
+    <building>
+      <bed_showSleeperBody>true</bed_showSleeperBody>
+      <bed_healPerDay>3</bed_healPerDay>
+      <bed_maxBodySize>0.4</bed_maxBodySize>
+	  <buildingTags>
+        <li>Bed</li>
+      </buildingTags>
+    </building>
+    <comps>
+      <li Class="CompProperties_AssignableToPawn">
+        <drawAssignmentOverlay>false</drawAssignmentOverlay>
+        <compClass>CompAssignableToPawn_Bed</compClass>
+      </li>
+    </comps>
+    <fillPercent>0.35</fillPercent>
+    <pathCost>35</pathCost>
+    <staticSunShadowHeight>0</staticSunShadowHeight>
+    <castEdgeShadows>False</castEdgeShadows>
+	<interactionCellOffset>(1,0,0)</interactionCellOffset>
+    <designationHotKey>Misc2</designationHotKey>
+    <passability>PassThroughOnly</passability>
+	<defaultPlacingRot>South</defaultPlacingRot>
+    <drawGUIOverlay>True</drawGUIOverlay>	
+    <researchPrerequisites>
+      <li>VBY_PrimitiveProduction</li>
+    </researchPrerequisites>
+	<uiIconScale>0.6</uiIconScale>
+  </ThingDef>
+  
+  
+</Defs>  

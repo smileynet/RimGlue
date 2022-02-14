@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ResearchProjectDef>
+    <defName>PrimitiveInstruments</defName>
+    <label>primitive instruments</label>
+    <description>Create basic wind and percussion instruments at the sculptor's table.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tags>
+      <li>TribalStart</li>
+    </tags>
+    <researchViewX>2</researchViewX>
+    <researchViewY>4</researchViewY>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>StringedInstruments</defName>
+    <label>stringed instruments</label>
+    <description>Create tuned string instruments at the sculptor's table.</description>
+    <baseCost>750</baseCost>
+    <techLevel>Medieval</techLevel>
+    <researchViewX>3</researchViewX>
+    <researchViewY>4</researchViewY>
+    <prerequisites>
+      <li>PrimitiveInstruments</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>ElectricInstruments</defName>
+    <label>electric instruments</label>
+    <description>Construct electrically amplified instruments.</description>
+    <baseCost>1000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <researchViewX>4</researchViewX>
+    <researchViewY>4</researchViewY>
+    <prerequisites>
+      <li>StringedInstruments</li>
+      <li>Electricity</li>
+    </prerequisites>
+  </ResearchProjectDef>
+</Defs>

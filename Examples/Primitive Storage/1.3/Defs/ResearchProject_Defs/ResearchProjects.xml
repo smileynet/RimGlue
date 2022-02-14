@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+    <ResearchProjectDef>
+        <defName>VBY_NeoStorage</defName>
+        <label>primitive storage</label>
+        <description>Build simple storage like woven baskets and dedicated storage tents.</description>
+        <baseCost>225</baseCost>
+        <techLevel>Neolithic</techLevel>
+        <researchViewX>1.00</researchViewX>
+        <researchViewY>5.70</researchViewY>
+    </ResearchProjectDef>
+
+</Defs>

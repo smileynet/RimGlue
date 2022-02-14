@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="StoneBlocksBase">
+		<defName>VBY_BlocksAdobe</defName>
+		<label>adobe blocks</label>
+		<description>Blocks of fired adobe. Adobe is soft but effective for quick, dry shelter.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/VBY_AdobeBlocks</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+		  <Mass>1</Mass>
+		  <SharpDamageMultiplier>0.12</SharpDamageMultiplier>
+		</statBases>
+		<stuffProps>
+		  <color>(204,102,0)</color>
+		  <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
+		  <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+		  <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+		  <stuffAdjective>adobe</stuffAdjective>
+		  <statFactors>
+			<Beauty>0.9</Beauty>  
+			<MaxHitPoints>1.45</MaxHitPoints>
+			<WorkToBuild>4.5</WorkToBuild>
+			<WorkToMake>0.9</WorkToMake>
+		  </statFactors>
+		</stuffProps>
+	  </ThingDef>
+
+</Defs>

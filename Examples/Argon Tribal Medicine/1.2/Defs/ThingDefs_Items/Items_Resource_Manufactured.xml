@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Advanced Herbal Medicine -->
+  <ThingDef ParentName="MedicineBase">
+    <defName>TM_AdvancedMedicine</defName>
+    <label>advanced herbal medicine</label>
+    <description>A pack of herbal concoctions extracted from various medical plants. It is less potent than industrial pharmaceuticals, but much better than healroots.\nThis medicine is valued by tribespeople, as there is known that in hands of a good shaman, it can save the life of people.</description>
+    <graphicData>
+      <texPath>Things/Item/AdvMedicine</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <techLevel>Neolithic</techLevel>
+    <statBases>
+      <MarketValue>18</MarketValue>
+      <Mass>0.35</Mass>
+      <Flammability>1.3</Flammability>
+      <MedicalPotency>0.80</MedicalPotency>
+      <MedicalQualityMax>0.90</MedicalQualityMax>
+      <DeteriorationRate>6</DeteriorationRate>
+    </statBases>
+	<costList>
+		<MedicineHerbal>1</MedicineHerbal>
+		<TM_RawRedPetals>3</TM_RawRedPetals>
+		<TM_RawDarkBerries>3</TM_RawDarkBerries>
+	</costList>
+	<recipeMaker>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>600</workAmount>
+		<skillRequirements>
+			<Medicine>4</Medicine>
+		</skillRequirements>
+		<recipeUsers>
+			<li>CraftingSpot</li>
+			<li>DrugLab</li>
+		</recipeUsers>
+	</recipeMaker>
+    <tickerType>Rare</tickerType>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>190</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+  
+</Defs>

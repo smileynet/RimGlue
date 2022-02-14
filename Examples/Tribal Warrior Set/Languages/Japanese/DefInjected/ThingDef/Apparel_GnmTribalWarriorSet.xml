@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Tribal Warrior Set -->
+
+  <Gunmar_Apparel_Tribal.label>部族の服</Gunmar_Apparel_Tribal.label>
+  <Gunmar_Apparel_Tribal.description>布または動物の毛皮で作られた新石器時代の服です。寒さから身を守ることができます。</Gunmar_Apparel_Tribal.description>
+
+  <Gunmar_Apparel_ThickPeltArmor.label>厚毛皮の鎧</Gunmar_Apparel_ThickPeltArmor.label>
+  <Gunmar_Apparel_ThickPeltArmor.description>動物の毛皮の中でも特に硬くて丈夫なものだけを使用した鎧です。かなり厚手のため、動きが鈍くなります。</Gunmar_Apparel_ThickPeltArmor.description>
+
+  <Gunmar_Apparel_PeltCap.label>毛皮の帽子</Gunmar_Apparel_PeltCap.label>
+  <Gunmar_Apparel_PeltCap.description>動物の毛皮の使用した帽子です。暖かいうえに、頭を保護します。</Gunmar_Apparel_PeltCap.description>
+
+  <Gunmar_Apparel_PeltMantle.label>毛皮の外套</Gunmar_Apparel_PeltMantle.label>
+  <Gunmar_Apparel_PeltMantle.description>動物の毛皮を縫い合わせた外套です。寒さをしのぐための部族たちの知恵の一つです。</Gunmar_Apparel_PeltMantle.description>
+
+  <Gunmar_Apparel_PeltHandWraps.label>毛皮のハンドラップ</Gunmar_Apparel_PeltHandWraps.label>
+  <Gunmar_Apparel_PeltHandWraps.description>動物の毛皮を使用したハンドラップです。手を保護します。</Gunmar_Apparel_PeltHandWraps.description>
+
+  <Gunmar_Apparel_PeltLeggings.label>毛皮のレギンス</Gunmar_Apparel_PeltLeggings.label>
+  <Gunmar_Apparel_PeltLeggings.description>動物の毛皮を使用したレギンスです。脚を守ることができますが、移動速度に若干の制限を受けます。</Gunmar_Apparel_PeltLeggings.description>
+
+  <Gunmar_Apparel_PeltBoots.label>毛皮のブーツ</Gunmar_Apparel_PeltBoots.label>
+  <Gunmar_Apparel_PeltBoots.description>動物の毛皮を使用したブーツです。勇敢な部族の戦士でも、素足では冬場は厳しいでしょう。</Gunmar_Apparel_PeltBoots.description>
+
+  <Gunmar_Apparel_SunshadePeltCap.label>毛皮の日よけ帽子</Gunmar_Apparel_SunshadePeltCap.label>
+  <Gunmar_Apparel_SunshadePeltCap.description>動物の毛皮の使用した帽子です。強い日差しから着用者の頭を守ります。</Gunmar_Apparel_SunshadePeltCap.description>
+
+  <Gunmar_Apparel_SunshadePeltMantle.label>毛皮の日よけ外套</Gunmar_Apparel_SunshadePeltMantle.label>
+  <Gunmar_Apparel_SunshadePeltMantle.description>動物の毛皮を縫い合わせた日よけ用の外套です。砂漠などの暑い環境で生活する部族民の必需品です。</Gunmar_Apparel_SunshadePeltMantle.description>
+
+  <Gunmar_Apparel_WovenCap.label>織物の帽子</Gunmar_Apparel_WovenCap.label>
+  <Gunmar_Apparel_WovenCap.description>コットンや動物の毛などの繊維で編まれた外套です。暑さと寒さの両方から身を守ります。</Gunmar_Apparel_WovenCap.description>
+
+  <Gunmar_Apparel_WovenMantle.label>織物の外套</Gunmar_Apparel_WovenMantle.label>
+  <Gunmar_Apparel_WovenMantle.description>コットンや動物の毛などの繊維で編まれた外套です。暑さと寒さの両方から身を守ります。</Gunmar_Apparel_WovenMantle.description>
+
+  <Gunmar_Apparel_WovenHandWraps.label>織物のハンドラップ</Gunmar_Apparel_WovenHandWraps.label>
+  <Gunmar_Apparel_WovenHandWraps.description>コットンや動物の毛などの繊維で編まれたハンドラップです。手を保護します。</Gunmar_Apparel_WovenHandWraps.description>
+
+  <Gunmar_Apparel_WovenLeggings.label>織物のレギンス</Gunmar_Apparel_WovenLeggings.label>
+  <Gunmar_Apparel_WovenLeggings.description>コットンや動物の毛などの繊維で編まれたレギンスです。暑さと寒さの両方から身を守ります。</Gunmar_Apparel_WovenLeggings.description>
+
+  <Gunmar_Apparel_WovenFootWraps.label>織物のフットラップ</Gunmar_Apparel_WovenFootWraps.label>
+  <Gunmar_Apparel_WovenFootWraps.description>コットンや動物の毛などの繊維で編まれたフットラップです。足を保護します。</Gunmar_Apparel_WovenFootWraps.description>
+
+
+</LanguageData>

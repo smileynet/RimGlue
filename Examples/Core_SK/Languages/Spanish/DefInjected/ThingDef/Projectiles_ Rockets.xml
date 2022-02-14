@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Bullet_M72LAW.label>Cohete M72 LAW (HEAT)</Bullet_M72LAW.label>
+  <Bullet_SPG9Grenade_HEAT.label>Misil AT (HEAT)</Bullet_SPG9Grenade_HEAT.label>
+  <Bullet_SPG9Grenade_Frag.label>Misil AT (Fragmentario)</Bullet_SPG9Grenade_Frag.label>
+
+  <!-- 130mm rocket missile -->
+
+  <Bullet_130mmRocketMissile.label>Cohete Misil 130mm HE</Bullet_130mmRocketMissile.label>
+
+
+</LanguageData>

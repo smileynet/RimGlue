@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <HeavyPowerConduit.label>Conducto de gran potencia</HeavyPowerConduit.label>
+  <HeavyPowerConduit.description>Un conjunto de cables eléctricos pesados ​​para mover la energía alrededor. Son muy fuertes y no inflamables.</HeavyPowerConduit.description>
+  <HeavyPowerConduit_Blueprint.label>conducto de gran potencia (anteproyecto)</HeavyPowerConduit_Blueprint.label>
+  <HeavyPowerConduit_Frame.label>conducto de gran potencia (en construcción)</HeavyPowerConduit_Frame.label>
+  <HeavyPowerConduit_Frame.description>Un conjunto de cables eléctricos pesados ​​para mover la energía alrededor. Son muy fuertes y no inflamables.</HeavyPowerConduit_Frame.description>
+
+  <PowerConduitInvisible.label>Conducto de energía oculto</PowerConduitInvisible.label>
+  <PowerConduitInvisible.description>Un conjunto de cables eléctricos para mover la energía alrededor. Ésta está escondida en el suelo.</PowerConduitInvisible.description>
+  <PowerConduitInvisible_Blueprint.label>conducto de energía (anteproyecto)</PowerConduitInvisible_Blueprint.label>
+  <PowerConduitInvisible_Frame.label>conducto de energía (en construcción)</PowerConduitInvisible_Frame.label>
+  <PowerConduitInvisible_Frame.description>Un conjunto de cables eléctricos para mover la energía alrededor. Ésta está escondida en el suelo.</PowerConduitInvisible_Frame.description>
+
+  <PowerSwitchFlicker.label>Parpadeo del interruptor de encendido</PowerSwitchFlicker.label>
+  <PowerSwitchFlicker.description>Activa / desactiva la alimentación con autoflicker.</PowerSwitchFlicker.description>
+  <PowerSwitchFlicker_Blueprint.label>parpadeo del interruptor de encendido (anteproyecto)</PowerSwitchFlicker_Blueprint.label>
+  <PowerSwitchFlicker_Frame.label>parpadeo del interruptor de encendido (en construcción)</PowerSwitchFlicker_Frame.label>
+  <PowerSwitchFlicker_Frame.description>Activa / desactiva la alimentación con autoflicker.</PowerSwitchFlicker_Frame.description>
+
+  <TimerSwitch.label>Interruptor programado</TimerSwitch.label>
+  <TimerSwitch.description>Enciende y apaga el equipo según la hora del día.</TimerSwitch.description>
+  <TimerSwitch_Blueprint.label>interruptor programado (anteproyecto)</TimerSwitch_Blueprint.label>
+  <TimerSwitch_Frame.label>interruptor programado (en construcción)</TimerSwitch_Frame.label>
+  <TimerSwitch_Frame.description>Enciende y apaga el equipo según la hora del día.</TimerSwitch_Frame.description>
+
+  <FissionBattery.label>Batería de fisión</FissionBattery.label>
+  <FissionBattery.description>Almacena electricidad y recicla la carga usando procesos de fisión. Un poco más eficiente que las baterías estándar. Advertencia: las baterías cargadas tienden a explotar cuando se calientan o se mojan. Tiene capacidad para 4.000 W.</FissionBattery.description>
+  <FissionBattery_Blueprint.label>batería de fisión (anteproyecto)</FissionBattery_Blueprint.label>
+  <FissionBattery_Blueprint_Install.label>batería de fisión (anteproyecto)</FissionBattery_Blueprint_Install.label>
+  <FissionBattery_Frame.label>batería de fisión (en construcción)</FissionBattery_Frame.label>
+  <FissionBattery_Frame.description>Almacena electricidad y recicla la carga usando procesos de fisión. Un poco más eficiente que las baterías estándar. Advertencia: las baterías cargadas tienden a explotar cuando se calientan o se mojan. Tiene capacidad para 4.000 W.</FissionBattery_Frame.description>
+
+  <AdvancedSolarGenerator.label>Generador solar avanzado</AdvancedSolarGenerator.label>
+  <AdvancedSolarGenerator.description>Produce electricidad de la luz del sol. No funciona en la oscuridad.</AdvancedSolarGenerator.description>
+  <AdvancedSolarGenerator_Blueprint.label>generador solar avanzado (anteproyecto)</AdvancedSolarGenerator_Blueprint.label>
+  <AdvancedSolarGenerator_Frame.label>generador solar avanzado (en construcción)</AdvancedSolarGenerator_Frame.label>
+  <AdvancedSolarGenerator_Frame.description>Produce electricidad de la luz del sol. No funciona en la oscuridad.</AdvancedSolarGenerator_Frame.description>
+
+  <AdvancedWindTurbine.label>Turbina de viento avanzada</AdvancedWindTurbine.label>
+  <AdvancedWindTurbine.description>Un generador eléctrico accionado por viento. Requiere un gran espacio libre delante y detrás para un flujo de aire óptimo.</AdvancedWindTurbine.description>
+  <AdvancedWindTurbine_Blueprint.label>turbina de viento avanzada (anteproyecto)</AdvancedWindTurbine_Blueprint.label>
+  <AdvancedWindTurbine_Frame.label>turbina de viento avanzada (en construcción)</AdvancedWindTurbine_Frame.label>
+  <AdvancedWindTurbine_Frame.description>Un generador eléctrico accionado por viento. Requiere un gran espacio libre delante y detrás para un flujo de aire óptimo.</AdvancedWindTurbine_Frame.description>
+
+  <BioGenerator.label>Bio generador</BioGenerator.label>
+  <BioGenerator.description>Un bio-generador que produce electricidad. Requiere Biodiesel como fuente de combustible. Potencia de salida: 1000 W.</BioGenerator.description>
+  <BioGenerator_Blueprint.label>bio-generator (blueprint)</BioGenerator_Blueprint.label>
+  <BioGenerator_Frame.label>bio-generator (building)</BioGenerator_Frame.label>
+  <BioGenerator_Frame.description>Un bio-generador que produce electricidad. Requiere Biodiesel como fuente de combustible. Potencia de salida: 1000 W.</BioGenerator_Frame.description>
+
+  <CoalPowerPlant.label>Central eléctrica de carbón</CoalPowerPlant.label>
+  <CoalPowerPlant.description>La central de carbón que produce electricidad mediante la quema de combustibles de carbón. Puede ser alimentado con mineral de carbón o turba. Potencia de salida: 2,000 W.</CoalPowerPlant.description>
+  <CoalPowerPlant_Blueprint.label>central eléctrica de carbón (anteproyecto)</CoalPowerPlant_Blueprint.label>
+  <CoalPowerPlant_Frame.label>central eléctrica de carbón (en construcción)</CoalPowerPlant_Frame.label>
+  <CoalPowerPlant_Frame.description>La central de carbón que produce electricidad mediante la quema de combustibles de carbón. Puede ser alimentado con mineral de carbón o turba. Potencia de salida: 2.000 W.</CoalPowerPlant_Frame.description>
+
+  <ChemfuelPoweredGenerator.label>Planta de combustible</ChemfuelPoweredGenerator.label>
+  <ChemfuelPoweredGenerator.description>Una central de combustible que produce electricidad. Puede ser alimentado con combustible, Prometheum o FSX. Potencia de salida: 3,500 W.</ChemfuelPoweredGenerator.description>
+  <ChemfuelPoweredGenerator_Blueprint.label>planta de combustible (anteproyecto)</ChemfuelPoweredGenerator_Blueprint.label>
+  <ChemfuelPoweredGenerator_Frame.label>planta de combustible (en construcción)</ChemfuelPoweredGenerator_Frame.label>
+  <ChemfuelPoweredGenerator_Frame.description>Una central de combustible que produce electricidad. Puede ser alimentado con combustible, Prometheum o FSX. Potencia de salida: 3.500 W.</ChemfuelPoweredGenerator_Frame.description>
+
+  <ThermoelectricGenerator.label>Generador termoeléctrico</ThermoelectricGenerator.label>
+  <ThermoelectricGenerator.description>Produce electricidad a partir de las diferencias de temperatura entre dos habitaciones. Debe colocarse en una pared. Ejemplo: A una diferencia de 1.600 C (2.912 F), la potencia de salida es de 16.200 W con una eficiencia del 600%.</ThermoelectricGenerator.description>
+  <ThermoelectricGenerator_Blueprint.label>generador termoelectrico (anteproyecto)</ThermoelectricGenerator_Blueprint.label>
+  <ThermoelectricGenerator_Frame.label>generador termoelectrico (en construcción)</ThermoelectricGenerator_Frame.label>
+  <ThermoelectricGenerator_Frame.description>Produce electricidad a partir de las diferencias de temperatura entre dos habitaciones. Debe colocarse en una pared. Ejemplo: A una diferencia de 1.600 C (2.912 F), la potencia de salida es de 16.200 W con una eficiencia del 600%.</ThermoelectricGenerator_Frame.description>
+
+  <NPP.label>Planta Nuclear</NPP.label>
+  <NPP.description>Una central nuclear con una potencia de 24.000 W. Requiere una tolva con uranio enriquecido como fuente de combustible. ADVERTENCIA: En caso de una fusión nuclear, construir paredes alrededor de los escombros para contener la radiación!</NPP.description>
+  <NPP_Blueprint.label>planta nuclear (anteproyecto)</NPP_Blueprint.label>
+  <NPP_Frame.label>planta nuclear (en construcción)</NPP_Frame.label>
+  <NPP_Frame.description>Una central nuclear con una potencia de 24.000 W. Requiere una tolva con uranio enriquecido como fuente de combustible. ADVERTENCIA: En caso de una fusión nuclear, construir paredes alrededor de los escombros para contener la radiación!</NPP_Frame.description>
+
+  <NPPD.label>Desechos de las centrales nucleares</NPPD.label>
+  <NPPD.description>Escombros radiactivos de una central nuclear. ¡Construya paredes a su alrededor para contener la radiación!</NPPD.description>
+
+  <GauseWindTurbine.label>Aerogenerador</GauseWindTurbine.label>
+  <GauseWindTurbine.description>Un generador de energía eléctrica accionado por viento. Por favor, mantenga todas las extremidades y mascotas fuera del área de la turbina! Potencia de salida: 2,250 W a la velocidad máxima del viento.</GauseWindTurbine.description>
+  <GauseWindTurbine_Blueprint.label>aerogenerador (anteproyecto)</GauseWindTurbine_Blueprint.label>
+  <GauseWindTurbine_Frame.label>aerogenerador (en construcción)</GauseWindTurbine_Frame.label>
+  <GauseWindTurbine_Frame.description>Un generador de energía eléctrica accionado por viento. Por favor, mantenga todas las extremidades y mascotas fuera del área de la turbina! Potencia de salida: 2,250 W a la velocidad máxima del viento.</GauseWindTurbine_Frame.description>
+
+  <TeslaLigthningPower.label>Tesla generador de rayos</TeslaLigthningPower.label>
+  <TeslaLigthningPower.description>Aproveche la increíble fuente de energía del rayo a través de la invención de Nikola Tesla, el generador de relámpagos Tesla! Necesita enfriarse de vez en cuando cuando hace demasiado calor. Potencia de salida: 6,000 W.</TeslaLigthningPower.description>
+  <TeslaLigthningPower_Blueprint.label>generador tesla de rayos (anteproyecto)</TeslaLigthningPower_Blueprint.label>
+  <TeslaLigthningPower_Frame.label>generador tesla de rayos (en construcción)</TeslaLigthningPower_Frame.label>
+  <TeslaLigthningPower_Frame.description>Aproveche la increíble fuente de energía del rayo a través de la invención de Nikola Tesla, el generador de relámpagos Tesla! Necesita enfriarse de vez en cuando cuando hace demasiado calor. Potencia de salida: 6.000 W.</TeslaLigthningPower_Frame.description>
+
+  <PlasmaGeothermalPlant.label>Reactor de plasma</PlasmaGeothermalPlant.label>
+  <PlasmaGeothermalPlant.description>Produce electricidad libre de impuestos de un géiser de vapor. Debe colocarse en un géiser de vapor. Un generador de plasma puede ser conectado para absorber las descargas de plasma. Requiere ser alimentado por estaño o aluminio.</PlasmaGeothermalPlant.description>
+  <PlasmaGeothermalPlant_Blueprint.label>reactor de plasma (anteproyecto)</PlasmaGeothermalPlant_Blueprint.label>
+  <PlasmaGeothermalPlant_Frame.label>reactor de plasma (en construcción)</PlasmaGeothermalPlant_Frame.label>
+  <PlasmaGeothermalPlant_Frame.description>Produce electricidad libre de impuestos de un géiser de vapor. Debe colocarse en un géiser de vapor. Un generador de plasma puede ser conectado para absorber las descargas de plasma. Requiere ser alimentado por estaño o aluminio.</PlasmaGeothermalPlant_Frame.description>
+
+  <PlasmaGen.label>Generador de plasma</PlasmaGen.label>
+  <PlasmaGen.description>Produce electricidad libre de impuestos a través de descargas de plasma de un reactor de plasma. Tiene que estar completamente cargado primero.</PlasmaGen.description>
+  <PlasmaGen_Blueprint.label>generador de plasma (anteproyecto)</PlasmaGen_Blueprint.label>
+  <PlasmaGen_Frame.label>generador de plasma (en construcción)</PlasmaGen_Frame.label>
+  <PlasmaGen_Frame.description>Produce electricidad libre de impuestos a través de descargas de plasma de un reactor de plasma. Tiene que estar completamente cargado primero.</PlasmaGen_Frame.description>
+
+  <XenonIonTurbine.label>Turbina de ion xenón</XenonIonTurbine.label>
+  <XenonIonTurbine.description>Debe colocarse en un géiser de vapor. La turbina Xenon-Ion produce energía de calor extremo, y la eficiencia puede ir por encima del 100%. Ejemplo: A una diferencia de 250 C (482 F), la potencia de salida es de 5.000 W con una eficiencia del 150%.</XenonIonTurbine.description>
+  <XenonIonTurbine_Blueprint.label>turbina de ion xenón (anteproyecto)</XenonIonTurbine_Blueprint.label>
+  <XenonIonTurbine_Frame.label>turbina de ion xenón (en construcción)</XenonIonTurbine_Frame.label>
+  <XenonIonTurbine_Frame.description>Debe colocarse en un géiser de vapor. La turbina Xenon-Ion produce energía de calor extremo, y la eficiencia puede ir por encima del 100%. Ejemplo: A una diferencia de 250 C (482 F), la potencia de salida es de 5.000 W con una eficiencia del 150%.</XenonIonTurbine_Frame.description>
+
+  <AntimatterReactor.label>Reactor de antimateria</AntimatterReactor.label>
+  <AntimatterReactor.description>La antimateria debe ser contenida separada de la materia normal por campos magneticos para que no se produzcan reacciones no deseadas. La energia seria extraida de la misma manera que los reactores nucleares capturan el calor gastado y la energia luminosa de las reacciones de fision. Potencia de salida: 32,000 W.</AntimatterReactor.description>
+  <AntimatterReactor_Blueprint.label>antimatter reactor (blueprint)</AntimatterReactor_Blueprint.label>
+  <AntimatterReactor_Frame.label>antimatter reactor (building)</AntimatterReactor_Frame.label>
+  <AntimatterReactor_Frame.description>La antimateria debe ser contenida separada de la materia normal por campos magneticos para que no se produzcan reacciones no deseadas. La energia seria extraida de la misma manera que los reactores nucleares capturan el calor gastado y la energia luminosa de las reacciones de fision. Potencia de salida: 32.000 W.</AntimatterReactor_Frame.description>
+
+</LanguageData>

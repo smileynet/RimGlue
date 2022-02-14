@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- ============= Art ============= -->
+  <WorkGiverDef>
+    <defName>MusicPlay</defName>
+    <label>perform music</label>
+    <giverClass>MusicalInstruments.WorkGiver_MusicPlay</giverClass>
+    <workType>Art</workType>
+    <priorityInType>50</priorityInType>
+    <verb>perform</verb>
+    <gerund>performing at</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+      <li>Hearing</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+  <WorkGiverDef>
+    <defName>TableMusicalInstruments</defName>
+    <label>craft musical instrument</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Crafting</workType>
+    <priorityInType>85</priorityInType>
+    <fixedBillGiverDefs>
+      <li>TableMusicalInstruments</li>
+    </fixedBillGiverDefs>
+    <verb>craft</verb>
+    <gerund>crafting at</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>
+</Defs>

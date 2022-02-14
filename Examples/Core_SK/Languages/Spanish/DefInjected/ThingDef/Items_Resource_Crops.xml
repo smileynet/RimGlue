@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Plant matter (inedible by people) -->
+
+  <Silage.label>Ensilaje</Silage.label>
+  <Silage.description>El ensilaje es un heno fermentado rico en nutrientes y un producto alimenticio crudo adecuado para la alimentación animal. El proceso de fermentación conserva el ensilaje y evita que se pudra.</Silage.description>
+
+  <NeutroPetals.label>Pétalos de flores Neutro</NeutroPetals.label>
+  <NeutroPetals.description>Pétalos Amarillo-Naranja hermosos de la flor Neutro. Se utiliza para hacer Neutroamina, una base para las medicinas.</NeutroPetals.description>
+
+  <aloe.label>Hojas de Aloe</aloe.label>
+  <aloe.description>Un manojo de hojas de aloe de una planta de aloe. Hojas aloe se utilizan como un tipo de medicina natural.</aloe.description>
+
+  <RawCaoutchouc.label>Caucho</RawCaoutchouc.label>
+  <RawCaoutchouc.description>El caucho es una savia de caucho natural recogida de un árbol de Hevea. Se puede vulcanizar para crear útiles materiales de caucho.</RawCaoutchouc.description>
+
+</LanguageData>

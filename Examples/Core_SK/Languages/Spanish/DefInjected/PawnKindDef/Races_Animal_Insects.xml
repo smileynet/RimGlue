@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Insects -->
+
+  <Scorpion.label>Escorpión</Scorpion.label>
+  <Scorpion.labelPlural>Escorpiónes</Scorpion.labelPlural>
+  <Scorpion.lifeStages.0.label>Escorpión</Scorpion.lifeStages.0.label>
+  <Scorpion.lifeStages.0.labelPlural>Escorpiónes</Scorpion.lifeStages.0.labelPlural>
+  <Scorpion.lifeStages.0.labelMale>Escorpion masculino</Scorpion.lifeStages.0.labelMale>
+  <Scorpion.lifeStages.0.labelMalePlural>Escorpiones masculinos</Scorpion.lifeStages.0.labelMalePlural>
+  <Scorpion.lifeStages.0.labelFemale>Escorpion femenino</Scorpion.lifeStages.0.labelFemale>
+  <Scorpion.lifeStages.0.labelFemalePlural>Escorpiones femeninos</Scorpion.lifeStages.0.labelFemalePlural>
+  <Scorpion.lifeStages.1.label>Escorpión</Scorpion.lifeStages.1.label>
+  <Scorpion.lifeStages.1.labelPlural>Escorpiónes</Scorpion.lifeStages.1.labelPlural>
+  <Scorpion.lifeStages.1.labelMale>Escorpion masculino</Scorpion.lifeStages.1.labelMale>
+  <Scorpion.lifeStages.1.labelMalePlural>Escorpiones masculinos</Scorpion.lifeStages.1.labelMalePlural>
+  <Scorpion.lifeStages.1.labelFemale>Escorpion femenino</Scorpion.lifeStages.1.labelFemale>
+  <Scorpion.lifeStages.1.labelFemalePlural>Escorpiones femeninos</Scorpion.lifeStages.1.labelFemalePlural>
+  <Scorpion.lifeStages.2.label>Escorpión</Scorpion.lifeStages.2.label>
+  <Scorpion.lifeStages.2.labelPlural>Escorpiónes</Scorpion.lifeStages.2.labelPlural>
+  <Scorpion.lifeStages.2.labelMale>Escorpion masculino</Scorpion.lifeStages.2.labelMale>
+  <Scorpion.lifeStages.2.labelMalePlural>Escorpiones masculinos</Scorpion.lifeStages.2.labelMalePlural>
+  <Scorpion.lifeStages.2.labelFemale>Escorpion femenino</Scorpion.lifeStages.2.labelFemale>
+  <Scorpion.lifeStages.2.labelFemalePlural>Escorpiones femeninos</Scorpion.lifeStages.2.labelFemalePlural>
+  <Scorpion.labelMale>Escorpion masculino</Scorpion.labelMale>
+  <Scorpion.labelMalePlural>Escorpion masculinos</Scorpion.labelMalePlural>
+  <Scorpion.labelFemale>Escorpion femenino</Scorpion.labelFemale>
+  <Scorpion.labelFemalePlural>Escorpiones femeninos</Scorpion.labelFemalePlural>
+
+
+</LanguageData>

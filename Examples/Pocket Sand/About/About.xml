@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Pocket Sand</name>
+	<author>Usagirei</author>
+	<packageId>usagirei.pocketsand</packageId>
+	<supportedVersions>
+		<li>1.2</li>
+		<li>1.3</li>
+	</supportedVersions>
+	<description>Pocket Sand!
+	
+Surprise your enemies with that weapon in your pocket.
+
+Adds a gizmo to equip/unequip weapons to and from pawn inventory, that's it.
+
+No tool auto-switching based on job/distance.
+No pawn remembering what gear it had equipped and getting stuck on a equip-unequip loop when it tries to store its active weapon on a locker then dying of hunger.
+Just a few buttons to manually equip a gun, knife, or what have you.
+
+Similar to the old SimpleSidearms, when there wasn't a pawn memory, but even lightweighter.
+
+Combat Extended Compatible.
+
+Load Before Combat Extended
+
+Changelog:
+2021-07-16:
+	• 1.3 Support
+	
+2021-06-05:
+	• Changed mass-check behaviour to not allow pickup if the pawn is over capacity, instead of if pawn would be over capacity.
+
+2021-05-29:
+	• Gizmos now work when multiple pawns are selected, allowing for batch equipment changing.
+	• (Optional) Added Replacement Caravan unload jobs, to prevent pawns from unloading their weapons.
+	• (Optional) Added Replacement Equip/Unequip jobs, to enable a delay on equipment swapping. Picking up new equipment from the floor will now store the currently held one to inventory.
+	• (Optional) Added a carry capacity check to prevent pawns from picking up weapons while over-encumbered. Only applies to equipment on floor.
+	• Added Mod Configuration Menu, for the above options.
+	• Still no actual sand included.
+	</description>
+	<modDependencies>
+		<li>
+			<packageId>brrainz.harmony</packageId>
+			<displayName>Harmony</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+			<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+		</li>
+	</modDependencies>
+	<loadAfter>
+		<li>Core</li>
+		<li>brrainz.harmony</li>
+	</loadAfter>
+	<loadBefore>
+		<li>CETeam.CombatExtended</li>
+	</loadBefore>
+</ModMetaData>

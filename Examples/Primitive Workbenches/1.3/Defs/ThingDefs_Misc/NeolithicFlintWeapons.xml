@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ 
+ <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">   <!-- come back  -->
+    <defName>VBY_FlintKnife</defName>
+    <label>flint knife</label>
+    <description>A long shank of chipped flint attached to a sturdy piece of wood. It's sharp and effective.</description>
+	<techLevel>Neolithic</techLevel>	
+    <smeltable>false</smeltable>	
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponMelee/HDM_FlintKnife</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.6</uiIconScale>
+	<thingSetMakerTags Inherit="False"/>
+	<recipeMaker>
+	  <researchPrerequisite Inherit="False"/>
+	  <recipeUsers Inherit="False">
+        <li>VBY_PrimitiveMeleeWeaponTable</li>
+		<li>VBY_PrimitiveCraftingTable</li>
+		<li>CraftingSpot</li>
+      </recipeUsers>
+	</recipeMaker>  
+    <weaponTags>
+      <li>NeolithicMeleeBasic</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>Neolithic</li>
+    </weaponClasses>
+	<descriptionHyperlinks>
+	  <StatDef>CookSpeed</StatDef>
+	  <StatDef>FoodPoisonChance</StatDef>
+	</descriptionHyperlinks>
+    <costList>
+	  <VBY_PrimitiveFlint>10</VBY_PrimitiveFlint>
+	  <WoodLog>20</WoodLog>
+    </costList>
+    <statBases>
+      <WorkToMake>1950</WorkToMake>
+      <Mass>0.55</Mass>	  
+    </statBases>
+	<equippedStatOffsets>
+	   <CookSpeed>0.15</CookSpeed>
+	   <FoodPoisonChance>-0.10</FoodPoisonChance>
+	   <SharpDamageMultiplier>0.10</SharpDamageMultiplier>
+	</equippedStatOffsets>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>14</power>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+ 
+ <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>VBY_FlintSpear</defName>
+    <label>flint spear</label>
+    <description>A solid piece of wood with a fragment of flint attached at the end. Perfect for hunting game or defending the colony.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponMelee/KAZ_FlintSpear</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>		
+    <smeltable>false</smeltable>
+    <techLevel>Neolithic</techLevel>
+    <weaponTags>
+      <li>NeolithicMeleeAdvanced</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>Neolithic</li>
+    </weaponClasses>
+    <thingSetMakerTags>
+	  <li>RewardStandardQualitySuper</li>
+	</thingSetMakerTags>
+	<costList>
+		<VBY_PrimitiveFlint>15</VBY_PrimitiveFlint>
+		<WoodLog>50</WoodLog>
+	 </costList>
+    <statBases>
+      <WorkToMake>13500</WorkToMake>
+      <Mass>2</Mass>
+    </statBases>
+    <equippedAngleOffset>-25</equippedAngleOffset>
+    <tools>
+      <li>
+        <label>shaft</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>11</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>21</power>
+        <armorPenetration>0.35</armorPenetration>
+        <cooldownTime>2.7</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+	  <recipeUsers Inherit="False">
+        <li>CraftingSpot</li>		
+		<li>VBY_PrimitiveCraftingTable</li>
+		<li>VBY_PrimitiveMeleeWeaponTable</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+	  <researchPrerequisite>VBY_PrimitiveTools</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>VBY_SharpStick</defName>
+    <label>sharpened stick</label>
+    <description>A solid piece of wood that has been sharpened at one end to make a crude weapon.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponMelee/KAZ_Sharpstick</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Neolithic</techLevel>
+    <weaponTags>
+      <li>NeolithicMeleeBasic</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>Neolithic</li>
+    </weaponClasses>
+	<costList>
+		<WoodLog>30</WoodLog>
+	 </costList>
+    <statBases>
+      <WorkToMake>5500</WorkToMake>
+      <Mass>1.7</Mass>
+    </statBases>
+    <equippedAngleOffset>-75</equippedAngleOffset>
+    <tools>
+      <li>
+        <label>shaft</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2.3</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>19</power>
+        <armorPenetration>0.20</armorPenetration>
+        <cooldownTime>2.4</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+	  <researchPrerequisite Inherit="False"/>
+	  <recipeUsers Inherit="False">
+        <li>CraftingSpot</li>		
+		<li>VBY_PrimitiveCraftingTable</li>
+		<li>VBY_PrimitiveMeleeWeaponTable</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+
+</Defs>

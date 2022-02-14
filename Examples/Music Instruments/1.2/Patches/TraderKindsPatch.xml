@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- neolithic base -->
+  <Operation Class="PatchOperationInsert">
+    <xpath>Defs/TraderKindDef[defName="Base_Neolithic_Standard"]/stockGenerators/li[last()]</xpath>
+    <value>
+      <li Class="StockGenerator_Category">
+        <categoryDef>MusicalInstruments</categoryDef>
+        <maxTechLevelGenerate>Neolithic</maxTechLevelGenerate>
+        <thingDefCountRange>1~3</thingDefCountRange>
+        <totalPriceRange>400~1000</totalPriceRange>
+      </li>
+    </value>
+  </Operation>
+  <!-- outlander base -->
+  <Operation Class="PatchOperationInsert">
+    <xpath>Defs/TraderKindDef[defName="Base_Outlander_Standard"]/stockGenerators/li[last()]</xpath>
+    <value>
+      <li Class="StockGenerator_Category">
+        <categoryDef>MusicalInstruments</categoryDef>
+        <maxTechLevelGenerate>Industrial</maxTechLevelGenerate>
+        <thingDefCountRange>1~3</thingDefCountRange>
+        <totalPriceRange>400~2000</totalPriceRange>
+      </li>
+    </value>
+  </Operation>
+  <!-- neolithic caravan -->
+  <Operation Class="PatchOperationInsert">
+    <xpath>Defs/TraderKindDef[defName="Caravan_Neolithic_ShamanMerchant"]/stockGenerators/li[last()]</xpath>
+    <value>
+      <li Class="StockGenerator_Category">
+        <categoryDef>MusicalInstruments</categoryDef>
+        <maxTechLevelGenerate>Neolithic</maxTechLevelGenerate>
+        <thingDefCountRange>1~2</thingDefCountRange>
+        <totalPriceRange>200~600</totalPriceRange>
+      </li>
+    </value>
+  </Operation>
+  <!-- outlander caravan -->
+  <Operation Class="PatchOperationInsert">
+    <xpath>Defs/TraderKindDef[defName="Caravan_Outlander_Exotic"]/stockGenerators/li[last()]</xpath>
+    <value>
+      <li Class="StockGenerator_Category">
+        <categoryDef>MusicalInstruments</categoryDef>
+        <maxTechLevelGenerate>Industrial</maxTechLevelGenerate>
+        <thingDefCountRange>1~4</thingDefCountRange>
+        <totalPriceRange>600~2400</totalPriceRange>
+      </li>
+    </value>
+  </Operation>
+  <!-- orbital & empire -->
+  <Operation Class="PatchOperationInsert">
+    <xpath>Defs/TraderKindDef[defName="Orbital_Exotic" or defName="Empire_Caravan_TraderGeneral" or defName="Orbital_Empire"]/stockGenerators/li[last()]</xpath>
+    <value>
+      <li Class="StockGenerator_Category">
+        <categoryDef>MusicalInstruments</categoryDef>
+        <maxTechLevelGenerate>Industrial</maxTechLevelGenerate>
+        <thingDefCountRange>2~6</thingDefCountRange>
+        <totalPriceRange>800~3000</totalPriceRange>
+      </li>
+    </value>
+  </Operation>
+</Patch>

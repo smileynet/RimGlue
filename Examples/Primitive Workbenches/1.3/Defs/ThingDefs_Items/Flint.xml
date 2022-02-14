@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>VBY_PrimitiveFlint</defName>
+    <label>flint</label>
+    <description>Flint is a sedimentary cryptocrystalline form of the mineral quartz. Flint was widely used historically to make stone tools and start fires. It occurs chiefly as nodules and masses in sedimentary rocks, such as chalks and limestones. Inside the nodule, flint is usually dark grey, black, green, white or brown in colour, and often has a glassy or waxy appearance. Flint breaks and chips into sharp-edged pieces, making it useful for knife blades and other cutting tools.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/HDM_Flint</texPath>  <!-- Here  -->
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+	<stackLimit>125</stackLimit>
+    <useHitPoints>true</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <soundInteract>ChunkRock_Drop</soundInteract>
+    <soundDrop>ChunkRock_Drop</soundDrop>
+    <statBases>
+      <MarketValue>1.2</MarketValue>
+      <Mass>0.05</Mass>
+      <SharpDamageMultiplier>1.10</SharpDamageMultiplier>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <smeltable>false</smeltable>
+	<smallVolume>false</smallVolume>
+    <stuffProps>
+      <categories>
+        <li>Stony</li>  <!-- New?  -->
+      </categories>
+	  <appearance>Bricks</appearance>
+      <commonality>0.15</commonality>
+      <color>(160,160,160)</color>
+      <constructEffect>ConstructMetal</constructEffect>
+      <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <statOffsets>
+        <WorkToBuild>155</WorkToBuild>
+      </statOffsets>
+      <statFactors>
+        <MarketValue>0.45</MarketValue>
+        <MaxHitPoints>1.7</MaxHitPoints>
+        <Flammability>0</Flammability>
+        <WorkToBuild>6.0</WorkToBuild>
+        <WorkToMake>1.45</WorkToMake>
+        <DoorOpenSpeed>0.55</DoorOpenSpeed>
+        <BedRestEffectiveness>0.85</BedRestEffectiveness>
+        <MeleeWeapon_CooldownMultiplier>1.15</MeleeWeapon_CooldownMultiplier>
+      </statFactors>
+    </stuffProps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+  </ThingDef>
+  
+</Defs> 

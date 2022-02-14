@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <IonSatelliteBroadcaster.label>Satelite ionico radiodifusor</IonSatelliteBroadcaster.label>
+  <IonSatelliteBroadcaster.description>Un potente dispositivo de control de cañones de iones. Es capaz de destruir a tus enemigos con el poder del arma de iones mecanoide.</IonSatelliteBroadcaster.description>
+  <IonSatelliteBroadcaster_Blueprint.label>Satélite ionico radiodifusor (anteproyecto)</IonSatelliteBroadcaster_Blueprint.label>
+  <IonSatelliteBroadcaster_Frame.label>Satélite ionico radiodifusor (en construcción)</IonSatelliteBroadcaster_Frame.label>
+  <IonSatelliteBroadcaster_Frame.description>Un potente dispositivo de control de cañones de iones. Es capaz de destruir a tus enemigos con el poder del arma de iones mecanoide.</IonSatelliteBroadcaster_Frame.description>
+
+
+</LanguageData>

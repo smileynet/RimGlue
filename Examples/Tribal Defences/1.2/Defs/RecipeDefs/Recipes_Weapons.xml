@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- =========================== Melee =================================== -->
+  <RecipeDef>
+    <defName>MakeTribalSpear</defName>
+    <label>make spear</label>
+    <description>Make spear.</description>
+    <jobString>Making spear.</jobString>
+    <workAmount>22000</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <requiredGiverWorkType>Crafting</requiredGiverWorkType>
+    <workSkill>Crafting</workSkill>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>WoodLog</li>
+          </thingDefs>
+        </filter>
+        <count>90</count>
+      </li>
+    </ingredients>
+    <products>
+      <MeleeWeapon_Spear>1</MeleeWeapon_Spear>
+    </products>
+    <recipeUsers>
+      <li>CraftingSpot</li>
+    </recipeUsers>
+  </RecipeDef>
+  <!-- ============================ Ranged ================================== -->
+  <RecipeDef>
+    <defName>MakeGreatBow</defName>
+    <label>make great bow</label>
+    <description>Make a great bow.</description>
+    <jobString>Making great bow.</jobString>
+    <workAmount>24000</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <requiredGiverWorkType>Crafting</requiredGiverWorkType>
+    <workSkill>Crafting</workSkill>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>WoodLog</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+    </ingredients>
+    <products>
+      <Bow_Great>1</Bow_Great>
+    </products>
+    <recipeUsers>
+      <li>CraftingSpot</li>
+    </recipeUsers>
+    <researchPrerequisite>Smithing</researchPrerequisite>
+  </RecipeDef>
+  <RecipeDef>
+    <defName>MakePila</defName>
+    <label>make pila</label>
+    <description>Make a pila.</description>
+    <jobString>Making pila.</jobString>
+    <workAmount>19000</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <requiredGiverWorkType>Crafting</requiredGiverWorkType>
+    <workSkill>Crafting</workSkill>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>WoodLog</li>
+          </thingDefs>
+        </filter>
+        <count>70</count>
+      </li>
+    </ingredients>
+    <products>
+      <Pila>1</Pila>
+    </products>
+    <recipeUsers>
+      <li>CraftingSpot</li>
+    </recipeUsers>
+    <researchPrerequisite>Smithing</researchPrerequisite>
+  </RecipeDef>
+</Defs>

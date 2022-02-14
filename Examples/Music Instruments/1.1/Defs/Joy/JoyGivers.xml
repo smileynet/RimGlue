@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <JoyGiverDef>
+    <defName>MusicPlay</defName>
+    <giverClass>MusicalInstruments.JoyGiver_MusicPlay</giverClass>
+    <baseChance>3</baseChance>
+    <jobDef>MusicPlayJoy</jobDef>
+    <joyKind>Music</joyKind>
+    <thingDefs>
+      <li>FrameDrum</li>
+      <li>Ocarina</li>
+      <li>Guitar</li>
+      <li>Violin</li>
+      <li>ElectronicOrgan</li>
+    </thingDefs>
+    <requiredCapacities>
+      <li>Manipulation</li>
+      <li>Hearing</li>
+    </requiredCapacities>
+  </JoyGiverDef>
+  <JoyGiverDef>
+    <defName>MusicListen</defName>
+    <giverClass>MusicalInstruments.JoyGiver_MusicListen</giverClass>
+    <baseChance>12</baseChance>
+    <jobDef>MusicListen</jobDef>
+    <joyKind>Music</joyKind>
+    <thingDefs>
+      <li>FrameDrum</li>
+      <li>Ocarina</li>
+      <li>Guitar</li>
+      <li>Violin</li>
+      <li>ElectronicOrgan</li>
+    </thingDefs>
+    <requiredCapacities>
+      <li>Hearing</li>
+    </requiredCapacities>
+    <canDoWhileInBed>true</canDoWhileInBed>
+  </JoyGiverDef>
+</Defs>

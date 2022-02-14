@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <RecipeDef>
+    <defName>BurnMusicalInstrument</defName>
+    <label>burn musical instrument</label>
+    <description>Use heat to destroy unwanted musical instruments.</description>
+    <jobString>Burning instrument.</jobString>
+    <workAmount>400</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <recipeUsers>
+      <li>Campfire</li>
+      <li>ElectricSmelter</li>
+      <li>ElectricCrematorium</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MusicalInstruments</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>MusicalInstruments</li>
+      </categories>
+    </fixedIngredientFilter>
+  </RecipeDef>
+</Defs>

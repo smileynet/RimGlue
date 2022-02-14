@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Vanilla Sandbags for Siege -->
+
+  <Barricade.label>Barricadeo</Barricade.label>
+  <Barricade.description>Una pared de piedra a altura de la cintura construida para la defensa.</Barricade.description>
+  <Barricade_Blueprint.label>Barricadeo (anteproyecto)</Barricade_Blueprint.label>
+  <Barricade_Frame.label>Barricadeo (en construcción)</Barricade_Frame.label>
+  <Barricade_Frame.description>Una pared de piedra de altura de la cintura construida para la defensa.</Barricade_Frame.description>
+
+
+  <!-- Cheval de frise -->
+
+  <chevalDeFrise.label>Caballos de Frisia</chevalDeFrise.label>
+  <chevalDeFrise.description>Una barrera defensiva hecha de palos afilados. Es débil pero lento para subir.</chevalDeFrise.description>
+  <chevalDeFrise_Blueprint.label>caballos de frisia (anteproyecto)</chevalDeFrise_Blueprint.label>
+  <chevalDeFrise_Frame.label>caballos de frisia (en construcción)</chevalDeFrise_Frame.label>
+  <chevalDeFrise_Frame.description>Una barrera defensiva hecha de palos afilados. Es débil pero lento para subir.</chevalDeFrise_Frame.description>
+
+
+  <!-- Embrasures -->
+
+  <Embrasure.label>Alféizar</Embrasure.label>
+  <Embrasure.description>Una pared de piedra de altura de la cintura construida para la defensa.</Embrasure.description>
+  <Embrasure_Blueprint.label>Alféizar (anteproyecto)</Embrasure_Blueprint.label>
+  <Embrasure_Frame.label>alféizar (en construcción)</Embrasure_Frame.label>
+  <Embrasure_Frame.description>Una pared de piedra de altura de la cintura construida para la defensa.</Embrasure_Frame.description>
+
+
+  <!-- Barbed Wire -->
+
+  <WallWire.label>Alambre de espino</WallWire.label>
+  <WallWire.description>Las buenas vallas hacen para el buen vecino. Esta cerca se hace con alambre cortante para mantener a la mayoría alejada.</WallWire.description>
+  <WallWire_Blueprint.label>alambre de espino (anteproyecto)</WallWire_Blueprint.label>
+  <WallWire_Frame.label>alambre de espino (en construcción)</WallWire_Frame.label>
+  <WallWire_Frame.description>Las buenas vallas hacen para el buen vecino. Esta cerca se hace fuera del alambre de la maquinilla de afeitar para guardar a la mayoría de la gente ausente.</WallWire_Frame.description>
+
+
+  <!-- Moat -->
+
+  <Moat.label>Foso poco profundo</Moat.label>
+  <Moat.description>Una defensa de perímetro ligero para frenar a tu enemigo.</Moat.description>
+  <Moat_Blueprint.label>foso poco profundo (anteproyecto)</Moat_Blueprint.label>
+  <Moat_Frame.label>foso poco profundo (en construcción)</Moat_Frame.label>
+  <Moat_Frame.description>Una defensa de perímetro ligero para frenar a tu enemigo.</Moat_Frame.description>
+
+
+  <!-- Traps -->
+
+  <Razor_Wire_Trap.label>Trampa de alambre cortante</Razor_Wire_Trap.label>
+  <Razor_Wire_Trap.description>Trampa muy peligrosa.</Razor_Wire_Trap.description>
+  <Razor_Wire_Trap_Blueprint.label>trampa de alambre (anteproyecto)</Razor_Wire_Trap_Blueprint.label>
+  <Razor_Wire_Trap_Frame.label>trampa de alambre (en construcción)</Razor_Wire_Trap_Frame.label>
+  <Razor_Wire_Trap_Frame.description>Trampa muy peligrosa.</Razor_Wire_Trap_Frame.description>
+
+  <Building_Pawn_Upgrader.label>Estación Escudo Nanite</Building_Pawn_Upgrader.label>
+  <Building_Pawn_Upgrader.description>Suministra y recarga los moduladores de escudo Nanite de los colonos para protegerlos de lesiones.</Building_Pawn_Upgrader.description>
+  <Building_Pawn_Upgrader_Blueprint.label>estación escudo nanite (anteproyecto)</Building_Pawn_Upgrader_Blueprint.label>
+  <Building_Pawn_Upgrader_Frame.label>estación escudo nanite (en construcción)</Building_Pawn_Upgrader_Frame.label>
+  <Building_Pawn_Upgrader_Frame.description>Suministra y recarga los moduladores de escudo Nanite de los colonos para protegerlos de lesiones.</Building_Pawn_Upgrader_Frame.description>
+
+
+</LanguageData>

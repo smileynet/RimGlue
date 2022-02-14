@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RecipeDef>
+		<defName>VBY_SmashRocks</defName>
+		<label>smash limestone rocks</label>
+		<description>Smash two limestone rocks together to break into smaller fragments of flint.</description>
+		<jobString>smashing rocks.</jobString>
+		<workAmount>1700</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>  <!--Patch in stonecutting  -->
+		<effectWorking>CutStone</effectWorking>
+		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkLimestone</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ChunkLimestone</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<VBY_PrimitiveFlint>20</VBY_PrimitiveFlint>
+		</products>
+		<workSkill>Crafting</workSkill>
+	 <recipeUsers>                                <!-- patch in other Stone Spots  -->
+         <li>VBY_PrimitiveStoneCuttingSpot</li>
+		 <li>VBY_PrimitiveStoneCuttingTable</li>
+		 <li>TableStonecutter</li>
+      </recipeUsers>		
+	</RecipeDef>
+
+<!--  ===============================  From Mods  ===========================  -->
+
+	<RecipeDef MayRequire="Kura.ExtraStone">
+		<defName>VBY_SmashRocksObsidian</defName>
+		<label>smash obsidian rocks</label>
+		<description>Smash two obsidian rocks together to break into smaller fragments of flint.</description>
+		<jobString>smashing rocks.</jobString>
+		<workAmount>1700</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>CutStone</effectWorking>
+		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkObsidian</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ChunkObsidian</li>
+				</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<VBY_PrimitiveFlint>35</VBY_PrimitiveFlint>
+		</products>
+		<workSkill>Crafting</workSkill>
+	  <recipeUsers>
+		 <li>VBY_PrimitiveStoneCuttingSpot</li>
+		 <li>VBY_PrimitiveStoneCuttingTable</li>
+		 <li>TableStonecutter</li>
+	  </recipeUsers>		
+	</RecipeDef>
+
+	<RecipeDef MayRequire="Kura.ExtraStone">
+		<defName>VBY_SmashRocksChalk</defName>
+		<label>smash chalk rocks</label>
+		<description>Smash two chalk rocks together to break into smaller fragments of flint.</description>
+		<jobString>smashing rocks.</jobString>
+		<workAmount>1700</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>CutStone</effectWorking>
+        <soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkChalk</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ChunkChalk</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<VBY_PrimitiveFlint>25</VBY_PrimitiveFlint>
+		</products>
+		<workSkill>Crafting</workSkill>
+	 <recipeUsers>
+		 <li>VBY_PrimitiveStoneCuttingSpot</li>
+		 <li>VBY_PrimitiveStoneCuttingTable</li>
+		 <li>TableStonecutter</li>
+	  </recipeUsers>		
+	</RecipeDef>
+
+	<RecipeDef MayRequire="Kura.ExtraStoneCupro">
+		<defName>VBY_SmashRocksObsidian</defName>
+		<label>smash obsidian rocks</label>
+		<description>Smash two obsidian rocks together to break into smaller fragments of flint.</description>
+		<jobString>smashing rocks.</jobString>
+		<workAmount>1700</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>CutStone</effectWorking>
+		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkObsidian</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ChunkObsidian</li>
+				</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<VBY_PrimitiveFlint>35</VBY_PrimitiveFlint>
+		</products>
+		<workSkill>Crafting</workSkill>
+	  <recipeUsers>
+		 <li>VBY_PrimitiveStoneCuttingSpot</li>
+		 <li>VBY_PrimitiveStoneCuttingTable</li>
+		 <li>TableStonecutter</li>
+	  </recipeUsers>		
+	</RecipeDef>
+
+	<RecipeDef MayRequire="Kura.ExtraStoneCupro">
+		<defName>VBY_SmashRocksChalk</defName>
+		<label>smash chalk rocks</label>
+		<description>Smash two chalk rocks together to break into smaller fragments of flint.</description>
+		<jobString>smashing rocks.</jobString>
+		<workAmount>1700</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>CutStone</effectWorking>
+        <soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkChalk</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ChunkChalk</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<VBY_PrimitiveFlint>25</VBY_PrimitiveFlint>
+		</products>
+		<workSkill>Crafting</workSkill>
+	 <recipeUsers>
+		 <li>VBY_PrimitiveStoneCuttingSpot</li>
+		 <li>VBY_PrimitiveStoneCuttingTable</li>
+		 <li>TableStonecutter</li>
+	  </recipeUsers>		
+	</RecipeDef>
+
+	<RecipeDef MayRequire="sarg.alphabiomes">
+		<defName>VBY_SmashRocksObsidianAlpha</defName>
+		<label>smash obsidian rocks</label>
+		<description>Smash two obsidian rocks together to break into smaller fragments of flint.</description>
+		<jobString>smashing rocks.</jobString>
+		<workAmount>1700</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>CutStone</effectWorking>
+		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AB_ChunkObsidian</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AB_ChunkObsidian</li>
+				</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<VBY_PrimitiveFlint>35</VBY_PrimitiveFlint>
+		</products>
+		<workSkill>Crafting</workSkill>
+	  <recipeUsers>
+		 <li>VBY_PrimitiveStoneCuttingSpot</li>
+		 <li>VBY_PrimitiveStoneCuttingTable</li>
+		 <li>TableStonecutter</li>
+	  </recipeUsers>		
+	</RecipeDef>
+
+	<RecipeDef MayRequire="sarg.alphabiomes">
+		<defName>VBY_SmashRocksQuartz</defName>
+		<label>smash rose quartz rocks</label>
+		<description>Smash two rose quartz rocks together to break into smaller fragments of flint.</description>
+		<jobString>smashing rocks.</jobString>
+		<workAmount>1700</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>CutStone</effectWorking>
+		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GU_ChunkRoseQuartz</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>GU_ChunkRoseQuartz</li>
+				</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<VBY_PrimitiveFlint>40</VBY_PrimitiveFlint>
+		</products>
+		<workSkill>Crafting</workSkill>
+	  <recipeUsers>
+		 <li>VBY_PrimitiveStoneCuttingSpot</li>
+		 <li>VBY_PrimitiveStoneCuttingTable</li>
+		 <li>TableStonecutter</li>
+	  </recipeUsers>		
+	</RecipeDef>
+
+	<RecipeDef MayRequire="void.szstonesandterrains">
+		<defName>VBY_SmashRocksObsidianSZ</defName>
+		<label>smash obsidian rocks</label>
+		<description>Smash two obsidian rocks together to break into smaller fragments of flint.</description>
+		<jobString>smashing rocks.</jobString>
+		<workAmount>1700</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>CutStone</effectWorking>
+		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkObsidian</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ChunkObsidian</li>
+				</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<VBY_PrimitiveFlint>35</VBY_PrimitiveFlint>
+		</products>
+		<workSkill>Crafting</workSkill>
+	  <recipeUsers>
+		 <li>VBY_PrimitiveStoneCuttingSpot</li>
+		 <li>VBY_PrimitiveStoneCuttingTable</li>
+		 <li>TableStonecutter</li>
+	  </recipeUsers>		
+	</RecipeDef>
+
+	<RecipeDef MayRequire="void.szstonesandterrains">
+		<defName>VBY_SmashRocksLimestoneSZ</defName>
+		<label>smash white limestone rocks</label>
+		<description>Smash two white limestone rocks together to break into smaller fragments of flint.</description>
+		<jobString>smashing rocks.</jobString>
+		<workAmount>1700</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>  <!--Patch in stonecutting  -->
+		<effectWorking>CutStone</effectWorking>
+		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkWhiteLimestone</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ChunkWhiteLimestone</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<VBY_PrimitiveFlint>20</VBY_PrimitiveFlint>
+		</products>
+		<workSkill>Crafting</workSkill>
+	 <recipeUsers>                                <!-- patch in other Stone Spots  -->
+         <li>VBY_PrimitiveStoneCuttingSpot</li>
+		 <li>VBY_PrimitiveStoneCuttingTable</li>
+		 <li>TableStonecutter</li>
+      </recipeUsers>		
+	</RecipeDef>
+
+	<RecipeDef MayRequire="ObsidiaExpansion.Core">
+		<defName>VBY_SmashRocksObsidianOE</defName>
+		<label>smash obsidian rocks</label>
+		<description>Smash two obsidian rocks together to break into smaller fragments of flint.</description>
+		<jobString>smashing rocks.</jobString>
+		<workAmount>1700</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>CutStone</effectWorking>
+		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>OE_Obsidian</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>OE_Obsidian</li>
+				</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<VBY_PrimitiveFlint>35</VBY_PrimitiveFlint>
+		</products>
+		<workSkill>Crafting</workSkill>
+	  <recipeUsers>
+		 <li>VBY_PrimitiveStoneCuttingSpot</li>
+		 <li>VBY_PrimitiveStoneCuttingTable</li>
+		 <li>TableStonecutter</li>
+	  </recipeUsers>		
+	</RecipeDef>
+	
+</Defs>	

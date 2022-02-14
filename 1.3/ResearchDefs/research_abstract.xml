@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ResearchProjectDef Name="NeolithicBase" Abstract="True">
+        <tags>
+            <li>MedievalStart</li>
+            <li>ClassicStart</li>
+        </tags>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef Name="NeolithicAdvanced" Abstract="True">
+        <requiredResearchBuilding>NeolithicResearchBench</requiredResearchBuilding>
+        <requiredResearchBuildings>
+            <li>PrimitiveResearchBench</li>
+            <li>SimpleResearchBench</li>
+            <li>HiTechResearchBench</li>
+        </requiredResearchBuildings>
+        <tags>
+            <li>MedievalStart</li>
+            <li>ClassicStart</li>
+        </tags>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef Name="MedievalBase" Abstract="True">
+        <requiredResearchBuilding>SimpleResearchBench</requiredResearchBuilding>
+        <requiredResearchBuildings>
+            <li>SimpleResearchBench</li>
+            <li>HiTechResearchBench</li>
+        </requiredResearchBuildings>
+        <tags>
+            <li>ClassicStart</li>
+        </tags>
+    </ResearchProjectDef>
+</Defs>

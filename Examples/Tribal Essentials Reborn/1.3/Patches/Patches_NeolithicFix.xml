@@ -1,0 +1,63 @@
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Normal</success>
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>*/ThingDef[defName = "HoopstoneRing"]/maxTechLevelToBuild</xpath>
+				<success>Normal</success>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>*/ThingDef[defName = "GameOfUrBoard"]/maxTechLevelToBuild</xpath>
+				<success>Normal</success>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>*/ThingDef[defName = "HoopstoneRing"]/researchPrerequisites</xpath>
+				<success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[defName = "HoopstoneRing"]</xpath>
+				<value>
+					<researchPrerequisites/>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[defName = "HoopstoneRing"]/researchPrerequisites</xpath>
+		<value>
+			<li>TribalEssentials</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>*/ThingDef[defName = "GameOfUrBoard"]/researchPrerequisites</xpath>
+				<success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[defName = "GameOfUrBoard"]</xpath>
+				<value>
+					<researchPrerequisites/>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[defName = "GameOfUrBoard"]/researchPrerequisites</xpath>
+		<value>
+			<li>TribalEssentials</li>
+		</value>
+	</Operation>
+
+
+
+</Patch>

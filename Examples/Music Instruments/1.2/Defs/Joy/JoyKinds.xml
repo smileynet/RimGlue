@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <JoyKindDef>
+    <defName>Music</defName>
+    <label>music appreciation</label>
+    <needsThing>true</needsThing>
+  </JoyKindDef>
+</Defs>

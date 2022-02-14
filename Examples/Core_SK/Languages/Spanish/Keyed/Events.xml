@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <LetterLabelSwarm>Enjambre</LetterLabelSwarm>
+  <SwarmArrived>Un grupo de insectos hambrientos apareció cerca de la colonia.\n¡A cubrir todo, inmediatamente! Ellos estarán aquí por un corto tiempo, nosotros podemos esperar.</SwarmArrived>
+
+  <LabelAG>Genocidio Animal</LabelAG>
+  <DescAG>Todas las especies no humanas dentro de la zona han muerto misteriosamente.\nDebe estar pasando algún tipo de fenómeno súper misterioso en este RimWorld.</DescAG>
+
+  <LabelAE>Explosión accidental</LabelAE>
+  <DescAE>Un mal funcionamiento del nucleo de una central eléctrica ha causado una explosión. La central ha sido severamente dañada o destruida.</DescAE>
+
+  <LabelBH>¡Meteoro cayendo!</LabelBH>
+  <DescBH>¡Un meteorito ha entrado en el pozo de gravedad del planeta y se está estrellando, lo que inminentemente causará una gran explosión en donde caiga!</DescBH>
+
+  <LabelBMH>¡Lluvia de meteoritos cayendo!</LabelBMH>
+  <DescBMH>¡Una lluvia de meteoroides ha entrado en el pozo de gravedad del planeta y se están estrellando, causando explosiones!</DescBMH>
+
+  <FoundTreasure>Tesoro encontrado</FoundTreasure>
+  <HeStash> se sintió generoso y decidió regalar un arma de gran valor que estaba escondiendo para servir a la colonia. \n\nEl dio su </HeStash>
+  <SheStash> se sintió generosa y decidió regalar un arma preciosa que estaba escondiendo para servir a la colonia.\n\nElla dio su </SheStash>
+  <GunStash> pistola.</GunStash>
+  <HeMoney> se sintió generoso y decidió que era mejor compartir su riqueza con la colonia.\n\nEl ha decidido donar </HeMoney>
+  <SheMoney> se sintió generosa y decidió que era mejor compartir su riqueza con la colonia.\n\nElla ha decidido donar </SheMoney>
+  <SilverStash> plata a la colonia.</SilverStash>
+
+  <DescEQ>¡Advertencia! ¡TERREMOTO! Cuidado con los escombros que caen!</DescEQ>
+  <LabelEQ>¡Terremoto!</LabelEQ>
+
+  <LabelFE>Extraño eclipse</LabelFE>
+  <DescFE>El eclipse esta ocurriendo </DescFE>
+  <DescFEtwo> en la zona feral. Se están fusionando para atacar a su colonia, ¡Prepara la defensa inmediatamente!</DescFEtwo>
+
+  <LabelEM>Eclipse por meteorito</LabelEM>
+  <DescEM>¡Este eclipse no es causado por una luna, es un gran meteorito que esta pasando!\n¡Tenga cuidado con los pedazos y con los escombros!\n\nPodrían haber caído metales preciosos!</DescEM>
+
+  <RescueStay>Rescate</RescueStay>
+  <RescueGoAway>Obtener rescate</RescueGoAway>
+  <EndGame>Un buque cercano de otro grupo planetario ha recibido información sobre el sitio del accidente basado en la señal de socorro que lanzó durante la destrucción de su nave. Han decidido venir a buscarte a ti y a tus colonos.\n\nPuedes elegir terminar el juego ahora y decirle al barco de rescate que venga a buscarte o elegir quedarte; es totalmente tu decisión.</EndGame>
+
+  <LabelHC>Carnívoros hambrientos llegaron</LabelHC>
+  <DescHC>Un grupo de carnívoros hambrientos está buscando comida. Tus colonos parecen comida.</DescHC>
+
+  <NEDesc>¡¡¡ADVERTENCIA!!! ¡Hubo una explosión en un reactor nuclear!</NEDesc>
+  <NELabel>Incidente nuclear</NELabel>
+
+  <LabelRV>Virus de la rabia</LabelRV>
+  <DescRV>ha sido encontrado inmune por la calamidad desconocida.</DescRV>
+
+  <LabelRVH>Advertencia: ¡Virus de la rabia!</LabelRVH>
+  <DescRVH>¡Una calamidad desconocida ha golpeado! La mayoría de los humanos en la zona han sido conducidos a la locura y se están atacando mutuamente! La mitad de tus colonos están afectados. ¡Date prisa y haz algo!</DescRVH>
+
+  <LabelRZ>Lluvia navaja inminente</LabelRZ>
+  <DescRZ>Algunos escombros en órbita alrededor del planeta han comenzado a caer en la zona.</DescRZ>
+
+  <LabelCR>Radiación cósmica</LabelCR>
+  <DescCR>obtuvo a través de la radiación y está luchando para ayudar a los otros colonos</DescCR>
+  <DescHCR>Demasiada radiación de la llamarada solar ha provocado la radiación cósmica sobre los seres humanos dentro de la zona.\n\nnTodo el mundo siente náuseas, los más jóvenes pueden haber ido bien, pero los mayores se sienten enfermos y necesitan descansar.</DescHCR>
+
+  <LabelHA>Accidente cerebrovascular</LabelHA>
+  <DescHA> ha sufrido un accidente cerebrovascular. Tratar con cuidado.</DescHA>
+
+  <TribMigrDesc>Una tribu entera de viajeros ha llegado a la zona de tu colonia.\n\nSólo puedes imaginar lo que el destino ha decidido que ellos soporten.</TribMigrDesc>
+
+  <MeteorStopLabel>Se detuvo la lluvia de meteoros</MeteorStopLabel>
+  <MeteorStopDesc>La lluvia de meteoros se ha detenido. No se detectaron más meteoros.</MeteorStopDesc>
+
+  <RazorOverLabel>Lluvia navaja detenida</RazorOverLabel>
+  <RazorOverDesc>La lluvia de navajas parece estar dejando de caer.</RazorOverDesc>
+
+  <EQMess>¡Un terremoto! ¿Alguien está herido? \n\nParece que algunos de los edificios se han dañado severamente.</EQMess>
+  <EQMessLow>¡Un terremoto! ¿Alguien está herido?\n\nParece que algunos de los edificios se han dañado.</EQMessLow>
+  <EQRichterScale>\nEscala del terremoto: </EQRichterScale>
+
+  <MDLabel>Se encontraron recursos ocultos</MDLabel>
+  <MDDesc>¡Hemos encontrado depósitos minerales ocultos!</MDDesc>
+  <RMDLabel>Se encontraron minerales raros ocultos</RMDLabel>
+  <RMDDesc>¡Hemos encontrado depósitos minerales ocultos!</RMDDesc>
+  <OFLabel>Encontrado yacimiento petrolífero oculto</OFLabel>
+  <OFDesc>Hemos encontrado un yacimiento petrolífero escondido!</OFDesc>
+
+  <LabelMT>Es algo extraño</LabelMT>
+  <DescMT>Los rostros de los humanos contenidos en las capsulas de escape parecían aterrorizados en gran manera. Debieron haber experimentado algo horripilante</DescMT>
+  <TheThingLabel>¡Abominación!</TheThingLabel>
+  <TheThingDesc> se ha transformado en una gran Abominación! ¡Aquella misteriosa transmisión era de una forma de vida mutada!\n\n¡Destrúyela antes de mate a todos los colonos!</TheThingDesc>
+
+  <CosmicRadiationLevel>Parece que el nivel de radiación ha descendido a un nivel normal.</CosmicRadiationLevel>
+
+  <LabelNF>Precipitaciones nucleares</LabelNF>
+  <DescNF>¡Oh Dios mío! ¡Han empezado las lluvias nucleares! ¡Todo va a morir! El tiempo en el que el uranio permanecerá activo, es de 100 días.</DescNF>
+
+  <ConfusionLabel>Confusión</ConfusionLabel>
+  <ConfusionDesc> sólo salió de la confusión.</ConfusionDesc>
+
+  <LetterLabelPlunderersArrived>Exploradores insectoides</LetterLabelPlunderersArrived>
+  <PlunderersArrived>Algunos exploradores de quizás una colmena insectoide cercana están hurgando alrededor de su territorio. Ellos sin duda actuarán como una amenaza tanto para sus colonos como para el ecosistema mientras exploran. ¡Cuidado, parece que atacaran a los colonos que se acercan demasiado!</PlunderersArrived>
+  <KillingSpree> trata de matarlos </KillingSpree>
+
+  <LabelBug>Ataque de langostas</LabelBug>
+  <DescBug>¡Se han encontrado langostas cerca de tu hogar! Destruyalas rápidamente o de lo contrario se comerán tu ropa!</DescBug>
+
+  <LabelTrySuicide>Intentó suicidio</LabelTrySuicide>
+  <DescTrySuicide> intentó suicidarse, pero no funcionó.</DescTrySuicide>
+  <LabelSuicide>Suicidio de prisionero</LabelSuicide>
+  
+  <DescSuicide_A>Uno de sus prisioneros murió en la celda y dejó atrás un mensaje final. Se lee: "Cámaras en todas partes Mirando, siempre viendome. Las paredes alrededor se mueven observando. No puedo dormir, siempre mirando. Me ves y no te veo. No hay luces aquí, no no. Te veo en la oscuridad que hacen. Cámaras, ojos de espías ¡No me verás más!"</DescSuicide_A>
+  <DescSuicide_B>Your prisoner smashed it's head against the wall and has died. A small piece of paper nearby has a message that was hastily scrawled. It reads: "I thought there would be easy cash in this Colony...but instead I got trapped into something horrible. I think I'm going crazy. This food...the Warden said it was "yummy, tasty, mmm" but I don't believe it. Something tastes wrong about it. My old injuries still haunt me, like a nightmare that never ends. Even the barely audible sound of the door causes me to shudder as if it were thunder".</DescSuicide_B>
+  <DescSuicide_C>A prisoner has committed suicide shortly after asking a Colonist: "Where are my meals? I need nourishment! Muffalo meat or something! GIVE ME FOOD!"</DescSuicide_C>
+  <DescSuicide_D>A prisoner who was found dead had kept a diary with multiple entries. It reads: "A rough cough. I feel cold and hot. I caught something, a flu maybe? No ventilation in here. Cough getting worse. My mouth is dry, it tastes like rust*blood splatter covers some words*rible. I see people sometimes, they promised me a future. To think I even liked it! I was promised food, a good bed and could one day use my skills again. I believed that, but not anymore. I need*blood splatter covers more words* worth a try.</DescSuicide_D>
+  <DescSuicide_E>A prisoner was found deceased under the bed. A small note was crumpled up nearby. It angrily reads: "They wanted to operate on me! They were going to harvest me for organs! These people are crazies! YOU WON'T HARVEST ME ALIVE! I WON'T LET YOU!</DescSuicide_E>
+  <DescSuicide_F>A prisoner has succumbed. A quick look at the body shows signs of infection and gangrene in hidden areas. The pain must have be extruciating.</DescSuicide_F>
+  <DescSuicide_G>A prisoner has perished. Scrawled into the floor is a note. It reads: "Suddenly no one comes? Am I going to die here like an abandoned dog in a cage?".</DescSuicide_G>
+  <DescSuicide_H>One of your prisoners suddenly couldn't stand up. The doctor's first thought was that the prisoner's psyche was tender, overwhelmed by the anxiety and depression from imprisonment. Then the prisoner suddenly died! Upon the autopsy examination, a long fat stick was found up the prisoner's rear and had gouged the intestines. What an unfortunate circumstance.</DescSuicide_H>
+  <DescSuicide_I>A prisoner has died under mysterious circumstances. The body was found in the fetal position with its hands covering its eyes. The prisoner seems to have choked when it swallowed its own tongue.</DescSuicide_I>
+  <DescSuicide_J>A prisoner has died under mysterious circumstances. A quick inspection of the body tells the tale. The prisoner seems to have tried hanging itself with a boot lace, but the lace broke. The prisoner then tried to gnaw off the door handle, as indicated by the bloody bite marks on the door. Failing that the prisoner swallowed part of the boot, where it got lodged in the throat and the prisoner suffocated.</DescSuicide_J>
+  <DescSuicide_K>The prisoner died under mysterious circumstances. A medical summary paper was found nearby. It reads: "Patient has distemper, intestinal ticks and show signs of being in a delirious state. Patient has tried to eat it's own feet and hands. I recommend isolating the patient and attempting experimental procedures. It might have lupus."</DescSuicide_K>
+  <DescSuicide_L>A prisoner has been found dead under the bed, and a scrap of paper was found nearby. It looks like a mission report and it reads: "Here is your job. Land at the listed co-ordinates and grab some weapons, ammunition, rations and armor. Then follow us and assault the illegal colony. They shouldn't be here and we're going to enforce that. You may be a rookie but this will be easy. They won't know what hit 'em!".</DescSuicide_L>
+  <DescSuicide_M>A prisoner has died. A message was found in a notebook. It reads: "We were waiting for orders when suddenly some air defense shot down our ship! I survived by jumping in the escape pod. When the pod opened I was immediately under fire. I was caught and imprisoned. I don't know what happened to the others. I don't think I'll be leaving this place alive. If you're still monitoring me, let them know what happened and tell them to stay away from this place".</DescSuicide_M>
+  <DescSuicide_N>A prisoner has suddenly died. A strange message was found scrawed on a medical paper. It reads "They wanted to do a test procedure on me with experimental bionics and regenerative tissue. They wanted to cut off my leg. So, I passed. I'll show them that I don't need medical help! My flesh and blood is my own, a little infection won't stop me! I AM INVINCIBLE!"</DescSuicide_N>
+
+	<!-- Malaria raid -->
+	<LabelMalariaRaid>Malaria epidemic</LabelMalariaRaid>
+	<DescMalariaRaid>Our area hard-hit by the malaria. /nShould be afraid of mosquitoes!</DescMalariaRaid>
+
+	<!-- Flea raid -->
+	<LabelFleaRaid>Plague epidemic</LabelFleaRaid>
+	<DescFleaRaid>Our area hard-hit by the plague. /nFleas are carriers of the plague, be careful.</DescFleaRaid>
+
+
+  <ThanksgivingLabel>Acción de gracias</ThanksgivingLabel>
+  <ThanksgivingDesc>Una de las tribus ha notado que sus raciones de comida son bajas. Les han proporcionado algo de comida, sin compromisos.\n\nEllos les agradecen por ser tan buenos amigos y esperan que su amistad sea más firme con este acto.</ThanksgivingDesc>
+
+  <CalmWeatherLabel>Clima calmado</CalmWeatherLabel>
+  <CalmWeatherDesc>El clima se calmó notablemente. Las turbinas de viento serán inútiles, pero disparar será más fácil.</CalmWeatherDesc>
+
+  <Amnesia>Amnesia</Amnesia>
+  <AmnesiaHeDesc>de repente olvidó lo que estaba haciendo. Él no puede recordar qué hacer.</AmnesiaHeDesc>
+  <AmnesiaSheDesc>de repente olvidó lo que estaba haciendo. Ella no puede recordar qué hacer.</AmnesiaSheDesc>
+
+  <PestsLabel>¡Peste!</PestsLabel>
+  <PestsDesc>Algunos bichos que comen cultivos han encontrado su camino en sus zonas de cultivo. Ellos comen todo lo que encuentran, si no se tratan.</PestsDesc>
+
+  <!--<AmnesiaLabel>Amnesia</AmnesiaLabel>-->
+  <SALabel>Actividad sísmica</SALabel>
+  <SAMess>Hay actividad sísmica en esta región. \n\n¡Cuidado en las áreas montañosas! Pueden haber colapsos.</SAMess> 
+  <SARichterScale>\nEscala de Richter: </SARichterScale>
+
+</LanguageData>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Lifesupport -->
+
+  <LifesupportHeart.label>Bomba de sangre</LifesupportHeart.label>
+  <LifesupportLung.label>Respirador</LifesupportLung.label>
+  <LifesupportKidney.label>Filtro de orina</LifesupportKidney.label>
+  <LifesupportLiver.label>Filtro de sangre</LifesupportLiver.label>
+
+
+</LanguageData>

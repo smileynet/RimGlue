@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<JobDef>
+		<defName>PS_Equip</defName>
+		<driverClass>PocketSand.JobDriver_Equip</driverClass>
+		<reportString>equipping TargetA.</reportString>
+		<allowOpportunisticPrefix>false</allowOpportunisticPrefix>
+	</JobDef>
+
+	<JobDef>
+		<defName>PS_Drop</defName>
+		<driverClass>PocketSand.JobDriver_DropEquipment</driverClass>
+		<reportString>dropping TargetA.</reportString>
+		<allowOpportunisticPrefix>false</allowOpportunisticPrefix>
+	</JobDef>
+
+</Defs>

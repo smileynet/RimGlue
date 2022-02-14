@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- Broots -->
+<ThingDef ParentName="PlantBase">
+	<defName>TM_Broots</defName>
+	<label>wild white broots</label>
+	<description>Small root-like fibrous fungus, they grow in the wild and are relatively hard to grow on purpose, tribal people know how to use them to prepare special medical beverages.</description>
+	<statBases>
+		<MaxHitPoints>55</MaxHitPoints>
+		<Nutrition>0.08</Nutrition>
+	</statBases>
+	<graphicData>
+		<texPath>Things/Plant/Broots</texPath>
+		<graphicClass>Graphic_Random</graphicClass>
+	</graphicData>
+	<selectable>true</selectable>
+	<pathCost>8</pathCost>
+	<ingestible />
+	<plant>
+		<harvestWork>800</harvestWork>
+		<immatureGraphicPath>Things/Plant/Broots</immatureGraphicPath>
+		<leaflessGraphicPath>Things/Plant/Broots</leaflessGraphicPath>
+		<sowMinSkill>6</sowMinSkill>
+		<neverBlightable>true</neverBlightable>
+		<sowResearchPrerequisites>
+			<li>TM_TribalMedicalHerbs</li>
+		</sowResearchPrerequisites>
+		<wildClusterRadius>12</wildClusterRadius>
+		<wildClusterWeight>500</wildClusterWeight>
+		<mustBeWildToSow>false</mustBeWildToSow>
+		<dieIfLeafless>false</dieIfLeafless>
+		<maxMeshCount>16</maxMeshCount>
+		<harvestTag>Standard</harvestTag>
+		<harvestedThingDef>TM_RawBroots</harvestedThingDef>
+		<harvestYield>6</harvestYield>
+		<sowTags>
+			<li>Ground</li>
+			<li>Hydroponic</li>
+		</sowTags>
+		<topWindExposure>0.1</topWindExposure>
+		<growDays>7</growDays>
+		<visualSizeRange>0.5~1</visualSizeRange>
+		<wildOrder>2</wildOrder>
+		<purpose>Health</purpose>
+	</plant>
+</ThingDef>
+
+<!-- Red Petals -->
+<ThingDef ParentName="PlantBase">
+	<defName>TM_RedPetals</defName>
+	<label>wild red petals</label>
+	<description>Small mesh plants that grow a small amount of shiny red silk-soft petals, tribal people know how to use them to prepare special medical beverages.</description>
+	<statBases>
+		<MaxHitPoints>35</MaxHitPoints>
+		<Nutrition>0.02</Nutrition>
+	</statBases>
+	<graphicData>
+		<texPath>Things/Plant/RedPetals</texPath>
+		<graphicClass>Graphic_Random</graphicClass>
+	</graphicData>
+	<selectable>true</selectable>
+	<pathCost>4</pathCost>
+	<ingestible />
+	<plant>
+		<harvestWork>900</harvestWork>
+		<immatureGraphicPath>Things/Plant/RedPetals</immatureGraphicPath>
+		<leaflessGraphicPath>Things/Plant/RedPetals</leaflessGraphicPath>
+		<sowMinSkill>7</sowMinSkill>
+		<neverBlightable>true</neverBlightable>
+		<sowResearchPrerequisites>
+			<li>TM_TribalMedicalHerbs</li>
+		</sowResearchPrerequisites>
+		<wildClusterRadius>5</wildClusterRadius>
+		<wildClusterWeight>110</wildClusterWeight>
+		<mustBeWildToSow>false</mustBeWildToSow>
+		<dieIfLeafless>false</dieIfLeafless>
+		<maxMeshCount>4</maxMeshCount>
+		<harvestTag>Standard</harvestTag>
+		<harvestedThingDef>TM_RawRedPetals</harvestedThingDef>
+		<harvestYield>6</harvestYield>
+		<sowTags>
+			<li>Ground</li>
+			<li>Hydroponic</li>
+		</sowTags>
+		<topWindExposure>0.1</topWindExposure>
+		<growDays>10</growDays>
+		<visualSizeRange>0.3~0.8</visualSizeRange>
+		<wildOrder>2</wildOrder>
+		<purpose>Health</purpose>
+	</plant>
+</ThingDef>
+
+<!-- Shrooms -->
+<ThingDef ParentName="PlantBase">
+	<defName>TM_Shrooms</defName>
+	<label>wild shrooms</label>
+	<description>Small moshrooms that may look ordinary, tribal people seem to harvest them, they seem to be able to prepare medical beverages with them.\n\nDo not ingest raw as they are extremely poisonous.</description>
+	<statBases>
+		<MaxHitPoints>35</MaxHitPoints>
+		<Nutrition>0.005</Nutrition>
+	</statBases>
+	<graphicData>
+		<texPath>Things/Plant/Shrooms</texPath>
+		<graphicClass>Graphic_Random</graphicClass>
+	</graphicData>
+	<selectable>true</selectable>
+	<pathCost>2</pathCost>
+	<ingestible />
+	<plant>
+		<harvestWork>800</harvestWork>
+		<immatureGraphicPath>Things/Plant/Shrooms</immatureGraphicPath>
+		<leaflessGraphicPath>Things/Plant/Shrooms</leaflessGraphicPath>
+		<sowMinSkill>10</sowMinSkill>
+		<neverBlightable>true</neverBlightable>
+		<sowResearchPrerequisites>
+			<li>TM_TribalMedicalHerbs</li>
+		</sowResearchPrerequisites>
+		<wildClusterRadius>8</wildClusterRadius>
+		<wildClusterWeight>80</wildClusterWeight>
+		<mustBeWildToSow>false</mustBeWildToSow>
+		<dieIfLeafless>false</dieIfLeafless>
+		<maxMeshCount>9</maxMeshCount>
+		<harvestTag>Standard</harvestTag>
+		<harvestedThingDef>TM_RawShrooms</harvestedThingDef>
+		<harvestYield>6</harvestYield>
+		<sowTags>
+			<li>Ground</li>
+			<li>Hydroponic</li>
+		</sowTags>
+		<topWindExposure>0.02</topWindExposure>
+		<growDays>40</growDays>
+		<visualSizeRange>0.5~1</visualSizeRange>
+		<wildOrder>2</wildOrder>
+		<purpose>Health</purpose>
+	</plant>
+</ThingDef>
+
+<!-- Dark Berries -->
+<ThingDef ParentName="PlantBase">
+	<defName>TM_DarkBerries</defName>
+	<label>wild dark berries</label>
+	<description>A compact and mossy-looking bush with a small, black fruit. Dark berries have a bland and salty taste that sticks in the mouth for long and disallows people to feel flavours, it is also bad for the organism as it can cause stomachache.\n\nDespite this, tribal people seem ti value them, as there are myths that in hig amounts they can even cure asthma or heart illness.</description>
+	<statBases>
+		<MaxHitPoints>60</MaxHitPoints>
+		<Nutrition>0.003</Nutrition>
+	</statBases>
+	<graphicData>
+		<texPath>Things/Plant/DarkBerryBush</texPath>
+		<graphicClass>Graphic_Random</graphicClass>
+	</graphicData>
+	<selectable>true</selectable>
+	<pathCost>5</pathCost>
+	<ingestible />
+	<plant>
+		<harvestWork>500</harvestWork>
+		<immatureGraphicPath>Things/Plant/DarkBerryBush_Immature</immatureGraphicPath>
+		<leaflessGraphicPath>Things/Plant/DarkBerryBush_Leafless</leaflessGraphicPath>
+		<sowMinSkill>7</sowMinSkill>
+		<neverBlightable>false</neverBlightable>
+		<sowResearchPrerequisites>
+			<li>TM_TribalMedicalHerbs</li>
+		</sowResearchPrerequisites>
+		<wildClusterRadius>5</wildClusterRadius>
+		<wildClusterWeight>90</wildClusterWeight>
+		<mustBeWildToSow>false</mustBeWildToSow>
+		<dieIfLeafless>false</dieIfLeafless>
+		<maxMeshCount>1</maxMeshCount>
+		<harvestTag>Standard</harvestTag>
+		<harvestedThingDef>TM_RawDarkBerries</harvestedThingDef>
+		<harvestYield>8</harvestYield>
+		<sowTags>
+			<li>Ground</li>
+			<li>Hydroponic</li>
+		</sowTags>
+		<topWindExposure>0.02</topWindExposure>
+		<growDays>40</growDays>
+		<visualSizeRange>0.5~1</visualSizeRange>
+		<wildOrder>2</wildOrder>
+		<purpose>Health</purpose>
+	</plant>
+</ThingDef>
+
+</Defs>
