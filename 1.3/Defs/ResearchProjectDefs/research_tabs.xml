@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ResearchTabDef>
+    <defName>RimGlue_Neolithic</defName>
+    <label>Neolithic</label>
+  </ResearchTabDef>
+
+  <ResearchTabDef>
+    <defName>RimGlue_Medieval</defName>
+    <label>Medieval</label>
+  </ResearchTabDef>
+</Defs>

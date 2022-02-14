@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ResearchProjectDef ParentName="NeolithicBasic">
+    <defName>RimGlue_NeolithicProduction</defName>
+    <label>Basic Neolithic Production</label>
+    <description>Learn to make basic neolithic production benches with faster work speed compared to spots.</description>
+    <baseCost>100</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tab>RimGlue_Neolithic</tab>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>0.00</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="NeolithicAdvanced">
+    <defName>RimGlue_NeolithicProductionAdvanced</defName>
+    <label>Advanced Neolithic Production</label>
+    <description>Learn to make advanced neolithic production benches with faster work speed compared to basic benches.</description>
+    <baseCost>300</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tab>RimGlue_Neolithic</tab>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>0.00</researchViewY>
+    <!-- <requiredResearchBuilding>RimGlue_NeolithicResearchTable</requiredResearchBuilding> -->
+    <prerequisites>
+      <li>RimGlue_NeolithicProduction</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="MedivalBasic">
+    <defName>RimGlue_MedievalProduction</defName>
+    <label>Basic Medieval Production</label>
+    <description>Learn to make medieval production benches with faster work speed compared to their neolithic predecessors.</description>
+    <baseCost>600</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>RimGlue_Medieval</tab>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>0.00</researchViewY>
+    <prerequisites>
+      <li>RimGlue_NeolithicProductionAdvanced</li>
+    </prerequisites>
+  </ResearchProjectDef>
+</Defs>  

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-    <ResearchProjectDef Name="NeolithicBase" Abstract="True">
+    <ResearchProjectDef Name="NeolithicBasic" Abstract="True">
         <tags>
             <li>MedievalStart</li>
             <li>ClassicStart</li>
@@ -22,6 +22,7 @@
     </ResearchProjectDef>
 
     <ResearchProjectDef Name="MedievalBase" Abstract="True">
+        <tab>Medieval</tab>
         <requiredResearchBuilding>SimpleResearchBench</requiredResearchBuilding>
         <requiredResearchBuildings>
             <li>SimpleResearchBench</li>
