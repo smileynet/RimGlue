@@ -9,25 +9,24 @@
     <techLevel>Neolithic</techLevel>
     <tab>RimGlue_Neolithic</tab>
     <researchViewX>0.00</researchViewX>
-    <researchViewY>0.00</researchViewY>
+    <researchViewY>1.00</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef ParentName="NeolithicAdvanced">
     <defName>RimGlue_NeolithicProductionAdvanced</defName>
     <label>Advanced Neolithic Production</label>
-    <description>Learn to make advanced neolithic production benches with faster work speed compared to basic benches.</description>
+    <description>Learn to make advanced neolithic production buildings to enhance efficiency.</description>
     <baseCost>300</baseCost>
     <techLevel>Neolithic</techLevel>
     <tab>RimGlue_Neolithic</tab>
     <researchViewX>1.00</researchViewX>
-    <researchViewY>0.00</researchViewY>
-    <!-- <requiredResearchBuilding>RimGlue_NeolithicResearchTable</requiredResearchBuilding> -->
+    <researchViewY>1.00</researchViewY>
     <prerequisites>
       <li>RimGlue_NeolithicProduction</li>
     </prerequisites>
   </ResearchProjectDef>
 
-  <ResearchProjectDef ParentName="MedivalBasic">
+  <ResearchProjectDef ParentName="MedievalBasic">
     <defName>RimGlue_MedievalProduction</defName>
     <label>Basic Medieval Production</label>
     <description>Learn to make medieval production benches with faster work speed compared to their neolithic predecessors.</description>
@@ -35,9 +34,51 @@
     <techLevel>Medieval</techLevel>
     <tab>RimGlue_Medieval</tab>
     <researchViewX>0.00</researchViewX>
-    <researchViewY>0.00</researchViewY>
+    <researchViewY>1.00</researchViewY>
     <prerequisites>
       <li>RimGlue_NeolithicProductionAdvanced</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="MedievalAdvanced">
+    <defName>RimGlue_MedievalProductionAdvanced</defName>
+    <label>Advanced Medieval Production</label>
+    <description>Learn to make advanced medieval production buildings to enhance efficiency.</description>
+    <baseCost>1000</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>RimGlue_Medieval</tab>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>1.00</researchViewY>
+    <prerequisites>
+      <li>RimGlue_MedievalProduction</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="IndustrialBasic">
+    <defName>RimGlue_IndustrialProduction</defName>
+    <label>Basic Industrial Production</label>
+    <description>Learn to make industrial production benches with faster work speed compared to their medieval predecessors.</description>
+    <baseCost>600</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>RimGlue_Industrial</tab>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>1.00</researchViewY>
+    <prerequisites>
+      <li>RimGlue_MedievalProductionAdvanced</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="IndustrialAdvanced">
+    <defName>RimGlue_IndustrialProductionAdvanced</defName>
+    <label>Advanced Industrial Production</label>
+    <description>Learn to make advanced industrial production buildings to enhance efficiency.</description>
+    <baseCost>1000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>RimGlue_Industrial</tab>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>1.00</researchViewY>
+    <prerequisites>
+      <li>RimGlue_IndustrialProduction</li>
     </prerequisites>
   </ResearchProjectDef>
 </Defs>  

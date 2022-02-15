@@ -12,7 +12,34 @@
 		<xpath>Defs/ThingDef[defName="SimpleResearchBench"]</xpath>
 		<value>
 			<researchPrerequisites>
-				<li>RimGlue_MedievalProduction</li>
+				<li>RimGlue_IndustrialResearch</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+    <Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="TableSculpting"]</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>RimGlue_IndustrialProduction</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+    <Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="FueledStove"]</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>RimGlue_IndustrialProduction</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+    <Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="TableButcher"]</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>RimGlue_IndustrialProduction</li>
 			</researchPrerequisites>
 		</value>
 	</Operation>
@@ -30,15 +57,11 @@
 	</Operation>
 
     <Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="ButcherSpot"]</xpath>
+		<xpath>Defs/ThingDef[defName="ButcherSpot"]/description</xpath>
 		<value>
-			<description>
-                A place for butchering animals. Due to the lack of equipment, butchering here yields only 50% of the meat and leather of each creature.
-            </description>
+			<description>A place for butchering animals. Due to the lack of equipment, butchering here yields only 50% of the meat and leather of each creature.</description>
 		</value>
 	</Operation>
-
-    <description>A place for butchering animals. Due to the lack of equipment, butchering here yields only 70% of the meat and leather of each creature.</description>
 
     <!--
     <Operation Class="PatchOperationAdd">

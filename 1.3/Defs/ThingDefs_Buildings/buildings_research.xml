@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>RimGlue_ResearchingSpot</defName>
+    <label>research spot</label>
+    <description>A place for research simple concepts. Researching here is slow.</description>
+    <thingClass>Building_ResearchBench</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Production/CraftingSpot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+    <altitudeLayer>FloorEmplacement</altitudeLayer>
+    <statBases>
+      <WorkToBuild>0</WorkToBuild>
+      <ResearchSpeedFactor>0.25</ResearchSpeedFactor>
+    </statBases>
+    <scatterableOnMapGen>false</scatterableOnMapGen>
+    <useHitPoints>false</useHitPoints>
+    <size>(1,1)</size>
+    <designationCategory>Production</designationCategory>
+    <passability>Standable</passability>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <interactionCellIcon>DiningChair</interactionCellIcon>
+    <surfaceType>Item</surfaceType>
+    <building>
+      <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+    </building>
+    <comps>
+      <li>
+        <compClass>CompReportWorkSpeed</compClass>
+      </li>
+    </comps>
+    <designationHotKey>Misc1</designationHotKey>
+    <placeWorkers>
+      <li>PlaceWorker_ReportWorkSpeedPenalties</li>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
+  </ThingDef>
+
+  <ThingDef Name="RimGlue_ResearchBenchBase" ParentName="BenchBase" Abstract="True">
+    <thingClass>Building_ResearchBench</thingClass>
+    <castEdgeShadows>true</castEdgeShadows>
+    <staticSunShadowHeight>0.20</staticSunShadowHeight>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <WorkToBuild>2800</WorkToBuild>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <placeWorkers>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
+  </ThingDef>
+
+  <ThingDef ParentName="RimGlue_ResearchBenchBase">
+    <defName>RimGlue_NeolithicResearchBench</defName>
+    <label>neolithic research bench</label>
+    <description>A rough surface to study and observe on.</description>
+    <size>(3,1)</size>
+    <graphicData>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(3,1)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+      <texPath>Things/Building/Production/Research/HDM_PrimitiveResearchTable</texPath>
+    </graphicData>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>75</costStuffCount>
+    <statBases>
+      <ResearchSpeedFactor>0.4</ResearchSpeedFactor>
+    </statBases>
+    <techLevel>Neolithic</techLevel>
+    <designationHotKey>Misc2</designationHotKey> 
+    <researchPrerequisites>
+      <li>RimGlue_NeolithicResearch</li>
+    </researchPrerequisites>
+    <designationCategory>Production</designationCategory>
+  </ThingDef>
+
+  <ThingDef ParentName="RimGlue_ResearchBenchBase">
+    <defName>RimGlue_MedievalResearchBench</defName>
+    <label>medieval research bench</label>
+    <description>A sturdy area to conduct experments on.</description>
+    <size>(3,2)</size>
+    <graphicData>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(5,4)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+      <texPath>Things/Building/Production/Research/ResearchBench</texPath>
+    </graphicData>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>100</costStuffCount>
+    <statBases>
+      <ResearchSpeedFactor>0.7</ResearchSpeedFactor>
+    </statBases>
+    <techLevel>Medieval</techLevel>
+    <designationHotKey>Misc3</designationHotKey> 
+    <researchPrerequisites>
+      <li>RimGlue_MedievalResearch</li>
+    </researchPrerequisites>
+    <designationCategory>Production</designationCategory>
+  </ThingDef>
+</Defs>

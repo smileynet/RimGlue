@@ -3,33 +3,27 @@
 
     <ResearchProjectDef Name="NeolithicBasic" Abstract="True">
         <tags>
-            <li>MedievalStart</li>
             <li>ClassicStart</li>
         </tags>
     </ResearchProjectDef>
 
     <ResearchProjectDef Name="NeolithicAdvanced" Abstract="True">
-        <requiredResearchBuilding>NeolithicResearchBench</requiredResearchBuilding>
-        <requiredResearchBuildings>
-            <li>PrimitiveResearchBench</li>
-            <li>SimpleResearchBench</li>
-            <li>HiTechResearchBench</li>
-        </requiredResearchBuildings>
-        <tags>
-            <li>MedievalStart</li>
-            <li>ClassicStart</li>
-        </tags>
+        <requiredResearchBuilding>RimGlue_NeolithicResearchBench</requiredResearchBuilding>
     </ResearchProjectDef>
 
-    <ResearchProjectDef Name="MedievalBase" Abstract="True">
-        <tab>Medieval</tab>
+    <ResearchProjectDef Name="MedievalBasic" Abstract="True">
+        <requiredResearchBuilding>RimGlue_NeolithicResearchBench</requiredResearchBuilding>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef Name="MedievalAdvanced" Abstract="True">
+        <requiredResearchBuilding>RimGlue_MedievalResearchBench</requiredResearchBuilding>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef Name="IndustrialBasic" Abstract="True">
+        <requiredResearchBuilding>RimGlue_MedievalResearchBench</requiredResearchBuilding>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef Name="IndustrialAdvanced" Abstract="True">
         <requiredResearchBuilding>SimpleResearchBench</requiredResearchBuilding>
-        <requiredResearchBuildings>
-            <li>SimpleResearchBench</li>
-            <li>HiTechResearchBench</li>
-        </requiredResearchBuildings>
-        <tags>
-            <li>ClassicStart</li>
-        </tags>
     </ResearchProjectDef>
 </Defs>

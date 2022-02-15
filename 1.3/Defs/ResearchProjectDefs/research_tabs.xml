@@ -10,4 +10,19 @@
     <defName>RimGlue_Medieval</defName>
     <label>Medieval</label>
   </ResearchTabDef>
+
+  <ResearchTabDef>
+    <defName>RimGlue_Industrial</defName>
+    <label>Industrial</label>
+  </ResearchTabDef>
+
+  <ResearchTabDef>
+    <defName>RimGlue_Spacer</defName>
+    <label>Spacer</label>
+  </ResearchTabDef>
+
+  <ResearchTabDef>
+    <defName>RimGlue_Ultra</defName>
+    <label>Ultra</label>
+  </ResearchTabDef>
 </Defs>
