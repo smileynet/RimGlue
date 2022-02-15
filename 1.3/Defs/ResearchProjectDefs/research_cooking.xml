@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ResearchProjectDef ParentName="NeolithicBasic">
+    <defName>RimGlue_NeolithicCooking</defName>
+    <label>Basic Neolithic Cooking</label>
+    <description>Learn to make basic neolithic cooking benches with faster work speed compared to spots.</description>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>2.00</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="NeolithicAdvanced">
+    <defName>RimGlue_NeolithicCookingAdvanced</defName>
+    <label>Advanced Neolithic Cooking</label>
+    <description>Learn to make advanced neolithic cooking buildings to enhance efficiency.</description>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>2.00</researchViewY>
+    <prerequisites>
+      <li>RimGlue_NeolithicCooking</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="MedievalBasic">
+    <defName>RimGlue_MedievalCooking</defName>
+    <label>Basic Medieval Cooking</label>
+    <description>Learn to make medieval cooking benches with faster work speed compared to their neolithic predecessors.</description>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>2.00</researchViewY>
+    <prerequisites>
+      <li>RimGlue_NeolithicCookingAdvanced</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="MedievalAdvanced">
+    <defName>RimGlue_MedievalCookingAdvanced</defName>
+    <label>Advanced Medieval Cooking</label>
+    <description>Learn to make advanced medieval cooking buildings to enhance efficiency.</description>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>2.00</researchViewY>
+    <prerequisites>
+      <li>RimGlue_MedievalCooking</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="IndustrialBasic">
+    <defName>RimGlue_IndustrialCooking</defName>
+    <label>Basic Industrial Cooking</label>
+    <description>Learn to make industrial cooking benches with faster work speed compared to their medieval predecessors.</description>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>2.00</researchViewY>
+    <prerequisites>
+      <li>RimGlue_MedievalCookingAdvanced</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="IndustrialAdvanced">
+    <defName>RimGlue_IndustrialCookingAdvanced</defName>
+    <label>Advanced Industrial Cooking</label>
+    <description>Learn to make advanced industrial cooking buildings to enhance efficiency.</description>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>2.00</researchViewY>
+    <prerequisites>
+      <li>RimGlue_IndustrialCooking</li>
+    </prerequisites>
+  </ResearchProjectDef>
+</Defs>  

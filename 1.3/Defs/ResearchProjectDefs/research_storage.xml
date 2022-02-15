@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ResearchProjectDef ParentName="NeolithicBasic">
+    <defName>RimGlue_NeolithicStorage</defName>
+    <label>Basic Neolithic Storage</label>
+    <description>Learn to make basic neolithic storage benches with faster work speed compared to spots.</description>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>3.00</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="NeolithicAdvanced">
+    <defName>RimGlue_NeolithicStorageAdvanced</defName>
+    <label>Advanced Neolithic Storage</label>
+    <description>Learn to make advanced neolithic storage buildings to enhance efficiency.</description>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>3.00</researchViewY>
+    <prerequisites>
+      <li>RimGlue_NeolithicStorage</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="MedievalBasic">
+    <defName>RimGlue_MedievalStorage</defName>
+    <label>Basic Medieval Storage</label>
+    <description>Learn to make medieval storage benches with faster work speed compared to their neolithic predecessors.</description>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>3.00</researchViewY>
+    <prerequisites>
+      <li>RimGlue_NeolithicStorageAdvanced</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="MedievalAdvanced">
+    <defName>RimGlue_MedievalStorageAdvanced</defName>
+    <label>Advanced Medieval Storage</label>
+    <description>Learn to make advanced medieval storage buildings to enhance efficiency.</description>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>3.00</researchViewY>
+    <prerequisites>
+      <li>RimGlue_MedievalStorage</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="IndustrialBasic">
+    <defName>RimGlue_IndustrialStorage</defName>
+    <label>Basic Industrial Storage</label>
+    <description>Learn to make industrial storage benches with faster work speed compared to their medieval predecessors.</description>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>3.00</researchViewY>
+    <prerequisites>
+      <li>RimGlue_MedievalStorageAdvanced</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="IndustrialAdvanced">
+    <defName>RimGlue_IndustrialStorageAdvanced</defName>
+    <label>Advanced Industrial Storage</label>
+    <description>Learn to make advanced industrial storage buildings to enhance efficiency.</description>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>3.00</researchViewY>
+    <prerequisites>
+      <li>RimGlue_IndustrialStorage</li>
+    </prerequisites>
+  </ResearchProjectDef>
+</Defs>  
