@@ -5,9 +5,6 @@
     <defName>RimGlue_NeolithicProduction</defName>
     <label>Basic Neolithic Production</label>
     <description>Learn to make basic neolithic production benches with faster work speed compared to spots.</description>
-    <baseCost>100</baseCost>
-    <techLevel>Neolithic</techLevel>
-    <tab>RimGlue_Neolithic</tab>
     <researchViewX>0.00</researchViewX>
     <researchViewY>1.00</researchViewY>
   </ResearchProjectDef>
@@ -16,9 +13,6 @@
     <defName>RimGlue_NeolithicProductionAdvanced</defName>
     <label>Advanced Neolithic Production</label>
     <description>Learn to make advanced neolithic production buildings to enhance efficiency.</description>
-    <baseCost>300</baseCost>
-    <techLevel>Neolithic</techLevel>
-    <tab>RimGlue_Neolithic</tab>
     <researchViewX>1.00</researchViewX>
     <researchViewY>1.00</researchViewY>
     <prerequisites>
@@ -30,9 +24,6 @@
     <defName>RimGlue_MedievalProduction</defName>
     <label>Basic Medieval Production</label>
     <description>Learn to make medieval production benches with faster work speed compared to their neolithic predecessors.</description>
-    <baseCost>600</baseCost>
-    <techLevel>Medieval</techLevel>
-    <tab>RimGlue_Medieval</tab>
     <researchViewX>0.00</researchViewX>
     <researchViewY>1.00</researchViewY>
     <prerequisites>
@@ -44,9 +35,6 @@
     <defName>RimGlue_MedievalProductionAdvanced</defName>
     <label>Advanced Medieval Production</label>
     <description>Learn to make advanced medieval production buildings to enhance efficiency.</description>
-    <baseCost>1000</baseCost>
-    <techLevel>Medieval</techLevel>
-    <tab>RimGlue_Medieval</tab>
     <researchViewX>1.00</researchViewX>
     <researchViewY>1.00</researchViewY>
     <prerequisites>
@@ -58,9 +46,6 @@
     <defName>RimGlue_IndustrialProduction</defName>
     <label>Basic Industrial Production</label>
     <description>Learn to make industrial production benches with faster work speed compared to their medieval predecessors.</description>
-    <baseCost>600</baseCost>
-    <techLevel>Industrial</techLevel>
-    <tab>RimGlue_Industrial</tab>
     <researchViewX>0.00</researchViewX>
     <researchViewY>1.00</researchViewY>
     <prerequisites>
@@ -72,9 +57,6 @@
     <defName>RimGlue_IndustrialProductionAdvanced</defName>
     <label>Advanced Industrial Production</label>
     <description>Learn to make advanced industrial production buildings to enhance efficiency.</description>
-    <baseCost>1000</baseCost>
-    <techLevel>Industrial</techLevel>
-    <tab>RimGlue_Industrial</tab>
     <researchViewX>1.00</researchViewX>
     <researchViewY>1.00</researchViewY>
     <prerequisites>

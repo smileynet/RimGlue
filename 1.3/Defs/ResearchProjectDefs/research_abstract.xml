@@ -2,28 +2,46 @@
 <Defs>
 
     <ResearchProjectDef Name="NeolithicBasic" Abstract="True">
+        <baseCost>100</baseCost>
+        <techLevel>Neolithic</techLevel>
+        <tab>RimGlue_Neolithic</tab>
         <tags>
             <li>ClassicStart</li>
         </tags>
     </ResearchProjectDef>
 
     <ResearchProjectDef Name="NeolithicAdvanced" Abstract="True">
+        <baseCost>300</baseCost>
+        <techLevel>Neolithic</techLevel>
+        <tab>RimGlue_Neolithic</tab>
         <requiredResearchBuilding>RimGlue_NeolithicResearchBench</requiredResearchBuilding>
     </ResearchProjectDef>
 
     <ResearchProjectDef Name="MedievalBasic" Abstract="True">
+        <baseCost>600</baseCost>
+        <techLevel>Medieval</techLevel>
+        <tab>RimGlue_Medieval</tab>
         <requiredResearchBuilding>RimGlue_NeolithicResearchBench</requiredResearchBuilding>
     </ResearchProjectDef>
 
     <ResearchProjectDef Name="MedievalAdvanced" Abstract="True">
+        <baseCost>1000</baseCost>
+        <techLevel>Medieval</techLevel>
+        <tab>RimGlue_Medieval</tab>
         <requiredResearchBuilding>RimGlue_MedievalResearchBench</requiredResearchBuilding>
     </ResearchProjectDef>
 
     <ResearchProjectDef Name="IndustrialBasic" Abstract="True">
+        <baseCost>1500</baseCost>
+        <techLevel>Industrial</techLevel>
+        <tab>RimGlue_Industrial</tab>
         <requiredResearchBuilding>RimGlue_MedievalResearchBench</requiredResearchBuilding>
     </ResearchProjectDef>
 
     <ResearchProjectDef Name="IndustrialAdvanced" Abstract="True">
+        <baseCost>2000</baseCost>
+        <techLevel>Industrial</techLevel>
+        <tab>RimGlue_Industrial</tab>
         <requiredResearchBuilding>SimpleResearchBench</requiredResearchBuilding>
     </ResearchProjectDef>
 </Defs>

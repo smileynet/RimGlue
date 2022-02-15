@@ -5,9 +5,6 @@
     <defName>RimGlue_NeolithicResearch</defName>
     <label>Basic Neolithic Research</label>
     <description>Learn to make basic neolithic research benches with faster work speed compared to spots.</description>
-    <baseCost>100</baseCost>
-    <techLevel>Neolithic</techLevel>
-    <tab>RimGlue_Neolithic</tab>
     <researchViewX>0.00</researchViewX>
     <researchViewY>0.00</researchViewY>
   </ResearchProjectDef>
@@ -16,9 +13,6 @@
     <defName>RimGlue_NeolithicResearchAdvanced</defName>
     <label>Advanced Neolithic Research</label>
     <description>Learn to make advanced neolithic research buildings to enhance efficiency.</description>
-    <baseCost>300</baseCost>
-    <techLevel>Neolithic</techLevel>
-    <tab>RimGlue_Neolithic</tab>
     <researchViewX>1.00</researchViewX>
     <researchViewY>0.00</researchViewY>
     <prerequisites>
@@ -29,10 +23,6 @@
   <ResearchProjectDef ParentName="MedievalBasic">
     <defName>RimGlue_MedievalResearch</defName>
     <label>Basic Medieval Research</label>
-    <description>Learn to make medieval research benches with faster work speed compared to their neolithic predecessors.</description>
-    <baseCost>600</baseCost>
-    <techLevel>Medieval</techLevel>
-    <tab>RimGlue_Medieval</tab>
     <researchViewX>0.00</researchViewX>
     <researchViewY>0.00</researchViewY>
     <prerequisites>
@@ -44,9 +34,6 @@
     <defName>RimGlue_MedievalResearchAdvanced</defName>
     <label>Advanced Medieval Research</label>
     <description>Learn to make advanced medival research buildings to enhance efficiency.</description>
-    <baseCost>1000</baseCost>
-    <techLevel>Medieval</techLevel>
-    <tab>RimGlue_Medieval</tab>
     <researchViewX>1.00</researchViewX>
     <researchViewY>0.00</researchViewY>
     <prerequisites>
@@ -58,9 +45,6 @@
     <defName>RimGlue_IndustrialResearch</defName>
     <label>Basic Industrial Research</label>
     <description>Learn to make industrial research benches with faster work speed compared to their medieval predecessors.</description>
-    <baseCost>600</baseCost>
-    <techLevel>Industrial</techLevel>
-    <tab>RimGlue_Industrial</tab>
     <researchViewX>0.00</researchViewX>
     <researchViewY>0.00</researchViewY>
     <prerequisites>
@@ -72,9 +56,6 @@
     <defName>RimGlue_IndustrialResearchAdvanced</defName>
     <label>Advanced Industrial Research</label>
     <description>Learn to make advanced industrial research buildings to enhance efficiency.</description>
-    <baseCost>1000</baseCost>
-    <techLevel>Industrial</techLevel>
-    <tab>RimGlue_Industrial</tab>
     <researchViewX>1.00</researchViewX>
     <researchViewY>0.00</researchViewY>
     <prerequisites>
