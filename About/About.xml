@@ -8,9 +8,7 @@
 	<packageId>smileynet.rimglue</packageId>
 	<loadAfter>
 		<li>brrainz.harmony</li>
-		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
 		<li>LWM.DeepStorage</li>
-		<li>syrchalis.processor.framework</li>
 	</loadAfter>
 	<modDependencies>
 	  <li>
@@ -19,25 +17,15 @@
 		<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
 		<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
 	  </li>
-	  <li>
-		<packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>
-		<displayName>Vanilla Expanded Framework</displayName>
-		<steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=2023507013</steamWorkshopUrl>
-	  </li>
-	  <li>
-		<packageId>LWM.DeepStorage</packageId>
-		<displayName>LWM's Deep Storage</displayName>
-		<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=1617282896</steamWorkshopUrl>
-	  </li>
-	  <li>
-		<packageId>syrchalis.processor.framework</packageId>
-		<displayName>[SYR] Processor Framework</displayName>
-		<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2633514537</steamWorkshopUrl>
-	  </li>
 	</modDependencies>
-	<description>This mod was created for people looking to start from nothing and work their way up the tech tree with each tech unlock having meaningful results.
+	<description>This mod was created for people looking to start at a specific tech level (or nothing) and work their way up the tech tree. This mod is not intended for neolithic/medieval only playthroughs, but rather to provide interesting progression through each of the ages, with different (and increasingly better) versions of things like benches and linkables.
+
+	One of my biggest gripes with doing tribal playthroughs is objects that have no required tech levels, making clueless/ zero playthroughs require me to create my own soft rules for when I could use those objects. Currently I've tied all vanilla objects and research categories to different parts of the tech tree, and may eventually merge the entire tree in to RimGlue's.
 	
-	This mod is not intended for neolithic only playthrough, but rather to provide well thought-out progression through each of the ages.
+	Aside from adding some core production and research benches, my goal is to use existing mods as much as possible to add flavor to playthroughs rather copy and swap objects in to this mod (Although I will definitely publish a modpack of my current preferred list once I've gotten a chance to make patches for them). Hopefully this makes it easier to assemble your own preferred modset with only minimal work needed to tie them together.
+
+	For more information, check out the wiki: https://github.com/smileynet/RimGlue/wiki.
 	
-	I've tried to patch on top of existing mods as much as possible rather copy and swap to reduce the scope of things I need to personally maintain while allowing for as much flavor and compatibility as possible.</description>
+	I can be found lurking aorund Discord (smileynet#7052), so feel free to message me on there with thoughts and feedback! :)
+	</description>
 </ModMetaData>
