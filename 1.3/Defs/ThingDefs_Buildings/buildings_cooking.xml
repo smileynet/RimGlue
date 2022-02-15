@@ -63,7 +63,7 @@
       <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
     </building>
     <researchPrerequisites>
-      <li>RimGlue_NeolithicProduction</li>
+      <li>RimGlue_NeolithicCooking</li>
     </researchPrerequisites>
     <designationHotKey>Misc3</designationHotKey>
     <placeWorkers>
