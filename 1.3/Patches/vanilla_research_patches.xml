@@ -113,7 +113,7 @@
 		<xpath>Defs/ResearchProjectDef[defName="TreeSowing"]</xpath>
 		<value>
 			<prerequisites>
-				<li>RimGlue_NeolithicAgricultureAdvanced</li>
+				<li>RimGlue_NeolithicAgriculture</li>
 			</prerequisites>
 		</value>
 	</Operation>
