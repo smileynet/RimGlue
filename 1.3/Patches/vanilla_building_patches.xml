@@ -30,7 +30,7 @@
 		<xpath>Defs/ThingDef[defName="FueledStove"]</xpath>
 		<value>
 			<researchPrerequisites>
-				<li>RimGlue_IndustrialProduction</li>
+				<li>RimGlue_IndustrialCooking</li>
 			</researchPrerequisites>
 		</value>
 	</Operation>
@@ -39,7 +39,7 @@
 		<xpath>Defs/ThingDef[defName="TableButcher"]</xpath>
 		<value>
 			<researchPrerequisites>
-				<li>RimGlue_IndustrialProduction</li>
+				<li>RimGlue_IndustrialCooking</li>
 			</researchPrerequisites>
 		</value>
 	</Operation>
@@ -62,28 +62,4 @@
 			<description>A place for butchering animals. Due to the lack of equipment, butchering here yields only 50% of the meat and leather of each creature.</description>
 		</value>
 	</Operation>
-
-    <!--
-    <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities[./li[text()="ToolCabinet"]]</xpath>
-        <value>
-            <li>VBY_PrimitiveToolBench</li>
-        </value>
-    </Operation>
-
-
-
-    <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName = "SimpleResearchBench"]</xpath>
-        <value>
-            <comps>
-                <li Class="CompProperties_AffectedByFacilities">
-                    <linkableFacilities>
-                        <li>DankPyon_RusticBookshelf</li>
-                    </linkableFacilities>
-                </li>
-            </comps>
-        </value>
-    </Operation>
-    -->
 </Patch>

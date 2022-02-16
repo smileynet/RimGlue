@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ResearchProjectDef[defName="Electricity"]</xpath>
+		<value>
+			<prerequisites>
+				<li>RimGlue_IndustrialProduction</li>
+			</prerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ResearchProjectDef[defName="RecurveBow"]</xpath>
+		<value>
+			<prerequisites>
+				<li>RimGlue_NeolithicWeapons</li>
+			</prerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ResearchProjectDef[defName="Smithing"]</xpath>
+		<value>
+			<prerequisites>
+				<li>RimGlue_MedievalProduction</li>
+			</prerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ResearchProjectDef[defName="Pemmican"]</xpath>
+		<value>
+			<prerequisites>
+				<li>RimGlue_NeolithicCooking</li>
+			</prerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ResearchProjectDef[defName="CarpetMaking"]</xpath>
+		<value>
+			<prerequisites>
+				<li>RimGlue_NeolithicBuildingAdvanced</li>
+			</prerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ResearchProjectDef[defName="Devilstrand"]</xpath>
+		<value>
+			<prerequisites>
+				<li>RimGlue_NeolithicAgricultureAdvanced</li>
+			</prerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ResearchProjectDef[defName="DrugProduction"]</xpath>
+		<value>
+			<prerequisites>
+				<li>RimGlue_IndustrialMedicine</li>
+			</prerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ResearchProjectDef[defName="ComplexClothing"]</xpath>
+		<value>
+			<prerequisites>
+				<li>RimGlue_MedievalWearables</li>
+			</prerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ResearchProjectDef[defName="Stonecutting"]</xpath>
+		<value>
+			<prerequisites>
+				<li>RimGlue_MedievalBuilding</li>
+			</prerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ResearchProjectDef[defName="PassiveCooler"]</xpath>
+		<value>
+			<prerequisites>
+				<li>RimGlue_NeolithicBuilding</li>
+			</prerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ResearchProjectDef[defName="ComplexFurniture"]</xpath>
+		<value>
+			<prerequisites>
+				<li>RimGlue_MedievalBuilding</li>
+			</prerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ResearchProjectDef[defName="PsychoidBrewing"]</xpath>
+		<value>
+			<prerequisites>
+				<li>RimGlue_NeolithicCookingAdvanced</li>
+			</prerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ResearchProjectDef[defName="TreeSowing"]</xpath>
+		<value>
+			<prerequisites>
+				<li>RimGlue_NeolithicAgricultureAdvanced</li>
+			</prerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ResearchProjectDef[defName="Brewing"]</xpath>
+		<value>
+			<prerequisites>
+				<li>RimGlue_NeolithicCookingAdvanced</li>
+			</prerequisites>
+		</value>
+	</Operation>
+</Patch>

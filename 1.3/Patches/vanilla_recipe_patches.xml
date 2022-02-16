@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/RecipeDef[defName="Make_Kibble"]</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>RimGlue_NeolithicCooking</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="SmokeleafJoint"]/recipeMaker</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>RimGlue_NeolithicMedicineAdvanced</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+	
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/RecipeDef[defName="Anesthetize"]</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>RimGlue_NeolithicMedicine</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/RecipeDef[defName="Euthanize"]</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>RimGlue_NeolithicMedicine</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/RecipeDef[defName="RemoveBodyPart"]</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>RimGlue_NeolithicMedicine</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Apparel_TribalHeaddress"]/recipeMaker/researchPrerequisite</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>RimGlue_NeolithicWearables</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Apparel_WarMask"]/recipeMaker</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>RimGlue_NeolithicWearables</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Apparel_TribalA"]/recipeMaker</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>RimGlue_NeolithicWearables</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Apparel_WarVeil"]/recipeMaker</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>RimGlue_NeolithicWearables</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="MeleeWeapon_Knife"]/recipeMaker</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>RimGlue_NeolithicWeapons</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="MeleeWeapon_Ikwa"]/recipeMaker/researchPrerequisite</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>RimGlue_NeolithicWeaponsAdvanced</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="MeleeWeapon_Ikwa"]/recipeMaker</xpath>
+		<value>
+			<recipeUsers>
+				<li>CraftingSpot</li>
+			</recipeUsers>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="MeleeWeapon_Spear"]/recipeMaker/researchPrerequisite</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>RimGlue_NeolithicWeaponsAdvanced</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="MeleeWeapon_Spear"]/recipeMaker</xpath>
+		<value>
+			<recipeUsers>
+				<li>CraftingSpot</li>
+			</recipeUsers>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Bow_Short"]/recipeMaker</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>RimGlue_NeolithicWeapons</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Pila"]/recipeMaker</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>RimGlue_NeolithicWeaponsAdvanced</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Pila"]/recipeMaker</xpath>
+		<value>
+			<recipeUsers>
+				<li>CraftingSpot</li>
+			</recipeUsers>
+		</value>
+	</Operation>
+</Patch>
