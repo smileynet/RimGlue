@@ -7,7 +7,7 @@
     <description>A place for research simple concepts. Researching here is slow.</description>
     <thingClass>Building_ResearchBench</thingClass>
     <graphicData>
-      <texPath>Things/Building/Production/CraftingSpot</texPath>
+      <texPath>Things/Building/Research/ResearchSpot</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(1,1)</drawSize>
     </graphicData>
@@ -73,7 +73,7 @@
         <cornerBL>Damage/Corner</cornerBL>
         <cornerBR>Damage/Corner</cornerBR>
       </damageData>
-      <texPath>Things/Building/Production/Research/HDM_PrimitiveResearchTable</texPath>
+      <texPath>Things/Building/Research/HDM_PrimitiveResearchTable</texPath>
     </graphicData>
     <stuffCategories>
       <li>Metallic</li>
@@ -107,7 +107,7 @@
         <cornerBL>Damage/Corner</cornerBL>
         <cornerBR>Damage/Corner</cornerBR>
       </damageData>
-      <texPath>Things/Building/Production/Research/ResearchBench</texPath>
+      <texPath>Things/Building/Research/ResearchBench</texPath>
     </graphicData>
     <stuffCategories>
       <li>Metallic</li>

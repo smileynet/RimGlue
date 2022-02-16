@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
   <ThingDef ParentName="BenchBase">
-    <defName>DankPyon_ButchersBlock</defName>
+    <defName>RimGlue_ButchersBlock</defName>
     <label>butcher's block</label>
-    <description>A wooden stump for butchering dead creatures into pieces of raw meat.</description>
+    <description>A basic wooden block for butchering creatures.</description>
     <thingClass>Building_WorkTable</thingClass>
     <graphicData>
-      <texPath>Things/Building/Production/Cooking/ButcherBlock</texPath>
+      <texPath>Things/Building/Cooking/ButcherBlock</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <shaderType>CutoutComplex</shaderType>
       <drawSize>(1.5,1.5)</drawSize>
