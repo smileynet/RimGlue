@@ -1,3 +1,5 @@
+[logo](https://github.com/smileynet/RimGlue/blob/master/About/Preview.png)
+
 This mod was created for people looking to start at a specific tech level (or nothing) and work their way up the tech tree. This mod is not intended for neolithic/medieval only playthroughs, but rather to provide interesting progression through each of the ages, with different (and increasingly better) versions of things like benches and linkables.
 
 ne of my biggest gripes with doing tribal playthroughs is objects that have no required tech levels, making clueless/ zero playthroughs require me to create my own soft rules for when I could use those objects. I've tied all vanilla objects and research categories to different parts of the tech tree, and may eventually merge the entire tree into RimGlue's.
