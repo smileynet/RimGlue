@@ -23,6 +23,7 @@
   <ResearchProjectDef ParentName="MedievalBasic">
     <defName>RimGlue_MedievalResearch</defName>
     <label>Basic Medieval Research</label>
+    <description>Learn to make medieval research benches with faster work speed compared to their neolithic predecessors.</description>
     <researchViewX>0.00</researchViewX>
     <researchViewY>0.00</researchViewY>
     <prerequisites>
@@ -50,6 +51,9 @@
     <prerequisites>
       <li>RimGlue_MedievalResearchAdvanced</li>
     </prerequisites>
+    <tags>
+      <li>ClassicStart</li>
+    </tags>
   </ResearchProjectDef>
 
   <ResearchProjectDef ParentName="IndustrialAdvanced">

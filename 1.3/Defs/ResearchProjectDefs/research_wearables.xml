@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ResearchProjectDef ParentName="NeolithicBasic">
+    <defName>RimGlue_NeolithicWearables</defName>
+    <label>Basic Neolithic Wearables</label>
+    <description>neolithic wearables</description>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>5.00</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="NeolithicAdvanced">
+    <defName>RimGlue_NeolithicWearablesAdvanced</defName>
+    <label>Advanced Neolithic Wearables</label>
+    <description>advanced neolithic wearables</description>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>5.00</researchViewY>
+    <prerequisites>
+      <li>RimGlue_NeolithicWearables</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="MedievalBasic">
+    <defName>RimGlue_MedievalWearables</defName>
+    <label>Basic Medieval Wearables</label>
+    <description>medieval wearables</description>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>5.00</researchViewY>
+    <prerequisites>
+      <li>RimGlue_NeolithicWearablesAdvanced</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="MedievalAdvanced">
+    <defName>RimGlue_MedievalWearablesAdvanced</defName>
+    <label>Advanced Medieval Wearables</label>
+    <description>advanced medieval wearables</description>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>5.00</researchViewY>
+    <prerequisites>
+      <li>RimGlue_MedievalWearables</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="IndustrialBasic">
+    <defName>RimGlue_IndustrialWearables</defName>
+    <label>Basic Industrial Wearables</label>
+    <description>industrial wearables</description>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>5.00</researchViewY>
+    <prerequisites>
+      <li>RimGlue_MedievalWearablesAdvanced</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="IndustrialAdvanced">
+    <defName>RimGlue_IndustrialWearablesAdvanced</defName>
+    <label>Advanced Industrial Wearables</label>
+    <description>advanced industrial wearables</description>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>5.00</researchViewY>
+    <prerequisites>
+      <li>RimGlue_IndustrialWearables</li>
+    </prerequisites>
+  </ResearchProjectDef>
+</Defs>  

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ResearchProjectDef ParentName="NeolithicBasic">
+    <defName>RimGlue_NeolithicWeapons</defName>
+    <label>Basic Neolithic Weapons</label>
+    <description>neolithic weapons</description>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>4.00</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="NeolithicAdvanced">
+    <defName>RimGlue_NeolithicWeaponsAdvanced</defName>
+    <label>Advanced Neolithic Weapons</label>
+    <description>advanced neolithic weapons</description>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>4.00</researchViewY>
+    <prerequisites>
+      <li>RimGlue_NeolithicWeapons</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="MedievalBasic">
+    <defName>RimGlue_MedievalWeapons</defName>
+    <label>Basic Medieval Weapons</label>
+    <description>medieval weapons</description>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>4.00</researchViewY>
+    <prerequisites>
+      <li>RimGlue_NeolithicWeaponsAdvanced</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="MedievalAdvanced">
+    <defName>RimGlue_MedievalWeaponsAdvanced</defName>
+    <label>Advanced Medieval Weapons</label>
+    <description>advanced medieval weapons</description>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>4.00</researchViewY>
+    <prerequisites>
+      <li>RimGlue_MedievalWeapons</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="IndustrialBasic">
+    <defName>RimGlue_IndustrialWeapons</defName>
+    <label>Basic Industrial Weapons</label>
+    <description>industrial weapons</description>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>4.00</researchViewY>
+    <prerequisites>
+      <li>RimGlue_MedievalWeaponsAdvanced</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="IndustrialAdvanced">
+    <defName>RimGlue_IndustrialWeaponsAdvanced</defName>
+    <label>Advanced Industrial Weapons</label>
+    <description>advanced industrial weapons</description>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>4.00</researchViewY>
+    <prerequisites>
+      <li>RimGlue_IndustrialWeapons</li>
+    </prerequisites>
+  </ResearchProjectDef>
+</Defs>  

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ResearchProjectDef ParentName="NeolithicBasic">
+    <defName>RimGlue_NeolithicBuilding</defName>
+    <label>Basic Neolithic Building</label>
+    <description>neolithic building</description>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>3.00</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="NeolithicAdvanced">
+    <defName>RimGlue_NeolithicBuildingAdvanced</defName>
+    <label>Advanced Neolithic Building</label>
+    <description>advanced neolithic building</description>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>3.00</researchViewY>
+    <prerequisites>
+      <li>RimGlue_NeolithicBuilding</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="MedievalBasic">
+    <defName>RimGlue_MedievalBuilding</defName>
+    <label>Basic Medieval Building</label>
+    <description>medieval building</description>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>3.00</researchViewY>
+    <prerequisites>
+      <li>RimGlue_NeolithicBuildingAdvanced</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="MedievalAdvanced">
+    <defName>RimGlue_MedievalBuildingAdvanced</defName>
+    <label>Advanced Medieval Building</label>
+    <description>advanced medieval building</description>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>3.00</researchViewY>
+    <prerequisites>
+      <li>RimGlue_MedievalBuilding</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="IndustrialBasic">
+    <defName>RimGlue_IndustrialBuilding</defName>
+    <label>Basic Industrial Building</label>
+    <description>industrial building</description>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>3.00</researchViewY>
+    <prerequisites>
+      <li>RimGlue_MedievalBuildingAdvanced</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="IndustrialAdvanced">
+    <defName>RimGlue_IndustrialBuildingAdvanced</defName>
+    <label>Advanced Industrial Building</label>
+    <description>advanced industrial building</description>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>3.00</researchViewY>
+    <prerequisites>
+      <li>RimGlue_IndustrialBuilding</li>
+    </prerequisites>
+  </ResearchProjectDef>
+</Defs>  

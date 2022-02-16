@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ResearchProjectDef ParentName="NeolithicBasic">
+    <defName>RimGlue_NeolithicAgriculture</defName>
+    <label>Basic Neolithic Agriculture</label>
+    <description>neolithic agriculture</description>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>7.00</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="NeolithicAdvanced">
+    <defName>RimGlue_NeolithicAgricultureAdvanced</defName>
+    <label>Advanced Neolithic Agriculture</label>
+    <description>advanced neolithic agriculture</description>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>7.00</researchViewY>
+    <prerequisites>
+      <li>RimGlue_NeolithicAgriculture</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="MedievalBasic">
+    <defName>RimGlue_MedievalAgriculture</defName>
+    <label>Basic Medieval Agriculture</label>
+    <description>medieval agriculture</description>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>7.00</researchViewY>
+    <prerequisites>
+      <li>RimGlue_NeolithicAgricultureAdvanced</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="MedievalAdvanced">
+    <defName>RimGlue_MedievalAgricultureAdvanced</defName>
+    <label>Advanced Medieval Agriculture</label>
+    <description>advanced medieval agriculture</description>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>7.00</researchViewY>
+    <prerequisites>
+      <li>RimGlue_MedievalAgriculture</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="IndustrialBasic">
+    <defName>RimGlue_IndustrialAgriculture</defName>
+    <label>Basic Industrial Agriculture</label>
+    <description>industrial agriculture</description>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>7.00</researchViewY>
+    <prerequisites>
+      <li>RimGlue_MedievalAgricultureAdvanced</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="IndustrialAdvanced">
+    <defName>RimGlue_IndustrialAgricultureAdvanced</defName>
+    <label>Advanced Industrial Agriculture</label>
+    <description>advanced industrial agriculture</description>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>7.00</researchViewY>
+    <prerequisites>
+      <li>RimGlue_IndustrialAgriculture</li>
+    </prerequisites>
+  </ResearchProjectDef>
+</Defs>  

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ResearchProjectDef ParentName="NeolithicBasic">
+    <defName>RimGlue_NeolithicMedicine</defName>
+    <label>Basic Neolithic Medicine</label>
+    <description>neolithic medicine</description>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>6.00</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="NeolithicAdvanced">
+    <defName>RimGlue_NeolithicMedicineAdvanced</defName>
+    <label>Advanced Neolithic Medicine</label>
+    <description>advanced neolithic medicine</description>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>6.00</researchViewY>
+    <prerequisites>
+      <li>RimGlue_NeolithicMedicine</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="MedievalBasic">
+    <defName>RimGlue_MedievalMedicine</defName>
+    <label>Basic Medieval Medicine</label>
+    <description>medieval medicine</description>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>6.00</researchViewY>
+    <prerequisites>
+      <li>RimGlue_NeolithicMedicineAdvanced</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="MedievalAdvanced">
+    <defName>RimGlue_MedievalMedicineAdvanced</defName>
+    <label>Advanced Medieval Medicine</label>
+    <description>advanced medieval medicine</description>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>6.00</researchViewY>
+    <prerequisites>
+      <li>RimGlue_MedievalMedicine</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="IndustrialBasic">
+    <defName>RimGlue_IndustrialMedicine</defName>
+    <label>Basic Industrial Medicine</label>
+    <description>industrial medicine</description>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>6.00</researchViewY>
+    <prerequisites>
+      <li>RimGlue_MedievalMedicineAdvanced</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="IndustrialAdvanced">
+    <defName>RimGlue_IndustrialMedicineAdvanced</defName>
+    <label>Advanced Industrial Medicine</label>
+    <description>advanced industrial medicine</description>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>6.00</researchViewY>
+    <prerequisites>
+      <li>RimGlue_IndustrialMedicine</li>
+    </prerequisites>
+  </ResearchProjectDef>
+</Defs>  

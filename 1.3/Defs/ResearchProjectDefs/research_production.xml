@@ -51,6 +51,9 @@
     <prerequisites>
       <li>RimGlue_MedievalProductionAdvanced</li>
     </prerequisites>
+    <tags>
+      <li>ClassicStart</li>
+    </tags>
   </ResearchProjectDef>
 
   <ResearchProjectDef ParentName="IndustrialAdvanced">

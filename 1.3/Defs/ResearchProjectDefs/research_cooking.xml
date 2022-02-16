@@ -62,5 +62,8 @@
     <prerequisites>
       <li>RimGlue_IndustrialCooking</li>
     </prerequisites>
+    <tags>
+      <li>ClassicStart</li>
+    </tags>
   </ResearchProjectDef>
 </Defs>  
