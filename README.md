@@ -1,4 +1,4 @@
-[logo](https://github.com/smileynet/RimGlue/blob/master/About/Preview.png)
+![logo](https://github.com/smileynet/RimGlue/blob/master/About/Preview.png)
 
 This mod was created for people looking to start at a specific tech level (or nothing) and work their way up the tech tree. This mod is not intended for neolithic/medieval only playthroughs, but rather to provide interesting progression through each of the ages, with different (and increasingly better) versions of things like benches and linkables.
 
