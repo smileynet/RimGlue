@@ -11,7 +11,7 @@
           <xpath>Defs/ThingDef[defName="LWM_Food_Basket"]/researchPrerequisites</xpath>
           <value>
               <researchPrerequisites Inherit="false">
-                  <li>RimGlue_NeolithicStorage</li>
+                  <li>RimGlue_NeolithicBuilding</li>
               </researchPrerequisites>
           </value>
       </li>
