@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+  <ThingDef Name="RimGlue_ToolCabinetBase" ParentName="BuildingBase" Abstract="True">
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <castEdgeShadows>true</castEdgeShadows>
+    <staticSunShadowHeight>0.35</staticSunShadowHeight>
+    <fillPercent>0.5</fillPercent>
+    <canOverlapZones>false</canOverlapZones>
+    <pathCost>42</pathCost>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToBuild>1800</WorkToBuild>
+      <Mass>20</Mass>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <building>
+      <destroySound>BuildingDestroyed_Metal_Small</destroySound>
+    </building>
+    <designationCategory>Misc</designationCategory>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+    <thingCategories>
+      <li>BuildingsMisc</li>
+    </thingCategories>
+    <designationHotKey>Misc6</designationHotKey>
+    <placeWorkers>
+      <li>PlaceWorker_ShowFacilitiesConnections</li>
+    </placeWorkers>
+  </ThingDef>
+
+  <ThingDef ParentName="RimGlue_ToolCabinetBase">
+    <defName>RimGlue_NeolithicToolBin</defName>
+    <label>neolithic tool bin</label>
+    <description>Increases work speed when placed near a workbench. One workbench can use up to two tool bins.</description>
+    <graphicData>
+      <texPath>Things/Building/Production/NeolithicToolBin</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,1)</drawSize>
+      <color>(96,114,95)</color>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <size>(2,1)</size>
+    <costStuffCount>100</costStuffCount>
+    <stuffCategories>
+      <li>Stony</li>
+    </stuffCategories>
+    <comps>
+      <li Class="CompProperties_Facility">
+        <statOffsets>
+          <WorkTableWorkSpeedFactor>0.05</WorkTableWorkSpeedFactor>
+        </statOffsets>
+        <maxSimultaneous>2</maxSimultaneous>
+      </li>
+    </comps>    
+    <researchPrerequisites>
+      <li>RimGlue_NeolithicProductionAdvanced</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="RimGlue_ToolCabinetBase">
+    <defName>RimGlue_MedievalToolChest</defName>
+    <label>medieval tool chest</label>
+    <description>Increases work speed when placed near a workbench. One workbench can use up to two tool chests.</description>
+    <graphicData>
+      <texPath>Things/Building/Production/MedievalToolCabinet</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,1)</drawSize>
+      <color>(96,114,95)</color>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <size>(2,1)</size>
+    <costStuffCount>150</costStuffCount>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <comps>
+      <li Class="CompProperties_Facility">
+        <statOffsets>
+          <WorkTableWorkSpeedFactor>0.055</WorkTableWorkSpeedFactor>
+        </statOffsets>
+        <maxSimultaneous>2</maxSimultaneous>
+      </li>
+    </comps>    
+    <researchPrerequisites>
+      <li>RimGlue_MedievalProductionAdvanced</li>
+    </researchPrerequisites>
+  </ThingDef>
+</Defs>

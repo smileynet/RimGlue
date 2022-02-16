@@ -62,4 +62,12 @@
 			<description>A place for butchering animals. Due to the lack of equipment, butchering here yields only 50% of the meat and leather of each creature.</description>
 		</value>
 	</Operation>
+
+	<Operation Class="PatchOperationInsert">
+        <xpath>//linkableFacilities/li[text()="ToolCabinet"]</xpath>
+        <value>
+            <li>RimGlue_NeolithicToolBin</li>
+			<li>RimGlue_MedievalToolChest</li>
+        </value>
+    </Operation>
 </Patch>
