@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TerrainDef[defName="Boards_Totemic"]</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>RimGlue_NeolithicBuildingAdvanced</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[@Name="BuildingFloorCoveringMediumBase"]</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>RimGlue_NeolithicBuilding</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[@Name="BuildingFloorCoveringBroadBase"]</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>RimGlue_NeolithicBuildingAdvanced</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+	
+
+</Patch>

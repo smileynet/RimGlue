@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="NatureShrine_Small"]</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>RimGlue_NeolithicBuilding</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="NatureShrine_Large"]</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>RimGlue_NeolithicBuildinAdvanced</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+</Patch>

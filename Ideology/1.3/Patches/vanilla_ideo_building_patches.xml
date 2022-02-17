@@ -64,8 +64,8 @@
 		</value>
 	</Operation>
 
-	<Operation Class="IdeoSmokerBase">
-		<xpath>Defs/ThingDef[@Name="AltarBase"]</xpath>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[@Name="IdeoSmokerBase"]</xpath>
 		<value>
 			<researchPrerequisites>
 				<li>RimGlue_NeolithicBuildingAdvanced</li>
@@ -127,21 +127,5 @@
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="PlantPot_Bonsai"]</xpath>
-		<value>
-			<researchPrerequisites>
-				<li>RimGlue_NeolithicAgricultureAdvanced</li>
-			</researchPrerequisites>
-		</value>
-	</Operation>
 
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="Skullspike"]</xpath>
-		<value>
-			<researchPrerequisites>
-				<li>RimGlue_NeolithicBuilding</li>
-			</researchPrerequisites>
-		</value>
-	</Operation>
 </Patch>
