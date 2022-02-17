@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TerrainDef[defName="Boards_Totemic"]</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>RimGlue_NeolithicBuidingAdvanced</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+	
+
+</Patch>

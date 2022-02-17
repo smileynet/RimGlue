@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
 <Patch>
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName = "CraftingSpot"]/statBases/WorkTableWorkSpeedFactor</xpath>
-        <value>
-            <WorkTableWorkSpeedFactor>0.25</WorkTableWorkSpeedFactor>
-        </value>
-    </Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName = "CraftingSpot"]/statBases/WorkTableWorkSpeedFactor</xpath>
+		<value>
+			<WorkTableWorkSpeedFactor>0.25</WorkTableWorkSpeedFactor>
+		</value>
+	</Operation>
 
-    <Operation Class="PatchOperationAdd">
+	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="SimpleResearchBench"]</xpath>
 		<value>
 			<researchPrerequisites>
@@ -17,7 +17,7 @@
 		</value>
 	</Operation>
 
-    <Operation Class="PatchOperationAdd">
+	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="TableSculpting"]</xpath>
 		<value>
 			<researchPrerequisites>
@@ -26,7 +26,7 @@
 		</value>
 	</Operation>
 
-    <Operation Class="PatchOperationAdd">
+	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="FueledStove"]</xpath>
 		<value>
 			<researchPrerequisites>
@@ -35,7 +35,7 @@
 		</value>
 	</Operation>
 
-    <Operation Class="PatchOperationAdd">
+	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="TableButcher"]</xpath>
 		<value>
 			<researchPrerequisites>
@@ -44,19 +44,19 @@
 		</value>
 	</Operation>
 
-    <Operation Class="PatchOperationReplace">
+	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="ButcherSpot"]/statBases</xpath>
 		<value>
 			<statBases>
 				<WorkToBuild>0</WorkToBuild>
 				<WorkTableEfficiencyFactor>0.5</WorkTableEfficiencyFactor>
 				<WorkTableWorkSpeedFactor>0.25</WorkTableWorkSpeedFactor>
-                <Cleanliness>-30</Cleanliness>
-			  </statBases>
+				<Cleanliness>-30</Cleanliness>
+			</statBases>
 		</value>
 	</Operation>
 
-    <Operation Class="PatchOperationReplace">
+	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="ButcherSpot"]/description</xpath>
 		<value>
 			<description>A place for butchering animals. Due to the lack of equipment, butchering here yields only 50% of the meat and leather of each creature.</description>
@@ -64,10 +64,223 @@
 	</Operation>
 
 	<Operation Class="PatchOperationInsert">
-        <xpath>//linkableFacilities/li[text()="ToolCabinet"]</xpath>
-        <value>
-            <li>RimGlue_NeolithicToolBin</li>
+		<xpath>//linkableFacilities/li[text()="ToolCabinet"]</xpath>
+		<value>
+			<li>RimGlue_NeolithicToolBin</li>
 			<li>RimGlue_MedievalToolChest</li>
-        </value>
-    </Operation>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef[defName="HorseshoesPin"]/minTechLevelToBuild</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="HorseshoesPin"]</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>RimGlue_MedievalBuilding</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef[defName="HoopstoneRing"]/maxTechLevelToBuild</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="HoopstoneRing"]</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>RimGlue_NeolithicBuilding</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="HoopstoneRing"]/statBases/JoyGainFactor</xpath>
+		<value>
+			<JoyGainFactor>0.8</JoyGainFactor>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="GameOfUrBoard"]</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>RimGlue_NeolithicBuilding</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="AnimalFlap"]</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>RimGlue_NeolithicAgriculture</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Fence"]</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>RimGlue_NeolithicAgriculture</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="FenceGate"]</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>RimGlue_NeolithicAgriculture</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="PenMarker"]</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>RimGlue_NeolithicAgriculture</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Column"]</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>RimGlue_NeolithicBuilding</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Sandbags"]</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>RimGlue_IndustrialBuilding</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Barricade"]</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>RimGlue_NeolithicBuilding</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="TrapSpike"]</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>RimGlue_NeolithicBuilding</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Bedroll"]</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>RimGlue_NeolithicBuilding</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="BedrollDouble"]</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>RimGlue_NeolithicBuilding</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="AnimalSleepingBox"]</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>RimGlue_NeolithicBuilding</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="AnimalBed"]</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>RimGlue_NeolithicBuildingAdvanced</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Stool"]</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>RimGlue_NeolithicBuilding</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Table2x2c"]</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>RimGlue_NeolithicBuilding</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Table2x4c"]</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>RimGlue_NeolithicBuildingAdvanced</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Table3x3c"]</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>RimGlue_NeolithicBuildingAdvanced</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="PlantPot"]</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>RimGlue_NeolithicAgricultureAdvanced</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Shelf"]/researchPrerequisites</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>RimGlue_NeolithicBuilding</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="EggBox"]</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>RimGlue_NeolithicAgriculture</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
 </Patch>

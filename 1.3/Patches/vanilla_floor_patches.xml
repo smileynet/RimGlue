@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TerrainDef[defName="StrawMatting"]</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>RimGlue_NeolithicAgriculture</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TerrainDef[defName="WoodPlankFloor"]</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>RimGlue_NeolithicBuilding</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TerrainDef[@Name="FlagstoneBase"]</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>RimGlue_NeolithicBuildingAdvanced</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TerrainDef[defName="Bridge"]</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>RimGlue_NeolithicBuildingAdvanced</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+</Patch>
